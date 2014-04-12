@@ -1,6 +1,6 @@
 from django.contrib import admin
 from models import *
-
+#Testcomentario
 class TodoArticuloAdmin(admin.TabularInline):
 	model = TodoArticulo
 	extra = 0
