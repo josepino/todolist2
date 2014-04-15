@@ -10,5 +10,5 @@ class TodoAdmin(admin.ModelAdmin):
 	inlines = [TodoArticuloAdmin]
 
 
-#admin.site.register (Todo, TodoAdmin)
-#admin.site.register (TodoArticulo)
+admin.site.register (Todo, TodoAdmin)
+admin.site.register (TodoArticulo)
