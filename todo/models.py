@@ -7,7 +7,8 @@ from django.db import models
 # Create your models here.
 
 class Todo(models.Model):
-	nombre = models.CharField('Nombre', 
+    #Clase Todo
+    nombre = models.CharField('Nombre',
 								max_length=200,
 								help_text = 'Ingrese el nombre del proyecto'
 							)
