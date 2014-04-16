@@ -1,14 +1,16 @@
 from django.contrib import admin
+
 from models import *
+
 #Testcomentario
-class TodoArticuloAdmin(admin.TabularInline):
-	model = TodoArticulo
-	extra = 0
+class FaseAdmin(admin.TabularInline):
+    model = Fase
+    extra = 0
 
 
-class TodoAdmin(admin.ModelAdmin):
-	inlines = [TodoArticuloAdmin]
+class ProyectoAdmin(admin.ModelAdmin):
+    inlines = [FaseAdmin]
 
 
-admin.site.register (Todo, TodoAdmin)
-admin.site.register (TodoArticulo)
+admin.site.register(Proyecto, ProyectoAdmin)
+admin.site.register(Fase)
