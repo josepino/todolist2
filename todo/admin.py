@@ -18,6 +18,6 @@ class ProyectoAdmin(admin.ModelAdmin):
     inlines = [FaseAdmin]
 
 
-admin.site.register(Proyecto)
 #admin.site.register(Proyecto, ProyectoAdmin)
 #admin.site.register(Fase)
+admin.site.register(Proyecto)

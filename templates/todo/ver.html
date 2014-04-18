@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+    <h2>{{ ver.Nombre }}</h2>
+    {% for  obj in ver.fase_set.all %}
+    {{ obj.Nombre }}<br>
+    {{ obj.Descripcion }}
+    <br>
+
+    </div>
+
+    {% empty %}
+    <p>No hay fases para este proyecto</p>
+    {% enfor %}
+{% endblock contenido %}
+
