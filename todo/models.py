@@ -38,5 +38,5 @@ class Fase(models.Model):
         return u'%s | %s' % (self.fkproyecto, self.Nombre)
 
     class Meta:
-        verbose_name = u'Fase Proyecto'
-        verbose_name_plural = 'Fases Proyecto'
+        verbose_name = u'Fase'
+        verbose_name_plural = 'Fases'
