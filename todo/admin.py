@@ -2,8 +2,11 @@ from django.contrib import admin
 
 from models import *
 
-#Testcomentario
+
 class FaseAdmin(admin.TabularInline):
+    """
+    Definicion de la clase FaseAdmin
+    """
     list_display = ('Nombre',)
     list_filter = ('Nombre',)
     search_fields = ['Nombre']
@@ -12,11 +15,15 @@ class FaseAdmin(admin.TabularInline):
 
 
 class ProyectoAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase Proyecto
+    """
     list_display = ('Nombre', "Descripcion", "FechaCreacion",)
     list_filter = ('Nombre', "FechaCreacion",)
     search_fields = ['Nombre']
     ordering = ('Nombre',)
     #inlines = [FaseAdmin]
+
 
 
 admin.site.register(Proyecto, ProyectoAdmin)

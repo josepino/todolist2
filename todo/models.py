@@ -8,8 +8,11 @@ from django.db import models
 
 #Clase Proyecto, define los campos y textos que contienen los datos del Proyecto
 class Proyecto(models.Model):
-    #Clase Proyecto
-    #definimos los atributos de la clase Proyecto
+    """
+    Clase Proyecto
+    Definimos los atributos de la clase Proyecto
+    """
+
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre del proyecto')
     Descripcion = models.CharField('Descripcion', max_length=45, help_text='Ingrese la descripcion del proyecto')
     FechaCreacion = models.DateField('Fecha de Creacion', help_text='Ingrese la fecha de creacion del proyecto')
@@ -33,6 +36,10 @@ class Proyecto(models.Model):
 
 #Clase Fase, define los campos y textos que contienen los datos de cada Fase
 class Fase(models.Model):
+    """
+    Clase Fase
+    Define los campos y textos que continen los datos de cada Fase
+    """
     fkproyecto = models.ForeignKey(Proyecto)
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la fase')
     NroOrden = models.IntegerField(help_text='Ingrese el numero de orden de la fase')
