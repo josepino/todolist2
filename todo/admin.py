@@ -16,7 +16,7 @@ class FaseAdmin(admin.TabularInline):
 
 class ProyectoAdmin(admin.ModelAdmin):
     """
-    Definicion de la clase Proyecto
+    Definicion de la clase de Administracion de Proyecto
     """
     list_display = ('Nombre', "Descripcion", "FechaCreacion",)
     list_filter = ('Nombre', "FechaCreacion",)
