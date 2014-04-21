@@ -12,12 +12,13 @@ class FaseAdmin(admin.TabularInline):
 
 
 class ProyectoAdmin(admin.ModelAdmin):
-    list_display = ('Nombre',)
-    list_filter = ('Nombre',)
+    list_display = ('Nombre', "Descripcion", "FechaCreacion",)
+    list_filter = ('Nombre', "FechaCreacion",)
     search_fields = ['Nombre']
-    inlines = [FaseAdmin]
+    ordering = ('Nombre',)
+    #inlines = [FaseAdmin]
 
 
-#admin.site.register(Proyecto, ProyectoAdmin)
+admin.site.register(Proyecto, ProyectoAdmin)
 #admin.site.register(Fase)
-admin.site.register(Proyecto)
+
