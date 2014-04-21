@@ -5,3 +5,5 @@ urlpatterns = patterns('todo.views',
                        url(r'^ver_fase/(?P<id>\d+)/$', 'ver_fase', name='ver'),
 )
 
+
+
