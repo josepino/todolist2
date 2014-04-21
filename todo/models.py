@@ -4,8 +4,9 @@ from django.db import models
 #hola5
 
 
-# Create your models here.
 
+
+#Clase Proyecto, define los campos y textos que contienen los datos del Proyecto
 class Proyecto(models.Model):
     #Clase Proyecto
     #definimos los atributos de la clase Proyecto
@@ -30,9 +31,8 @@ class Proyecto(models.Model):
             ("iniciar proyecto", "Puede iniciar el proyecto"),
         )
 
-
+#Clase Fase, define los campos y textos que contienen los datos de cada Fase
 class Fase(models.Model):
-    #Clase fase
     fkproyecto = models.ForeignKey(Proyecto)
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la fase')
     NroOrden = models.IntegerField(help_text='Ingrese el numero de orden de la fase')
