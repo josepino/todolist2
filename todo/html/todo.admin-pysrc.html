@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>todo.admin</title>
+    <link rel="stylesheet" href="epydoc.css" type="text/css"/>
+    <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+    <tr valign="middle">
+
+        <!-- Tree link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <!-- Index link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <!-- Help link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <th class="navbar" width="100%"></th>
+    </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;todo ::
+        Module&nbsp;admin
+      </span>
+        </td>
+        <td>
+            <table cellpadding="0" cellspacing="0">
+                <!-- hide/show private -->
+                <tr>
+                    <td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+                                                                onclick="toggle_private();">hide&nbsp;private</a>]</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="options"
+                            >[<a href="frames.html" target="_top">frames</a
+                            >]&nbsp;|&nbsp;<a href="todo.admin-pysrc.html"
+                                              target="_top">no&nbsp;frames</a>]</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="todo.admin-module.html">Module todo.admin</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt
+        class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">contrib</tt> <tt class="py-keyword">import</tt>
+    <tt id="link-0" class="py-name" targets="Module todo.admin=todo.admin-module.html"><a title="todo.admin"
+                                                                                          class="py-name" href="#"
+                                                                                          onclick="return doclink('link-0', 'admin', 'link-0');">admin</a></tt>
+</tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1"
+                                                                                                         class="py-name"
+                                                                                                         targets="Module todo.models=todo.models-module.html"><a
+        title="todo.models" class="py-name" href="#" onclick="return doclink('link-1', 'models', 'link-1');">models</a></tt>
+    <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"> </tt>
+<a name="ItemAdmin"></a><div id="ItemAdmin-def"><a name="L5"></a><tt class="py-lineno"> 5</tt> <a class="py-toggle"
+                                                                                                  href="#"
+                                                                                                  id="ItemAdmin-toggle"
+                                                                                                  onclick="return toggle('ItemAdmin');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.admin.ItemAdmin-class.html">ItemAdmin</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">ModelAdmin</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ItemAdmin-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ItemAdmin-expanded"><a
+        name="L6"></a><tt class="py-lineno"> 6</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L7"></a><tt class="py-lineno"> 7</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        ItemAdmin</tt> </tt>
+    <a name="L8"></a><tt class="py-lineno"> 8</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L9"></a><tt class="py-lineno"> 9</tt> <tt class="py-line"> <tt id="link-2" class="py-name"
+                                                                            targets="Variable todo.admin.FaseAdmin.list_display=todo.admin.FaseAdmin-class.html#list_display,Variable todo.admin.ItemAdmin.list_display=todo.admin.ItemAdmin-class.html#list_display,Variable todo.admin.ProyectoAdmin.list_display=todo.admin.ProyectoAdmin-class.html#list_display,Variable todo.admin.TipoItemAdmin.list_display=todo.admin.TipoItemAdmin-class.html#list_display"><a
+            title="todo.admin.FaseAdmin.list_display
+todo.admin.ItemAdmin.list_display
+todo.admin.ProyectoAdmin.list_display
+todo.admin.TipoItemAdmin.list_display" class="py-name" href="#"
+            onclick="return doclink('link-2', 'list_display', 'link-2');">list_display</a></tt> <tt class="py-op">=</tt>
+        <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt class="py-string">'TipoItem'</tt><tt
+                class="py-op">,</tt> <tt class="py-string">'Descripcion'</tt><tt class="py-op">,</tt><tt
+                class="py-string">'Complejidad'</tt><tt class="py-op">,</tt><tt class="py-string">'Estado'</tt><tt
+                class="py-op">,</tt><tt class="py-string">'Version'</tt><tt class="py-op">,</tt><tt class="py-string">'Costo'</tt><tt
+                class="py-op">,</tt><tt class="py-string">'FechaModificacion'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L10"></a><tt class="py-lineno">10</tt> <tt class="py-line"> <tt id="link-3" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin.list_filter=todo.admin.FaseAdmin-class.html#list_filter,Variable todo.admin.ItemAdmin.list_filter=todo.admin.ItemAdmin-class.html#list_filter,Variable todo.admin.ProyectoAdmin.list_filter=todo.admin.ProyectoAdmin-class.html#list_filter,Variable todo.admin.TipoItemAdmin.list_filter=todo.admin.TipoItemAdmin-class.html#list_filter"><a
+            title="todo.admin.FaseAdmin.list_filter
+todo.admin.ItemAdmin.list_filter
+todo.admin.ProyectoAdmin.list_filter
+todo.admin.TipoItemAdmin.list_filter" class="py-name" href="#"
+            onclick="return doclink('link-3', 'list_filter', 'link-3');">list_filter</a></tt> <tt class="py-op">=</tt>
+        <tt class="py-op">(</tt> <tt class="py-string">'TipoItem'</tt><tt class="py-op">,</tt> <tt class="py-string">'Complejidad'</tt><tt
+                class="py-op">,</tt><tt class="py-string">'Estado'</tt><tt class="py-op">,</tt><tt class="py-string">'Costo'</tt><tt
+                class="py-op">,</tt><tt class="py-string">'FechaModificacion'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L11"></a><tt class="py-lineno">11</tt> <tt class="py-line"> <tt id="link-4" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin.search_fields=todo.admin.FaseAdmin-class.html#search_fields,Variable todo.admin.ItemAdmin.search_fields=todo.admin.ItemAdmin-class.html#search_fields,Variable todo.admin.ProyectoAdmin.search_fields=todo.admin.ProyectoAdmin-class.html#search_fields,Variable todo.admin.TipoItemAdmin.search_fields=todo.admin.TipoItemAdmin-class.html#search_fields"><a
+            title="todo.admin.FaseAdmin.search_fields
+todo.admin.ItemAdmin.search_fields
+todo.admin.ProyectoAdmin.search_fields
+todo.admin.TipoItemAdmin.search_fields" class="py-name" href="#"
+            onclick="return doclink('link-4', 'search_fields', 'link-4');">search_fields</a></tt> <tt
+            class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">]</tt>
+    </tt>
+    <a name="L12"></a><tt class="py-lineno">12</tt> <tt class="py-line"> <tt id="link-5" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin.ordering=todo.admin.FaseAdmin-class.html#ordering,Variable todo.admin.FaseAdmin2.ordering=todo.admin.FaseAdmin2-class.html#ordering,Variable todo.admin.ItemAdmin.ordering=todo.admin.ItemAdmin-class.html#ordering,Variable todo.admin.ItemAdmin2.ordering=todo.admin.ItemAdmin2-class.html#ordering,Variable todo.admin.ProyectoAdmin.ordering=todo.admin.ProyectoAdmin-class.html#ordering,Variable todo.admin.TipoItemAdmin.ordering=todo.admin.TipoItemAdmin-class.html#ordering,Variable todo.admin.TipoItemAdmin2.ordering=todo.admin.TipoItemAdmin2-class.html#ordering,Variable todo.models.Fase.Meta.ordering=todo.models.Fase.Meta-class.html#ordering,Variable todo.models.Item.Meta.ordering=todo.models.Item.Meta-class.html#ordering,Variable todo.models.Proyecto.Meta.ordering=todo.models.Proyecto.Meta-class.html#ordering,Variable todo.models.TipoItem.Meta.ordering=todo.models.TipoItem.Meta-class.html#ordering"><a
+            title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-5', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+</div><a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"> </tt>
+<a name="ItemAdmin2"></a><div id="ItemAdmin2-def"><a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle"
+                                                                                                     href="#"
+                                                                                                     id="ItemAdmin2-toggle"
+                                                                                                     onclick="return toggle('ItemAdmin2');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.admin.ItemAdmin2-class.html">ItemAdmin2</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">TabularInline</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ItemAdmin2-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="ItemAdmin2-expanded"><a
+        name="L16"></a><tt class="py-lineno">16</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L17"></a><tt class="py-lineno">17</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        ItemAdmin2 que se utiliza para la clase FaseAdmin</tt> </tt>
+    <a name="L18"></a><tt class="py-lineno">18</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L19"></a><tt class="py-lineno">19</tt> <tt class="py-line"> <tt id="link-6" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-6', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L20"></a><tt class="py-lineno">20</tt> <tt class="py-line"> <tt id="link-7" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin2.model=todo.admin.FaseAdmin2-class.html#model,Variable todo.admin.ItemAdmin2.model=todo.admin.ItemAdmin2-class.html#model,Variable todo.admin.TipoItemAdmin2.model=todo.admin.TipoItemAdmin2-class.html#model"><a
+            title="todo.admin.FaseAdmin2.model
+todo.admin.ItemAdmin2.model
+todo.admin.TipoItemAdmin2.model" class="py-name" href="#"
+            onclick="return doclink('link-7', 'model', 'link-7');">model</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-8" class="py-name" targets="Class todo.models.Item=todo.models.Item-class.html"><a
+            title="todo.models.Item" class="py-name" href="#"
+            onclick="return doclink('link-8', 'Item', 'link-8');">Item</a></tt> </tt>
+    <a name="L21"></a><tt class="py-lineno">21</tt> <tt class="py-line"> <tt id="link-9" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin2.extra=todo.admin.FaseAdmin2-class.html#extra,Variable todo.admin.ItemAdmin2.extra=todo.admin.ItemAdmin2-class.html#extra,Variable todo.admin.TipoItemAdmin2.extra=todo.admin.TipoItemAdmin2-class.html#extra"><a
+            title="todo.admin.FaseAdmin2.extra
+todo.admin.ItemAdmin2.extra
+todo.admin.TipoItemAdmin2.extra" class="py-name" href="#"
+            onclick="return doclink('link-9', 'extra', 'link-9');">extra</a></tt> <tt class="py-op">=</tt> <tt
+            class="py-number">0</tt> </tt>
+</div><a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"> </tt>
+<a name="TipoItemAdmin"></a><div id="TipoItemAdmin-def"><a name="L23"></a><tt class="py-lineno">23</tt> <a
+        class="py-toggle" href="#" id="TipoItemAdmin-toggle" onclick="return toggle('TipoItemAdmin');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.admin.TipoItemAdmin-class.html">TipoItemAdmin</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">ModelAdmin</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TipoItemAdmin-collapsed" style="display:none;" pad="++" indent="++++"></div><div
+        id="TipoItemAdmin-expanded"><a name="L24"></a><tt class="py-lineno">24</tt> <tt class="py-line"> <tt
+        class="py-docstring">"""</tt> </tt>
+    <a name="L25"></a><tt class="py-lineno">25</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        TipoItemAdmin</tt> </tt>
+    <a name="L26"></a><tt class="py-lineno">26</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L27"></a><tt class="py-lineno">27</tt> <tt class="py-line"> <tt id="link-10" class="py-name"><a title="todo.admin.FaseAdmin.list_display
+todo.admin.ItemAdmin.list_display
+todo.admin.ProyectoAdmin.list_display
+todo.admin.TipoItemAdmin.list_display" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-10', 'list_display', 'link-2');">list_display</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'Fase'</tt><tt class="py-op">,</tt> <tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+    <a name="L28"></a><tt class="py-lineno">28</tt> <tt class="py-line"> <tt id="link-11" class="py-name"><a title="todo.admin.FaseAdmin.list_filter
+todo.admin.ItemAdmin.list_filter
+todo.admin.ProyectoAdmin.list_filter
+todo.admin.TipoItemAdmin.list_filter" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-11', 'list_filter', 'link-3');">list_filter</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt> <tt class="py-string">'Fase'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L29"></a><tt class="py-lineno">29</tt> <tt class="py-line"> <tt id="link-12" class="py-name"><a title="todo.admin.FaseAdmin.search_fields
+todo.admin.ItemAdmin.search_fields
+todo.admin.ProyectoAdmin.search_fields
+todo.admin.TipoItemAdmin.search_fields" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-12', 'search_fields', 'link-4');">search_fields</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">]</tt>
+    </tt>
+    <a name="L30"></a><tt class="py-lineno">30</tt> <tt class="py-line"> <tt id="link-13" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-13', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L31"></a><tt class="py-lineno">31</tt> <tt class="py-line"> <tt id="link-14" class="py-name"
+                                                                             targets="Variable todo.admin.FaseAdmin.inlines=todo.admin.FaseAdmin-class.html#inlines,Variable todo.admin.ProyectoAdmin.inlines=todo.admin.ProyectoAdmin-class.html#inlines,Variable todo.admin.TipoItemAdmin.inlines=todo.admin.TipoItemAdmin-class.html#inlines"><a
+            title="todo.admin.FaseAdmin.inlines
+todo.admin.ProyectoAdmin.inlines
+todo.admin.TipoItemAdmin.inlines" class="py-name" href="#" onclick="return doclink('link-14', 'inlines', 'link-14');">inlines</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt id="link-15" class="py-name"
+                                                             targets="Class todo.admin.ItemAdmin2=todo.admin.ItemAdmin2-class.html"><a
+                title="todo.admin.ItemAdmin2" class="py-name" href="#"
+                onclick="return doclink('link-15', 'ItemAdmin2', 'link-15');">ItemAdmin2</a></tt><tt
+                class="py-op">]</tt> </tt>
+</div><a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"> </tt>
+<a name="TipoItemAdmin2"></a><div id="TipoItemAdmin2-def"><a name="L34"></a><tt class="py-lineno">34</tt> <a
+        class="py-toggle" href="#" id="TipoItemAdmin2-toggle" onclick="return toggle('TipoItemAdmin2');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.admin.TipoItemAdmin2-class.html">TipoItemAdmin2</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">TabularInline</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TipoItemAdmin2-collapsed" style="display:none;" pad="++" indent="++++"></div><div
+        id="TipoItemAdmin2-expanded"><a name="L35"></a><tt class="py-lineno">35</tt> <tt class="py-line"> <tt
+        class="py-docstring">"""</tt> </tt>
+    <a name="L36"></a><tt class="py-lineno">36</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        TipoItemAdmin2 que se utiliza para la clase FaseAdmin</tt> </tt>
+    <a name="L37"></a><tt class="py-lineno">37</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L38"></a><tt class="py-lineno">38</tt> <tt class="py-line"> <tt id="link-16" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-16', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L39"></a><tt class="py-lineno">39</tt> <tt class="py-line"> <tt id="link-17" class="py-name"><a title="todo.admin.FaseAdmin2.model
+todo.admin.ItemAdmin2.model
+todo.admin.TipoItemAdmin2.model" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-17', 'model', 'link-7');">model</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-18" class="py-name"
+                                     targets="Variable todo.models.Item.TipoItem=todo.models.Item-class.html#TipoItem,Class todo.models.TipoItem=todo.models.TipoItem-class.html"><a
+                title="todo.models.Item.TipoItem
+todo.models.TipoItem" class="py-name" href="#" onclick="return doclink('link-18', 'TipoItem', 'link-18');">TipoItem</a></tt>
+    </tt>
+    <a name="L40"></a><tt class="py-lineno">40</tt> <tt class="py-line"> <tt id="link-19" class="py-name"><a title="todo.admin.FaseAdmin2.extra
+todo.admin.ItemAdmin2.extra
+todo.admin.TipoItemAdmin2.extra" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-19', 'extra', 'link-9');">extra</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+</div><a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="FaseAdmin"></a><div id="FaseAdmin-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle"
+                                                                                                   href="#"
+                                                                                                   id="FaseAdmin-toggle"
+                                                                                                   onclick="return toggle('FaseAdmin');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.admin.FaseAdmin-class.html">FaseAdmin</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">ModelAdmin</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="FaseAdmin-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="FaseAdmin-expanded"><a
+        name="L44"></a><tt class="py-lineno">44</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L45"></a><tt class="py-lineno">45</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        FaseAdmin</tt> </tt>
+    <a name="L46"></a><tt class="py-lineno">46</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L47"></a><tt class="py-lineno">47</tt> <tt class="py-line"> <tt id="link-20" class="py-name"><a title="todo.admin.FaseAdmin.list_display
+todo.admin.ItemAdmin.list_display
+todo.admin.ProyectoAdmin.list_display
+todo.admin.TipoItemAdmin.list_display" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-20', 'list_display', 'link-2');">list_display</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'fkproyecto'</tt><tt class="py-op">,</tt> <tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt> <tt class="py-string">'FechaCreacion'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L48"></a><tt class="py-lineno">48</tt> <tt class="py-line"> <tt id="link-21" class="py-name"><a title="todo.admin.FaseAdmin.list_filter
+todo.admin.ItemAdmin.list_filter
+todo.admin.ProyectoAdmin.list_filter
+todo.admin.TipoItemAdmin.list_filter" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-21', 'list_filter', 'link-3');">list_filter</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt> <tt class="py-string">'fkproyecto'</tt><tt
+                class="py-op">,</tt> <tt class="py-string">'FechaCreacion'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'FechaInicio'</tt><tt class="py-op">,</tt> <tt class="py-string">'Estado'</tt><tt
+                class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+    <a name="L49"></a><tt class="py-lineno">49</tt> <tt class="py-line"> <tt id="link-22" class="py-name"><a title="todo.admin.FaseAdmin.search_fields
+todo.admin.ItemAdmin.search_fields
+todo.admin.ProyectoAdmin.search_fields
+todo.admin.TipoItemAdmin.search_fields" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-22', 'search_fields', 'link-4');">search_fields</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">]</tt>
+    </tt>
+    <a name="L50"></a><tt class="py-lineno">50</tt> <tt class="py-line"> <tt id="link-23" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-23', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L51"></a><tt class="py-lineno">51</tt> <tt class="py-line"> <tt id="link-24" class="py-name"><a title="todo.admin.FaseAdmin.inlines
+todo.admin.ProyectoAdmin.inlines
+todo.admin.TipoItemAdmin.inlines" class="py-name" href="#" onclick="return doclink('link-24', 'inlines', 'link-14');">inlines</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt id="link-25" class="py-name"
+                                                             targets="Class todo.admin.TipoItemAdmin2=todo.admin.TipoItemAdmin2-class.html"><a
+                title="todo.admin.TipoItemAdmin2" class="py-name" href="#"
+                onclick="return doclink('link-25', 'TipoItemAdmin2', 'link-25');">TipoItemAdmin2</a></tt><tt
+                class="py-op">]</tt> </tt>
+</div><a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line"> </tt>
+<a name="FaseAdmin2"></a><div id="FaseAdmin2-def"><a name="L54"></a><tt class="py-lineno">54</tt> <a class="py-toggle"
+                                                                                                     href="#"
+                                                                                                     id="FaseAdmin2-toggle"
+                                                                                                     onclick="return toggle('FaseAdmin2');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.admin.FaseAdmin2-class.html">FaseAdmin2</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">TabularInline</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="FaseAdmin2-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="FaseAdmin2-expanded"><a
+        name="L55"></a><tt class="py-lineno">55</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L56"></a><tt class="py-lineno">56</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        FaseAdmin2 que se utiliza para la clase ProyectoAdmin</tt> </tt>
+    <a name="L57"></a><tt class="py-lineno">57</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L58"></a><tt class="py-lineno">58</tt> <tt class="py-line"> <tt id="link-26" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-26', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L59"></a><tt class="py-lineno">59</tt> <tt class="py-line"> <tt id="link-27" class="py-name"><a title="todo.admin.FaseAdmin2.model
+todo.admin.ItemAdmin2.model
+todo.admin.TipoItemAdmin2.model" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-27', 'model', 'link-7');">model</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-28" class="py-name"
+                                     targets="Class todo.models.Fase=todo.models.Fase-class.html,Variable todo.models.TipoItem.Fase=todo.models.TipoItem-class.html#Fase"><a
+                title="todo.models.Fase
+todo.models.TipoItem.Fase" class="py-name" href="#"
+                onclick="return doclink('link-28', 'Fase', 'link-28');">Fase</a></tt> </tt>
+    <a name="L60"></a><tt class="py-lineno">60</tt> <tt class="py-line"> <tt id="link-29" class="py-name"><a title="todo.admin.FaseAdmin2.extra
+todo.admin.ItemAdmin2.extra
+todo.admin.TipoItemAdmin2.extra" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-29', 'extra', 'link-9');">extra</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+</div><a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line"> </tt>
+<a name="ProyectoAdmin"></a><div id="ProyectoAdmin-def"><a name="L63"></a><tt class="py-lineno">63</tt> <a
+        class="py-toggle" href="#" id="ProyectoAdmin-toggle" onclick="return toggle('ProyectoAdmin');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.admin.ProyectoAdmin-class.html">ProyectoAdmin</a><tt
+        class="py-op">(</tt><tt class="py-base-class">admin</tt><tt class="py-op">.</tt><tt class="py-base-class">ModelAdmin</tt><tt
+        class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ProyectoAdmin-collapsed" style="display:none;" pad="++" indent="++++"></div><div
+        id="ProyectoAdmin-expanded"><a name="L64"></a><tt class="py-lineno">64</tt> <tt class="py-line"> <tt
+        class="py-docstring">"""</tt> </tt>
+    <a name="L65"></a><tt class="py-lineno">65</tt> <tt class="py-line"><tt class="py-docstring"> Definicion de la clase
+        ProyectoAdmin</tt> </tt>
+    <a name="L66"></a><tt class="py-lineno">66</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L67"></a><tt class="py-lineno">67</tt> <tt class="py-line"> <tt id="link-30" class="py-name"><a title="todo.admin.FaseAdmin.list_display
+todo.admin.ItemAdmin.list_display
+todo.admin.ProyectoAdmin.list_display
+todo.admin.TipoItemAdmin.list_display" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-30', 'list_display', 'link-2');">list_display</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'Descripcion'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'FechaCreacion'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+    <a name="L68"></a><tt class="py-lineno">68</tt> <tt class="py-line"> <tt id="link-31" class="py-name"><a title="todo.admin.FaseAdmin.list_filter
+todo.admin.ItemAdmin.list_filter
+todo.admin.ProyectoAdmin.list_filter
+todo.admin.TipoItemAdmin.list_filter" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-31', 'list_filter', 'link-3');">list_filter</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt> <tt class="py-string">'FechaCreacion'</tt><tt
+                class="py-op">,</tt> <tt class="py-string">'FechaInicio'</tt><tt class="py-op">,</tt> <tt
+                class="py-string">'Estado'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt> </tt>
+    <a name="L69"></a><tt class="py-lineno">69</tt> <tt class="py-line"> <tt id="link-32" class="py-name"><a title="todo.admin.FaseAdmin.search_fields
+todo.admin.ItemAdmin.search_fields
+todo.admin.ProyectoAdmin.search_fields
+todo.admin.TipoItemAdmin.search_fields" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-32', 'search_fields', 'link-4');">search_fields</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">]</tt>
+    </tt>
+    <a name="L70"></a><tt class="py-lineno">70</tt> <tt class="py-line"> <tt id="link-33" class="py-name"><a title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-33', 'ordering', 'link-5');">ordering</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L71"></a><tt class="py-lineno">71</tt> <tt class="py-line"> <tt id="link-34" class="py-name"><a title="todo.admin.FaseAdmin.inlines
+todo.admin.ProyectoAdmin.inlines
+todo.admin.TipoItemAdmin.inlines" class="py-name" href="#" onclick="return doclink('link-34', 'inlines', 'link-14');">inlines</a></tt>
+        <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt id="link-35" class="py-name"
+                                                             targets="Class todo.admin.FaseAdmin2=todo.admin.FaseAdmin2-class.html"><a
+                title="todo.admin.FaseAdmin2" class="py-name" href="#"
+                onclick="return doclink('link-35', 'FaseAdmin2', 'link-35');">FaseAdmin2</a></tt><tt
+                class="py-op">]</tt> </tt>
+</div><a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line"> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line"> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line"><tt id="link-36" class="py-name"><a
+        title="todo.admin" class="py-name" href="#"
+        onclick="return doclink('link-36', 'admin', 'link-0');">admin</a></tt><tt class="py-op">.</tt><tt
+        class="py-name">site</tt><tt class="py-op">.</tt><tt class="py-name">register</tt><tt class="py-op">(</tt><tt
+        id="link-37" class="py-name" targets="Class todo.models.Proyecto=todo.models.Proyecto-class.html"><a
+        title="todo.models.Proyecto" class="py-name" href="#"
+        onclick="return doclink('link-37', 'Proyecto', 'link-37');">Proyecto</a></tt><tt class="py-op">,</tt> <tt
+        id="link-38" class="py-name" targets="Class todo.admin.ProyectoAdmin=todo.admin.ProyectoAdmin-class.html"><a
+        title="todo.admin.ProyectoAdmin" class="py-name" href="#"
+        onclick="return doclink('link-38', 'ProyectoAdmin', 'link-38');">ProyectoAdmin</a></tt><tt class="py-op">)</tt>
+</tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"><tt id="link-39" class="py-name"><a
+        title="todo.admin" class="py-name" href="#"
+        onclick="return doclink('link-39', 'admin', 'link-0');">admin</a></tt><tt class="py-op">.</tt><tt
+        class="py-name">site</tt><tt class="py-op">.</tt><tt class="py-name">register</tt><tt class="py-op">(</tt><tt
+        id="link-40" class="py-name"><a title="todo.models.Fase
+todo.models.TipoItem.Fase" class="py-name" href="#"
+                                        onclick="return doclink('link-40', 'Fase', 'link-28');">Fase</a></tt><tt
+        class="py-op">,</tt> <tt id="link-41" class="py-name"
+                                 targets="Class todo.admin.FaseAdmin=todo.admin.FaseAdmin-class.html"><a
+        title="todo.admin.FaseAdmin" class="py-name" href="#"
+        onclick="return doclink('link-41', 'FaseAdmin', 'link-41');">FaseAdmin</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"><tt id="link-42" class="py-name"><a
+        title="todo.admin" class="py-name" href="#"
+        onclick="return doclink('link-42', 'admin', 'link-0');">admin</a></tt><tt class="py-op">.</tt><tt
+        class="py-name">site</tt><tt class="py-op">.</tt><tt class="py-name">register</tt><tt class="py-op">(</tt><tt
+        id="link-43" class="py-name"><a title="todo.models.Item.TipoItem
+todo.models.TipoItem" class="py-name" href="#" onclick="return doclink('link-43', 'TipoItem', 'link-18');">TipoItem</a></tt><tt
+        class="py-op">,</tt> <tt id="link-44" class="py-name"
+                                 targets="Class todo.admin.TipoItemAdmin=todo.admin.TipoItemAdmin-class.html"><a
+        title="todo.admin.TipoItemAdmin" class="py-name" href="#"
+        onclick="return doclink('link-44', 'TipoItemAdmin', 'link-44');">TipoItemAdmin</a></tt><tt class="py-op">)</tt>
+</tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line"><tt id="link-45" class="py-name"><a
+        title="todo.admin" class="py-name" href="#"
+        onclick="return doclink('link-45', 'admin', 'link-0');">admin</a></tt><tt class="py-op">.</tt><tt
+        class="py-name">site</tt><tt class="py-op">.</tt><tt class="py-name">register</tt><tt class="py-op">(</tt><tt
+        id="link-46" class="py-name"><a title="todo.models.Item" class="py-name" href="#"
+                                        onclick="return doclink('link-46', 'Item', 'link-8');">Item</a></tt><tt
+        class="py-op">,</tt> <tt id="link-47" class="py-name"
+                                 targets="Class todo.admin.ItemAdmin=todo.admin.ItemAdmin-class.html"><a
+        title="todo.admin.ItemAdmin" class="py-name" href="#"
+        onclick="return doclink('link-47', 'ItemAdmin', 'link-47');">ItemAdmin</a></tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+    <!--
+    expandto(location.href);
+    // -->
+</script>
+</pre>
+<br/>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+    <tr valign="middle">
+
+        <!-- Tree link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <!-- Index link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <!-- Help link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+        <th class="navbar" width="100%"></th>
+    </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+    <tr>
+        <td align="left" class="footer">
+            Generated by Epydoc 3.0.1 on Mon Apr 28 15:33:08 2014
+        </td>
+        <td align="right" class="footer">
+            <a target="mainFrame" href="http://epydoc.sourceforge.net"
+                    >http://epydoc.sourceforge.net</a>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    <!--
+    // Private objects are initially displayed (because if
+    // javascript is turned off then we want them to be
+    // visible); but by default, we want to hide them.  So hide
+    // them unless we have a cookie that says to show them.
+    checkCookie();
+    // -->
+</script>
+</body>
+</html>
