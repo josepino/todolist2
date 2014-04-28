@@ -43,7 +43,10 @@ class Proyecto(models.Model):
             ("administrar proyecto designadoo", "Puede administrar el proyecto que le fue designado"),
         )
 
-#Clase Fase, define los campos y textos que contienen los datos de cada Fase
+
+"""Clase Fase, define los campos y textos que contienen los datos de cada Fase"""
+
+
 class Fase(models.Model):
     """
     Clase Fase
@@ -97,3 +100,38 @@ class TipoItem(models.Model):
         ordering = ('Nombre',)
         verbose_name = u'TipoItem'
         verbose_name_plural = 'Tipos de Item'
+
+
+"""Clase Item, define los campos y textos que contienen los datos de cada Item"""
+
+
+class Item(models.Model):
+    """
+    Clase Item
+    Definimos los atributos de la clase Item
+    """
+    TipoItem = models.ForeignKey(TipoItem)
+    """Nombre del TipoItem"""
+    Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la Item')
+    """Nombre del Item"""
+    Descripcion = models.CharField('Descripcion', max_length=45, help_text='Ingrese la descripcion del Item')
+    """Descripción del Item"""
+    Complejidad = models.IntegerField(help_text='Ingrese la complejidad del Item')
+    """Complejidad del Item"""
+    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado del Item', null=True, blank=True)
+    """Estado del Item"""
+    Version = models.IntegerField(help_text='Ingrese la Version del Item')
+    """Version del Item"""
+    Costo = models.IntegerField(help_text='Ingrese el costo del Item')
+    """Costo del Item"""
+    FechaModificacion = models.DateField('Fecha de Modificacion', help_text='Ingrese la fecha de modificacion del Item')
+    """Fecha de modificacion del Item"""
+
+    def __unicode__(self):
+        return u'%s | %s' % (self.TipoItem, self.Nombre)
+
+    class Meta:
+        """En esta clase definimos que se listaran los Item ordenados por el nombre"""
+        ordering = ('Nombre',)
+        verbose_name = u'Item'
+        verbose_name_plural = 'Items'
