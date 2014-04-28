@@ -135,3 +135,23 @@ class Item(models.Model):
         ordering = ('Nombre',)
         verbose_name = u'Item'
         verbose_name_plural = 'Items'
+
+
+class RelacionItem(models.Model):
+    """
+    Clase RelacionItem
+    Definimos los atributos de la clase RelacionItem
+    """
+    Item = models.ForeignKey(Item)
+    """Nombre del Item1"""
+    Descripcion = models.CharField('Descripcion', max_length=45, help_text='Ingrese la descripcion del Item')
+    """Descripción del Item"""
+
+    def __unicode__(self):
+        return self.Nombre
+
+    class Meta:
+        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el nombre"""
+        ordering = ('Nombre',)
+        verbose_name = u'RelacionItem'
+        verbose_name_plural = 'Relacion Items'
