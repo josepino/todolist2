@@ -206,6 +206,7 @@ class RelacionItem(models.Model):
     Item1 = models.ForeignKey(Item, verbose_name="Item 1", help_text='Seleccione el primer Item')
     """Nombre del Item1"""
     #Item2 = models.OneToOneField(Item)
+    
     #"""Nombre del Item2"""
     TipoRelacion_CHOICES = (
         ('P', 'Pade - Hijo'),
