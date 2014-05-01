@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="ascii"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-          "DTD/xhtml1-transitional.dtd">
+        "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>todo.models</title>
-  <link rel="stylesheet" href="epydoc.css" type="text/css" />
-  <script type="text/javascript" src="epydoc.js"></script>
+    <title>todo.models</title>
+    <link rel="stylesheet" href="epydoc.css" type="text/css"/>
+    <script type="text/javascript" src="epydoc.js"></script>
 </head>
 
 <body bgcolor="white" text="black" link="blue" vlink="#204080"
@@ -13,166 +13,778 @@
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
        bgcolor="#a0c0ff" cellspacing="0">
-  <tr valign="middle">
+    <tr valign="middle">
 
-  <!-- Tree link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Tree link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Index link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Index link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Help link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Help link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-      <th class="navbar" width="100%"></th>
-  </tr>
+        <th class="navbar" width="100%"></th>
+    </tr>
 </table>
 <table width="100%" cellpadding="0" cellspacing="0">
-  <tr valign="top">
-    <td width="100%">
+    <tr valign="top">
+        <td width="100%">
       <span class="breadcrumbs">
         Package&nbsp;todo ::
         Module&nbsp;models
       </span>
-    </td>
-    <td>
-      <table cellpadding="0" cellspacing="0">
-        <!-- hide/show private -->
-        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
-    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
-        <tr><td align="right"><span class="options"
-            >[<a href="frames.html" target="_top">frames</a
-            >]&nbsp;|&nbsp;<a href="todo.models-pysrc.html"
-            target="_top">no&nbsp;frames</a>]</span></td></tr>
-      </table>
-    </td>
-  </tr>
+        </td>
+        <td>
+            <table cellpadding="0" cellspacing="0">
+                <!-- hide/show private -->
+                <tr>
+                    <td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+                                                                onclick="toggle_private();">hide&nbsp;private</a>]</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="options"
+                            >[<a href="frames.html" target="_top">frames</a
+                            >]&nbsp;|&nbsp;<a href="todo.models-pysrc.html"
+                                              target="_top">no&nbsp;frames</a>]</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>
 <h1 class="epydoc">Source Code for <a href="todo.models-module.html">Module todo.models</a></h1>
 <pre class="py-src">
-<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: utf-8 -*-</tt> </tt>
-<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">db</tt> <tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Module todo.models=todo.models-module.html"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-0', 'models', 'link-0');">models</a></tt> </tt>
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># -*- coding: utf-8 -*-</tt>
+</tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt
+        class="py-name">django</tt><tt class="py-op">.</tt><tt class="py-name">db</tt> <tt
+        class="py-keyword">import</tt> <tt id="link-0" class="py-name"
+                                           targets="Module todo.models=todo.models-module.html"><a title="todo.models"
+                                                                                                   class="py-name"
+                                                                                                   href="#"
+                                                                                                   onclick="return doclink('link-0', 'models', 'link-0');">models</a></tt>
+</tt>
 <a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"> </tt>
 <a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-comment">#hola5</tt> </tt>
 <a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"> </tt>
 <a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"> </tt>
 <a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"> </tt>
 <a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"> </tt>
-<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-comment">#Clase Proyecto, define los campos y textos que contienen los datos del Proyecto</tt> </tt>
-<a name="Proyecto"></a><div id="Proyecto-def"><a name="L10"></a><tt class="py-lineno">10</tt> <a class="py-toggle" href="#" id="Proyecto-toggle" onclick="return toggle('Proyecto');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.Proyecto-class.html">Proyecto</a><tt class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="Proyecto-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Proyecto-expanded"><a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"><tt class="py-docstring">    Clase Proyecto</tt> </tt>
-<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-docstring">    Definimos los atributos de la clase Proyecto</tt> </tt>
-<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"> </tt>
-<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">    <tt id="link-1" class="py-name" targets="Variable todo.models.Fase.Nombre=todo.models.Fase-class.html#Nombre,Variable todo.models.Proyecto.Nombre=todo.models.Proyecto-class.html#Nombre"><a title="todo.models.Fase.Nombre
-todo.models.Proyecto.Nombre" class="py-name" href="#" onclick="return doclink('link-1', 'Nombre', 'link-1');">Nombre</a></tt> <tt class="py-op">=</tt> <tt id="link-2" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-2', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese el nombre del proyecto'</tt><tt class="py-op">)</tt> </tt>
-<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">    <tt id="link-3" class="py-name" targets="Variable todo.models.Fase.Descripcion=todo.models.Fase-class.html#Descripcion,Variable todo.models.Proyecto.Descripcion=todo.models.Proyecto-class.html#Descripcion"><a title="todo.models.Fase.Descripcion
-todo.models.Proyecto.Descripcion" class="py-name" href="#" onclick="return doclink('link-3', 'Descripcion', 'link-3');">Descripcion</a></tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-4', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion del proyecto'</tt><tt class="py-op">)</tt> </tt>
-<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">    <tt id="link-5" class="py-name" targets="Variable todo.models.Fase.FechaCreacion=todo.models.Fase-class.html#FechaCreacion,Variable todo.models.Proyecto.FechaCreacion=todo.models.Proyecto-class.html#FechaCreacion"><a title="todo.models.Fase.FechaCreacion
-todo.models.Proyecto.FechaCreacion" class="py-name" href="#" onclick="return doclink('link-5', 'FechaCreacion', 'link-5');">FechaCreacion</a></tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-6', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Creacion'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de creacion del proyecto'</tt><tt class="py-op">)</tt> </tt>
-<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">    <tt id="link-7" class="py-name" targets="Variable todo.models.Fase.FechaInicio=todo.models.Fase-class.html#FechaInicio,Variable todo.models.Proyecto.FechaInicio=todo.models.Proyecto-class.html#FechaInicio"><a title="todo.models.Fase.FechaInicio
-todo.models.Proyecto.FechaInicio" class="py-name" href="#" onclick="return doclink('link-7', 'FechaInicio', 'link-7');">FechaInicio</a></tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-8', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Inicio'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de Inicio del proyecto'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
-<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">                                   <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">    <tt id="link-9" class="py-name" targets="Variable todo.models.Fase.FechaFin=todo.models.Fase-class.html#FechaFin,Variable todo.models.Proyecto.FechaFin=todo.models.Proyecto-class.html#FechaFin"><a title="todo.models.Fase.FechaFin
-todo.models.Proyecto.FechaFin" class="py-name" href="#" onclick="return doclink('link-9', 'FechaFin', 'link-9');">FechaFin</a></tt> <tt class="py-op">=</tt> <tt id="link-10" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-10', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Fin'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de Fin del proyecto'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">    <tt id="link-11" class="py-name" targets="Variable todo.models.Fase.Estado=todo.models.Fase-class.html#Estado,Variable todo.models.Proyecto.Estado=todo.models.Proyecto-class.html#Estado"><a title="todo.models.Fase.Estado
-todo.models.Proyecto.Estado" class="py-name" href="#" onclick="return doclink('link-11', 'Estado', 'link-11');">Estado</a></tt> <tt class="py-op">=</tt> <tt id="link-12" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-12', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Estado'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese el Estado del proyecto'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
-<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">                              <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"> </tt>
-<a name="Proyecto.__unicode__"></a><div id="Proyecto.__unicode__-def"><a name="L25"></a><tt class="py-lineno">25</tt> <a class="py-toggle" href="#" id="Proyecto.__unicode__-toggle" onclick="return toggle('Proyecto.__unicode__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="todo.models.Proyecto-class.html#__unicode__">__unicode__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="Proyecto.__unicode__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Proyecto.__unicode__-expanded"><a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="todo.models.Fase.Nombre
-todo.models.Proyecto.Nombre" class="py-name" href="#" onclick="return doclink('link-13', 'Nombre', 'link-1');">Nombre</a></tt> </tt>
-</div><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"> </tt>
-<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"> </tt>
-<a name="Proyecto.Meta"></a><div id="Proyecto.Meta-def"><a name="L29"></a><tt class="py-lineno">29</tt> <a class="py-toggle" href="#" id="Proyecto.Meta-toggle" onclick="return toggle('Proyecto.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.Proyecto.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
-</div><div id="Proyecto.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Proyecto.Meta-expanded"><a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-comment">#en esta clase definimos que se listaran los proyectos ordenados por el nombre</tt> </tt>
-<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt id="link-14" class="py-name" targets="Variable todo.admin.ProyectoAdmin.ordering=todo.admin.ProyectoAdmin-class.html#ordering,Variable todo.models.Proyecto.Meta.ordering=todo.models.Proyecto.Meta-class.html#ordering"><a title="todo.admin.ProyectoAdmin.ordering
-todo.models.Proyecto.Meta.ordering" class="py-name" href="#" onclick="return doclink('link-14', 'ordering', 'link-14');">ordering</a></tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt> </tt>
-<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">        <tt id="link-15" class="py-name" targets="Variable todo.models.Proyecto.Meta.permissions=todo.models.Proyecto.Meta-class.html#permissions"><a title="todo.models.Proyecto.Meta.permissions" class="py-name" href="#" onclick="return doclink('link-15', 'permissions', 'link-15');">permissions</a></tt> <tt class="py-op">=</tt> <tt class="py-op">(</tt> </tt>
-<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-string">"ver proyecto"</tt><tt class="py-op">,</tt> <tt class="py-string">"Puede visualizar el proyecto"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
-<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-string">"iniciar proyecto"</tt><tt class="py-op">,</tt> <tt class="py-string">"Puede iniciar el proyecto"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
-<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">        <tt class="py-op">)</tt> </tt>
-</div></div><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"> </tt>
-<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-comment">#Clase Fase, define los campos y textos que contienen los datos de cada Fase</tt> </tt>
-<a name="Fase"></a><div id="Fase-def"><a name="L38"></a><tt class="py-lineno">38</tt> <a class="py-toggle" href="#" id="Fase-toggle" onclick="return toggle('Fase');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.Fase-class.html">Fase</a><tt class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="Fase-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Fase-expanded"><a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-docstring">    Clase Fase</tt> </tt>
-<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"><tt class="py-docstring">    Define los campos y textos que continen los datos de cada Fase</tt> </tt>
-<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">    <tt id="link-16" class="py-name" targets="Variable todo.models.Fase.fkproyecto=todo.models.Fase-class.html#fkproyecto"><a title="todo.models.Fase.fkproyecto" class="py-name" href="#" onclick="return doclink('link-16', 'fkproyecto', 'link-16');">fkproyecto</a></tt> <tt class="py-op">=</tt> <tt id="link-17" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-17', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">ForeignKey</tt><tt class="py-op">(</tt><tt id="link-18" class="py-name" targets="Class todo.models.Proyecto=todo.models.Proyecto-class.html"><a title="todo.models.Proyecto" class="py-name" href="#" onclick="return doclink('link-18', 'Proyecto', 'link-18');">Proyecto</a></tt><tt class="py-op">)</tt> </tt>
-<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">    <tt id="link-19" class="py-name"><a title="todo.models.Fase.Nombre
-todo.models.Proyecto.Nombre" class="py-name" href="#" onclick="return doclink('link-19', 'Nombre', 'link-1');">Nombre</a></tt> <tt class="py-op">=</tt> <tt id="link-20" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-20', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese el nombre de la fase'</tt><tt class="py-op">)</tt> </tt>
-<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">    <tt id="link-21" class="py-name" targets="Variable todo.models.Fase.NroOrden=todo.models.Fase-class.html#NroOrden"><a title="todo.models.Fase.NroOrden" class="py-name" href="#" onclick="return doclink('link-21', 'NroOrden', 'link-21');">NroOrden</a></tt> <tt class="py-op">=</tt> <tt id="link-22" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-22', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">IntegerField</tt><tt class="py-op">(</tt><tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese el numero de orden de la fase'</tt><tt class="py-op">)</tt> </tt>
-<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">    <tt id="link-23" class="py-name"><a title="todo.models.Fase.Descripcion
-todo.models.Proyecto.Descripcion" class="py-name" href="#" onclick="return doclink('link-23', 'Descripcion', 'link-3');">Descripcion</a></tt> <tt class="py-op">=</tt> <tt id="link-24" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-24', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion de la fase'</tt><tt class="py-op">)</tt> </tt>
-<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">    <tt id="link-25" class="py-name"><a title="todo.models.Fase.FechaCreacion
-todo.models.Proyecto.FechaCreacion" class="py-name" href="#" onclick="return doclink('link-25', 'FechaCreacion', 'link-5');">FechaCreacion</a></tt> <tt class="py-op">=</tt> <tt id="link-26" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-26', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Creacion'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de creacion de la fase'</tt><tt class="py-op">)</tt> </tt>
-<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">    <tt id="link-27" class="py-name"><a title="todo.models.Fase.FechaInicio
-todo.models.Proyecto.FechaInicio" class="py-name" href="#" onclick="return doclink('link-27', 'FechaInicio', 'link-7');">FechaInicio</a></tt> <tt class="py-op">=</tt> <tt id="link-28" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-28', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Inicio'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de Inicio de la fase'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
-<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">                                   <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">    <tt id="link-29" class="py-name"><a title="todo.models.Fase.FechaFin
-todo.models.Proyecto.FechaFin" class="py-name" href="#" onclick="return doclink('link-29', 'FechaFin', 'link-9');">FechaFin</a></tt> <tt class="py-op">=</tt> <tt id="link-30" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-30', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha de Fin'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese la fecha de Fin de la fase'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">    <tt id="link-31" class="py-name"><a title="todo.models.Fase.Estado
-todo.models.Proyecto.Estado" class="py-name" href="#" onclick="return doclink('link-31', 'Estado', 'link-11');">Estado</a></tt> <tt class="py-op">=</tt> <tt id="link-32" class="py-name"><a title="todo.models" class="py-name" href="#" onclick="return doclink('link-32', 'models', 'link-0');">models</a></tt><tt class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Estado'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt class="py-string">'Ingrese el Estado de la fase'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
-<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"> </tt>
-<a name="Fase.__unicode__"></a><div id="Fase.__unicode__-def"><a name="L53"></a><tt class="py-lineno">53</tt> <a class="py-toggle" href="#" id="Fase.__unicode__-toggle" onclick="return toggle('Fase.__unicode__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="todo.models.Fase-class.html#__unicode__">__unicode__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="Fase.__unicode__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Fase.__unicode__-expanded"><a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">u'%s | %s'</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a title="todo.models.Fase.fkproyecto" class="py-name" href="#" onclick="return doclink('link-33', 'fkproyecto', 'link-16');">fkproyecto</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="todo.models.Fase.Nombre
-todo.models.Proyecto.Nombre" class="py-name" href="#" onclick="return doclink('link-34', 'Nombre', 'link-1');">Nombre</a></tt><tt class="py-op">)</tt> </tt>
-</div><a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"> </tt>
-<a name="Fase.Meta"></a><div id="Fase.Meta-def"><a name="L56"></a><tt class="py-lineno">56</tt> <a class="py-toggle" href="#" id="Fase.Meta-toggle" onclick="return toggle('Fase.Meta');">-</a><tt class="py-line">    <tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.Fase.Meta-class.html">Meta</a><tt class="py-op">:</tt> </tt>
-</div><div id="Fase.Meta-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Fase.Meta-expanded"><a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">        <tt id="link-35" class="py-name" targets="Variable todo.models.Fase.Meta.verbose_name=todo.models.Fase.Meta-class.html#verbose_name"><a title="todo.models.Fase.Meta.verbose_name" class="py-name" href="#" onclick="return doclink('link-35', 'verbose_name', 'link-35');">verbose_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">u'Fase'</tt> </tt>
-<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">        <tt id="link-36" class="py-name" targets="Variable todo.models.Fase.Meta.verbose_name_plural=todo.models.Fase.Meta-class.html#verbose_name_plural"><a title="todo.models.Fase.Meta.verbose_name_plural" class="py-name" href="#" onclick="return doclink('link-36', 'verbose_name_plural', 'link-36');">verbose_name_plural</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'Fases'</tt> </tt>
-</div></div><a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line"> </tt><script type="text/javascript">
-<!--
-expandto(location.href);
-// -->
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-string">"""Models contiene los modelos
+    del proyecto"""</tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"> </tt>
+<a name="Proyecto"></a><div id="Proyecto-def"><a name="L12"></a><tt class="py-lineno"> 12</tt> <a class="py-toggle"
+                                                                                                  href="#"
+                                                                                                  id="Proyecto-toggle"
+                                                                                                  onclick="return toggle('Proyecto');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.Proyecto-class.html">Proyecto</a><tt
+        class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt
+        class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Proyecto-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Proyecto-expanded"><a
+        name="L13"></a><tt class="py-lineno"> 13</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L14"></a><tt class="py-lineno"> 14</tt> <tt class="py-line"><tt class="py-docstring"> Clase Proyecto</tt>
+    </tt>
+    <a name="L15"></a><tt class="py-lineno"> 15</tt> <tt class="py-line"><tt class="py-docstring"> Definimos los
+        atributos de la clase Proyecto</tt> </tt>
+    <a name="L16"></a><tt class="py-lineno"> 16</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L17"></a><tt class="py-lineno"> 17</tt> <tt class="py-line"> </tt>
+    <a name="L18"></a><tt class="py-lineno"> 18</tt> <tt class="py-line"> <tt id="link-1" class="py-name"
+                                                                              targets="Variable todo.models.Fase.Nombre=todo.models.Fase-class.html#Nombre,Variable todo.models.Item.Nombre=todo.models.Item-class.html#Nombre,Variable todo.models.Proyecto.Nombre=todo.models.Proyecto-class.html#Nombre,Variable todo.models.TipoItem.Nombre=todo.models.TipoItem-class.html#Nombre"><a
+            title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#" onclick="return doclink('link-1', 'Nombre', 'link-1');">Nombre</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-2" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                    onclick="return doclink('link-2', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el nombre del proyecto'</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L19"></a><tt class="py-lineno"> 19</tt> <tt class="py-line"> <tt class="py-string">"""Nombre del
+        Proyecto"""</tt> </tt>
+    <a name="L20"></a><tt class="py-lineno"> 20</tt> <tt class="py-line"> <tt id="link-3" class="py-name"
+                                                                              targets="Variable todo.models.Fase.Descripcion=todo.models.Fase-class.html#Descripcion,Variable todo.models.Item.Descripcion=todo.models.Item-class.html#Descripcion,Variable todo.models.Proyecto.Descripcion=todo.models.Proyecto-class.html#Descripcion,Variable todo.models.TipoItem.Descripcion=todo.models.TipoItem-class.html#Descripcion"><a
+            title="todo.models.Fase.Descripcion
+todo.models.Item.Descripcion
+todo.models.Proyecto.Descripcion
+todo.models.TipoItem.Descripcion" class="py-name" href="#" onclick="return doclink('link-3', 'Descripcion', 'link-3');">Descripcion</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                    onclick="return doclink('link-4', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion del proyecto'</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L21"></a><tt class="py-lineno"> 21</tt> <tt class="py-line"> <tt class="py-string">"""Descripci&#243;n del
+        Proyecto"""</tt> </tt>
+    <a name="L22"></a><tt class="py-lineno"> 22</tt> <tt class="py-line"> <tt id="link-5" class="py-name"
+                                                                              targets="Variable todo.models.Fase.FechaCreacion=todo.models.Fase-class.html#FechaCreacion,Variable todo.models.Proyecto.FechaCreacion=todo.models.Proyecto-class.html#FechaCreacion"><a
+            title="todo.models.Fase.FechaCreacion
+todo.models.Proyecto.FechaCreacion" class="py-name" href="#"
+            onclick="return doclink('link-5', 'FechaCreacion', 'link-5');">FechaCreacion</a></tt> <tt
+            class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                    onclick="return doclink('link-6', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+        de Creacion'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+            class="py-string">'Ingrese la fecha de creacion del proyecto'</tt><tt class="py-op">)</tt> </tt>
+    <a name="L23"></a><tt class="py-lineno"> 23</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de creaci&#243;n
+        del Proyecto"""</tt> </tt>
+    <a name="L24"></a><tt class="py-lineno"> 24</tt> <tt class="py-line"> <tt id="link-7" class="py-name"
+                                                                              targets="Variable todo.models.Fase.FechaInicio=todo.models.Fase-class.html#FechaInicio,Variable todo.models.Proyecto.FechaInicio=todo.models.Proyecto-class.html#FechaInicio"><a
+            title="todo.models.Fase.FechaInicio
+todo.models.Proyecto.FechaInicio" class="py-name" href="#" onclick="return doclink('link-7', 'FechaInicio', 'link-7');">FechaInicio</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-8" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                    onclick="return doclink('link-8', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+            de Inicio'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+                class="py-string">'Ingrese la fecha de Inicio del proyecto'</tt><tt class="py-op">,</tt> <tt
+                class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt>
+    </tt>
+    <a name="L25"></a><tt class="py-lineno"> 25</tt> <tt class="py-line"> <tt class="py-name">blank</tt><tt
+            class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+    <a name="L26"></a><tt class="py-lineno"> 26</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de inicio del
+        Proyecto"""</tt> </tt>
+    <a name="L27"></a><tt class="py-lineno"> 27</tt> <tt class="py-line"> <tt id="link-9" class="py-name"
+                                                                              targets="Variable todo.models.Fase.FechaFin=todo.models.Fase-class.html#FechaFin,Variable todo.models.Proyecto.FechaFin=todo.models.Proyecto-class.html#FechaFin"><a
+            title="todo.models.Fase.FechaFin
+todo.models.Proyecto.FechaFin" class="py-name" href="#" onclick="return doclink('link-9', 'FechaFin', 'link-9');">FechaFin</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-10" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-10', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+            de Fin'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+                class="py-string">'Ingrese la fecha de Fin del proyecto'</tt><tt class="py-op">,</tt> <tt
+                class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt>
+        <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L28"></a><tt class="py-lineno"> 28</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de finalizaci&#243;n
+        del Proyecto"""</tt> </tt>
+    <a name="L29"></a><tt class="py-lineno"> 29</tt> <tt class="py-line"> <tt id="link-11" class="py-name"
+                                                                              targets="Variable todo.models.Fase.Estado=todo.models.Fase-class.html#Estado,Variable todo.models.Item.Estado=todo.models.Item-class.html#Estado,Variable todo.models.Proyecto.Estado=todo.models.Proyecto-class.html#Estado"><a
+            title="todo.models.Fase.Estado
+todo.models.Item.Estado
+todo.models.Proyecto.Estado" class="py-name" href="#"
+            onclick="return doclink('link-11', 'Estado', 'link-11');">Estado</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-12" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-12', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt
+            class="py-string">'Estado'</tt><tt class="py-op">,</tt> <tt class="py-name">max_length</tt><tt
+            class="py-op">=</tt><tt class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+            class="py-op">=</tt><tt class="py-string">'Ingrese el Estado del proyecto'</tt><tt class="py-op">,</tt> <tt
+            class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+    <a name="L30"></a><tt class="py-lineno"> 30</tt> <tt class="py-line"> <tt class="py-name">blank</tt><tt
+            class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+    <a name="L31"></a><tt class="py-lineno"> 31</tt> <tt class="py-line"> <tt class="py-string">"""Estado del
+        Proyecto"""</tt> </tt>
+    <a name="L32"></a><tt class="py-lineno"> 32</tt> <tt class="py-line"> </tt>
+    <a name="Proyecto.__unicode__"></a>
+
+    <div id="Proyecto.__unicode__-def"><a name="L33"></a><tt class="py-lineno"> 33</tt> <a class="py-toggle" href="#"
+                                                                                           id="Proyecto.__unicode__-toggle"
+                                                                                           onclick="return toggle('Proyecto.__unicode__');">-</a><tt
+            class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
+                                                                href="todo.models.Proyecto-class.html#__unicode__">__unicode__</a><tt
+            class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+    </div>
+    <div id="Proyecto.__unicode__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Proyecto.__unicode__-expanded"><a name="L34"></a><tt class="py-lineno"> 34</tt> <tt class="py-line"> <tt
+            class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13"
+                                                                                                    class="py-name"><a
+            title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+            onclick="return doclink('link-13', 'Nombre', 'link-1');">Nombre</a></tt> </tt>
+    </div>
+    <a name="L35"></a><tt class="py-lineno"> 35</tt> <tt class="py-line"> </tt>
+    <a name="L36"></a><tt class="py-lineno"> 36</tt> <tt class="py-line"> </tt>
+    <a name="Proyecto.Meta"></a>
+
+    <div id="Proyecto.Meta-def"><a name="L37"></a><tt class="py-lineno"> 37</tt> <a class="py-toggle" href="#"
+                                                                                    id="Proyecto.Meta-toggle"
+                                                                                    onclick="return toggle('Proyecto.Meta');">-</a><tt
+            class="py-line"> <tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                                  href="todo.models.Proyecto.Meta-class.html">Meta</a><tt
+            class="py-op">:</tt> </tt>
+    </div>
+    <div id="Proyecto.Meta-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Proyecto.Meta-expanded"><a name="L38"></a><tt class="py-lineno"> 38</tt> <tt class="py-line"> <tt
+            class="py-docstring">"""En esta clase definimos que se listaran los proyectos ordenados por el
+        nombre"""</tt> </tt>
+        <a name="L39"></a><tt class="py-lineno"> 39</tt> <tt class="py-line"> <tt id="link-14" class="py-name"
+                                                                                  targets="Variable todo.admin.FaseAdmin.ordering=todo.admin.FaseAdmin-class.html#ordering,Variable todo.admin.FaseAdmin2.ordering=todo.admin.FaseAdmin2-class.html#ordering,Variable todo.admin.ItemAdmin.ordering=todo.admin.ItemAdmin-class.html#ordering,Variable todo.admin.ItemAdmin2.ordering=todo.admin.ItemAdmin2-class.html#ordering,Variable todo.admin.ProyectoAdmin.ordering=todo.admin.ProyectoAdmin-class.html#ordering,Variable todo.admin.TipoItemAdmin.ordering=todo.admin.TipoItemAdmin-class.html#ordering,Variable todo.admin.TipoItemAdmin2.ordering=todo.admin.TipoItemAdmin2-class.html#ordering,Variable todo.models.Fase.Meta.ordering=todo.models.Fase.Meta-class.html#ordering,Variable todo.models.Item.Meta.ordering=todo.models.Item.Meta-class.html#ordering,Variable todo.models.Proyecto.Meta.ordering=todo.models.Proyecto.Meta-class.html#ordering,Variable todo.models.TipoItem.Meta.ordering=todo.models.TipoItem.Meta-class.html#ordering"><a
+                title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#"
+                onclick="return doclink('link-14', 'ordering', 'link-14');">ordering</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt>
+        </tt>
+        <a name="L40"></a><tt class="py-lineno"> 40</tt> <tt class="py-line"> <tt id="link-15" class="py-name"
+                                                                                  targets="Variable todo.models.Proyecto.Meta.permissions=todo.models.Proyecto.Meta-class.html#permissions"><a
+                title="todo.models.Proyecto.Meta.permissions" class="py-name" href="#"
+                onclick="return doclink('link-15', 'permissions', 'link-15');">permissions</a></tt> <tt
+                class="py-op">=</tt> <tt class="py-op">(</tt> </tt>
+        <a name="L41"></a><tt class="py-lineno"> 41</tt> <tt class="py-line"> <tt class="py-op">(</tt><tt
+                class="py-string">"ver proyecto"</tt><tt class="py-op">,</tt> <tt class="py-string">"Puede visualizar el
+            proyecto"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+        <a name="L42"></a><tt class="py-lineno"> 42</tt> <tt class="py-line"> <tt class="py-op">(</tt><tt
+                class="py-string">"iniciar proyecto"</tt><tt class="py-op">,</tt> <tt class="py-string">"Puede iniciar
+            el proyecto"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+        <a name="L43"></a><tt class="py-lineno"> 43</tt> <tt class="py-line"> <tt class="py-op">(</tt><tt
+                class="py-string">"administrar proyecto designadoo"</tt><tt class="py-op">,</tt> <tt class="py-string">"Puede
+            administrar el proyecto que le fue designado"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+        <a name="L44"></a><tt class="py-lineno"> 44</tt> <tt class="py-line"> <tt class="py-op">)</tt> </tt>
+    </div>
+</div><a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line"> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"><tt class="py-string">"""Clase Fase, define los
+    campos y textos que contienen los datos de cada Fase"""</tt> </tt>
+<a name="Fase"></a><div id="Fase-def"><a name="L47"></a><tt class="py-lineno"> 47</tt> <a class="py-toggle" href="#"
+                                                                                          id="Fase-toggle"
+                                                                                          onclick="return toggle('Fase');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.models.Fase-class.html">Fase</a><tt
+        class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt
+        class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Fase-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Fase-expanded"><a
+        name="L48"></a><tt class="py-lineno"> 48</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L49"></a><tt class="py-lineno"> 49</tt> <tt class="py-line"><tt class="py-docstring"> Clase Fase</tt> </tt>
+    <a name="L50"></a><tt class="py-lineno"> 50</tt> <tt class="py-line"><tt class="py-docstring"> Definimos los
+        atributos de la clase Fase</tt> </tt>
+    <a name="L51"></a><tt class="py-lineno"> 51</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L52"></a><tt class="py-lineno"> 52</tt> <tt class="py-line"> <tt id="link-16" class="py-name"
+                                                                              targets="Variable todo.models.Fase.fkproyecto=todo.models.Fase-class.html#fkproyecto"><a
+            title="todo.models.Fase.fkproyecto" class="py-name" href="#"
+            onclick="return doclink('link-16', 'fkproyecto', 'link-16');">fkproyecto</a></tt> <tt class="py-op">=</tt>
+        <tt id="link-17" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-17', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">ForeignKey</tt><tt class="py-op">(</tt><tt id="link-18"
+                                                                                                   class="py-name"
+                                                                                                   targets="Class todo.models.Proyecto=todo.models.Proyecto-class.html"><a
+                title="todo.models.Proyecto" class="py-name" href="#"
+                onclick="return doclink('link-18', 'Proyecto', 'link-18');">Proyecto</a></tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L53"></a><tt class="py-lineno"> 53</tt> <tt class="py-line"> <tt class="py-string">"""Nombre del
+        Proyecto"""</tt> </tt>
+    <a name="L54"></a><tt class="py-lineno"> 54</tt> <tt class="py-line"> <tt id="link-19" class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-19', 'Nombre', 'link-1');">Nombre</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-20" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-20', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el nombre de la fase'</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L55"></a><tt class="py-lineno"> 55</tt> <tt class="py-line"> <tt class="py-string">"""Nombre de la
+        Fase"""</tt> </tt>
+    <a name="L56"></a><tt class="py-lineno"> 56</tt> <tt class="py-line"> <tt id="link-21" class="py-name"
+                                                                              targets="Variable todo.models.Fase.NroOrden=todo.models.Fase-class.html#NroOrden"><a
+            title="todo.models.Fase.NroOrden" class="py-name" href="#"
+            onclick="return doclink('link-21', 'NroOrden', 'link-21');">NroOrden</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-22" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-22', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">IntegerField</tt><tt class="py-op">(</tt><tt class="py-name">help_text</tt><tt
+            class="py-op">=</tt><tt class="py-string">'Ingrese el numero de orden de la fase'</tt><tt
+            class="py-op">)</tt> </tt>
+    <a name="L57"></a><tt class="py-lineno"> 57</tt> <tt class="py-line"> <tt class="py-string">"""Numero de orden de la
+        Fase"""</tt> </tt>
+    <a name="L58"></a><tt class="py-lineno"> 58</tt> <tt class="py-line"> <tt id="link-23" class="py-name"><a title="todo.models.Fase.Descripcion
+todo.models.Item.Descripcion
+todo.models.Proyecto.Descripcion
+todo.models.TipoItem.Descripcion" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-23', 'Descripcion', 'link-3');">Descripcion</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-24" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-24', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion de la fase'</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L59"></a><tt class="py-lineno"> 59</tt> <tt class="py-line"> <tt class="py-string">"""Descripci&#243;n de
+        la Fase"""</tt> </tt>
+    <a name="L60"></a><tt class="py-lineno"> 60</tt> <tt class="py-line"> <tt id="link-25" class="py-name"><a title="todo.models.Fase.FechaCreacion
+todo.models.Proyecto.FechaCreacion" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-25', 'FechaCreacion', 'link-5');">FechaCreacion</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-26" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-26', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+            de Creacion'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+                class="py-string">'Ingrese la fecha de creacion de la fase'</tt><tt class="py-op">)</tt> </tt>
+    <a name="L61"></a><tt class="py-lineno"> 61</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de creaci&#243;n
+        de la Fase"""</tt> </tt>
+    <a name="L62"></a><tt class="py-lineno"> 62</tt> <tt class="py-line"> <tt id="link-27" class="py-name"><a title="todo.models.Fase.FechaInicio
+todo.models.Proyecto.FechaInicio" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-27', 'FechaInicio', 'link-7');">FechaInicio</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-28" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-28', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+            de Inicio'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+                class="py-string">'Ingrese la fecha de Inicio de la fase'</tt><tt class="py-op">,</tt> <tt
+                class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt>
+    </tt>
+    <a name="L63"></a><tt class="py-lineno"> 63</tt> <tt class="py-line"> <tt class="py-name">blank</tt><tt
+            class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+    <a name="L64"></a><tt class="py-lineno"> 64</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de inicio de la
+        Fase"""</tt> </tt>
+    <a name="L65"></a><tt class="py-lineno"> 65</tt> <tt class="py-line"> <tt id="link-29" class="py-name"><a title="todo.models.Fase.FechaFin
+todo.models.Proyecto.FechaFin" class="py-name" href="#" onclick="return doclink('link-29', 'FechaFin', 'link-9');">FechaFin</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-30" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-30', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+            de Fin'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+                class="py-string">'Ingrese la fecha de Fin de la fase'</tt><tt class="py-op">,</tt> <tt class="py-name">null</tt><tt
+                class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> <tt class="py-name">blank</tt><tt
+                class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+    <a name="L66"></a><tt class="py-lineno"> 66</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de finalizaci&#243;nde
+        la Fase"""</tt> </tt>
+    <a name="L67"></a><tt class="py-lineno"> 67</tt> <tt class="py-line"> <tt id="link-31" class="py-name"><a title="todo.models.Fase.Estado
+todo.models.Item.Estado
+todo.models.Proyecto.Estado" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-31', 'Estado', 'link-11');">Estado</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-32" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-32', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Estado'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el Estado de la fase'</tt><tt class="py-op">,</tt>
+        <tt class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> <tt
+                class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L68"></a><tt class="py-lineno"> 68</tt> <tt class="py-line"> <tt class="py-string">"""Estado de la
+        Fase"""</tt> </tt>
+    <a name="L69"></a><tt class="py-lineno"> 69</tt> <tt class="py-line"> </tt>
+    <a name="Fase.__unicode__"></a>
+
+    <div id="Fase.__unicode__-def"><a name="L70"></a><tt class="py-lineno"> 70</tt> <a class="py-toggle" href="#"
+                                                                                       id="Fase.__unicode__-toggle"
+                                                                                       onclick="return toggle('Fase.__unicode__');">-</a><tt
+            class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
+                                                                href="todo.models.Fase-class.html#__unicode__">__unicode__</a><tt
+            class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+    </div>
+    <div id="Fase.__unicode__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Fase.__unicode__-expanded"><a name="L71"></a><tt class="py-lineno"> 71</tt> <tt class="py-line"> <tt
+            class="py-keyword">return</tt> <tt class="py-string">u'%s | %s'</tt> <tt class="py-op">%</tt> <tt
+            class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-33" class="py-name"><a
+            title="todo.models.Fase.fkproyecto" class="py-name" href="#"
+            onclick="return doclink('link-33', 'fkproyecto', 'link-16');">fkproyecto</a></tt><tt class="py-op">,</tt>
+        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                 onclick="return doclink('link-34', 'Nombre', 'link-1');">Nombre</a></tt><tt
+                class="py-op">)</tt> </tt>
+    </div>
+    <a name="L72"></a><tt class="py-lineno"> 72</tt> <tt class="py-line"> </tt>
+    <a name="Fase.Meta"></a>
+
+    <div id="Fase.Meta-def"><a name="L73"></a><tt class="py-lineno"> 73</tt> <a class="py-toggle" href="#"
+                                                                                id="Fase.Meta-toggle"
+                                                                                onclick="return toggle('Fase.Meta');">-</a><tt
+            class="py-line"> <tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                                  href="todo.models.Fase.Meta-class.html">Meta</a><tt
+            class="py-op">:</tt> </tt>
+    </div>
+    <div id="Fase.Meta-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Fase.Meta-expanded"><a name="L74"></a><tt class="py-lineno"> 74</tt> <tt class="py-line"> <tt
+            class="py-docstring">"""En esta clase definimos que se listaran las fases ordenados por el nombre"""</tt>
+    </tt>
+        <a name="L75"></a><tt class="py-lineno"> 75</tt> <tt class="py-line"> <tt id="link-35" class="py-name"><a
+                title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#"
+                onclick="return doclink('link-35', 'ordering', 'link-14');">ordering</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt>
+        </tt>
+        <a name="L76"></a><tt class="py-lineno"> 76</tt> <tt class="py-line"> <tt id="link-36" class="py-name"
+                                                                                  targets="Variable todo.models.Fase.Meta.verbose_name=todo.models.Fase.Meta-class.html#verbose_name,Variable todo.models.Item.Meta.verbose_name=todo.models.Item.Meta-class.html#verbose_name,Variable todo.models.TipoItem.Meta.verbose_name=todo.models.TipoItem.Meta-class.html#verbose_name"><a
+                title="todo.models.Fase.Meta.verbose_name
+todo.models.Item.Meta.verbose_name
+todo.models.TipoItem.Meta.verbose_name" class="py-name" href="#"
+                onclick="return doclink('link-36', 'verbose_name', 'link-36');">verbose_name</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-string">u'Fase'</tt> </tt>
+        <a name="L77"></a><tt class="py-lineno"> 77</tt> <tt class="py-line"> <tt id="link-37" class="py-name"
+                                                                                  targets="Variable todo.models.Fase.Meta.verbose_name_plural=todo.models.Fase.Meta-class.html#verbose_name_plural,Variable todo.models.Item.Meta.verbose_name_plural=todo.models.Item.Meta-class.html#verbose_name_plural,Variable todo.models.TipoItem.Meta.verbose_name_plural=todo.models.TipoItem.Meta-class.html#verbose_name_plural"><a
+                title="todo.models.Fase.Meta.verbose_name_plural
+todo.models.Item.Meta.verbose_name_plural
+todo.models.TipoItem.Meta.verbose_name_plural" class="py-name" href="#"
+                onclick="return doclink('link-37', 'verbose_name_plural', 'link-37');">verbose_name_plural</a></tt> <tt
+                class="py-op">=</tt> <tt class="py-string">'Fases'</tt> </tt>
+    </div>
+</div><a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"> </tt>
+<a name="TipoItem"></a><div id="TipoItem-def"><a name="L80"></a><tt class="py-lineno"> 80</tt> <a class="py-toggle"
+                                                                                                  href="#"
+                                                                                                  id="TipoItem-toggle"
+                                                                                                  onclick="return toggle('TipoItem');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="todo.models.TipoItem-class.html">TipoItem</a><tt
+        class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt
+        class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TipoItem-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="TipoItem-expanded"><a
+        name="L81"></a><tt class="py-lineno"> 81</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L82"></a><tt class="py-lineno"> 82</tt> <tt class="py-line"><tt class="py-docstring"> Clase TipoItem</tt>
+    </tt>
+    <a name="L83"></a><tt class="py-lineno"> 83</tt> <tt class="py-line"><tt class="py-docstring"> Definimos los
+        atributos de la clase TipoItem</tt> </tt>
+    <a name="L84"></a><tt class="py-lineno"> 84</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L85"></a><tt class="py-lineno"> 85</tt> <tt class="py-line"> <tt id="link-38" class="py-name"
+                                                                              targets="Class todo.models.Fase=todo.models.Fase-class.html,Variable todo.models.TipoItem.Fase=todo.models.TipoItem-class.html#Fase"><a
+            title="todo.models.Fase
+todo.models.TipoItem.Fase" class="py-name" href="#"
+            onclick="return doclink('link-38', 'Fase', 'link-38');">Fase</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-39" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-39', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">ForeignKey</tt><tt class="py-op">(</tt><tt id="link-40"
+                                                                                               class="py-name"><a
+            title="todo.models.Fase
+todo.models.TipoItem.Fase" class="py-name" href="#"
+            onclick="return doclink('link-40', 'Fase', 'link-38');">Fase</a></tt><tt class="py-op">)</tt> </tt>
+    <a name="L86"></a><tt class="py-lineno"> 86</tt> <tt class="py-line"> <tt id="link-41" class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-41', 'Nombre', 'link-1');">Nombre</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-42" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-42', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el nombre del Tipo de Item'</tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L87"></a><tt class="py-lineno"> 87</tt> <tt class="py-line"> <tt class="py-string">"""Nombre del Tipo de
+        Item"""</tt> </tt>
+    <a name="L88"></a><tt class="py-lineno"> 88</tt> <tt class="py-line"> <tt id="link-43" class="py-name"><a title="todo.models.Fase.Descripcion
+todo.models.Item.Descripcion
+todo.models.Proyecto.Descripcion
+todo.models.TipoItem.Descripcion" class="py-name" href="#"
+                                                                                                              onclick="return doclink('link-43', 'Descripcion', 'link-3');">Descripcion</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-44" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-44', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> </tt>
+    <a name="L89"></a><tt class="py-lineno"> 89</tt> <tt class="py-line"> <tt class="py-name">help_text</tt><tt
+            class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion del del Tipo de Item'</tt><tt
+            class="py-op">)</tt> </tt>
+    <a name="L90"></a><tt class="py-lineno"> 90</tt> <tt class="py-line"> <tt class="py-string">"""Descripci&#243;n del
+        Tipo de Item"""</tt> </tt>
+    <a name="L91"></a><tt class="py-lineno"> 91</tt> <tt class="py-line"> </tt>
+    <a name="TipoItem.__unicode__"></a>
+
+    <div id="TipoItem.__unicode__-def"><a name="L92"></a><tt class="py-lineno"> 92</tt> <a class="py-toggle" href="#"
+                                                                                           id="TipoItem.__unicode__-toggle"
+                                                                                           onclick="return toggle('TipoItem.__unicode__');">-</a><tt
+            class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
+                                                                href="todo.models.TipoItem-class.html#__unicode__">__unicode__</a><tt
+            class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+    </div>
+    <div id="TipoItem.__unicode__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="TipoItem.__unicode__-expanded"><a name="L93"></a><tt class="py-lineno"> 93</tt> <tt class="py-line"> <tt
+            class="py-keyword">return</tt> <tt class="py-string">u'%s | %s'</tt> <tt class="py-op">%</tt> <tt
+            class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-45" class="py-name"><a
+            title="todo.models.Fase
+todo.models.TipoItem.Fase" class="py-name" href="#"
+            onclick="return doclink('link-45', 'Fase', 'link-38');">Fase</a></tt><tt class="py-op">,</tt> <tt
+            class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                 onclick="return doclink('link-46', 'Nombre', 'link-1');">Nombre</a></tt><tt
+            class="py-op">)</tt> </tt>
+    </div>
+    <a name="L94"></a><tt class="py-lineno"> 94</tt> <tt class="py-line"> </tt>
+    <a name="TipoItem.Meta"></a>
+
+    <div id="TipoItem.Meta-def"><a name="L95"></a><tt class="py-lineno"> 95</tt> <a class="py-toggle" href="#"
+                                                                                    id="TipoItem.Meta-toggle"
+                                                                                    onclick="return toggle('TipoItem.Meta');">-</a><tt
+            class="py-line"> <tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                                  href="todo.models.TipoItem.Meta-class.html">Meta</a><tt
+            class="py-op">:</tt> </tt>
+    </div>
+    <div id="TipoItem.Meta-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="TipoItem.Meta-expanded"><a name="L96"></a><tt class="py-lineno"> 96</tt> <tt class="py-line"> <tt
+            class="py-docstring">"""En esta clase definimos que se listaran los Tipos de Item por el nombre"""</tt>
+    </tt>
+        <a name="L97"></a><tt class="py-lineno"> 97</tt> <tt class="py-line"> <tt id="link-47" class="py-name"><a
+                title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#"
+                onclick="return doclink('link-47', 'ordering', 'link-14');">ordering</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt>
+        </tt>
+        <a name="L98"></a><tt class="py-lineno"> 98</tt> <tt class="py-line"> <tt id="link-48" class="py-name"><a
+                title="todo.models.Fase.Meta.verbose_name
+todo.models.Item.Meta.verbose_name
+todo.models.TipoItem.Meta.verbose_name" class="py-name" href="#"
+                onclick="return doclink('link-48', 'verbose_name', 'link-36');">verbose_name</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-string">u'TipoItem'</tt> </tt>
+        <a name="L99"></a><tt class="py-lineno"> 99</tt> <tt class="py-line"> <tt id="link-49" class="py-name"><a
+                title="todo.models.Fase.Meta.verbose_name_plural
+todo.models.Item.Meta.verbose_name_plural
+todo.models.TipoItem.Meta.verbose_name_plural" class="py-name" href="#"
+                onclick="return doclink('link-49', 'verbose_name_plural', 'link-37');">verbose_name_plural</a></tt> <tt
+                class="py-op">=</tt> <tt class="py-string">'Tipos de Item'</tt> </tt>
+    </div>
+</div><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"><tt class="py-string">"""Clase Item, define los
+    campos y textos que contienen los datos de cada Item"""</tt> </tt>
+<a name="Item"></a><div id="Item-def"><a name="L102"></a><tt class="py-lineno">102</tt> <a class="py-toggle" href="#"
+                                                                                           id="Item-toggle"
+                                                                                           onclick="return toggle('Item');">-</a><tt
+        class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                             href="todo.models.Item-class.html">Item</a><tt
+        class="py-op">(</tt><tt class="py-base-class">models</tt><tt class="py-op">.</tt><tt
+        class="py-base-class">Model</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Item-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Item-expanded"><a
+        name="L103"></a><tt class="py-lineno">103</tt> <tt class="py-line"> <tt class="py-docstring">"""</tt> </tt>
+    <a name="L104"></a><tt class="py-lineno">104</tt> <tt class="py-line"><tt class="py-docstring"> Clase Item</tt>
+    </tt>
+    <a name="L105"></a><tt class="py-lineno">105</tt> <tt class="py-line"><tt class="py-docstring"> Definimos los
+        atributos de la clase Item</tt> </tt>
+    <a name="L106"></a><tt class="py-lineno">106</tt> <tt class="py-line"><tt class="py-docstring"> """</tt> </tt>
+    <a name="L107"></a><tt class="py-lineno">107</tt> <tt class="py-line"> <tt id="link-50" class="py-name"
+                                                                               targets="Variable todo.models.Item.TipoItem=todo.models.Item-class.html#TipoItem,Class todo.models.TipoItem=todo.models.TipoItem-class.html"><a
+            title="todo.models.Item.TipoItem
+todo.models.TipoItem" class="py-name" href="#" onclick="return doclink('link-50', 'TipoItem', 'link-50');">TipoItem</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-51" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-51', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">ForeignKey</tt><tt class="py-op">(</tt><tt id="link-52"
+                                                                                                   class="py-name"><a
+                title="todo.models.Item.TipoItem
+todo.models.TipoItem" class="py-name" href="#" onclick="return doclink('link-52', 'TipoItem', 'link-50');">TipoItem</a></tt><tt
+                class="py-op">)</tt> </tt>
+    <a name="L108"></a><tt class="py-lineno">108</tt> <tt class="py-line"> <tt class="py-string">"""Nombre del
+        TipoItem"""</tt> </tt>
+    <a name="L109"></a><tt class="py-lineno">109</tt> <tt class="py-line"> <tt id="link-53" class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                               onclick="return doclink('link-53', 'Nombre', 'link-1');">Nombre</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-54" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-54', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el nombre de la Item'</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L110"></a><tt class="py-lineno">110</tt> <tt class="py-line"> <tt class="py-string">"""Nombre del
+        Item"""</tt> </tt>
+    <a name="L111"></a><tt class="py-lineno">111</tt> <tt class="py-line"> <tt id="link-55" class="py-name"><a title="todo.models.Fase.Descripcion
+todo.models.Item.Descripcion
+todo.models.Proyecto.Descripcion
+todo.models.TipoItem.Descripcion" class="py-name" href="#"
+                                                                                                               onclick="return doclink('link-55', 'Descripcion', 'link-3');">Descripcion</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-56" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-56', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Descripcion'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese la descripcion del Item'</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L112"></a><tt class="py-lineno">112</tt> <tt class="py-line"> <tt class="py-string">"""Descripci&#243;n del
+        Item"""</tt> </tt>
+    <a name="L113"></a><tt class="py-lineno">113</tt> <tt class="py-line"> <tt id="link-57" class="py-name"
+                                                                               targets="Variable todo.models.Item.Complejidad=todo.models.Item-class.html#Complejidad"><a
+            title="todo.models.Item.Complejidad" class="py-name" href="#"
+            onclick="return doclink('link-57', 'Complejidad', 'link-57');">Complejidad</a></tt> <tt class="py-op">=</tt>
+        <tt id="link-58" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-58', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">IntegerField</tt><tt class="py-op">(</tt><tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese la complejidad del Item'</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L114"></a><tt class="py-lineno">114</tt> <tt class="py-line"> <tt class="py-string">"""Complejidad del
+        Item"""</tt> </tt>
+    <a name="L115"></a><tt class="py-lineno">115</tt> <tt class="py-line"> <tt id="link-59" class="py-name"><a title="todo.models.Fase.Estado
+todo.models.Item.Estado
+todo.models.Proyecto.Estado" class="py-name" href="#"
+                                                                                                               onclick="return doclink('link-59', 'Estado', 'link-11');">Estado</a></tt>
+        <tt class="py-op">=</tt> <tt id="link-60" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-60', 'models', 'link-0');">models</a></tt><tt
+                class="py-op">.</tt><tt class="py-name">CharField</tt><tt class="py-op">(</tt><tt class="py-string">'Estado'</tt><tt
+                class="py-op">,</tt> <tt class="py-name">max_length</tt><tt class="py-op">=</tt><tt
+                class="py-number">45</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt
+                class="py-op">=</tt><tt class="py-string">'Ingrese el Estado del Item'</tt><tt class="py-op">,</tt> <tt
+                class="py-name">null</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt>
+        <tt class="py-name">blank</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt>
+    </tt>
+    <a name="L116"></a><tt class="py-lineno">116</tt> <tt class="py-line"> <tt class="py-string">"""Estado del
+        Item"""</tt> </tt>
+    <a name="L117"></a><tt class="py-lineno">117</tt> <tt class="py-line"> <tt id="link-61" class="py-name"
+                                                                               targets="Variable todo.models.Item.Version=todo.models.Item-class.html#Version"><a
+            title="todo.models.Item.Version" class="py-name" href="#"
+            onclick="return doclink('link-61', 'Version', 'link-61');">Version</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-62" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-62', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">IntegerField</tt><tt class="py-op">(</tt><tt class="py-name">help_text</tt><tt
+            class="py-op">=</tt><tt class="py-string">'Ingrese la Version del Item'</tt><tt class="py-op">)</tt> </tt>
+    <a name="L118"></a><tt class="py-lineno">118</tt> <tt class="py-line"> <tt class="py-string">"""Version del
+        Item"""</tt> </tt>
+    <a name="L119"></a><tt class="py-lineno">119</tt> <tt class="py-line"> <tt id="link-63" class="py-name"
+                                                                               targets="Variable todo.models.Item.Costo=todo.models.Item-class.html#Costo"><a
+            title="todo.models.Item.Costo" class="py-name" href="#"
+            onclick="return doclink('link-63', 'Costo', 'link-63');">Costo</a></tt> <tt class="py-op">=</tt> <tt
+            id="link-64" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                            onclick="return doclink('link-64', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">IntegerField</tt><tt class="py-op">(</tt><tt class="py-name">help_text</tt><tt
+            class="py-op">=</tt><tt class="py-string">'Ingrese el costo del Item'</tt><tt class="py-op">)</tt> </tt>
+    <a name="L120"></a><tt class="py-lineno">120</tt> <tt class="py-line"> <tt class="py-string">"""Costo del
+        Item"""</tt> </tt>
+    <a name="L121"></a><tt class="py-lineno">121</tt> <tt class="py-line"> <tt id="link-65" class="py-name"
+                                                                               targets="Variable todo.models.Item.FechaModificacion=todo.models.Item-class.html#FechaModificacion"><a
+            title="todo.models.Item.FechaModificacion" class="py-name" href="#"
+            onclick="return doclink('link-65', 'FechaModificacion', 'link-65');">FechaModificacion</a></tt> <tt
+            class="py-op">=</tt> <tt id="link-66" class="py-name"><a title="todo.models" class="py-name" href="#"
+                                                                     onclick="return doclink('link-66', 'models', 'link-0');">models</a></tt><tt
+            class="py-op">.</tt><tt class="py-name">DateField</tt><tt class="py-op">(</tt><tt class="py-string">'Fecha
+        de Modificacion'</tt><tt class="py-op">,</tt> <tt class="py-name">help_text</tt><tt class="py-op">=</tt><tt
+            class="py-string">'Ingrese la fecha de modificacion del Item'</tt><tt class="py-op">)</tt> </tt>
+    <a name="L122"></a><tt class="py-lineno">122</tt> <tt class="py-line"> <tt class="py-string">"""Fecha de
+        modificacion del Item"""</tt> </tt>
+    <a name="L123"></a><tt class="py-lineno">123</tt> <tt class="py-line"> </tt>
+    <a name="Item.__unicode__"></a>
+
+    <div id="Item.__unicode__-def"><a name="L124"></a><tt class="py-lineno">124</tt> <a class="py-toggle" href="#"
+                                                                                        id="Item.__unicode__-toggle"
+                                                                                        onclick="return toggle('Item.__unicode__');">-</a><tt
+            class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
+                                                                href="todo.models.Item-class.html#__unicode__">__unicode__</a><tt
+            class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+    </div>
+    <div id="Item.__unicode__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Item.__unicode__-expanded"><a name="L125"></a><tt class="py-lineno">125</tt> <tt class="py-line"> <tt
+            class="py-keyword">return</tt> <tt class="py-string">u'%s | %s'</tt> <tt class="py-op">%</tt> <tt
+            class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-67" class="py-name"><a
+            title="todo.models.Item.TipoItem
+todo.models.TipoItem" class="py-name" href="#" onclick="return doclink('link-67', 'TipoItem', 'link-50');">TipoItem</a></tt><tt
+            class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-68"
+                                                                                          class="py-name"><a title="todo.models.Fase.Nombre
+todo.models.Item.Nombre
+todo.models.Proyecto.Nombre
+todo.models.TipoItem.Nombre" class="py-name" href="#"
+                                                                                                             onclick="return doclink('link-68', 'Nombre', 'link-1');">Nombre</a></tt><tt
+            class="py-op">)</tt> </tt>
+    </div>
+    <a name="L126"></a><tt class="py-lineno">126</tt> <tt class="py-line"> </tt>
+    <a name="Item.Meta"></a>
+
+    <div id="Item.Meta-def"><a name="L127"></a><tt class="py-lineno">127</tt> <a class="py-toggle" href="#"
+                                                                                 id="Item.Meta-toggle"
+                                                                                 onclick="return toggle('Item.Meta');">-</a><tt
+            class="py-line"> <tt class="py-keyword">class</tt> <a class="py-def-name"
+                                                                  href="todo.models.Item.Meta-class.html">Meta</a><tt
+            class="py-op">:</tt> </tt>
+    </div>
+    <div id="Item.Meta-collapsed" style="display:none;" pad="+++" indent="++++++++"></div>
+    <div id="Item.Meta-expanded"><a name="L128"></a><tt class="py-lineno">128</tt> <tt class="py-line"> <tt
+            class="py-docstring">"""En esta clase definimos que se listaran los Item ordenados por el nombre"""</tt>
+    </tt>
+        <a name="L129"></a><tt class="py-lineno">129</tt> <tt class="py-line"> <tt id="link-69" class="py-name"><a
+                title="todo.admin.FaseAdmin.ordering
+todo.admin.FaseAdmin2.ordering
+todo.admin.ItemAdmin.ordering
+todo.admin.ItemAdmin2.ordering
+todo.admin.ProyectoAdmin.ordering
+todo.admin.TipoItemAdmin.ordering
+todo.admin.TipoItemAdmin2.ordering
+todo.models.Fase.Meta.ordering
+todo.models.Item.Meta.ordering
+todo.models.Proyecto.Meta.ordering
+todo.models.TipoItem.Meta.ordering" class="py-name" href="#"
+                onclick="return doclink('link-69', 'ordering', 'link-14');">ordering</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-op">(</tt><tt class="py-string">'Nombre'</tt><tt class="py-op">,</tt><tt class="py-op">)</tt>
+        </tt>
+        <a name="L130"></a><tt class="py-lineno">130</tt> <tt class="py-line"> <tt id="link-70" class="py-name"><a
+                title="todo.models.Fase.Meta.verbose_name
+todo.models.Item.Meta.verbose_name
+todo.models.TipoItem.Meta.verbose_name" class="py-name" href="#"
+                onclick="return doclink('link-70', 'verbose_name', 'link-36');">verbose_name</a></tt> <tt class="py-op">=</tt>
+            <tt class="py-string">u'Item'</tt> </tt>
+        <a name="L131"></a><tt class="py-lineno">131</tt> <tt class="py-line"> <tt id="link-71" class="py-name"><a
+                title="todo.models.Fase.Meta.verbose_name_plural
+todo.models.Item.Meta.verbose_name_plural
+todo.models.TipoItem.Meta.verbose_name_plural" class="py-name" href="#"
+                onclick="return doclink('link-71', 'verbose_name_plural', 'link-37');">verbose_name_plural</a></tt> <tt
+                class="py-op">=</tt> <tt class="py-string">'Items'</tt> </tt>
+    </div>
+</div><a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+    <!--
+    expandto(location.href);
+    // -->
 </script>
 </pre>
-<br />
+<br/>
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
        bgcolor="#a0c0ff" cellspacing="0">
-  <tr valign="middle">
+    <tr valign="middle">
 
-  <!-- Tree link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Tree link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Index link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Index link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
 
-  <!-- Help link -->
-      <th>&nbsp;&nbsp;&nbsp;<a
-        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+        <!-- Help link -->
+        <th>&nbsp;&nbsp;&nbsp;<a
+                href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
 
-      <th class="navbar" width="100%"></th>
-  </tr>
+        <th class="navbar" width="100%"></th>
+    </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
-  <tr>
-    <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Apr 21 14:58:56 2014
-    </td>
-    <td align="right" class="footer">
-      <a target="mainFrame" href="http://epydoc.sourceforge.net"
-        >http://epydoc.sourceforge.net</a>
-    </td>
-  </tr>
+    <tr>
+        <td align="left" class="footer">
+            Generated by Epydoc 3.0.1 on Mon Apr 28 15:33:08 2014
+        </td>
+        <td align="right" class="footer">
+            <a target="mainFrame" href="http://epydoc.sourceforge.net"
+                    >http://epydoc.sourceforge.net</a>
+        </td>
+    </tr>
 </table>
 
 <script type="text/javascript">
-  <!--
-  // Private objects are initially displayed (because if
-  // javascript is turned off then we want them to be
-  // visible); but by default, we want to hide them.  So hide
-  // them unless we have a cookie that says to show them.
-  checkCookie();
-  // -->
+    <!--
+    // Private objects are initially displayed (because if
+    // javascript is turned off then we want them to be
+    // visible); but by default, we want to hide them.  So hide
+    // them unless we have a cookie that says to show them.
+    checkCookie();
+    // -->
 </script>
 </body>
 </html>

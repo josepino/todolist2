@@ -3,7 +3,7 @@
         "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>todo.models.Fase</title>
+    <title>todo.models.Item</title>
     <link rel="stylesheet" href="epydoc.css" type="text/css"/>
     <script type="text/javascript" src="epydoc.js"></script>
 </head>
@@ -36,7 +36,7 @@
       <span class="breadcrumbs">
         Package&nbsp;todo ::
         <a href="todo.models-module.html">Module&nbsp;models</a> ::
-        Class&nbsp;Fase
+        Class&nbsp;Item
       </span>
         </td>
         <td>
@@ -50,7 +50,7 @@
                 <tr>
                     <td align="right"><span class="options"
                             >[<a href="frames.html" target="_top">frames</a
-                            >]&nbsp;|&nbsp;<a href="todo.models.Fase-class.html"
+                            >]&nbsp;|&nbsp;<a href="todo.models.Item-class.html"
                                               target="_top">no&nbsp;frames</a>]</span></td>
                 </tr>
             </table>
@@ -58,17 +58,17 @@
     </tr>
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class Fase</h1>
+<h1 class="epydoc">Class Item</h1>
 
-<p class="nomargin-top"><span class="codelink"><a href="todo.models-pysrc.html#Fase">source&nbsp;code</a></span></p>
+<p class="nomargin-top"><span class="codelink"><a href="todo.models-pysrc.html#Item">source&nbsp;code</a></span></p>
 <pre class="base-tree">
 django.db.models.Model --+
                          |
-                        <strong class="uidshort">Fase</strong>
+                        <strong class="uidshort">Item</strong>
 </pre>
 
 <hr/>
-<p>Clase Fase Definimos los atributos de la clase Fase</p>
+<p>Clase Item Definimos los atributos de la clase Item</p>
 
 <!-- ==================== NESTED CLASSES ==================== -->
 <a name="section-NestedClasses"></a>
@@ -92,8 +92,8 @@ django.db.models.Model --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase.Meta-class.html" class="summary-name">Meta</a><br/>
-            En esta clase definimos que se listaran las fases ordenados por el
+            <a href="todo.models.Item.Meta-class.html" class="summary-name">Meta</a><br/>
+            En esta clase definimos que se listaran los Item ordenados por el
             nombre
         </td>
     </tr>
@@ -127,7 +127,7 @@ django.db.models.Model --+
                             class="summary-sig-arg">self</span>)</span></td>
                     <td align="right" valign="top">
                         <span class="codelink"><a
-                                href="todo.models-pysrc.html#Fase.__unicode__">source&nbsp;code</a></span>
+                                href="todo.models-pysrc.html#Item.__unicode__">source&nbsp;code</a></span>
 
                     </td>
                 </tr>
@@ -158,9 +158,9 @@ django.db.models.Model --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a name="fkproyecto"></a><span class="summary-name">fkproyecto</span> = <code
-                title="models.ForeignKey(Proyecto)">models.ForeignKey(Proyecto)</code><br/>
-            Nombre del Proyecto
+            <a name="TipoItem"></a><span class="summary-name">TipoItem</span> = <code
+                title="models.ForeignKey(TipoItem)">models.ForeignKey(TipoItem)</code><br/>
+            Nombre del TipoItem
         </td>
     </tr>
     <tr>
@@ -168,10 +168,10 @@ django.db.models.Model --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#Nombre" class="summary-name">Nombre</a> = <code title="models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb\
-re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
+            <a href="todo.models.Item-class.html#Nombre" class="summary-name">Nombre</a> = <code title="models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb\
+re de la Item')">models.CharField('Nombre', max_length= 45, help_text=<code
                 class="variable-ellipsis">...</code></code><br/>
-            Nombre de la Fase
+            Nombre del Item
         </td>
     </tr>
     <tr>
@@ -179,20 +179,10 @@ re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#NroOrden" class="summary-name">NroOrden</a> = <code title="models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'\
-)">models.IntegerField(help_text= 'Ingrese el numero d<code class="variable-ellipsis">...</code></code><br/>
-            Numero de orden de la Fase
-        </td>
-    </tr>
-    <tr>
-        <td width="15%" align="right" valign="top" class="summary">
-            <span class="summary-type">&nbsp;</span>
-        </td>
-        <td class="summary">
-            <a href="todo.models.Fase-class.html#Descripcion" class="summary-name">Descripcion</a> = <code title="models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la\
- descripcion de la fase')">models.CharField('Descripcion', max_length= 45, <code
+            <a href="todo.models.Item-class.html#Descripcion" class="summary-name">Descripcion</a> = <code title="models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la\
+ descripcion del Item')">models.CharField('Descripcion', max_length= 45, <code
                 class="variable-ellipsis">...</code></code><br/>
-            Descripci&#243;n de la Fase
+            Descripci&#243;n del Item
         </td>
     </tr>
     <tr>
@@ -200,10 +190,10 @@ re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaCreacion" class="summary-name">FechaCreacion</a> = <code title="models.DateField('Fecha de Creacion', help_text= 'Ingrese la fecha de \
-creacion de la fase')">models.DateField('Fecha de Creacion', help_tex<code
-                class="variable-ellipsis">...</code></code><br/>
-            Fecha de creaci&#243;n de la Fase
+            <a href="todo.models.Item-class.html#Complejidad" class="summary-name">Complejidad</a> = <code
+                title="models.IntegerField(help_text= 'Ingrese la complejidad del Item')">models.IntegerField(help_text=
+            'Ingrese la compl<code class="variable-ellipsis">...</code></code><br/>
+            Complejidad del Item
         </td>
     </tr>
     <tr>
@@ -211,10 +201,10 @@ creacion de la fase')">models.DateField('Fecha de Creacion', help_tex<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaInicio" class="summary-name">FechaInicio</a> = <code title="models.DateField('Fecha de Inicio', help_text= 'Ingrese la fecha de In\
-icio de la fase', null= True, blank= True)">models.DateField('Fecha de Inicio', help_text= '<code
+            <a href="todo.models.Item-class.html#Estado" class="summary-name">Estado</a> = <code title="models.CharField('Estado', max_length= 45, help_text= 'Ingrese el Esta\
+do del Item', null= True, blank= True)">models.CharField('Estado', max_length= 45, help_text=<code
                 class="variable-ellipsis">...</code></code><br/>
-            Fecha de inicio de la Fase
+            Estado del Item
         </td>
     </tr>
     <tr>
@@ -222,10 +212,10 @@ icio de la fase', null= True, blank= True)">models.DateField('Fecha de Inicio', 
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaFin" class="summary-name">FechaFin</a> = <code title="models.DateField('Fecha de Fin', help_text= 'Ingrese la fecha de Fin d\
-e la fase', null= True, blank= True)">models.DateField('Fecha de Fin', help_text= 'Ingres<code
-                class="variable-ellipsis">...</code></code><br/>
-            Fecha de finalizaci&#243;nde la Fase
+            <a href="todo.models.Item-class.html#Version" class="summary-name">Version</a> = <code
+                title="models.IntegerField(help_text= 'Ingrese la Version del Item')">models.IntegerField(help_text=
+            'Ingrese la Version d<code class="variable-ellipsis">...</code></code><br/>
+            Version del Item
         </td>
     </tr>
     <tr>
@@ -233,10 +223,21 @@ e la fase', null= True, blank= True)">models.DateField('Fecha de Fin', help_text
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#Estado" class="summary-name">Estado</a> = <code title="models.CharField('Estado', max_length= 45, help_text= 'Ingrese el Esta\
-do de la fase', null= True, blank= True)">models.CharField('Estado', max_length= 45, help_text=<code
-                class="variable-ellipsis">...</code></code><br/>
-            Estado de la Fase
+            <a href="todo.models.Item-class.html#Costo" class="summary-name">Costo</a> = <code
+                title="models.IntegerField(help_text= 'Ingrese el costo del Item')">models.IntegerField(help_text=
+            'Ingrese el costo del I<code class="variable-ellipsis">...</code></code><br/>
+            Costo del Item
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.Item-class.html#FechaModificacion" class="summary-name">FechaModificacion</a> = <code
+                title="models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha\
+ de modificacion del Item')">models.DateField('Fecha de Modificacion', <code class="variable-ellipsis">...</code></code><br/>
+            Fecha de modificacion del Item
         </td>
     </tr>
 </table>
@@ -267,7 +268,7 @@ do de la fase', null= True, blank= True)">models.CharField('Estado', max_length=
             <td>
                 <h3 class="epydoc">Nombre</h3>
 
-                <p>Nombre de la Fase</p>
+                <p>Nombre del Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -278,38 +279,7 @@ do de la fase', null= True, blank= True)">models.CharField('Estado', max_length=
                                 <td><pre class="variable">
 models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb<span class="variable-linewrap"><img
                                         src="crarr.png" alt="\"/></span>
-re de la fase')
-</pre>
-                                </td>
-                            </tr>
-                        </table>
-                    </dd>
-                </dl>
-            </td>
-        </tr>
-    </table>
-</div>
-<a name="NroOrden"></a>
-
-<div>
-    <table class="details" border="1" cellpadding="3"
-           cellspacing="0" width="100%" bgcolor="white">
-        <tr>
-            <td>
-                <h3 class="epydoc">NroOrden</h3>
-
-                <p>Numero de orden de la Fase</p>
-                <dl class="fields">
-                </dl>
-                <dl class="fields">
-                    <dt>Value:</dt>
-                    <dd>
-                        <table>
-                            <tr>
-                                <td><pre class="variable">
-models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'<span class="variable-linewrap"><img
-                                        src="crarr.png" alt="\"/></span>
-)
+re de la Item')
 </pre>
                                 </td>
                             </tr>
@@ -329,7 +299,7 @@ models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'<span clas
             <td>
                 <h3 class="epydoc">Descripcion</h3>
 
-                <p>Descripci&#243;n de la Fase</p>
+                <p>Descripci&#243;n del Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -340,7 +310,7 @@ models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'<span clas
                                 <td><pre class="variable">
 models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la<span class="variable-linewrap"><img
                                         src="crarr.png" alt="\"/></span>
- descripcion de la fase')
+ descripcion del Item')
 </pre>
                                 </td>
                             </tr>
@@ -351,16 +321,16 @@ models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la<span clas
         </tr>
     </table>
 </div>
-<a name="FechaCreacion"></a>
+<a name="Complejidad"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">FechaCreacion</h3>
+                <h3 class="epydoc">Complejidad</h3>
 
-                <p>Fecha de creaci&#243;n de la Fase</p>
+                <p>Complejidad del Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -369,71 +339,7 @@ models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la<span clas
                         <table>
                             <tr>
                                 <td><pre class="variable">
-models.DateField('Fecha de Creacion', help_text= 'Ingrese la fecha de <span class="variable-linewrap"><img
-                                        src="crarr.png" alt="\"/></span>
-creacion de la fase')
-</pre>
-                                </td>
-                            </tr>
-                        </table>
-                    </dd>
-                </dl>
-            </td>
-        </tr>
-    </table>
-</div>
-<a name="FechaInicio"></a>
-
-<div>
-    <table class="details" border="1" cellpadding="3"
-           cellspacing="0" width="100%" bgcolor="white">
-        <tr>
-            <td>
-                <h3 class="epydoc">FechaInicio</h3>
-
-                <p>Fecha de inicio de la Fase</p>
-                <dl class="fields">
-                </dl>
-                <dl class="fields">
-                    <dt>Value:</dt>
-                    <dd>
-                        <table>
-                            <tr>
-                                <td><pre class="variable">
-models.DateField('Fecha de Inicio', help_text= 'Ingrese la fecha de In<span class="variable-linewrap"><img
-                                        src="crarr.png" alt="\"/></span>
-icio de la fase', null= True, blank= True)
-</pre>
-                                </td>
-                            </tr>
-                        </table>
-                    </dd>
-                </dl>
-            </td>
-        </tr>
-    </table>
-</div>
-<a name="FechaFin"></a>
-
-<div>
-    <table class="details" border="1" cellpadding="3"
-           cellspacing="0" width="100%" bgcolor="white">
-        <tr>
-            <td>
-                <h3 class="epydoc">FechaFin</h3>
-
-                <p>Fecha de finalizaci&#243;nde la Fase</p>
-                <dl class="fields">
-                </dl>
-                <dl class="fields">
-                    <dt>Value:</dt>
-                    <dd>
-                        <table>
-                            <tr>
-                                <td><pre class="variable">
-models.DateField('Fecha de Fin', help_text= 'Ingrese la fecha de Fin d<span class="variable-linewrap"><img
-                                        src="crarr.png" alt="\"/></span>
-e la fase', null= True, blank= True)
+models.IntegerField(help_text= 'Ingrese la complejidad del Item')
 </pre>
                                 </td>
                             </tr>
@@ -453,7 +359,7 @@ e la fase', null= True, blank= True)
             <td>
                 <h3 class="epydoc">Estado</h3>
 
-                <p>Estado de la Fase</p>
+                <p>Estado del Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -464,7 +370,96 @@ e la fase', null= True, blank= True)
                                 <td><pre class="variable">
 models.CharField('Estado', max_length= 45, help_text= 'Ingrese el Esta<span class="variable-linewrap"><img
                                         src="crarr.png" alt="\"/></span>
-do de la fase', null= True, blank= True)
+do del Item', null= True, blank= True)
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="Version"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">Version</h3>
+
+                <p>Version del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.IntegerField(help_text= 'Ingrese la Version del Item')
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="Costo"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">Costo</h3>
+
+                <p>Costo del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.IntegerField(help_text= 'Ingrese el costo del Item')
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="FechaModificacion"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">FechaModificacion</h3>
+
+                <p>Fecha de modificacion del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+ de modificacion del Item')
 </pre>
                                 </td>
                             </tr>

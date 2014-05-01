@@ -3,7 +3,7 @@
         "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>todo.admin.FaseAdmin</title>
+    <title>todo.models.TipoItem</title>
     <link rel="stylesheet" href="epydoc.css" type="text/css"/>
     <script type="text/javascript" src="epydoc.js"></script>
 </head>
@@ -35,8 +35,8 @@
         <td width="100%">
       <span class="breadcrumbs">
         Package&nbsp;todo ::
-        <a href="todo.admin-module.html">Module&nbsp;admin</a> ::
-        Class&nbsp;FaseAdmin
+        <a href="todo.models-module.html">Module&nbsp;models</a> ::
+        Class&nbsp;TipoItem
       </span>
         </td>
         <td>
@@ -50,7 +50,7 @@
                 <tr>
                     <td align="right"><span class="options"
                             >[<a href="frames.html" target="_top">frames</a
-                            >]&nbsp;|&nbsp;<a href="todo.admin.FaseAdmin-class.html"
+                            >]&nbsp;|&nbsp;<a href="todo.models.TipoItem-class.html"
                                               target="_top">no&nbsp;frames</a>]</span></td>
                 </tr>
             </table>
@@ -58,18 +58,84 @@
     </tr>
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class FaseAdmin</h1>
+<h1 class="epydoc">Class TipoItem</h1>
 
-<p class="nomargin-top"><span class="codelink"><a href="todo.admin-pysrc.html#FaseAdmin">source&nbsp;code</a></span></p>
+<p class="nomargin-top"><span class="codelink"><a href="todo.models-pysrc.html#TipoItem">source&nbsp;code</a></span></p>
 <pre class="base-tree">
-django.contrib.admin.ModelAdmin --+
-                                  |
-                                 <strong class="uidshort">FaseAdmin</strong>
+django.db.models.Model --+
+                         |
+                        <strong class="uidshort">TipoItem</strong>
 </pre>
 
 <hr/>
-<p>Definicion de la clase FaseAdmin</p>
+<p>Clase TipoItem Definimos los atributos de la clase TipoItem</p>
 
+<!-- ==================== NESTED CLASSES ==================== -->
+<a name="section-NestedClasses"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+    <tr bgcolor="#70b0f0" class="table-header">
+        <td colspan="2" class="table-header">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr valign="top">
+                    <td align="left"><span class="table-header">Nested Classes</span></td>
+                    <td align="right" valign="top"
+                            ><span class="options">[<a href="#section-NestedClasses"
+                                                       class="privatelink" onclick="toggle_private();"
+                            >hide private</a>]</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.TipoItem.Meta-class.html" class="summary-name">Meta</a><br/>
+            En esta clase definimos que se listaran los Tipos de Item por el
+            nombre
+        </td>
+    </tr>
+</table>
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+    <tr bgcolor="#70b0f0" class="table-header">
+        <td colspan="2" class="table-header">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr valign="top">
+                    <td align="left"><span class="table-header">Instance Methods</span></td>
+                    <td align="right" valign="top"
+                            ><span class="options">[<a href="#section-InstanceMethods"
+                                                       class="privatelink" onclick="toggle_private();"
+                            >hide private</a>]</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="__unicode__"></a><span
+                            class="summary-sig-name">__unicode__</span>(<span
+                            class="summary-sig-arg">self</span>)</span></td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a
+                                href="todo.models-pysrc.html#TipoItem.__unicode__">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
 <!-- ==================== CLASS VARIABLES ==================== -->
 <a name="section-ClassVariables"></a>
 <table class="summary" border="1" cellpadding="3"
@@ -92,9 +158,7 @@ django.contrib.admin.ModelAdmin --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.admin.FaseAdmin-class.html#list_display" class="summary-name">list_display</a> = <code
-                title="'Nombre', 'fkproyecto', 'Descripcion', 'FechaCreacion',">'Nombre', 'fkproyecto', 'Descripcion',
-            'FechaCr<code class="variable-ellipsis">...</code></code>
+            <a name="Fase"></a><span class="summary-name">Fase</span> = <code title="models.ForeignKey(Fase)">models.ForeignKey(Fase)</code>
         </td>
     </tr>
     <tr>
@@ -102,9 +166,10 @@ django.contrib.admin.ModelAdmin --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.admin.FaseAdmin-class.html#list_filter" class="summary-name">list_filter</a> = <code
-                title="'fkproyecto', 'FechaCreacion', 'FechaInicio', 'Estado',">'fkproyecto', 'FechaCreacion',
-            'FechaInicio', 'E<code class="variable-ellipsis">...</code></code>
+            <a href="todo.models.TipoItem-class.html#Nombre" class="summary-name">Nombre</a> = <code title="models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb\
+re del Tipo de Item')">models.CharField('Nombre', max_length= 45, help_text=<code
+                class="variable-ellipsis">...</code></code><br/>
+            Nombre del Tipo de Item
         </td>
     </tr>
     <tr>
@@ -112,23 +177,10 @@ django.contrib.admin.ModelAdmin --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a name="search_fields"></a><span class="summary-name">search_fields</span> = <code title="['Nombre']">['Nombre']</code>
-        </td>
-    </tr>
-    <tr>
-        <td width="15%" align="right" valign="top" class="summary">
-            <span class="summary-type">&nbsp;</span>
-        </td>
-        <td class="summary">
-            <a name="ordering"></a><span class="summary-name">ordering</span> = <code title="'Nombre',">'Nombre',</code>
-        </td>
-    </tr>
-    <tr>
-        <td width="15%" align="right" valign="top" class="summary">
-            <span class="summary-type">&nbsp;</span>
-        </td>
-        <td class="summary">
-            <a name="inlines"></a><span class="summary-name">inlines</span> = <code title="[TipoItemAdmin2]">[TipoItemAdmin2]</code>
+            <a href="todo.models.TipoItem-class.html#Descripcion" class="summary-name">Descripcion</a> = <code title="models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la\
+ descripcion del del Tipo de Item')">models.CharField('Descripcion', max_length= 45, <code
+                class="variable-ellipsis">...</code></code><br/>
+            Descripci&#243;n del Tipo de Item
         </td>
     </tr>
 </table>
@@ -150,15 +202,16 @@ django.contrib.admin.ModelAdmin --+
         </td>
     </tr>
 </table>
-<a name="list_display"></a>
+<a name="Nombre"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">list_display</h3>
+                <h3 class="epydoc">Nombre</h3>
 
+                <p>Nombre del Tipo de Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -167,7 +220,9 @@ django.contrib.admin.ModelAdmin --+
                         <table>
                             <tr>
                                 <td><pre class="variable">
-'Nombre', 'fkproyecto', 'Descripcion', 'FechaCreacion',
+models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+re del Tipo de Item')
 </pre>
                                 </td>
                             </tr>
@@ -178,15 +233,16 @@ django.contrib.admin.ModelAdmin --+
         </tr>
     </table>
 </div>
-<a name="list_filter"></a>
+<a name="Descripcion"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">list_filter</h3>
+                <h3 class="epydoc">Descripcion</h3>
 
+                <p>Descripci&#243;n del Tipo de Item</p>
                 <dl class="fields">
                 </dl>
                 <dl class="fields">
@@ -195,7 +251,9 @@ django.contrib.admin.ModelAdmin --+
                         <table>
                             <tr>
                                 <td><pre class="variable">
-'fkproyecto', 'FechaCreacion', 'FechaInicio', 'Estado',
+models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+ descripcion del del Tipo de Item')
 </pre>
                                 </td>
                             </tr>
