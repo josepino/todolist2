@@ -3,6 +3,16 @@ from django.contrib import admin
 from models import *
 
 
+class RelacionAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase RelacionAdmin
+    """
+    list_display = ('Item1', 'TipoRelacion', )
+    list_filter = ('Item1', 'TipoRelacion',)
+    search_fields = ['Item1']
+    ordering = ('Item1',)
+
+
 class ItemAdmin(admin.ModelAdmin):
     """
     Definicion de la clase ItemAdmin
@@ -21,6 +31,26 @@ class ItemAdmin2(admin.TabularInline):
     ordering = ('Nombre',)
     model = Item
     extra = 0
+
+
+class AtributoItemAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase AtributoItemAdmin
+    """
+    list_display = ('Nombre', 'Item', 'AtributoTipoItem', 'Descripcion',)
+    list_filter = ( 'Item', 'AtributoTipoItem',)
+    search_fields = ['Nombre']
+    ordering = ('Nombre',)
+
+
+class AtributoTipoItemAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase AtributoTipoItemAdmin
+    """
+    list_display = ('Nombre', 'TipoItem', 'Descripcion',)
+    list_filter = ( 'TipoItem',)
+    search_fields = ['Nombre']
+    ordering = ('Nombre',)
 
 
 class TipoItemAdmin(admin.ModelAdmin):
@@ -78,4 +108,6 @@ admin.site.register(Proyecto, ProyectoAdmin)
 admin.site.register(Fase, FaseAdmin)
 admin.site.register(TipoItem, TipoItemAdmin)
 admin.site.register(Item, ItemAdmin)
-
+admin.site.register(RelacionItem, RelacionAdmin)
+admin.site.register(AtributoTipoItem, AtributoTipoItemAdmin)
+admin.site.register(AtributoItem, AtributoItemAdmin)
