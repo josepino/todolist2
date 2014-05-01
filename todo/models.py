@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
-#hola5
-
-
 
 
 #Clase Proyecto, define los campos y textos que contienen los datos del Proyecto

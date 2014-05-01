@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, '/todolist/templates'),
-)
+#TEMPLATE_DIRS = (
+#    os.path.join(BASE_DIR, '/todolist/templates'),
+#)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'django_admin_bootstrapped',
     'django.contrib.admin',
     'todo',
+    'signups',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -98,4 +99,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Ubicacion de template
+TEMPLATE_DIRS = (
 
+   # os.path.join(os.path.dirname(BASE_DIR), "static", "templates"),
+"/home/jose/PycharmProjects/todolist2/static/templates"
+)
+
+#Tutorial 7 de 21
+if DEBUG:
+    MEDIA_URL = '/media'
+    STATIC_ROOT = "/home/jose/PycharmProjects/todolist2/static/static-only" 
+    MEDIA_ROOT = "/home/jose/PycharmProjects/todolist2/static/media"
+    STATICFILES_DIRS = "/home/jose/PycharmProjects/todolist2/static/static"
