@@ -23,13 +23,19 @@ class Proyecto(models.Model):
     FechaCreacion = models.DateField('Fecha de Creacion', help_text='Ingrese la fecha de creacion del proyecto')
     """Fecha de creación del Proyecto"""
     FechaInicio = models.DateField('Fecha de Inicio', help_text='Ingrese la fecha de Inicio del proyecto', null=True,
-                                   blank=True)
+                                   editable=False, blank=True)
     """Fecha de inicio del Proyecto"""
     FechaFin = models.DateField('Fecha de Fin', help_text='Ingrese la fecha de Fin del proyecto', null=True, blank=True,
                                 editable=False)
     """Fecha de finalización del Proyecto"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado del proyecto', null=True,
-                              blank=True)
+    Estado_CHOICES = (
+        ('I', 'Inactivo'),
+        ('A', 'Iniciado/Activo'),
+        ('T', 'Terminado'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES,
+                              help_text='Ingrese el Estado del proyecto', null=True,
+                              blank=True, default='I')
     """Estado del Proyecto"""
 
     def iniciar(self):
@@ -73,7 +79,14 @@ class Fase(models.Model):
     """Fecha de inicio de la Fase"""
     FechaFin = models.DateField('Fecha de Fin', help_text='Ingrese la fecha de Fin de la fase', null=True, blank=True)
     """Fecha de finalizaciónde la Fase"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado de la fase', null=True, blank=True)
+    Estado_CHOICES = (
+        ('I', 'Inicio'),
+        ('D', 'Desarrollo'),
+        ('F', 'Finalizada'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES, help_text='Ingrese el Estado la Fase',
+                              null=True,
+                              blank=True, default='I')
     """Estado de la Fase"""
 
     def __unicode__(self):
@@ -116,7 +129,7 @@ class AtributoTipoItem(models.Model):
     Clase AtributoTipoItem
     Definimos los atributos de la clase AtributoTipoItem
     """
-    TipoItem = models.ForeignKey(TipoItem, verbose_name="Fase", help_text='Seleccione el Tipo de Item')
+    TipoItem = models.ForeignKey(TipoItem, verbose_name="Tipo de Item", help_text='Seleccione el Tipo de Item')
     """Nombre del Tipo de Item"""
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre del atributo del Tipo de Item')
     """Nombre del atributo del Tipo de Item"""
@@ -151,7 +164,17 @@ class Item(models.Model):
     """Descripción del Item"""
     Complejidad = models.IntegerField(help_text='Ingrese la complejidad del Item')
     """Complejidad del Item"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado del Item', null=True, blank=True)
+    Estado_CHOICES = (
+        ('M', 'En Modificacion'),
+        ('P', 'Pendiente'),
+        ('A', 'Aprobado'),
+        ('R', 'Rechazado'),
+        ('E', 'Eliminado'),
+        ('V', 'En revision'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES, help_text='Ingrese el Estado del Item',
+                              null=True,
+                              blank=True, default='M')
     """Estado del Item"""
     Version = models.IntegerField(help_text='Ingrese la Version del Item')
     """Version del Item"""

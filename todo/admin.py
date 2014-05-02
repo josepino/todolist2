@@ -13,6 +13,25 @@ class RelacionAdmin(admin.ModelAdmin):
     ordering = ('Item1',)
 
 
+class AtributoItemAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase AtributoItemAdmin
+    """
+    list_display = ('Nombre', 'Item', 'AtributoTipoItem', 'Descripcion',)
+    list_filter = ( 'Item', 'AtributoTipoItem',)
+    search_fields = ['Nombre']
+    ordering = ('Nombre',)
+
+
+class AtributoItemAdmin2(admin.TabularInline):
+    """
+    Definicion de la clase AtributoItemAdmin2 que se utiliza para la clase ItemAdmin
+    """
+    ordering = ('Nombre',)
+    model = AtributoItem
+    extra = 0
+
+
 class ItemAdmin(admin.ModelAdmin):
     """
     Definicion de la clase ItemAdmin
@@ -22,6 +41,7 @@ class ItemAdmin(admin.ModelAdmin):
     list_filter = ( 'TipoItem', 'Complejidad', 'Estado', 'Costo', 'FechaModificacion',)
     search_fields = ['Nombre']
     ordering = ('Nombre',)
+    inlines = [AtributoItemAdmin2]
 
 
 class ItemAdmin2(admin.TabularInline):
@@ -32,15 +52,6 @@ class ItemAdmin2(admin.TabularInline):
     model = Item
     extra = 0
 
-
-class AtributoItemAdmin(admin.ModelAdmin):
-    """
-    Definicion de la clase AtributoItemAdmin
-    """
-    list_display = ('Nombre', 'Item', 'AtributoTipoItem', 'Descripcion',)
-    list_filter = ( 'Item', 'AtributoTipoItem',)
-    search_fields = ['Nombre']
-    ordering = ('Nombre',)
 
 
 class AtributoTipoItemAdmin(admin.ModelAdmin):
@@ -53,6 +64,15 @@ class AtributoTipoItemAdmin(admin.ModelAdmin):
     ordering = ('Nombre',)
 
 
+class AtributoTipoItemAdmin2(admin.TabularInline):
+    """
+    Definicion de la clase AtributoTipoItemAdmin2 que se utiliza para la clase TipoItemAdmin
+    """
+    ordering = ('Nombre',)
+    model = AtributoTipoItem
+    extra = 0
+
+
 class TipoItemAdmin(admin.ModelAdmin):
     """
     Definicion de la clase TipoItemAdmin
@@ -61,7 +81,7 @@ class TipoItemAdmin(admin.ModelAdmin):
     list_filter = ( 'Fase',)
     search_fields = ['Nombre']
     ordering = ('Nombre',)
-    inlines = [ItemAdmin2]
+    inlines = [ItemAdmin2, AtributoTipoItemAdmin2]
 
 
 class TipoItemAdmin2(admin.TabularInline):
@@ -97,7 +117,7 @@ class ProyectoAdmin(admin.ModelAdmin):
     """
     Definicion de la clase ProyectoAdmin
     """
-    list_display = ('Nombre', 'Descripcion', 'FechaCreacion',)
+    list_display = ('Nombre', 'Descripcion', 'FechaCreacion', 'FechaInicio', 'FechaFin',)
     list_filter = ( 'FechaCreacion', 'FechaInicio', 'Estado',)
     search_fields = ['Nombre']
     ordering = ('Nombre',)
