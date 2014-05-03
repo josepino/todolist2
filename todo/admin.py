@@ -7,10 +7,10 @@ class RelacionAdmin(admin.ModelAdmin):
     """
     Definicion de la clase RelacionAdmin
     """
-    list_display = ('Item1', 'TipoRelacion', )
-    list_filter = ('Item1', 'TipoRelacion',)
-    search_fields = ['Item1']
-    ordering = ('Item1',)
+    list_display = ('ItemOrigen', 'TipoRelacion', 'ItemDestino',)
+    list_filter = ('ItemOrigen', 'TipoRelacion', 'ItemDestino',)
+    search_fields = ['ItemOrigen']
+    ordering = ('ItemOrigen', 'ItemDestino',)
 
 
 class AtributoItemAdmin(admin.ModelAdmin):

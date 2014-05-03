@@ -226,11 +226,10 @@ class RelacionItem(models.Model):
     Clase RelacionItem
     Definimos los atributos de la clase RelacionItem
     """
-    Item1 = models.ForeignKey(Item, verbose_name="Item 1", help_text='Seleccione el primer Item')
-    """Nombre del Item1"""
-    #Item2 = models.OneToOneField(Item)
-    
-    #"""Nombre del Item2"""
+    ItemOrigen = models.ForeignKey(Item, verbose_name="Item Origen", help_text='Seleccione el primer Item Origen',
+                                   related_name="ItemOrigen")
+    """Nombre del Item Origen"""
+
     TipoRelacion_CHOICES = (
         ('P', 'Pade - Hijo'),
         ('A', 'Antecesor - Sucesor'),
@@ -238,14 +237,17 @@ class RelacionItem(models.Model):
     TipoRelacion = models.CharField('Tipo de Relacion', max_length=1, choices=TipoRelacion_CHOICES,
                                     help_text='Ingrese el Tipo de Relacion de los Items')
     """Tipo de Relacion Item"""
+    ItemDestino = models.ForeignKey(Item, verbose_name="Item Destino", help_text='Seleccione el Item Destino',
+                                    related_name="ItemDestino")
+    """Nombre del Item Destino"""
 
 
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""
-        return u'%s | %s' % (self.Item1, self.TipoRelacion)
+        return u'%s | %s | %s' % (self.ItemOrigen, self.TipoRelacion, self.ItemDestino)
 
     class Meta:
-        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el nombre"""
-        ordering = ('Item1',)
+        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el Item Origen"""
+        ordering = ('ItemOrigen', 'ItemDestino',)
         verbose_name = u'Relacion Item'
         verbose_name_plural = 'Relacion Items'
