@@ -21,13 +21,19 @@ class Proyecto(models.Model):
     FechaCreacion = models.DateField('Fecha de Creacion', help_text='Ingrese la fecha de creacion del proyecto')
     """Fecha de creación del Proyecto"""
     FechaInicio = models.DateField('Fecha de Inicio', help_text='Ingrese la fecha de Inicio del proyecto', null=True,
-                                   blank=True)
+                                   editable=False, blank=True)
     """Fecha de inicio del Proyecto"""
     FechaFin = models.DateField('Fecha de Fin', help_text='Ingrese la fecha de Fin del proyecto', null=True, blank=True,
                                 editable=False)
     """Fecha de finalización del Proyecto"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado del proyecto', null=True,
-                              blank=True)
+    Estado_CHOICES = (
+        ('I', 'Inactivo'),
+        ('A', 'Iniciado/Activo'),
+        ('T', 'Terminado'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES,
+                              help_text='Ingrese el Estado del proyecto', null=True,
+                              blank=True, default='I')
     """Estado del Proyecto"""
 
     def iniciar(self):
@@ -71,7 +77,14 @@ class Fase(models.Model):
     """Fecha de inicio de la Fase"""
     FechaFin = models.DateField('Fecha de Fin', help_text='Ingrese la fecha de Fin de la fase', null=True, blank=True)
     """Fecha de finalizaciónde la Fase"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado de la fase', null=True, blank=True)
+    Estado_CHOICES = (
+        ('I', 'Inicio'),
+        ('D', 'Desarrollo'),
+        ('F', 'Finalizada'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES, help_text='Ingrese el Estado la Fase',
+                              null=True,
+                              blank=True, default='I')
     """Estado de la Fase"""
 
     def __unicode__(self):
@@ -114,7 +127,7 @@ class AtributoTipoItem(models.Model):
     Clase AtributoTipoItem
     Definimos los atributos de la clase AtributoTipoItem
     """
-    TipoItem = models.ForeignKey(TipoItem, verbose_name="Fase", help_text='Seleccione el Tipo de Item')
+    TipoItem = models.ForeignKey(TipoItem, verbose_name="Tipo de Item", help_text='Seleccione el Tipo de Item')
     """Nombre del Tipo de Item"""
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre del atributo del Tipo de Item')
     """Nombre del atributo del Tipo de Item"""
@@ -149,7 +162,17 @@ class Item(models.Model):
     """Descripción del Item"""
     Complejidad = models.IntegerField(help_text='Ingrese la complejidad del Item')
     """Complejidad del Item"""
-    Estado = models.CharField('Estado', max_length=45, help_text='Ingrese el Estado del Item', null=True, blank=True)
+    Estado_CHOICES = (
+        ('M', 'En Modificacion'),
+        ('P', 'Pendiente'),
+        ('A', 'Aprobado'),
+        ('R', 'Rechazado'),
+        ('E', 'Eliminado'),
+        ('V', 'En revision'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES, help_text='Ingrese el Estado del Item',
+                              null=True,
+                              blank=True, default='M')
     """Estado del Item"""
     Version = models.IntegerField(help_text='Ingrese la Version del Item')
     """Version del Item"""
@@ -201,11 +224,10 @@ class RelacionItem(models.Model):
     Clase RelacionItem
     Definimos los atributos de la clase RelacionItem
     """
-    Item1 = models.ForeignKey(Item, verbose_name="Item 1", help_text='Seleccione el primer Item')
-    """Nombre del Item1"""
-    #Item2 = models.OneToOneField(Item)
-    
-    #"""Nombre del Item2"""
+    ItemOrigen = models.ForeignKey(Item, verbose_name="Item Origen", help_text='Seleccione el primer Item Origen',
+                                   related_name="ItemOrigen")
+    """Nombre del Item Origen"""
+
     TipoRelacion_CHOICES = (
         ('P', 'Pade - Hijo'),
         ('A', 'Antecesor - Sucesor'),
@@ -213,14 +235,17 @@ class RelacionItem(models.Model):
     TipoRelacion = models.CharField('Tipo de Relacion', max_length=1, choices=TipoRelacion_CHOICES,
                                     help_text='Ingrese el Tipo de Relacion de los Items')
     """Tipo de Relacion Item"""
+    ItemDestino = models.ForeignKey(Item, verbose_name="Item Destino", help_text='Seleccione el Item Destino',
+                                    related_name="ItemDestino")
+    """Nombre del Item Destino"""
 
 
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""
-        return u'%s | %s' % (self.Item1, self.TipoRelacion)
+        return u'%s | %s | %s' % (self.ItemOrigen, self.TipoRelacion, self.ItemDestino)
 
     class Meta:
-        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el nombre"""
-        ordering = ('Item1',)
+        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el Item Origen"""
+        ordering = ('ItemOrigen', 'ItemDestino',)
         verbose_name = u'Relacion Item'
         verbose_name_plural = 'Relacion Items'
