@@ -3,6 +3,16 @@ from django.contrib import admin
 from models import *
 
 
+class LineaBaseAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase LineaBaseAdmin
+    """
+    list_display = ('Nombre', 'Fase', 'FechaCreacion', 'Estado',)
+    list_filter = ( 'Fase', 'FechaCreacion', 'Estado',)
+    search_fields = ['Nombre']
+    ordering = ('Nombre',)
+
+
 class RelacionAdmin(admin.ModelAdmin):
     """
     Definicion de la clase RelacionAdmin
@@ -131,3 +141,4 @@ admin.site.register(Item, ItemAdmin)
 admin.site.register(RelacionItem, RelacionAdmin)
 admin.site.register(AtributoTipoItem, AtributoTipoItemAdmin)
 admin.site.register(AtributoItem, AtributoItemAdmin)
+admin.site.register(LineaBase, LineaBaseAdmin)

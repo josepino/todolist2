@@ -144,6 +144,37 @@ class AtributoTipoItem(models.Model):
         verbose_name_plural = 'Atributos del Tipo de Item'
 
 
+class LineaBase(models.Model):
+    """
+    Clase LineaBase
+    Definimos los atributos de la clase LineaBase
+    """
+    Fase = models.ForeignKey(Fase, verbose_name="Fase", help_text='Seleccione la Fase')
+    """Nombre de la Fase"""
+    Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la Linea Base')
+    """Nombre de la Linea Base"""
+    FechaCreacion = models.DateField('Fecha de Creacion', help_text='Ingrese la fecha de creacion de la Linea Base')
+    """Fecha de creación de la Linea Base"""
+    Estado_CHOICES = (
+        ('I', 'Inicida'),
+        ('A', 'Aprovada'),
+    )
+    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES,
+                              help_text='Ingrese el Estado la Linea Base',
+                              null=True,
+                              blank=True, default='I')
+    """Estado de la Linea Base"""
+
+    def __unicode__(self):
+        """En esta clase definimos como se vera a la instancia de la clase LineaBase"""
+        return u'%s' % (self.Nombre)
+
+    class Meta:
+        """En esta clase definimos que se listaran las fases ordenados por el nombre"""
+        ordering = ('Nombre',)
+        verbose_name = u'Linea Base'
+        verbose_name_plural = 'Lineas Base'
+
 
 class Item(models.Model):
     """
@@ -152,6 +183,9 @@ class Item(models.Model):
     """
     TipoItem = models.ForeignKey(TipoItem, verbose_name="Tipo de Item", help_text='Seleccione el tipo de Item')
     """Nombre del TipoItem"""
+    LineaBase = models.ForeignKey(LineaBase, verbose_name="Linea Base", help_text='Seleccione la Linea Base', null=True,
+                                  blank=True)
+    """Nombre de la Linea Base"""
     Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la Item')
     """Nombre del Item"""
     Descripcion = models.CharField('Descripcion', max_length=45, help_text='Ingrese la descripcion del Item')
@@ -247,42 +281,4 @@ class RelacionItem(models.Model):
         verbose_name_plural = 'Relacion Items'
 
 
-class LineaBase(models.Model):
-    """
-    Clase LineaBase
-    Definimos los atributos de la clase LineaBase
-    """
-    fkproyecto = models.ForeignKey(Proyecto, verbose_name="Proyecto", help_text='Seleccione el proyecto')
-    """Nombre del Proyecto"""
-    Nombre = models.CharField('Nombre', max_length=45, help_text='Ingrese el nombre de la fase')
-    """Nombre de la Fase"""
-    NroOrden = models.IntegerField(help_text='Ingrese el numero de orden de la fase')
-    """Numero de orden de la Fase"""
-    Descripcion = models.CharField('Descripcion', max_length=45, help_text='Ingrese la descripcion de la fase')
-    """Descripción de la Fase"""
-    FechaCreacion = models.DateField('Fecha de Creacion', help_text='Ingrese la fecha de creacion de la fase')
-    """Fecha de creación de la Fase"""
-    FechaInicio = models.DateField('Fecha de Inicio', help_text='Ingrese la fecha de Inicio de la fase', null=True,
-                                   blank=True)
-    """Fecha de inicio de la Fase"""
-    FechaFin = models.DateField('Fecha de Fin', help_text='Ingrese la fecha de Fin de la fase', null=True, blank=True)
-    """Fecha de finalizaciónde la Fase"""
-    Estado_CHOICES = (
-        ('I', 'Inicio'),
-        ('D', 'Desarrollo'),
-        ('F', 'Finalizada'),
-    )
-    Estado = models.CharField('Estado', max_length=1, choices=Estado_CHOICES, help_text='Ingrese el Estado la Fase',
-                              null=True,
-                              blank=True, default='I')
-    """Estado de la Fase"""
 
-    def __unicode__(self):
-        """En esta clase definimos como se vera a la instancia de la clase Fase"""
-        return u'%s | %s' % (self.fkproyecto, self.Nombre)
-
-    class Meta:
-        """En esta clase definimos que se listaran las fases ordenados por el nombre"""
-        ordering = ('Nombre',)
-        verbose_name = u'Fase'
-        verbose_name_plural = 'Fases'
