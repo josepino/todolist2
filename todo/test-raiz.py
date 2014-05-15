@@ -12,10 +12,16 @@ __author__ = 'jpino'
 
 import unittest
 import math
-from models import Proyecto
+from django.conf import settings
+#settings.configure()
+#from models import Proyecto
 #from django.db import models
 #from django.test import TestCase
 #from myapp.models import Animal
+#from models import *
+#from todolist2 import *
+#from todo.models import *
+#from .models import *
 
 ###### Archivo que contiene las clases y metodos para las pruebas unitarias con respecto a calculos matematicos ######
 
@@ -50,12 +56,6 @@ class RaizTest(unittest.TestCase):
  #       self.assertRaises(IndexError, Raiz(-10))
 
 
-
-class ModelosTest(unittest.TestCase):
-    def test_proyecto(self):
-        p = Proyecto ('ProyectoBeta1', 'Test de Descripcion', 01/05/2014)
-        print (p.Nombre)
-        self.assertEqual('ProyectoBeta1', p)
 
 
 
