@@ -4,10 +4,12 @@ from django.template import RequestContext
 
 from todo.models import *
 
-
 def index(request):
-    todo = Proyecto.objects.all().order_by('id')  #select * from Todos
-    return render_to_response('index.html', RequestContext(request, locals()))
+     return render_to_response('todo/index.html')
+
+#def index(request):
+#    todo = Proyecto.objects.all().order_by('id')  #select * from Todos
+#    return render_to_response('todo/index.html', RequestContext(request, locals()))
 
 
 def ver_fase(request, id):

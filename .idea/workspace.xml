@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d02454e-62ce-4a4b-99e2-16c82a53574d" name="Default" comment="Inicio de Relacion de Items" />
+    <list default="true" id="0d02454e-62ce-4a4b-99e2-16c82a53574d" name="Default" comment="Inicio de Relacion de Items">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/borrar.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poblacion.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/todo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todolist/settings.py" afterPath="$PROJECT_DIR$/todolist/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo/urls.py" afterPath="$PROJECT_DIR$/todo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todolist/urls.py" afterPath="$PROJECT_DIR$/todolist/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo/views.py" afterPath="$PROJECT_DIR$/todo/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <list id="a426eb3f-bb11-4171-a4d6-7a2ce0357637" name="Failed commit: Default" comment="test" />
     <ignored path="todolist2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +37,8 @@
     <SUITE FILE_PATH="coverage/todolist$Test__todo_test_todo_TestTodo_test_demo.coverage" NAME="Test: todo.test_todo.TestTodo.test_demo Coverage Results" MODIFIED="1397270650974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/todolist$Test__todo_test_todo1_MyTestCase_test_something.coverage" NAME="Test: todo.test_todo1.MyTestCase.test_something Coverage Results" MODIFIED="1397270783787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/todolist$Test__todo_tests.coverage" NAME="Test: todo.tests Coverage Results" MODIFIED="1398107836655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/todolist$Test__todo_test_todoArticulo2_MyTestCase_test_something.coverage" NAME="Test: todo.test_todoArticulo2.MyTestCase.test_something Coverage Results" MODIFIED="1397272637434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/todolist$Test__todo_test_todo1_MyTestCase_test_negative_discr.coverage" NAME="Test: todo.test_todo1.MyTestCase.test_negative_discr Coverage Results" MODIFIED="1397272078365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/todolist$Test__todo_test_todoArticulo2_MyTestCase_test_something.coverage" NAME="Test: todo.test_todoArticulo2.MyTestCase.test_something Coverage Results" MODIFIED="1397272637434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -46,49 +55,9 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="28" selection-start="8861" selection-end="8861" vertical-scroll-proportion="0.67741936" vertical-offset="2862" max-vertical-offset="3480">
+            <state line="208" column="70" selection-start="8718" selection-end="8718" vertical-scroll-proportion="0.075566754" vertical-offset="3090" max-vertical-offset="4350">
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todolist/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="1590">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="26" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1770">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todolist/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="144" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +79,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Fase-Item-" />
+        <entry key="$PROJECT_DIR$" value="Iteracion_4_LineaBase" />
       </map>
     </option>
   </component>
@@ -126,15 +95,17 @@
         <option value="$PROJECT_DIR$/templates/todo/ver.html" />
         <option value="$PROJECT_DIR$/todo/test_proyecto.py" />
         <option value="$PROJECT_DIR$/todo/TestProyecto.py" />
-        <option value="$PROJECT_DIR$/todo/views.py" />
-        <option value="$PROJECT_DIR$/todo/urls.py" />
         <option value="$PROJECT_DIR$/todo/Test_Proyecto.py" />
-        <option value="$PROJECT_DIR$/todolist/settings.py" />
         <option value="$PROJECT_DIR$/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
-        <option value="$PROJECT_DIR$/todo/admin.py" />
-        <option value="$PROJECT_DIR$/todo/models.py" />
+        <option value="$PROJECT_DIR$/templates/admin/login.html" />
         <option value="$PROJECT_DIR$/todolist/urls.py" />
+        <option value="$PROJECT_DIR$/todo/urls.py" />
+        <option value="$PROJECT_DIR$/templates/todo/index.html" />
+        <option value="$PROJECT_DIR$/todo/views.py" />
+        <option value="$PROJECT_DIR$/todo/admin.py" />
+        <option value="$PROJECT_DIR$/todolist/settings.py" />
+        <option value="$PROJECT_DIR$/todo/models.py" />
       </list>
     </option>
   </component>
@@ -266,6 +237,11 @@
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/todo" />
+    </key>
   </component>
   <component name="RunManager" selected="Python tests.Unittests in Test_Proyecto">
     <configuration default="false" name="Test: todo.test_todo" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
@@ -468,9 +444,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -492,6 +465,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -627,29 +603,41 @@
       <created>1398971676901</created>
       <updated>1398971676902</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Linea Base inicial">
+      <created>1399917705206</created>
+      <updated>1399917705206</updated>
+    </task>
+    <task id="LOCAL-00015" summary="modelo de Linea Base OK">
+      <created>1399921791936</created>
+      <updated>1399921791937</updated>
+    </task>
+    <task id="LOCAL-00016" summary="abm linea base ok">
+      <created>1400184912876</created>
+      <updated>1400184912876</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17854284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17837837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.5004003" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32886904" sideWeight="0.5011583" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.49959967" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.4988417" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -683,29 +671,19 @@
     <MESSAGE value="Listo para el Merge" />
     <MESSAGE value="Inicio de Relacion de Items" />
     <MESSAGE value="TipoItem, AtributoTIpoitem y AtributoItem funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="TipoItem, AtributoTIpoitem y AtributoItem funcionando" />
+    <MESSAGE value="Linea Base inicial" />
+    <MESSAGE value="modelo de Linea Base OK" />
+    <MESSAGE value="abm linea base ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="abm linea base ok" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/todolist/urls.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/todolist/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todolist/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="28" selection-start="430" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1605">
@@ -715,11 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/views.py">
@@ -750,11 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/views.py">
@@ -785,11 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="2" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/views.py">
@@ -820,11 +786,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="450">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="17" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="450" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/views.py">
@@ -855,11 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="435">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="17" column="5" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/models.py">
@@ -885,11 +843,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="8" column="30" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/models.py">
@@ -982,53 +936,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todolist/templates/base_site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.2533784" vertical-offset="0" max-vertical-offset="592">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.2533784" vertical-offset="0" max-vertical-offset="592" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.2284264" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="398" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="144" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todolist/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="1590">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todolist/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
+        <state line="15" column="34" selection-start="479" selection-end="479" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/todo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="398" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo/test-raiz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="112" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="26" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" vertical-offset="554" max-vertical-offset="1770">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state line="49" column="20" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-10.48" vertical-offset="338" max-vertical-offset="1590">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="28" selection-start="8861" selection-end="8861" vertical-scroll-proportion="0.67741936" vertical-offset="2862" max-vertical-offset="3480">
+        <state line="208" column="70" selection-start="8718" selection-end="8718" vertical-scroll-proportion="0.075566754" vertical-offset="3090" max-vertical-offset="4350">
           <folding>
             <element signature="e#24#39#0" expanded="true" />
           </folding>
