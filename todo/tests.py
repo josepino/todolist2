@@ -36,7 +36,9 @@ class ModelosTest(TestCase):
     def test_proyecto(self):
         p = Proyecto ()
         p.Nombre = "ProyectoNameTest1"
+        p.FechaCreacion = "15/05/2014"
         self.assertEqual("ProyectoNameTest1", p.Nombre)
+        self.assertEqual("15/05/2014", p.FechaCreacion)
 
     """ Prueba de Fase """
     def test_fase(self):
