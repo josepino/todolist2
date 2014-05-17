@@ -124,7 +124,9 @@ django.db.models.Model --+
                 <tr>
                     <td><span class="summary-sig"><a name="__unicode__"></a><span
                             class="summary-sig-name">__unicode__</span>(<span
-                            class="summary-sig-arg">self</span>)</span></td>
+                            class="summary-sig-arg">self</span>)</span><br/>
+                        En esta clase definimos como se vera a la instancia de la clase Fase
+                    </td>
                     <td align="right" valign="top">
                         <span class="codelink"><a
                                 href="todo.models-pysrc.html#Fase.__unicode__">source&nbsp;code</a></span>
@@ -158,8 +160,10 @@ django.db.models.Model --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a name="fkproyecto"></a><span class="summary-name">fkproyecto</span> = <code
-                title="models.ForeignKey(Proyecto)">models.ForeignKey(Proyecto)</code><br/>
+            <a href="todo.models.Fase-class.html#fkproyecto" class="summary-name">fkproyecto</a> = <code
+                title="models.ForeignKey(Proyecto, verbose_name= &quot;Proyecto&quot;, help_text= 'Sele\
+ccione el proyecto')">models.ForeignKey(Proyecto, verbose_name= &quot;Proyec<code
+                class="variable-ellipsis">...</code></code><br/>
             Nombre del Proyecto
         </td>
     </tr>
@@ -168,7 +172,7 @@ django.db.models.Model --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#Nombre" class="summary-name">Nombre</a> = <code title="models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb\
+            <a href="todo.models.Fase-class.html#nombre" class="summary-name">nombre</a> = <code title="models.CharField('Nombre', max_length= 45, help_text= 'Ingrese el nomb\
 re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
                 class="variable-ellipsis">...</code></code><br/>
             Nombre de la Fase
@@ -179,7 +183,7 @@ re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#NroOrden" class="summary-name">NroOrden</a> = <code title="models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'\
+            <a href="todo.models.Fase-class.html#nroorden" class="summary-name">nroorden</a> = <code title="models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'\
 )">models.IntegerField(help_text= 'Ingrese el numero d<code class="variable-ellipsis">...</code></code><br/>
             Numero de orden de la Fase
         </td>
@@ -189,7 +193,7 @@ re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#Descripcion" class="summary-name">Descripcion</a> = <code title="models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la\
+            <a href="todo.models.Fase-class.html#descripcion" class="summary-name">descripcion</a> = <code title="models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la\
  descripcion de la fase')">models.CharField('Descripcion', max_length= 45, <code
                 class="variable-ellipsis">...</code></code><br/>
             Descripci&#243;n de la Fase
@@ -200,7 +204,7 @@ re de la fase')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaCreacion" class="summary-name">FechaCreacion</a> = <code title="models.DateField('Fecha de Creacion', help_text= 'Ingrese la fecha de \
+            <a href="todo.models.Fase-class.html#fechacreacion" class="summary-name">fechacreacion</a> = <code title="models.DateField('Fecha de Creacion', help_text= 'Ingrese la fecha de \
 creacion de la fase')">models.DateField('Fecha de Creacion', help_tex<code
                 class="variable-ellipsis">...</code></code><br/>
             Fecha de creaci&#243;n de la Fase
@@ -211,7 +215,7 @@ creacion de la fase')">models.DateField('Fecha de Creacion', help_tex<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaInicio" class="summary-name">FechaInicio</a> = <code title="models.DateField('Fecha de Inicio', help_text= 'Ingrese la fecha de In\
+            <a href="todo.models.Fase-class.html#fechainicio" class="summary-name">fechainicio</a> = <code title="models.DateField('Fecha de Inicio', help_text= 'Ingrese la fecha de In\
 icio de la fase', null= True, blank= True)">models.DateField('Fecha de Inicio', help_text= '<code
                 class="variable-ellipsis">...</code></code><br/>
             Fecha de inicio de la Fase
@@ -222,7 +226,7 @@ icio de la fase', null= True, blank= True)">models.DateField('Fecha de Inicio', 
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#FechaFin" class="summary-name">FechaFin</a> = <code title="models.DateField('Fecha de Fin', help_text= 'Ingrese la fecha de Fin d\
+            <a href="todo.models.Fase-class.html#fechafin" class="summary-name">fechafin</a> = <code title="models.DateField('Fecha de Fin', help_text= 'Ingrese la fecha de Fin d\
 e la fase', null= True, blank= True)">models.DateField('Fecha de Fin', help_text= 'Ingres<code
                 class="variable-ellipsis">...</code></code><br/>
             Fecha de finalizaci&#243;nde la Fase
@@ -233,9 +237,19 @@ e la fase', null= True, blank= True)">models.DateField('Fecha de Fin', help_text
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Fase-class.html#Estado" class="summary-name">Estado</a> = <code title="models.CharField('Estado', max_length= 45, help_text= 'Ingrese el Esta\
-do de la fase', null= True, blank= True)">models.CharField('Estado', max_length= 45, help_text=<code
-                class="variable-ellipsis">...</code></code><br/>
+            <a href="todo.models.Fase-class.html#Estado_CHOICES" class="summary-name">Estado_CHOICES</a> = <code
+                title="'I', 'Inicio', ('D', 'Desarrollo'), ('F', 'Finalizada'),">'I', 'Inicio', ('D', 'Desarrollo'),
+            ('F', 'Fi<code class="variable-ellipsis">...</code></code>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.Fase-class.html#estado" class="summary-name">estado</a> = <code title="models.CharField('Estado', max_length= 1, choices= Estado_CHOICES, hel\
+p_text= 'Ingrese el Estado la Fase', null= True, blank= True, default=\
+ 'I')">models.CharField('Estado', max_length= 1, choices= Es<code class="variable-ellipsis">...</code></code><br/>
             Estado de la Fase
         </td>
     </tr>
@@ -258,14 +272,45 @@ do de la fase', null= True, blank= True)">models.CharField('Estado', max_length=
         </td>
     </tr>
 </table>
-<a name="Nombre"></a>
+<a name="fkproyecto"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">Nombre</h3>
+                <h3 class="epydoc">fkproyecto</h3>
+
+                <p>Nombre del Proyecto</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.ForeignKey(Proyecto, verbose_name= &quot;Proyecto&quot;, help_text= 'Sele<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+ccione el proyecto')
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="nombre"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">nombre</h3>
 
                 <p>Nombre de la Fase</p>
                 <dl class="fields">
@@ -289,14 +334,14 @@ re de la fase')
         </tr>
     </table>
 </div>
-<a name="NroOrden"></a>
+<a name="nroorden"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">NroOrden</h3>
+                <h3 class="epydoc">nroorden</h3>
 
                 <p>Numero de orden de la Fase</p>
                 <dl class="fields">
@@ -320,14 +365,14 @@ models.IntegerField(help_text= 'Ingrese el numero de orden de la fase'<span clas
         </tr>
     </table>
 </div>
-<a name="Descripcion"></a>
+<a name="descripcion"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">Descripcion</h3>
+                <h3 class="epydoc">descripcion</h3>
 
                 <p>Descripci&#243;n de la Fase</p>
                 <dl class="fields">
@@ -351,14 +396,14 @@ models.CharField('Descripcion', max_length= 45, help_text= 'Ingrese la<span clas
         </tr>
     </table>
 </div>
-<a name="FechaCreacion"></a>
+<a name="fechacreacion"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">FechaCreacion</h3>
+                <h3 class="epydoc">fechacreacion</h3>
 
                 <p>Fecha de creaci&#243;n de la Fase</p>
                 <dl class="fields">
@@ -382,14 +427,14 @@ creacion de la fase')
         </tr>
     </table>
 </div>
-<a name="FechaInicio"></a>
+<a name="fechainicio"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">FechaInicio</h3>
+                <h3 class="epydoc">fechainicio</h3>
 
                 <p>Fecha de inicio de la Fase</p>
                 <dl class="fields">
@@ -413,14 +458,14 @@ icio de la fase', null= True, blank= True)
         </tr>
     </table>
 </div>
-<a name="FechaFin"></a>
+<a name="fechafin"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">FechaFin</h3>
+                <h3 class="epydoc">fechafin</h3>
 
                 <p>Fecha de finalizaci&#243;nde la Fase</p>
                 <dl class="fields">
@@ -444,14 +489,42 @@ e la fase', null= True, blank= True)
         </tr>
     </table>
 </div>
-<a name="Estado"></a>
+<a name="Estado_CHOICES"></a>
 
 <div>
     <table class="details" border="1" cellpadding="3"
            cellspacing="0" width="100%" bgcolor="white">
         <tr>
             <td>
-                <h3 class="epydoc">Estado</h3>
+                <h3 class="epydoc">Estado_CHOICES</h3>
+
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+'I', 'Inicio', ('D', 'Desarrollo'), ('F', 'Finalizada'),
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="estado"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">estado</h3>
 
                 <p>Estado de la Fase</p>
                 <dl class="fields">
@@ -462,9 +535,11 @@ e la fase', null= True, blank= True)
                         <table>
                             <tr>
                                 <td><pre class="variable">
-models.CharField('Estado', max_length= 45, help_text= 'Ingrese el Esta<span class="variable-linewrap"><img
+models.CharField('Estado', max_length= 1, choices= Estado_CHOICES, hel<span class="variable-linewrap"><img
                                         src="crarr.png" alt="\"/></span>
-do de la fase', null= True, blank= True)
+p_text= 'Ingrese el Estado la Fase', null= True, blank= True, default=<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+ 'I')
 </pre>
                                 </td>
                             </tr>
@@ -499,7 +574,7 @@ do de la fase', null= True, blank= True)
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
     <tr>
         <td align="left" class="footer">
-            Generated by Epydoc 3.0.1 on Mon Apr 28 15:33:08 2014
+            Generated by Epydoc 3.0.1 on Sat May 17 01:17:43 2014
         </td>
         <td align="right" class="footer">
             <a target="mainFrame" href="http://epydoc.sourceforge.net"

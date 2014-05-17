@@ -39,6 +39,9 @@ class Proyecto(models.Model):
     def iniciar(self):
         self.fechainicio = datetime.datetime.now()
 
+    def finalizar(self):
+        self.fechafin = datetime.datetime.now()
+
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase Proyecto"""
         return self.nombre

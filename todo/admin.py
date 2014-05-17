@@ -107,11 +107,33 @@ class FaseAdmin(admin.ModelAdmin):
     """
     Definicion de la clase FaseAdmin
     """
-    list_display = ('nombre', 'fkproyecto', 'descripcion', 'fechacreacion',)
+    list_display = ('nombre', 'fkproyecto', 'descripcion', 'fechacreacion', 'fechainicio', 'fechafin',)
     list_filter = ( 'fkproyecto', 'fechacreacion', 'fechainicio', 'estado',)
     search_fields = ['nombre']
     ordering = ('nombre',)
+    readonly_fields = ('fechainicio', 'fechafin',)
+    actions = ('iniciar_fase', 'finalizar_fase',)
     inlines = [TipoItemAdmin2]
+
+    def iniciar_fase(modeladmin, request, queryset):
+        rows_updated = queryset.update(fechainicio=datetime.datetime.now())
+        if rows_updated == 1:
+            message_bit = "1 fase fue iniciada"
+        else:
+            message_bit = "%s fases fueron iniciadas" % rows_updated
+        modeladmin.message_user(request, "%s correctamente." % message_bit)
+
+    iniciar_fase.short_description = "Iniciar la fase seleccionado"
+
+    def finalizar_fase(modeladmin, request, queryset):
+        rows_updated = queryset.update(fechafin=datetime.datetime.now())
+        if rows_updated == 1:
+            message_bit = "1 fase fue finalizada"
+        else:
+            message_bit = "%s fases fueron finalizadas" % rows_updated
+        modeladmin.message_user(request, "%s correctamente." % message_bit)
+
+    finalizar_fase.short_description = "Finalizar la fase seleccionado"
 
 
 class FaseAdmin2(admin.TabularInline):
@@ -127,11 +149,36 @@ class ProyectoAdmin(admin.ModelAdmin):
     """
     Definicion de la clase ProyectoAdmin
     """
-    list_display = ('nombre', 'descripcion', 'fechacreacion', 'fechainicio', 'fechafin',)
+    list_display = ('nombre', 'descripcion', 'fechacreacion', 'fechainicio', 'fechafin', )
     list_filter = ( 'fechacreacion', 'fechainicio', 'estado',)
     search_fields = ['nombre']
+    readonly_fields = ('fechainicio', 'fechafin',)
     ordering = ('nombre',)
+    fieldsets = (
+        ('Nombre', {'fields': ('nombre', 'descripcion',)} ),
+        ('Fechas', {'fields': ('fechacreacion', 'fechainicio', 'fechafin',)} ), ('Estado', {'fields': ('estado',)} ),)
+    actions = ('iniciar_proyecto', 'finalizar_proyecto',)
     inlines = [FaseAdmin2]
+
+    def iniciar_proyecto(modeladmin, request, queryset):
+        rows_updated = queryset.update(fechainicio=datetime.datetime.now())
+        if rows_updated == 1:
+            message_bit = "1 proyecto fue iniciado"
+        else:
+            message_bit = "%s proyectos fueron iniciados" % rows_updated
+        modeladmin.message_user(request, "%s correctamente." % message_bit)
+
+    iniciar_proyecto.short_description = "Iniciar el proyecto seleccionado"
+
+    def finalizar_proyecto(modeladmin, request, queryset):
+        rows_updated = queryset.update(fechafin=datetime.datetime.now())
+        if rows_updated == 1:
+            message_bit = "1 proyecto fue finalizado"
+        else:
+            message_bit = "%s proyectos fueron finalizados" % rows_updated
+        modeladmin.message_user(request, "%s correctamente." % message_bit)
+
+    finalizar_proyecto.short_description = "Finalizar el proyecto seleccionado"
 
 
 admin.site.register(Proyecto, ProyectoAdmin)
