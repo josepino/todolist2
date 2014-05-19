@@ -123,17 +123,20 @@ class FaseAdmin(admin.ModelAdmin):
             message_bit = "%s fases fueron iniciadas" % rows_updated
         modeladmin.message_user(request, "%s correctamente." % message_bit)
 
-    iniciar_fase.short_description = "Iniciar la fase seleccionado"
+    iniciar_fase.short_description = "Iniciar la fase seleccionada"
 
     def finalizar_fase(modeladmin, request, queryset):
         rows_updated = queryset.update(fechafin=datetime.datetime.now())
+        #for obj in queryset:
+        #    obj.all.readonly_fields
+        
         if rows_updated == 1:
             message_bit = "1 fase fue finalizada"
         else:
             message_bit = "%s fases fueron finalizadas" % rows_updated
         modeladmin.message_user(request, "%s correctamente." % message_bit)
 
-    finalizar_fase.short_description = "Finalizar la fase seleccionado"
+    finalizar_fase.short_description = "Finalizar la fase seleccionada"
 
 
 class FaseAdmin2(admin.TabularInline):
