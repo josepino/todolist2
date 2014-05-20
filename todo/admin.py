@@ -3,16 +3,6 @@ from django.contrib import admin
 from models import *
 
 
-class LineaBaseAdmin(admin.ModelAdmin):
-    """
-    Definicion de la clase LineaBaseAdmin
-    """
-    list_display = ('nombre', 'fase', 'fechacreacion', 'estado',)
-    list_filter = ( 'fase', 'fechacreacion', 'estado',)
-    search_fields = ['nombre']
-    ordering = ('nombre',)
-
-
 class RelacionAdmin(admin.ModelAdmin):
     """
     Definicion de la clase RelacionAdmin
@@ -62,6 +52,26 @@ class ItemAdmin2(admin.TabularInline):
     model = Item
     extra = 0
 
+
+class ItemAdmin3(admin.TabularInline):
+    """
+    Definicion de la clase ItemAdmin2 que se utiliza para la clase FaseAdmin
+    """
+    ordering = ('nombre',)
+    fields = ('nombre', 'descripcion')
+    model = Item
+    extra = 0
+
+
+class LineaBaseAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase LineaBaseAdmin
+    """
+    list_display = ('nombre', 'fase', 'fechacreacion', 'estado',)
+    list_filter = ( 'fase', 'fechacreacion', 'estado',)
+    search_fields = ['nombre']
+    ordering = ('nombre',)
+    inlines = [ItemAdmin3]
 
 
 class AtributoTipoItemAdmin(admin.ModelAdmin):
