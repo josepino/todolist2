@@ -10,11 +10,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from unipath import Path
-RUTA_PROYECTO=Path(__file__).ancestor(2)
+#from unipath import Path
+#RUTA_PROYECTO=Path(__file__).ancestor(2)
 BASE_DIR = os.path.realpath(os.path.dirname(__file__))
 #TEMPLATE_DIRS = ("templates/",)
-TEMPLATE_DIRS = (RUTA_PROYECTO.child('templates'),)
+#TEMPLATE_DIRS = (RUTA_PROYECTO.child('templates'),)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
