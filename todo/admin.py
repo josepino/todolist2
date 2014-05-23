@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.contenttypes.models import ContentType
 from models import *
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 class RelacionAdmin(admin.ModelAdmin):
@@ -151,8 +152,10 @@ class FaseAdmin(admin.ModelAdmin):
 
     def importar_tipoitem(modeladmin, request, queryset):
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
-        fid = ContentType.objects.get_for_model(queryset.model)
-        return HttpResponseRedirect('/importartipoitem/%s/1' % (",".join(selected)))
+        if selected == 1:
+            return HttpResponseRedirect('/importartipoitem/%s/1' % (",".join(selected)))
+        else:
+            messages.add_message(request, messages.ERROR, "Solo se puede importar Tipo de Item en una fase a la vez.")
 
     importar_tipoitem.short_description = "Importar tipo de Item"
 
