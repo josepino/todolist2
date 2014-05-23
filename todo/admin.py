@@ -1,6 +1,7 @@
 from django.contrib import admin
-
+from django.contrib.contenttypes.models import ContentType
 from models import *
+from django.http import HttpResponseRedirect
 
 
 class RelacionAdmin(admin.ModelAdmin):
@@ -122,7 +123,7 @@ class FaseAdmin(admin.ModelAdmin):
     search_fields = ['nombre']
     ordering = ('nombre',)
     readonly_fields = ('fechainicio', 'fechafin',)
-    actions = ('iniciar_fase', 'finalizar_fase',)
+    actions = ('iniciar_fase', 'finalizar_fase', 'importar_tipoitem',)
     inlines = [TipoItemAdmin2]
 
     def iniciar_fase(modeladmin, request, queryset):
@@ -147,6 +148,13 @@ class FaseAdmin(admin.ModelAdmin):
         modeladmin.message_user(request, "%s correctamente." % message_bit)
 
     finalizar_fase.short_description = "Finalizar la fase seleccionada"
+
+    def importar_tipoitem(modeladmin, request, queryset):
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+        fid = ContentType.objects.get_for_model(queryset.model)
+        return HttpResponseRedirect('/importartipoitem/%s/1' % (",".join(selected)))
+
+    importar_tipoitem.short_description = "Importar tipo de Item"
 
 
 class FaseAdmin2(admin.TabularInline):
