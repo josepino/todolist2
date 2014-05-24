@@ -14,6 +14,7 @@ from unipath import Path
 
 RUTA_PROYECTO = Path(__file__).ancestor(2)
 BASE_DIR = os.path.realpath(os.path.dirname(__file__))
+
 #TEMPLATE_DIRS = ("templates/",)
 TEMPLATE_DIRS = (RUTA_PROYECTO.child('templates'),)
 
