@@ -2,11 +2,6 @@
 
 ### Scripts de instalacion de los componentes
 
-#STorto:
-#Conmigo no tengo, pero nuestro script lo que hace es poblar la base de datos, 
-#hacer un checkout del repositorio (nosotros usamos mercurial (hg checkout)), 
-#y levantar el servidor (manage.py startserver o algo asi).
-
 echo "/////////////////////////////"
 echo "     PROJECT MANAGEMENT"
 echo " Instalacion de componentes"
@@ -16,73 +11,22 @@ echo "     Jose Santacruz"
 echo "       Victor Vera"
 echo "/////////////////////////////"
 
-#############Informacion de la BD que se utiliza
-#        'NAME': 'dbpm',
-#        'USER': 'postgres',
-#        'pass': 'postgres',
 
 
-############Creamos un user
-#El comando es createuser con los parametros (quitados de la documentacion man createuser):
-# -d The new user will be allowed to create databases.
-# -l The new user will be allowed to log in (that is, the user name can be used as the initial session user identifier). This is the default.
-# -P If given, createuser will issue a prompt for the pass of the new user. This is not necessary if you do not plan on using pass authentication.
-# -r The new user will be allowed to create new roles (that is, this user will have CREATEROLE privilege).
-# -S The new user will not be a superuser.
-# -U User name to connect as (not the user name to create).
-
-##############Ejecucion del comando
-createuser -d -l -P -r -S postgres -U postgres
-
-if [ $? -ne 0 ]; then
-	echo -e "\nPosible error ocurrido, revisar archivos y documentacion."
-    exit
-fi
-
-echo -e "\n\nEl user se ha creado."
-
-##############Creacion de la BD con el user postgres, poblacion.sql es un archivo que esta en el mismo directorio
-psql -U postgres postgres -f poblacion.sql
-
-if [ $? -ne 0 ]; then
-	echo "Ha ocurrido un error, revisar archivos y documentacion."
-    fi
-
-python syncdb.py
-
-
-##################Lanzar el navegador
-firefox -new-tab 127.0.0.1:8000/admin
-#google-chrome -new-tab 127.0.0.1:8000/admin
-#chromium-browser -new-tab 127.0.0.1:8000/admin
-
-
-
-
-
-
-
-########################
-########################
-########################
-
-########################Variables
-
-########################Directorio del proyecto
+########################Variable Directorio del proyecto
 directorioinstalacion="/home/jose/PycharmProjects/todolist2"
 
-#########################Superuser a crear en la BD
+#########################Variable Superuser a crear en la BD
 user='postgres'
 
-#########################Pass del super user a crear en la BD
+#########################Variable Pass del super user a crear en la BD
 pass='postgres'
 
-#########################Directorio actual del instalador
+#########################Variable Directorio actual del instalador
 directorioinstalador=`pwd`
 
-##########################Codigo fuente del proyecto
+##########################Variable Codigo fuente del proyecto
 fuente="https://github.com/josepino/todolist2/archive/master.zip"
-
 
 
 
@@ -92,12 +36,9 @@ apt-show-versions > pqtesinstalados.txt
 
 if [ ! -d "$directorioinstalacion" ];
 then
-echo "El directorio no existe, se creara el directorio necesario"
-mkdir -p "$directorioinstalacion"
+	echo "El directorio no existe, se creara el directorio necesario"
+	mkdir -p "$directorioinstalacion"
 fi
-
-
-
 
 
 
@@ -161,8 +102,6 @@ fi
 
 
 
-
-
 #############Instalacion Proyecto PM
 #############Vemos si ya esta instalado, sino obtenemos del repositorio
 if [ -d "$directorioinstalacion/todolist2" ];
@@ -179,6 +118,47 @@ fi
 cd proyecto
 unzip master.zip
 
+
+
+#############Base de Datos
+#        'NAME': 'dbpm',
+#        'USER': 'postgres',
+#        'pass': 'postgres',
+
+
+############Creamos un user
+#El comando es createuser con los parametros (quitados de la documentacion man createuser):
+# -d The new user will be allowed to create databases.
+# -l The new user will be allowed to log in (that is, the user name can be used as the initial session user identifier). This is the default.
+# -P If given, createuser will issue a prompt for the pass of the new user. This is not necessary if you do not plan on using pass authentication.
+# -r The new user will be allowed to create new roles (that is, this user will have CREATEROLE privilege).
+# -S The new user will not be a superuser.
+# -U User name to connect as (not the user name to create).
+
+##############Ejecucion del comando
+createuser -d -l -P -r -S postgres -U postgres
+
+if [ $? -ne 0 ]; then
+	echo -e "\nPosible error ocurrido, revisar archivos y documentacion."
+    exit
+fi
+
+echo -e "\n\nEl user se ha creado."
+
+##############Creacion de la BD con el user postgres, poblacion.sql es un archivo que esta en el mismo directorio
+psql -U postgres postgres -f poblacion.sql
+
+if [ $? -ne 0 ]; then
+	echo "Ha ocurrido un error, revisar archivos y documentacion."
+fi
+
+python syncdb.py
+
+
+##################Lanzar el navegador
+firefox -new-tab 127.0.0.1:8000/admin
+#google-chrome -new-tab 127.0.0.1:8000/admin
+#chromium-browser -new-tab 127.0.0.1:8000/admin
 
 
 
