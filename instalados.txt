@@ -1,0 +1,2148 @@
+accountsservice 0.6.15-2ubuntu9.7 newer than version in archive
+acl/precise uptodate 2.2.51-5ubuntu1
+acpi-support 0.140.1 newer than version in archive
+acpid/precise uptodate 1:2.0.10-1ubuntu3
+adduser/precise uptodate 3.113ubuntu2
+aircrack-ng/precise uptodate 1:1.2~beta2-0backbox3
+alacarte/precise uptodate 0.13.2-2ubuntu4
+alien/precise uptodate 8.86
+alsa-base 1.0.25+dfsg-0ubuntu1.1 newer than version in archive
+alsa-utils 1.0.25-1ubuntu5.2 newer than version in archive
+anacron/precise uptodate 2.3-14ubuntu1
+apache2 2.2.22-1ubuntu1.6 newer than version in archive
+apache2-mpm-prefork 2.2.22-1ubuntu1.6 newer than version in archive
+apache2-utils 2.2.22-1ubuntu1.6 newer than version in archive
+apache2.2-bin 2.2.22-1ubuntu1.6 newer than version in archive
+apache2.2-common 2.2.22-1ubuntu1.6 newer than version in archive
+app-install-data/precise uptodate 0.12.04.4
+app-install-data-partner/precise uptodate 12.12.04.1
+apparmor 2.7.102-0ubuntu3.9 newer than version in archive
+apport/precise-security uptodate 2.0.1-0ubuntu17.6
+apport-gtk/precise-security uptodate 2.0.1-0ubuntu17.6
+apport-symptoms 0.16.1 newer than version in archive
+apt 0.8.16~exp12ubuntu10.16 newer than version in archive
+apt-show-versions/precise uptodate 0.17
+apt-transport-https 0.8.16~exp12ubuntu10.16 newer than version in archive
+apt-utils 0.8.16~exp12ubuntu10.16 newer than version in archive
+apt-xapian-index/precise-security uptodate 0.44ubuntu5.1
+aptdaemon 0.43+bzr805-0ubuntu9 newer than version in archive
+aptdaemon-data 0.43+bzr805-0ubuntu9 newer than version in archive
+aqemu/precise uptodate 0.8.2-1ubuntu1
+armitage/precise uptodate 1.48+20131121-0backbox2
+arp-scan/precise uptodate 1.8.1-1
+aspell/precise uptodate 0.60.7~20110707-1
+aspell-en/precise uptodate 6.0-0-6ubuntu2
+asymptote/precise uptodate 2.15-1
+asymptote-doc/precise uptodate 2.15-1
+at/precise uptodate 3.1.13-1ubuntu1
+at-spi2-core 2.4.2-0ubuntu0.1 newer than version in archive
+atshell/precise uptodate 1.0-0backbox3
+attest/precise uptodate 1.2-0backbox3
+automater/precise uptodate 1.2.1-0backbox1
+autopsy/precise uptodate 2.24-1
+avahi-autoipd 0.6.30-5ubuntu2.1 newer than version in archive
+avahi-daemon 0.6.30-5ubuntu2.1 newer than version in archive
+avahi-utils 0.6.30-5ubuntu2.1 newer than version in archive
+backbox-artwork/precise uptodate 3.13
+backbox-default-settings/precise uptodate 3.13.2
+backbox-desktop/precise uptodate 3.13.1
+backbox-icon-theme/precise uptodate 3.13
+backbox-live-settings/precise uptodate 3.13.2
+backbox-menu/precise uptodate 3.13.1
+backbox-menu-text/precise uptodate 3.13.1
+backbox-minimal/precise uptodate 3.13.1
+backbox-minimal-settings/precise uptodate 3.13.2
+backbox-wallpapers/precise uptodate 3.13
+backfuzz/precise uptodate 0.3.1-0backbox6
+base-files 6.5ubuntu6.7 newer than version in archive
+base-passwd/precise uptodate 3.5.24
+bash 4.2-2ubuntu2.1 newer than version in archive
+bash-completion 1:1.3-1ubuntu8.1 newer than version in archive
+bc 1.06.95-2ubuntu1 newer than version in archive
+bdaddr/precise uptodate 1.1-0backbox2
+beef-project/precise uptodate 0.4.4.8+git20130912-0backbox1
+bind9-host/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+binfmt-support/precise uptodate 2.0.8
+binutils/precise-security uptodate 2.22-6ubuntu1.1
+binwalk/precise uptodate 1.2.1-0backbox1
+bison/precise uptodate 1:2.5.dfsg-2.1
+bkhive/precise uptodate 1.1.1-1
+bleachbit/precise uptodate 1.0-1backbox1
+blt/precise uptodate 2.4z-4.2ubuntu1
+bluediving/precise uptodate 0.9-0backbox3
+blueman 1.23-0ubuntu2.1 newer than version in archive
+bluez 4.98-2ubuntu7.2 newer than version in archive
+bluez-alsa 4.98-2ubuntu7.2 newer than version in archive
+bluez-cups 4.98-2ubuntu7.2 newer than version in archive
+bluez-tools/precise uptodate 0.1.38+git662e-2ubuntu1
+bokken/precise uptodate 1.5-5
+bpython/precise uptodate 0.10.1-3
+brasero 3.4.1-0ubuntu1.1 newer than version in archive
+brasero-cdrkit 3.4.1-0ubuntu1.1 newer than version in archive
+brasero-common 3.4.1-0ubuntu1.1 newer than version in archive
+bridge-utils 1.5-2ubuntu7 newer than version in archive
+brltty/precise uptodate 4.3-1ubuntu5
+brltty-x11/precise uptodate 4.3-1ubuntu5
+browser-plugin-vlc/precise uptodate 2.0.0-1
+bsdmainutils/precise uptodate 8.2.3ubuntu1
+bsdutils/precise uptodate 1:2.20.1-1ubuntu3
+bss/precise uptodate 0.8-0backbox2
+btftp/precise uptodate 0.1-0backbox2
+btobex/precise uptodate 0.1-0backbox2
+build-essential 11.5ubuntu2.1 newer than version in archive
+busybox-initramfs 1:1.18.5-1ubuntu4.1 newer than version in archive
+busybox-static 1:1.18.5-1ubuntu4.1 newer than version in archive
+bzip2/precise uptodate 1.0.6-1
+ca-certificates/precise-security uptodate 20130906ubuntu0.12.04.1
+ca-certificates-java/precise uptodate 20110912ubuntu6
+cabextract/precise uptodate 1.4-1
+cap2hccap/precise uptodate 0.1-0backbox3
+carwhisperer/precise uptodate 0.2-0backbox2
+casper 1.315.1 newer than version in archive
+catfish/precise uptodate 0.3.2-2ubuntu1
+cgroup-lite 1.1.5 newer than version in archive
+chntpw/precise uptodate 0.99.6-2
+chromium-browser/precise-security uptodate 34.0.1847.116-0ubuntu~1.12.04.0~pkg884
+chromium-browser-l10n/precise-security uptodate 34.0.1847.116-0ubuntu~1.12.04.0~pkg884
+chromium-codecs-ffmpeg/precise-security uptodate 34.0.1847.116-0ubuntu~1.12.04.0~pkg884
+cmap-adobe-japan1/precise uptodate 0+20090930-2
+colord 0.1.16-2ubuntu0.1 newer than version in archive
+comerr-dev/precise uptodate 2.1-1.42-1ubuntu2
+command-not-found/precise uptodate 0.2.46ubuntu6
+command-not-found-data/precise uptodate 0.2.46ubuntu6
+console-setup/precise uptodate 1.70ubuntu5
+consolekit 0.4.5-2ubuntu0.1 newer than version in archive
+coreutils 8.13-3ubuntu3.2 newer than version in archive
+cpio/precise uptodate 2.11-7ubuntu3
+cpp/precise uptodate 4:4.6.3-1ubuntu5
+cpp-4.6/precise uptodate 4.6.3-1ubuntu5
+cpu-checker/precise uptodate 0.7-0ubuntu1
+crda/precise uptodate 1.1.2-1ubuntu1
+cron 3.0pl1-120ubuntu4 newer than version in archive
+crunch/precise uptodate 3.4-0backbox2
+cryptcat/precise uptodate 20031202-4
+cryptsetup/precise uptodate 2:1.4.1-2ubuntu4
+cryptsetup-bin/precise uptodate 2:1.4.1-2ubuntu4
+cups/precise-security uptodate 1.5.3-0ubuntu8.2
+cups-bsd/precise-security uptodate 1.5.3-0ubuntu8.2
+cups-client/precise-security uptodate 1.5.3-0ubuntu8.2
+cups-common/precise-security uptodate 1.5.3-0ubuntu8.2
+cups-filters/precise-security uptodate 1.0.18-0ubuntu0.2
+cups-ppdc/precise-security uptodate 1.5.3-0ubuntu8.2
+curl/precise-security uptodate 7.22.0-3ubuntu4.8
+dash/precise uptodate 0.5.7-2ubuntu2
+dbus/precise-security uptodate 1.4.18-1ubuntu1.4
+dbus-x11/precise-security uptodate 1.4.18-1ubuntu1.4
+dc 1.06.95-2ubuntu1 newer than version in archive
+dcfldd/precise uptodate 1.3.4.1-2
+dconf-gsettings-backend 0.12.0-0ubuntu1.1 newer than version in archive
+dconf-service 0.12.0-0ubuntu1.1 newer than version in archive
+dctrl-tools/precise uptodate 2.18ubuntu1
+deb.torproject.org-keyring/precise uptodate 2012.08.29
+debconf/precise uptodate 1.5.42ubuntu1
+debconf-i18n/precise uptodate 1.5.42ubuntu1
+debhelper/precise uptodate 9.20120115ubuntu3
+debianutils/precise uptodate 4.2.1ubuntu2
+debootstrap 1.0.40~ubuntu0.5 newer than version in archive
+default-jre-headless/precise uptodate 1:1.6-43ubuntu2
+desktop-file-utils 0.20-0ubuntu3 newer than version in archive
+devscripts/precise-security uptodate 2.11.6ubuntu1.6
+dff/precise uptodate 1.2.0+dfsg.1-1
+dh-apparmor 2.7.102-0ubuntu3.9 newer than version in archive
+dia-common/precise uptodate 0.97.2-5
+dia-gnome/precise uptodate 0.97.2-5
+dia-libs/precise uptodate 0.97.2-5
+dictionaries-common/precise uptodate 1.12.1ubuntu2
+diffstat/precise uptodate 1.54-1
+diffutils/precise uptodate 1:3.2-1ubuntu1
+dirbuster-lists/precise uptodate 0.12-0backbox2
+dissy/precise uptodate 9-3
+dkms 2.2.0.3-1ubuntu3.2 newer than version in archive
+dmidecode/precise uptodate 2.11-4
+dmsetup 2:1.02.48-4ubuntu7.4 newer than version in archive
+dmz-cursor-theme/precise uptodate 0.4.3
+dnschef/precise uptodate 0.2.1-0backbox1
+dnsmasq-base 2.59-4ubuntu0.1 newer than version in archive
+dnsutils/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+doc-base/precise uptodate 0.10.3
+docbook-xml/precise uptodate 4.5-7ubuntu1
+docutils-common/precise uptodate 0.8.1-4ubuntu1
+docutils-doc/precise uptodate 0.8.1-4ubuntu1
+dosbox/precise uptodate 0.74-2
+dosfstools 3.0.12-1ubuntu1.1 newer than version in archive
+dpkg/precise-security uptodate 1.16.1.2ubuntu7.4
+dpkg-dev/precise-security uptodate 1.16.1.2ubuntu7.4
+dput/precise uptodate 0.9.6.2ubuntu1
+driftnet/precise uptodate 0.1.6-9ubuntu1
+dsniff/precise uptodate 2.4b1+debian-21.1
+dumpzilla/precise uptodate 0.1+20130315-0backbox0.3
+dvd+rw-tools/precise uptodate 7.1-10
+e2fslibs/precise uptodate 1.42-1ubuntu2
+e2fsprogs/precise uptodate 1.42-1ubuntu2
+ebtables/precise uptodate 2.0.9.2-2ubuntu2
+ed/precise uptodate 1.5-3
+eject/precise uptodate 2.1.5+deb1+cvs20081104-9
+emacs 23.3+1-1ubuntu9.2 newer than version in archive
+emacs23 23.3+1-1ubuntu9.2 newer than version in archive
+emacs23-bin-common 23.3+1-1ubuntu9.2 newer than version in archive
+emacs23-common 23.3+1-1ubuntu9.2 newer than version in archive
+emacsen-common/precise uptodate 1.4.22ubuntu1
+enchant/precise uptodate 1.6.0-7
+eog 3.4.2-0ubuntu1.1 newer than version in archive
+espeak/precise uptodate 1.46.02-0ubuntu1
+espeak-data/precise uptodate 1.46.02-0ubuntu1
+ettercap-common/precise uptodate 1:0.7.6-1backbox4
+ettercap-graphical/precise uptodate 1:0.7.6-1backbox4
+evince 3.4.0-0ubuntu1.7 newer than version in archive
+evince-common 3.4.0-0ubuntu1.7 newer than version in archive
+exo-utils/precise uptodate 0.6.2-4
+fakeroot/precise uptodate 1.18.2-1
+fang/precise uptodate 1.2+git20130907-0backbox1
+farpd/precise uptodate 0.2-10build1
+fcrackzip/precise uptodate 1.0-2
+file/precise-security uptodate 5.09-2ubuntu0.3
+file-roller/precise uptodate 3.4.1-0ubuntu1
+filezilla/precise uptodate 3.5.3-1ubuntu2
+filezilla-common/precise uptodate 3.5.3-1ubuntu2
+fimap/precise uptodate 0.9-0backbox6
+findutils/precise uptodate 4.4.2-4ubuntu1
+firebird2.5-common/precise-security uptodate 2.5.1.26351.ds4-2ubuntu0.1
+firebird2.5-common-doc/precise-security uptodate 2.5.1.26351.ds4-2ubuntu0.1
+firefox/precise-security uptodate 29.0+build1-0ubuntu0.12.04.2
+firefox-globalmenu/precise-security uptodate 29.0+build1-0ubuntu0.12.04.2
+firefox-gnome-support/precise-security uptodate 22.0+build2-0ubuntu0.12.04.2
+firefox-locale-en/precise-security uptodate 29.0+build1-0ubuntu0.12.04.2
+firefox-locale-es/precise-security uptodate 29.0+build1-0ubuntu0.12.04.2
+flashplugin-installer/precise-security uptodate 11.2.202.359ubuntu0.12.04.1
+flasm/precise uptodate 1.62-6
+flex/precise uptodate 2.5.35-10ubuntu3
+fontconfig 2.8.0-3ubuntu9.1 newer than version in archive
+fontconfig-config 2.8.0-3ubuntu9.1 newer than version in archive
+fonts-droid/precise uptodate 20101110+git-2
+fonts-horai-umefont/precise uptodate 434-1
+fonts-kacst/precise uptodate 2.01+mry-3
+fonts-kacst-one/precise uptodate 5.0+svn11846-2
+fonts-khmeros-core/precise uptodate 5.0-5ubuntu1
+fonts-lao/precise uptodate 0.0.20060226-8
+fonts-liberation 1.07.0-2ubuntu0.1 newer than version in archive
+fonts-nanum/precise uptodate 3.010-2
+fonts-opensymbol/precise uptodate 2:102.6+LibO4.2.4~rc2-0ubuntu1~precise3
+fonts-sil-gentium/precise uptodate 20081126:1.02-12
+fonts-sil-gentium-basic/precise uptodate 1.1-5
+fonts-takao-pgothic/precise uptodate 003.02.01-5ubuntu1
+fonts-thai-tlwg/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-garuda/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-kinnari/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-loma/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-mono/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-norasi/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-purisa/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-sawasdee/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-typewriter/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-typist/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-typo/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-umpush/precise uptodate 1:0.4.17-1ubuntu1
+fonts-tlwg-waree/precise uptodate 1:0.4.17-1ubuntu1
+fonts-unfonts-core/precise uptodate 1.0.3.is.1.0.2-080608-5ubuntu1
+foomatic-db-compressed-ppds/precise uptodate 20120322-0ubuntu1
+foomatic-db-engine/precise uptodate 4.0.8-2ubuntu1
+foomatic-filters 4.0.16-0ubuntu0.2 newer than version in archive
+foremost/precise uptodate 1.5.7-1
+freeglut3 2.6.0-1ubuntu3 newer than version in archive
+friendly-recovery/precise uptodate 0.2.25
+ftp/precise uptodate 0.17-25
+fuse/precise uptodate 2.8.6-2ubuntu2
+g++/precise uptodate 4:4.6.3-1ubuntu5
+g++-4.6/precise uptodate 4.6.3-1ubuntu5
+gawk/precise uptodate 1:3.1.8+dfsg-0.1ubuntu1
+gcalctool 6.4.1.1-0ubuntu3 newer than version in archive
+gcc/precise uptodate 4:4.6.3-1ubuntu5
+gcc-4.6/precise uptodate 4.6.3-1ubuntu5
+gcc-4.6-base/precise uptodate 4.6.3-1ubuntu5
+gconf-service/precise uptodate 3.2.5-0ubuntu2
+gconf-service-backend/precise uptodate 3.2.5-0ubuntu2
+gconf2/precise uptodate 3.2.5-0ubuntu2
+gconf2-common/precise uptodate 3.2.5-0ubuntu2
+gdb 7.4-2012.04-0ubuntu2.1 newer than version in archive
+gddrescue/precise uptodate 1.14-1
+geany/precise uptodate 0.21.dfsg-1ubuntu4
+geany-common/precise uptodate 0.21.dfsg-1ubuntu4
+gedit/precise uptodate 3.4.1-0ubuntu1
+gedit-common/precise uptodate 3.4.1-0ubuntu1
+genisoimage/precise uptodate 9:1.1.11-2ubuntu2
+geoip-database/precise uptodate 20111220-1
+gettext/precise uptodate 0.18.1.1-5ubuntu3
+gettext-base/precise uptodate 0.18.1.1-5ubuntu3
+gfortran/precise uptodate 4:4.6.3-1ubuntu5
+gfortran-4.6/precise uptodate 4.6.3-1ubuntu5
+ghex/precise uptodate 3.4.0-0ubuntu1
+ghostscript 9.05~dfsg-0ubuntu4.2 newer than version in archive
+ghostscript-cups 9.05~dfsg-0ubuntu4.2 newer than version in archive
+ghostscript-x 9.05~dfsg-0ubuntu4.2 newer than version in archive
+gigolo/precise uptodate 0.4.1-3
+gimp/precise-security uptodate 2.6.12-1ubuntu1.3
+gimp-data/precise-security uptodate 2.6.12-1ubuntu1.3
+gip/precise uptodate 1.7.0-1-3
+gir1.2-appindicator3-0.1 0.4.92-0ubuntu1.1 newer than version in archive
+gir1.2-atk-1.0/precise uptodate 2.4.0-0ubuntu1
+gir1.2-atspi-2.0 2.4.2-0ubuntu0.1 newer than version in archive
+gir1.2-dbusmenu-glib-0.4 0.6.2-0ubuntu0.2 newer than version in archive
+gir1.2-dbusmenu-gtk-0.4 0.6.2-0ubuntu0.2 newer than version in archive
+gir1.2-dee-1.0 1.0.10-0ubuntu1.1 newer than version in archive
+gir1.2-freedesktop/precise uptodate 1.32.0-1
+gir1.2-gdkpixbuf-2.0 2.26.1-1ubuntu1.1 newer than version in archive
+gir1.2-glib-2.0/precise uptodate 1.32.0-1
+gir1.2-gmenu-3.0/precise uptodate 3.4.0-0ubuntu1
+gir1.2-gtk-2.0 2.24.10-0ubuntu6.1 newer than version in archive
+gir1.2-gtk-3.0 3.4.2-0ubuntu0.8 newer than version in archive
+gir1.2-gtksource-3.0 3.4.2-0ubuntu1 newer than version in archive
+gir1.2-gudev-1.0 175-0ubuntu9.5 newer than version in archive
+gir1.2-javascriptcoregtk-3.0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+gir1.2-launchpad-integration-3.0 0.1.56.1 newer than version in archive
+gir1.2-notify-0.7/precise uptodate 0.7.5-1
+gir1.2-pango-1.0 1.30.0-0ubuntu3.1 newer than version in archive
+gir1.2-peas-1.0/precise uptodate 1.2.0-1ubuntu1
+gir1.2-polkit-1.0/precise-security uptodate 0.104-1ubuntu1.1
+gir1.2-soup-2.4/precise uptodate 2.38.1-1
+gir1.2-unity-5.0 5.12.0-0ubuntu1.1 newer than version in archive
+gir1.2-vte-2.90/precise uptodate 1:0.32.1-0ubuntu1
+gir1.2-webkit-3.0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+gir1.2-wnck-3.0/precise uptodate 3.4.0-0ubuntu1
+git/precise uptodate 1:1.7.9.5-1
+git-man/precise uptodate 1:1.7.9.5-1
+gitk/precise uptodate 1:1.7.9.5-1
+gksu/precise uptodate 2.0.2-6ubuntu1
+glib-networking 2.32.1-1ubuntu2 newer than version in archive
+glib-networking-common 2.32.1-1ubuntu2 newer than version in archive
+glib-networking-services 2.32.1-1ubuntu2 newer than version in archive
+gnome-desktop-data/precise uptodate 1:2.32.1-0ubuntu9
+gnome-desktop3-data 3.4.2-0ubuntu0.2 newer than version in archive
+gnome-exe-thumbnailer/precise uptodate 0.9-0ubuntu1
+gnome-icon-theme 3.4.0-0ubuntu1.1 newer than version in archive
+gnome-icon-theme-symbolic/precise uptodate 3.4.0-1
+gnome-keyring 3.2.2-2ubuntu4.1 newer than version in archive
+gnome-nettool/precise uptodate 3.2.0-0ubuntu1
+gnome-system-tools/precise uptodate 3.0.0-2ubuntu1
+gnome-time-admin/precise uptodate 3.0.0-2ubuntu1
+gnupg/precise-security uptodate 1.4.11-3ubuntu2.5
+gnuplot/precise uptodate 4.4.3-0ubuntu3
+gnuplot-nox/precise uptodate 4.4.3-0ubuntu3
+gnuplot-x11/precise uptodate 4.4.3-0ubuntu3
+gparted/precise uptodate 0.16.2-2backbox1
+gpgv/precise-security uptodate 1.4.11-3ubuntu2.5
+graphviz/precise-security uptodate 2.26.3-10ubuntu1.1
+greenbone-security-assistant/precise uptodate 4.0.1-1ubuntu1~precise
+greenplaque/precise uptodate 1.4-0backbox2
+grep/precise uptodate 2.10-1
+groff/precise uptodate 1.21-7
+groff-base/precise uptodate 1.21-7
+growisofs/precise uptodate 7.1-10
+grub-common 1.99-21ubuntu3.14 newer than version in archive
+grub-gfxpayload-lists/precise uptodate 0.6
+grub-pc 1.99-21ubuntu3.14 newer than version in archive
+grub-pc-bin 1.99-21ubuntu3.14 newer than version in archive
+grub2-common 1.99-21ubuntu3.14 newer than version in archive
+gs-cjk-resource/precise uptodate 1.20100103-3
+gsettings-desktop-schemas/precise uptodate 3.4.1-0ubuntu1
+gsfonts/precise uptodate 1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1
+gsfonts-x11/precise uptodate 0.22
+gstreamer0.10-alsa 0.10.36-1ubuntu0.1 newer than version in archive
+gstreamer0.10-gnomevfs 0.10.36-1ubuntu0.1 newer than version in archive
+gstreamer0.10-nice/precise uptodate 0.1.1-2ubuntu1
+gstreamer0.10-plugins-base 0.10.36-1ubuntu0.1 newer than version in archive
+gstreamer0.10-plugins-base-apps 0.10.36-1ubuntu0.1 newer than version in archive
+gstreamer0.10-plugins-good 0.10.31-1ubuntu1.2 newer than version in archive
+gstreamer0.10-pulseaudio 0.10.31-1ubuntu1.2 newer than version in archive
+gstreamer0.10-tools/precise uptodate 0.10.36-1ubuntu1
+gstreamer0.10-x 0.10.36-1ubuntu0.1 newer than version in archive
+gthumb-data/precise uptodate 3:2.14.3-0ubuntu1
+gtk-recordmydesktop/precise uptodate 0.3.8-4.1ubuntu1
+gtk2-engines/precise uptodate 1:2.20.2-1ubuntu1
+gtk2-engines-murrine/precise uptodate 0.98.2-0ubuntu1
+gtk2-engines-pixbuf 2.24.10-0ubuntu6.1 newer than version in archive
+gtk3-engines-unico/precise uptodate 1.0.2-0ubuntu1
+gucharmap/precise uptodate 1:3.4.1.1-0ubuntu1
+gufw/precise uptodate 12.04.1-0ubuntu1
+guile-1.8-libs/precise uptodate 1.8.8+1-6ubuntu2
+guymager-beta/unknown uptodate 0.7.3-1
+gvfs 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-backends 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-bin 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-common 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-daemons 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-fuse 1.12.1-0ubuntu1.2 newer than version in archive
+gvfs-libs 1.12.1-0ubuntu1.2 newer than version in archive
+gzip/precise uptodate 1.4-1ubuntu2
+hal/precise uptodate 0.5.14-8
+hal-info/precise uptodate 20091130-1
+hash-identifier/precise uptodate 1.1-0backbox1
+hashcat/precise uptodate 0.47-0backbox1
+hcidump-crash/precise uptodate 1.29-0backbox3
+hdparm 9.37-0ubuntu3.1 newer than version in archive
+heirloom-mailx/precise uptodate 12.5-1build1
+hicolor-icon-theme/precise uptodate 0.12-1ubuntu2
+hidattack/precise uptodate 0.1-0backbox0.2
+honeyd/precise uptodate 1.5c-8ubuntu1
+honeyd-common/precise uptodate 1.5c-8ubuntu1
+hostname/precise uptodate 3.06ubuntu1
+hping3/precise uptodate 3.a2.ds2-6
+hplip/precise-security uptodate 3.12.2-1ubuntu3.4
+hplip-data/precise-security uptodate 3.12.2-1ubuntu3.4
+hstest/precise uptodate 1.1-0backbox2
+htexploit/precise uptodate 0.77-0backbox2
+html2text/precise uptodate 1.3.2a-15
+httpfs/precise uptodate 0.2-0backbox2
+humanity-icon-theme/precise uptodate 0.5.3.11
+hunspell-en-us/precise uptodate 20070829-4ubuntu3
+hwdata/precise uptodate 0.233-1ubuntu1
+hydra/precise uptodate 7.5-0backbox1
+hydra-gtk/precise uptodate 7.5-0backbox1
+ibus/precise uptodate 1.4.1-3ubuntu1
+ibus-gtk/precise uptodate 1.4.1-3ubuntu1
+ibus-gtk3/precise uptodate 1.4.1-3ubuntu1
+ibus-pinyin/precise uptodate 1.4.0-1
+ibus-pinyin-db-android/precise uptodate 1.4.0-1
+ibus-table/precise uptodate 1.3.9.20110827-1ubuntu1
+icedtea-6-jre-cacao/precise-security uptodate 6b31-1.13.3-1ubuntu1~0.12.04.2
+icedtea-6-jre-jamvm/precise-security uptodate 6b31-1.13.3-1ubuntu1~0.12.04.2
+icedtea-7-jre-jamvm/precise-security uptodate 7u55-2.4.7-1ubuntu1~0.12.04.2
+icedtea-7-plugin/precise-security uptodate 1.2.3-0ubuntu0.12.04.4
+icedtea-netx/precise-security uptodate 1.2.3-0ubuntu0.12.04.4
+icedtea-netx-common/precise-security uptodate 1.2.3-0ubuntu0.12.04.4
+icoutils/precise uptodate 0.29.1-2
+ifupdown 0.7~beta2ubuntu11.1 newer than version in archive
+ike-scan/precise uptodate 1.9-4build1
+im-switch 1.20ubuntu5.2 newer than version in archive
+imagemagick/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+imagemagick-common/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+indicator-application/precise uptodate 0.5.0-0ubuntu1
+indicator-application-gtk2/precise uptodate 0.5.0-0ubuntu1
+indicator-messages 0.6.0-0ubuntu2 newer than version in archive
+indicator-messages-gtk2 0.6.0-0ubuntu2 newer than version in archive
+indicator-sound 0.8.5.0-0ubuntu2.1 newer than version in archive
+indicator-sound-gtk2 0.8.5.0-0ubuntu2.1 newer than version in archive
+indicator-status-provider-mc5 0.6.0-0ubuntu2 newer than version in archive
+indicator-status-provider-pidgin 0.6.0-0ubuntu2 newer than version in archive
+info/precise uptodate 4.13a.dfsg.1-8ubuntu2
+initramfs-tools/precise-security uptodate 0.99ubuntu13.5
+initramfs-tools-bin/precise-security uptodate 0.99ubuntu13.5
+initscripts 2.88dsf-13.10ubuntu11.1 newer than version in archive
+inkscape/precise-security uptodate 0.48.3.1-1ubuntu1.1
+inputattach/precise uptodate 1:1.4.2-1
+insserv/precise uptodate 1.14.0-2.1ubuntu2
+install-info/precise uptodate 4.13a.dfsg.1-8ubuntu2
+intltool-debian/precise uptodate 0.35.0+20060710.1
+inundator/precise uptodate 0.5-0backbox0
+iodine/precise uptodate 0.6.0~rc1-7
+iproute 20111117-1ubuntu2.1 newer than version in archive
+iptables 1.4.12-1ubuntu5 newer than version in archive
+iputils-arping/precise uptodate 3:20101006-1ubuntu1
+iputils-ping/precise uptodate 3:20101006-1ubuntu1
+iputils-tracepath/precise uptodate 3:20101006-1ubuntu1
+irqbalance/precise uptodate 0.56-1ubuntu4
+isc-dhcp-client 4.1.ESV-R4-0ubuntu5.9 newer than version in archive
+isc-dhcp-common 4.1.ESV-R4-0ubuntu5.9 newer than version in archive
+iso-codes/precise uptodate 3.31-1
+iw/precise uptodate 3.2-1
+java-common/precise uptodate 0.43ubuntu2
+jockey-common 0.9.7-0ubuntu7.14 newer than version in archive
+jockey-gtk 0.9.7-0ubuntu7.14 newer than version in archive
+john/precise uptodate 1.8.0-1backbox1
+john-data/precise uptodate 1.8.0-1backbox1
+joomscan/precise uptodate 0.0.4-0backbox6
+kbd/precise uptodate 1.15.2-3ubuntu4
+keepassx/precise uptodate 0.4.3-1ubuntu2
+kerneloops-daemon/precise uptodate 0.12+git20090217-1ubuntu19
+keyboard-configuration/precise uptodate 1.70ubuntu5
+kismet/precise uptodate 2013.03.R1b-1backbox1
+kismet-plugins/precise uptodate 2013.03.R1b-1backbox1
+klibc-utils/precise uptodate 1.5.25-1ubuntu2
+knock-scan/precise uptodate 1.5-0backbox2
+kpartx 0.4.9-3ubuntu5.1 newer than version in archive
+krb5-locales/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+krb5-multidev/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+kvm-ipxe/precise uptodate 1.0.0+git-3.55f6c88-0ubuntu1
+l2cap-headersize-overflow/precise uptodate 0.1-0backbox2
+l2cap-packet/precise uptodate 0.1-0backbox2
+lacheck/precise uptodate 1.26-14
+lame/precise uptodate 3.99.3+repack1-1
+language-pack-en 1:12.04+20140106 newer than version in archive
+language-pack-en-base 1:12.04+20140106 newer than version in archive
+language-pack-es 1:12.04+20140106 newer than version in archive
+language-pack-es-base 1:12.04+20140106 newer than version in archive
+language-pack-gnome-en 1:12.04+20140106 newer than version in archive
+language-pack-gnome-en-base 1:12.04+20140106 newer than version in archive
+language-pack-gnome-es 1:12.04+20140106 newer than version in archive
+language-pack-gnome-es-base 1:12.04+20140106 newer than version in archive
+language-selector-common/precise-security uptodate 0.79.4
+language-selector-gnome/precise-security uptodate 0.79.4
+laptop-detect/precise uptodate 0.13.7ubuntu2
+latex-beamer/precise uptodate 3.10-1
+latex-xcolor/precise uptodate 2.11-1
+launchpad-integration 0.1.56.1 newer than version in archive
+less/precise uptodate 444-1ubuntu1
+liba52-0.7.4/precise uptodate 0.7.4-16build1
+libaa1/precise uptodate 1.4p5-39ubuntu1
+libaacs0/precise uptodate 0.3.0-4
+libaccountsservice0 0.6.15-2ubuntu9.7 newer than version in archive
+libacl1/precise uptodate 2.2.51-5ubuntu1
+libafflib0/precise uptodate 3.6.6-1.1
+libaio1/precise uptodate 0.3.109-2ubuntu1
+libalgorithm-diff-perl/precise uptodate 1.19.02-2
+libalgorithm-diff-xs-perl/precise uptodate 0.04-2build2
+libalgorithm-merge-perl/precise uptodate 0.08-2
+libamd2.2.0/precise uptodate 1:3.4.0-2ubuntu3
+libao-common/precise uptodate 1.1.0-1ubuntu2
+libao4/precise uptodate 1.1.0-1ubuntu2
+libapache2-mod-php5/precise-security uptodate 5.3.10-1ubuntu3.11
+libapparmor1 2.7.102-0ubuntu3.9 newer than version in archive
+libappindicator1 0.4.92-0ubuntu1.1 newer than version in archive
+libappindicator3-1 0.4.92-0ubuntu1.1 newer than version in archive
+libapr1/precise uptodate 1.4.6-1
+libaprutil1/precise uptodate 1.3.12+dfsg-3
+libaprutil1-dbd-sqlite3/precise uptodate 1.3.12+dfsg-3
+libaprutil1-ldap/precise uptodate 1.3.12+dfsg-3
+libapt-inst1.4 0.8.16~exp12ubuntu10.16 newer than version in archive
+libapt-pkg-perl/precise uptodate 0.1.25build2
+libapt-pkg4.12 0.8.16~exp12ubuntu10.16 newer than version in archive
+libarchive12/precise uptodate 3.0.3-6ubuntu1
+libarpack2/precise uptodate 3.0.2-3
+libart-2.0-2 2.3.21-1ubuntu0.1 newer than version in archive
+libasn1-8-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libasound2 1.0.25-1ubuntu10.2 newer than version in archive
+libasound2-plugins/precise uptodate 1.0.25-1ubuntu1
+libaspell15/precise uptodate 0.60.7~20110707-1
+libass4/precise uptodate 0.10.0-3
+libasyncns0/precise uptodate 0.8-4
+libatasmart4/precise uptodate 0.18-3
+libatk-wrapper-java/precise uptodate 0.30.4-0ubuntu2
+libatk-wrapper-java-jni/precise uptodate 0.30.4-0ubuntu2
+libatk1.0-0/precise uptodate 2.4.0-0ubuntu1
+libatk1.0-data/precise uptodate 2.4.0-0ubuntu1
+libatkmm-1.6-1/precise uptodate 2.22.6-1ubuntu1
+libatlas3gf-base/precise uptodate 3.8.4-3build1
+libatspi2.0-0 2.4.2-0ubuntu0.1 newer than version in archive
+libattr1/precise uptodate 1:2.4.46-5ubuntu1
+libaudio-scrobbler-perl/precise uptodate 0.01-2.1
+libaudio2/precise-security uptodate 1.9.3-4ubuntu0.1
+libavahi-client3 0.6.30-5ubuntu2.1 newer than version in archive
+libavahi-common-data 0.6.30-5ubuntu2.1 newer than version in archive
+libavahi-common3 0.6.30-5ubuntu2.1 newer than version in archive
+libavahi-core7 0.6.30-5ubuntu2.1 newer than version in archive
+libavahi-glib1 0.6.30-5ubuntu2.1 newer than version in archive
+libavc1394-0/precise uptodate 0.5.3-1ubuntu2
+libavcodec53/precise-security uptodate 4:0.8.10-0ubuntu0.12.04.1
+libavformat53/precise-security uptodate 4:0.8.10-0ubuntu0.12.04.1
+libavutil51/precise-security uptodate 4:0.8.10-0ubuntu0.12.04.1
+libbabl-0.0-0/precise uptodate 0.0.22-1.1
+libbind9-80/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+libbison-dev/precise uptodate 1:2.5.dfsg-2.1
+libblas-dev/precise uptodate 1.2.20110419-2ubuntu1
+libblas3gf/precise uptodate 1.2.20110419-2ubuntu1
+libblkid1/precise uptodate 2.20.1-1ubuntu3
+libbluetooth3 4.98-2ubuntu7.2 newer than version in archive
+libbluray1/precise uptodate 1:0.2.1+git20111208.63e308d-3
+libbonobo2-0 2.32.1-0ubuntu1.1 newer than version in archive
+libbonobo2-common 2.32.1-0ubuntu1.1 newer than version in archive
+libbonoboui2-0 2.24.5-0ubuntu1.1 newer than version in archive
+libbonoboui2-common 2.24.5-0ubuntu1.1 newer than version in archive
+libboost-date-time1.46.1/precise uptodate 1.46.1-7ubuntu3
+libboost-date-time1.54.0/precise uptodate 1.54.0-2ubuntu3~precise1
+libboost-filesystem1.46.1/precise uptodate 1.46.1-7ubuntu3
+libboost-system1.46.1/precise uptodate 1.46.1-7ubuntu3
+libboost-thread1.46.1/precise uptodate 1.46.1-7ubuntu3
+libbrasero-media3-1 3.4.1-0ubuntu1.1 newer than version in archive
+libbrlapi0.5/precise uptodate 4.3-1ubuntu5
+libbsd0/precise uptodate 0.3.0-2
+libburn4/precise uptodate 1.1.8-1
+libbz2-1.0/precise uptodate 1.0.6-1
+libc-ares2/precise uptodate 1.7.5-1
+libc-bin/precise-security uptodate 2.15-0ubuntu10.5
+libc-dev-bin/precise-security uptodate 2.15-0ubuntu10.5
+libc6/precise-security uptodate 2.15-0ubuntu10.5
+libc6-dev/precise-security uptodate 2.15-0ubuntu10.5
+libcaca0/precise uptodate 0.99.beta17-2.1ubuntu2
+libcairo-gobject2 1.10.2-6.1ubuntu3 newer than version in archive
+libcairo-perl/precise uptodate 1.081-1build2
+libcairo2 1.10.2-6.1ubuntu3 newer than version in archive
+libcairomm-1.0-1/precise uptodate 1.10.0-1ubuntu1
+libcanberra-gtk3-0/precise uptodate 0.28-3ubuntu3
+libcanberra-gtk3-module/precise uptodate 0.28-3ubuntu3
+libcanberra0/precise uptodate 0.28-3ubuntu3
+libcap-ng0/precise uptodate 0.6.6-1ubuntu1
+libcap2/precise uptodate 1:2.22-1ubuntu3
+libcap2-bin/precise uptodate 1:2.22-1ubuntu3
+libcapi20-3/precise uptodate 1:3.12.20071127-0ubuntu11
+libcarp-assert-more-perl/precise uptodate 1.12-2
+libcarp-assert-perl/precise uptodate 0.20-2
+libccolamd2.7.1/precise uptodate 1:3.4.0-2ubuntu3
+libcddb2/precise uptodate 1.3.2-3fakesync1
+libcdio-cdda1/precise uptodate 0.83-1
+libcdio-paranoia1/precise uptodate 0.83-1
+libcdio13/precise uptodate 0.83-1
+libcdparanoia0/precise uptodate 3.10.2+debian-10ubuntu1
+libcdr-0.0-0/precise uptodate 0.0.15-1~precise1
+libcdt4/precise-security uptodate 2.26.3-10ubuntu1.1
+libcgraph5/precise-security uptodate 2.26.3-10ubuntu1.1
+libcholmod1.7.1/precise uptodate 1:3.4.0-2ubuntu3
+libck-connector0 0.4.5-2ubuntu0.1 newer than version in archive
+libclass-accessor-perl/precise uptodate 0.34-1
+libclass-isa-perl/precise uptodate 0.36-3
+libclone-perl/precise uptodate 0.31-1build3
+libclucene-contribs1/precise uptodate 2.3.3.4-2~precise1
+libclucene-core1/precise uptodate 2.3.3.4-2~precise1
+libcmis-0.2-0/precise uptodate 0.1.0-1
+libcmis-0.3-3 0.3.1-1ubuntu1~precise1 installed: No available version in archive
+libcmis-0.4-4/precise uptodate 0.4.1-3ubuntu4~precise2
+libcolamd2.7.1/precise uptodate 1:3.4.0-2ubuntu3
+libcolord1 0.1.16-2ubuntu0.1 newer than version in archive
+libcomerr2/precise uptodate 1.42-1ubuntu2
+libcommon-sense-perl/precise uptodate 3.4-1
+libconfig-inifiles-perl/precise-security uptodate 2.68-1ubuntu0.12.04.1
+libcroco3 0.6.5-1ubuntu0.1 newer than version in archive
+libcrypt-passwdmd5-perl/precise uptodate 1.3-10
+libcryptsetup4/precise uptodate 2:1.4.1-2ubuntu4
+libcrystalhd3 1:0.0~git20110715.fdd2f19-4.1 newer than version in archive
+libctemplate0/precise uptodate 1.0-1
+libcups2/precise-security uptodate 1.5.3-0ubuntu8.2
+libcupscgi1/precise-security uptodate 1.5.3-0ubuntu8.2
+libcupsdriver1/precise-security uptodate 1.5.3-0ubuntu8.2
+libcupsfilters1/precise-security uptodate 1.0.18-0ubuntu0.2
+libcupsimage2/precise-security uptodate 1.5.3-0ubuntu8.2
+libcupsmime1/precise-security uptodate 1.5.3-0ubuntu8.2
+libcupsppdc1/precise-security uptodate 1.5.3-0ubuntu8.2
+libcurl3/precise-security uptodate 7.22.0-3ubuntu4.8
+libcurl3-gnutls/precise-security uptodate 7.22.0-3ubuntu4.8
+libcurl4-gnutls-dev/precise-security uptodate 7.22.0-3ubuntu4.8
+libcxsparse2.2.3/precise uptodate 1:3.4.0-2ubuntu3
+libdaemon0/precise uptodate 0.14-2
+libdate-manip-perl/precise uptodate 6.25-1
+libdatrie1/precise uptodate 0.2.5-3
+libdb4.8/precise uptodate 4.8.30-11ubuntu1
+libdb5.1/precise uptodate 5.1.25-11build1
+libdbd-mysql-perl/precise uptodate 4.020-1build2
+libdbi-perl/precise uptodate 1.616-1build2
+libdbi1/precise uptodate 0.8.4-5.1
+libdbus-1-3/precise-security uptodate 1.4.18-1ubuntu1.4
+libdbus-glib-1-2/precise-security uptodate 0.98-1ubuntu1.1
+libdbusmenu-glib4 0.6.2-0ubuntu0.2 newer than version in archive
+libdbusmenu-gtk3-4 0.6.2-0ubuntu0.2 newer than version in archive
+libdbusmenu-gtk4 0.6.2-0ubuntu0.2 newer than version in archive
+libdc1394-22/precise uptodate 2.2.0-2
+libdca0/precise uptodate 0.0.5-5
+libdconf0 0.12.0-0ubuntu1.1 newer than version in archive
+libdee-1.0-4 1.0.10-0ubuntu1.1 newer than version in archive
+libdevmapper-event1.02.1 2:1.02.48-4ubuntu7.4 newer than version in archive
+libdevmapper1.02.1 2:1.02.48-4ubuntu7.4 newer than version in archive
+libdigest-crc-perl/precise uptodate 0.18-1
+libdigest-hmac-perl/precise uptodate 1.03+dfsg-1
+libdirac-encoder0/precise uptodate 1.0.2-4build1
+libdirectfb-1.2-9/precise uptodate 1.2.10.0-4.3ubuntu1
+libdistorm64-1/precise uptodate 1.7.30-1
+libdjvulibre-text/precise-security uptodate 3.5.24-9ubuntu0.1
+libdjvulibre21/precise-security uptodate 3.5.24-9ubuntu0.1
+libdns81/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+libdotconf1.0/precise uptodate 1.0.13-3
+libdpkg-perl/precise-security uptodate 1.16.1.2ubuntu7.4
+libdrm-dev 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libdrm-intel1 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libdrm-nouveau1a 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libdrm-nouveau2/precise uptodate 2.4.46-1ubuntu0.0.0.1
+libdrm-radeon1 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libdrm2 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libdumbnet1/precise uptodate 1.12-3.1
+libdv4/precise uptodate 1.0.0-3ubuntu1
+libdvbpsi7/precise uptodate 0.2.2-1
+libdvdnav4 4.2.0-1ubuntu0.1 newer than version in archive
+libdvdread4 4.2.0-1ubuntu4 newer than version in archive
+libebml3/precise uptodate 1.2.2-2
+libedit2/precise uptodate 2.11-20080614-3ubuntu2
+libelf1/precise uptodate 0.152-1ubuntu3
+libemail-valid-perl/precise uptodate 0.185-1
+libenca0/precise uptodate 1.13-4
+libenchant1c2a/precise uptodate 1.6.0-7
+libencode-locale-perl/precise uptodate 1.02-2
+libept1.4.12/precise uptodate 1.0.6~exp1ubuntu1
+liberror-perl/precise uptodate 0.17-1
+libespeak1/precise uptodate 1.46.02-0ubuntu1
+libevent-1.4-2/precise uptodate 1.4.14b-stable-0ubuntu1
+libevent-2.0-5/precise uptodate 2.0.16-stable-1
+libevince3-3 3.4.0-0ubuntu1.7 newer than version in archive
+libewf1/precise uptodate 20100226-1build2
+libexempi3/precise uptodate 2.2.0-1
+libexif12/precise-security uptodate 0.6.20-2ubuntu0.1
+libexiv2-11/precise uptodate 0.22-2
+libexo-1-0/precise uptodate 0.6.2-4
+libexo-common/precise uptodate 0.6.2-4
+libexo-helpers/precise uptodate 0.6.2-4
+libexpat1/precise-security uptodate 2.0.1-7.2ubuntu1.1
+libexpat1-dev/precise-security uptodate 2.0.1-7.2ubuntu1.1
+libexporter-lite-perl/precise uptodate 0.02-2
+libexttextcat-2.0-0/precise uptodate 3.4.3-1ubuntu1~precise1
+libexttextcat-data/precise uptodate 3.4.3-1ubuntu1~precise1
+libfaad2/precise uptodate 2.7-7
+libfarstream-0.1-0/precise uptodate 0.1.2-0ubuntu1
+libfbclient2/precise-security uptodate 2.5.1.26351.ds4-2ubuntu0.1
+libffi6/precise uptodate 3.0.11~rc1-5
+libfftw3-3/precise uptodate 3.3-1ubuntu1
+libfftw3-dev/precise uptodate 3.3-1ubuntu1
+libfile-basedir-perl/precise uptodate 0.03-1fakesync1
+libfile-copy-recursive-perl/precise uptodate 0.38-1
+libfile-desktopentry-perl/precise uptodate 0.04-3
+libfile-listing-perl/precise uptodate 6.03-1
+libfile-mimeinfo-perl/precise uptodate 0.15-2
+libfl-dev/precise uptodate 2.5.35-10ubuntu3
+libflac8/precise uptodate 1.2.1-6
+libfltk-gl1.3/precise uptodate 1.3.0-5build1
+libfltk1.1/precise uptodate 1.1.10-10
+libfltk1.3/precise uptodate 1.3.0-5build1
+libfont-afm-perl/precise uptodate 1.20-1
+libfontconfig1 2.8.0-3ubuntu9.1 newer than version in archive
+libfontenc1/precise uptodate 1:1.1.0-1
+libframe6/precise uptodate 2.2.4-0ubuntu0.12.04.1
+libfreetype6/precise-security uptodate 2.4.8-1ubuntu2.1
+libfribidi0/precise uptodate 0.19.2-1
+libfs6/precise-security uptodate 2:1.0.3-1ubuntu0.1
+libfuse2/precise uptodate 2.8.6-2ubuntu2
+libgail-3-0 3.4.2-0ubuntu0.8 newer than version in archive
+libgail18 2.24.10-0ubuntu6.1 newer than version in archive
+libgarcon-1-0/precise uptodate 0.1.11-0ubuntu1
+libgarcon-common/precise uptodate 0.1.11-0ubuntu1
+libgc1c2/precise-security uptodate 1:7.1-8ubuntu0.12.04.1
+libgcc1/precise uptodate 1:4.6.3-1ubuntu5
+libgck-1-0 3.2.2-2ubuntu4.1 newer than version in archive
+libgconf-2-4/precise uptodate 3.2.5-0ubuntu2
+libgconf2-4/precise uptodate 3.2.5-0ubuntu2
+libgcr-3-1 3.2.2-2ubuntu4.1 newer than version in archive
+libgcr-3-common 3.2.2-2ubuntu4.1 newer than version in archive
+libgcrypt11/precise-security uptodate 1.5.0-3ubuntu0.2
+libgcrypt11-dev/precise-security uptodate 1.5.0-3ubuntu0.2
+libgd2-xpm/precise uptodate 2.0.36~rc1~dfsg-6ubuntu2
+libgdbm3/precise uptodate 1.8.3-10
+libgdk-pixbuf2.0-0 2.26.1-1ubuntu1.1 newer than version in archive
+libgdk-pixbuf2.0-common 2.26.1-1ubuntu1.1 newer than version in archive
+libgdome2-0/precise uptodate 0.8.1+debian-4.1build1
+libgdome2-cpp-smart0c2a/precise uptodate 0.2.6-6build2
+libgdu0/precise uptodate 3.0.2-2ubuntu7
+libgee2/precise uptodate 0.6.4-1
+libgegl-0.0-0/precise uptodate 0.0.22-2ubuntu3
+libgeis1/precise uptodate 2.2.9.2-0ubuntu1
+libgeoclue0/precise uptodate 0.12.0-1ubuntu12
+libgeoip1/precise uptodate 1.4.8+dfsg-2
+libgettextpo0/precise uptodate 0.18.1.1-5ubuntu3
+libgfortran3/precise uptodate 4.6.3-1ubuntu5
+libgif4/precise uptodate 4.1.6-9ubuntu1
+libgimp2.0/precise-security uptodate 2.6.12-1ubuntu1.3
+libgirepository-1.0-1/precise uptodate 1.32.0-1
+libgksu2-0/precise uptodate 2.0.13~pre1-5ubuntu2
+libgl1-mesa-dev 8.0.4-0ubuntu0.7 newer than version in archive
+libgl1-mesa-dri 8.0.4-0ubuntu0.7 newer than version in archive
+libgl1-mesa-glx 8.0.4-0ubuntu0.7 newer than version in archive
+libgl2ps0/precise uptodate 1.3.6-1
+libglade2-0 1:2.6.4-1ubuntu1.1 newer than version in archive
+libglapi-mesa 8.0.4-0ubuntu0.7 newer than version in archive
+libglib-perl/precise uptodate 2:1.241-1
+libglib2.0-0 2.32.4-0ubuntu1 newer than version in archive
+libglib2.0-bin 2.32.4-0ubuntu1 newer than version in archive
+libglib2.0-data 2.32.4-0ubuntu1 newer than version in archive
+libglibmm-2.4-1c2a/precise uptodate 2.32.0-0ubuntu1
+libglpk0/precise uptodate 4.45-1build1
+libglu1-mesa 8.0.4-0ubuntu0.7 newer than version in archive
+libgmime-2.6-0/precise uptodate 2.6.7-1
+libgmp10/precise uptodate 2:5.0.2+dfsg-2ubuntu1
+libgnome-bluetooth8 3.2.2-0ubuntu5.1 newer than version in archive
+libgnome-desktop-3-2 3.4.2-0ubuntu0.2 newer than version in archive
+libgnome-keyring-common/precise uptodate 3.2.2-2
+libgnome-keyring0/precise uptodate 3.2.2-2
+libgnome-menu-3-0/precise uptodate 3.4.0-0ubuntu1
+libgnome-menu2/precise uptodate 3.0.1-0ubuntu7
+libgnome2-0 2.32.1-2ubuntu1.1 newer than version in archive
+libgnome2-bin/precise uptodate 2.32.1-2ubuntu1.1
+libgnome2-common 2.32.1-2ubuntu1.1 newer than version in archive
+libgnomecanvas2-0 2.30.3-1ubuntu1.1 newer than version in archive
+libgnomecanvas2-common 2.30.3-1ubuntu1.1 newer than version in archive
+libgnomeui-0/precise uptodate 2.24.5-2ubuntu2
+libgnomeui-common/precise uptodate 2.24.5-2ubuntu2
+libgnomevfs2-0 1:2.24.4-1ubuntu2.1 newer than version in archive
+libgnomevfs2-common 1:2.24.4-1ubuntu2.1 newer than version in archive
+libgnomevfs2-extra 1:2.24.4-1ubuntu2.1 newer than version in archive
+libgnutls-dev/precise-security uptodate 2.12.14-5ubuntu3.7
+libgnutls-openssl27/precise-security uptodate 2.12.14-5ubuntu3.7
+libgnutls26/precise-security uptodate 2.12.14-5ubuntu3.7
+libgnutlsxx27/precise-security uptodate 2.12.14-5ubuntu3.7
+libgoffice-0.8-8/precise uptodate 0.8.17-1
+libgoffice-0.8-8-common/precise uptodate 0.8.17-1
+libgomp1/precise uptodate 4.6.3-1ubuntu5
+libgpg-error-dev/precise uptodate 1.10-2ubuntu1
+libgpg-error0/precise uptodate 1.10-2ubuntu1
+libgpgme11/precise uptodate 1.2.0-1.4ubuntu2
+libgphoto2-2 2.4.13-1ubuntu1.2 newer than version in archive
+libgphoto2-l10n 2.4.13-1ubuntu1.2 newer than version in archive
+libgphoto2-port0 2.4.13-1ubuntu1.2 newer than version in archive
+libgpm2/precise uptodate 1.20.4-4
+libgrail5/precise uptodate 3.0.6-0ubuntu0.12.04.01
+libgraph4/precise-security uptodate 2.26.3-10ubuntu1.1
+libgraphicsmagick++3/precise uptodate 1.3.12-1.1build1
+libgraphicsmagick3/precise uptodate 1.3.12-1.1build1
+libgraphite2-3/precise uptodate 1.2.4-1ubuntu1~precise1
+libgrip0 0.3.5-0ubuntu1~12.04.1 newer than version in archive
+libgs9 9.05~dfsg-0ubuntu4.2 newer than version in archive
+libgs9-common 9.05~dfsg-0ubuntu4.2 newer than version in archive
+libgsf-1-114/precise uptodate 1.14.21-2
+libgsf-1-common/precise uptodate 1.14.21-2
+libgsl0ldbl/precise uptodate 1.15+dfsg-1build1
+libgsm1/precise uptodate 1.0.13-3
+libgsoap1/precise uptodate 2.8.4-2
+libgssapi-krb5-2/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libgssapi3-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libgssdp-1.0-3/precise uptodate 0.12.1-2
+libgssrpc4/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libgstreamer-perl/precise uptodate 0.16-1build1
+libgstreamer-plugins-base0.10-0 0.10.36-1ubuntu0.1 newer than version in archive
+libgstreamer0.10-0/precise uptodate 0.10.36-1ubuntu1
+libgtk-3-0 3.4.2-0ubuntu0.8 newer than version in archive
+libgtk-3-bin 3.4.2-0ubuntu0.8 newer than version in archive
+libgtk-3-common 3.4.2-0ubuntu0.8 newer than version in archive
+libgtk-vnc-1.0-0/precise uptodate 0.5.0-1ubuntu1
+libgtk2-gladexml-perl/precise uptodate 1.007-1build2
+libgtk2-notify-perl/precise uptodate 0.05-3build1
+libgtk2-perl/precise uptodate 2:1.223-1build3
+libgtk2-trayicon-perl/precise uptodate 0.06-1build2
+libgtk2.0-0 2.24.10-0ubuntu6.1 newer than version in archive
+libgtk2.0-bin 2.24.10-0ubuntu6.1 newer than version in archive
+libgtk2.0-common 2.24.10-0ubuntu6.1 newer than version in archive
+libgtkhex-3-0/precise uptodate 3.4.0-0ubuntu1
+libgtkmathview0c2a/precise uptodate 0.8.0-7
+libgtkmm-2.4-1c2a/precise uptodate 1:2.24.2-1ubuntu1
+libgtkmm-3.0-1/precise uptodate 3.4.0-0ubuntu1
+libgtksourceview-3.0-0 3.4.2-0ubuntu1 newer than version in archive
+libgtksourceview-3.0-common 3.4.2-0ubuntu1 newer than version in archive
+libgtksourceview2.0-0/precise uptodate 2.10.5-0ubuntu3
+libgtksourceview2.0-common/precise uptodate 2.10.5-0ubuntu3
+libgtkspell0/precise uptodate 2.0.16-1ubuntu5
+libgtop2-7/precise uptodate 2.28.4-2
+libgtop2-common/precise uptodate 2.28.4-2
+libgucharmap-2-90-7/precise uptodate 1:3.4.1.1-0ubuntu1
+libgudev-1.0-0 1:175-0ubuntu9.5 newer than version in archive
+libgupnp-1.0-4/precise uptodate 0.18.1-2
+libgupnp-igd-1.0-4/precise uptodate 0.2.1-2
+libgutenprint2 5.2.8~pre1-0ubuntu2.1 newer than version in archive
+libgvc5/precise-security uptodate 2.26.3-10ubuntu1.1
+libgvnc-1.0-0/precise uptodate 0.5.0-1ubuntu1
+libgvpr1/precise-security uptodate 2.26.3-10ubuntu1.1
+libhal-storage1/precise uptodate 0.5.14-8
+libhal1/precise uptodate 0.5.14-8
+libhcrypto4-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libhdf5-serial-1.8.4/precise uptodate 1.8.4-patch1-3ubuntu2
+libhdf5-serial-dev/precise uptodate 1.8.4-patch1-3ubuntu2
+libheimbase1-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libheimntlm0-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libhpmud0/precise-security uptodate 3.12.2-1ubuntu3.4
+libhsqldb-java/precise uptodate 1.8.0.10-9ubuntu2
+libhtml-form-perl/precise uptodate 6.00-1
+libhtml-format-perl/precise uptodate 2.10-1
+libhtml-parser-perl/precise uptodate 3.69-1build1
+libhtml-tagset-perl/precise uptodate 3.20-2
+libhtml-tree-perl/precise uptodate 4.2-1
+libhttp-cookies-perl/precise uptodate 6.00-2
+libhttp-daemon-perl/precise uptodate 6.00-1
+libhttp-date-perl/precise uptodate 6.00-1
+libhttp-message-perl/precise uptodate 6.01-1
+libhttp-negotiate-perl/precise uptodate 6.00-2
+libhttp-server-simple-perl/precise uptodate 0.44-1
+libhunspell-1.3-0/precise uptodate 1.3.2-4
+libhx509-5-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libhyphen0/precise uptodate 2.8.3-1
+libibus-1.0-0/precise uptodate 1.4.1-3ubuntu1
+libibverbs1/precise uptodate 1.1.5-1ubuntu1
+libical0/precise uptodate 0.48-1ubuntu3
+libice6/precise uptodate 2:1.0.7-2build1
+libicu48/precise uptodate 4.8.1.1-13+nmu1ubuntu1~precise1
+libid3tag0/precise uptodate 0.15.1b-10build2
+libidl-common/precise uptodate 0.8.14-0.2ubuntu2
+libidl0/precise uptodate 0.8.14-0.2ubuntu2
+libidn11/precise uptodate 1.23-2
+libidn11-dev/precise uptodate 1.23-2
+libido-0.1-0/precise uptodate 0.3.4-0ubuntu1
+libido3-0.1-0/precise uptodate 0.3.4-0ubuntu1
+libiec61883-0/precise uptodate 1.2.0-0.1ubuntu1
+libieee1284-3/precise uptodate 0.2.11-10build1
+libijs-0.35/precise uptodate 0.35-8
+libilmbase6/precise uptodate 1.0.1-3build2
+libimage-exiftool-perl/precise uptodate 8.60-2
+libimobiledevice2/precise uptodate 1.1.1-4
+libindicate-gtk3/precise uptodate 0.6.92-0ubuntu1
+libindicate5/precise uptodate 0.6.92-0ubuntu1
+libindicator-messages-status-provider1 0.6.0-0ubuntu2 newer than version in archive
+libindicator3-7/precise uptodate 0.5.0-0ubuntu1
+libindicator7/precise uptodate 0.5.0-0ubuntu1
+libio-pty-perl/precise uptodate 1:1.08-1build2
+libio-socket-inet6-perl/precise uptodate 2.69-2
+libio-socket-ssl-perl/precise uptodate 1.53-1
+libio-string-perl/precise uptodate 1.08-2
+libio-stringy-perl/precise uptodate 2.110-5
+libipc-run-perl/precise uptodate 0.90-1
+libisc83/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+libisccc80/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+libisccfg82/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+libiso9660-8/precise uptodate 0.83-1
+libisofs6/precise uptodate 1.1.6-1ubuntu1
+libiw30/precise uptodate 30~pre9-5ubuntu2
+libjack-jackd2-0 1.9.8~dfsg.1-1ubuntu2 newer than version in archive
+libjasper1/precise uptodate 1.900.1-13
+libjavascriptcoregtk-1.0-0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libjavascriptcoregtk-3.0-0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libjbig2dec0/precise uptodate 0.11-1ubuntu1
+libjpeg-dev/precise uptodate 8c-2ubuntu7
+libjpeg-progs/precise uptodate 8c-2ubuntu7
+libjpeg-turbo-progs/precise-security uptodate 1.1.90+svn733-0ubuntu4.3
+libjpeg-turbo8/precise-security uptodate 1.1.90+svn733-0ubuntu4.3
+libjpeg-turbo8-dev/precise-security uptodate 1.1.90+svn733-0ubuntu4.3
+libjpeg8/precise uptodate 8c-2ubuntu7
+libjpeg8-dev/precise uptodate 8c-2ubuntu7
+libjs-jquery/precise uptodate 1.7.1-1ubuntu1
+libjson-perl/precise uptodate 2.53-1
+libjson-xs-perl/precise uptodate 2.320-1build1
+libjson0/precise uptodate 0.9-1ubuntu1
+libjte1/precise uptodate 1.19-1
+libk5crypto3/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkadm5clnt-mit8/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkadm5srv-mit8/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkate1/precise uptodate 0.4.1-1
+libkdb5-6/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkeybinder0/precise uptodate 0.2.2-3build1
+libkeyutils1/precise uptodate 1.5.2-2
+libklibc/precise uptodate 1.5.25-1ubuntu2
+libkms1 2.4.46-1ubuntu0.0.0.1 newer than version in archive
+libkpathsea5/precise uptodate 2009-11ubuntu2
+libkrb5-26-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libkrb5-3/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkrb5-dev/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+libkrb5support0/precise-security uptodate 1.10+dfsg~beta1-2ubuntu0.3
+liblangtag-common/precise uptodate 0.5.1-2~precise2
+liblangtag1/precise uptodate 0.5.1-2~precise2
+liblapack-dev/precise uptodate 3.3.1-1
+liblapack3gf/precise uptodate 3.3.1-1
+liblaunchpad-integration-3.0-1 0.1.56.1 newer than version in archive
+liblaunchpad-integration-common 0.1.56.1 newer than version in archive
+liblaunchpad-integration1 0.1.56.1 newer than version in archive
+liblcms1/precise uptodate 1.19.dfsg-1ubuntu3
+liblcms2-2/precise uptodate 2.5-0ubuntu1~precise1
+libldap-2.4-2 2.4.28-1.1ubuntu4.4 newer than version in archive
+libldap2-dev 2.4.28-1.1ubuntu4.4 newer than version in archive
+liblightdm-gobject-1-0 1.2.3-0ubuntu2.4 newer than version in archive
+liblinear-tools/precise uptodate 1.8+dfsg-1
+liblinear1/precise uptodate 1.8+dfsg-1
+liblink-grammar4/precise uptodate 4.7.4-2
+liblircclient0/precise uptodate 0.9.0-0ubuntu1
+libllvm3.0/precise uptodate 3.0-4ubuntu1
+liblocale-gettext-perl/precise uptodate 1.05-7build1
+liblockfile-bin 1.09-3ubuntu0.1 newer than version in archive
+liblockfile1 1.09-3ubuntu0.1 newer than version in archive
+liblog4cpp5/precise uptodate 1.0-4
+libloudmouth1-0/precise uptodate 1.4.3-8
+liblqr-1-0/precise uptodate 0.4.1-1.1
+libltdl7/precise uptodate 2.4.2-1ubuntu1
+liblua5.1-0/precise uptodate 5.1.4-12ubuntu1
+liblua5.2-0/precise uptodate 5.2.0-2
+liblvm2app2.2 2.02.66-4ubuntu7.4 newer than version in archive
+liblwp-mediatypes-perl/precise uptodate 6.01-1
+liblwp-protocol-https-perl/precise uptodate 6.02-1
+liblwres80/precise-security uptodate 1:9.8.1.dfsg.P1-4ubuntu0.8
+liblzma5/precise uptodate 5.1.1alpha+20110809-3
+liblzo2-2/precise uptodate 2.06-1
+libm17n-0/precise uptodate 1.6.3-1
+libmad0/precise uptodate 0.15.1b-7ubuntu1
+libmagic-dev/precise-security uptodate 5.09-2ubuntu0.3
+libmagic1/precise-security uptodate 5.09-2ubuntu0.3
+libmagick++4/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+libmagickcore4/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+libmagickcore4-extra/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+libmagickwand4/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+libmail-sendmail-perl/precise uptodate 0.79.16-1
+libmailtools-perl/precise uptodate 2.08-1
+libmatroska5/precise uptodate 1.3.0-1
+libmcrypt4/precise uptodate 2.5.8-3.1
+libmeanwhile1/precise uptodate 1.0.2-4ubuntu1
+libmhash2/precise uptodate 0.9.9.9-1
+libmicrohttpd10/precise uptodate 0.9.26-1ubuntu1~precise
+libmikmod2/precise uptodate 3.1.12-2
+libminiupnpc8/precise uptodate 1.6-3ubuntu1
+libmng1/precise uptodate 1.0.10-3
+libmodplug1/precise uptodate 1:0.8.8.4-1
+libmount1/precise uptodate 2.20.1-1ubuntu3
+libmpc2/precise uptodate 0.9-4
+libmpcdec6/precise uptodate 2:0.1~r459-1ubuntu1
+libmpeg2-4/precise uptodate 0.4.1-3
+libmpfr4/precise uptodate 3.1.0-3ubuntu2
+libmpg123-0/precise uptodate 1.12.1-3.2ubuntu1
+libmspub-0.0-0/precise uptodate 0.0.6-1~precise1
+libmtdev1/precise uptodate 1.1.0-2ubuntu1
+libmtp-common 1.1.3-1ubuntu0.1 newer than version in archive
+libmtp-runtime 1.1.3-1ubuntu0.1 newer than version in archive
+libmtp9 1.1.3-1ubuntu0.1 newer than version in archive
+libmysqlclient18/precise-security uptodate 5.5.37-0ubuntu0.12.04.1
+libmythes-1.2-0/precise uptodate 2:1.2.2-1
+libnautilus-extension1a 1:3.4.2-0ubuntu9 newer than version in archive
+libncp/precise uptodate 2.2.6-8
+libncurses5/precise uptodate 5.9-4
+libncurses5-dev/precise uptodate 5.9-4
+libncursesw5/precise uptodate 5.9-4
+libneon27-gnutls 0.29.6-1ubuntu1 newer than version in archive
+libnet-cidr-perl/precise uptodate 0.14-1
+libnet-daemon-perl/precise uptodate 0.48-1
+libnet-dbus-perl/precise uptodate 1.0.0-1build1
+libnet-dns-perl/precise uptodate 0.66-2ubuntu3
+libnet-domain-tld-perl/precise uptodate 1.69-1
+libnet-http-perl/precise uptodate 6.02-1
+libnet-ip-perl/precise uptodate 1.25-3
+libnet-socks-perl/precise uptodate 0.03-12
+libnet-ssleay-perl/precise uptodate 1.42-1build1
+libnet1/precise uptodate 1.1.4-2.1
+libnetfilter-conntrack3/precise uptodate 0.9.1-1ubuntu1
+libnetpbm10/precise uptodate 2:10.0-15
+libnettle4/precise uptodate 2.4-1
+libnewt0.52/precise uptodate 0.52.11-2ubuntu10
+libnfnetlink0/precise uptodate 1.0.0-1
+libnice10/precise uptodate 0.1.1-2ubuntu1
+libnids1.21/precise uptodate 1.23-2
+libnih-dbus1 1.0.3-4ubuntu9.1 newer than version in archive
+libnih1 1.0.3-4ubuntu9.1 newer than version in archive
+libnl-3-200/precise uptodate 3.2.3-2ubuntu2
+libnl-genl-3-200/precise uptodate 3.2.3-2ubuntu2
+libnl-route-3-200/precise uptodate 3.2.3-2ubuntu2
+libnm-glib-vpn1 0.9.4.0-0ubuntu4.4.1 newer than version in archive
+libnm-glib4 0.9.4.0-0ubuntu4.4.1 newer than version in archive
+libnm-gtk-common 0.9.4.1-0ubuntu2.3 newer than version in archive
+libnm-gtk0 0.9.4.1-0ubuntu2.3 newer than version in archive
+libnm-util2 0.9.4.0-0ubuntu4.4.1 newer than version in archive
+libnotify-bin/precise uptodate 0.7.5-1
+libnotify4/precise uptodate 0.7.5-1
+libnspr4/precise-security uptodate 4.9.5-0ubuntu0.12.04.2
+libnspr4-0d/precise-security uptodate 4.9.5-0ubuntu0.12.04.2
+libnss-mdns/precise uptodate 0.10-3.2
+libnss3/precise-security uptodate 3.15.4-0ubuntu0.12.04.2
+libnss3-1d/precise-security uptodate 3.15.4-0ubuntu0.12.04.2
+libntfs10/precise uptodate 2.0.0-1ubuntu4
+libnuma1/precise uptodate 2.0.8~rc3-1
+liboctave-dev/precise uptodate 3.8.1-1ubuntu1~octave1~precise1
+liboctave1/precise uptodate 3.6.4-1~ppa1~precise1
+liboctave2/precise uptodate 3.8.1-1ubuntu1~octave1~precise1
+libodbc1/precise uptodate 2.2.14p2-5ubuntu3
+libogg0/precise uptodate 1.2.2~dfsg-1ubuntu1
+liboobs-1-5/precise uptodate 3.0.0-1
+libopenal-data/precise uptodate 1:1.13-4ubuntu3
+libopenal1/precise uptodate 1:1.13-4ubuntu3
+libopencc1/precise uptodate 0.3.0-1
+libopenconnect1/precise uptodate 3.15-0ubuntu2
+libopencore-amrnb0/precise uptodate 0.1.2-1
+libopencore-amrwb0/precise uptodate 0.1.2-1
+libopenexr6/precise uptodate 1.6.1-4.1
+libopenmpi1.3/precise uptodate 1.4.3-2.1ubuntu3
+libopenobex1/precise uptodate 1.5-2build1
+libopenvas6/precise uptodate 6.0.0-1ubuntu2~precise
+liborbit2 1:2.14.19-0.1ubuntu1 newer than version in archive
+liborc-0.4-0/precise uptodate 1:0.4.16-1ubuntu2
+liborcus-0.6-0/precise uptodate 0.5.1-3~precise1
+libotf0/precise uptodate 0.9.12-1
+libotr2/precise-security uptodate 3.2.0-4ubuntu0.2
+libots0/precise uptodate 0.5.0-2.1
+libp11-kit-dev/precise uptodate 0.12-2ubuntu1
+libp11-kit0/precise uptodate 0.12-2ubuntu1
+libpam-cap/precise uptodate 1:2.22-1ubuntu3
+libpam-ck-connector 0.4.5-2ubuntu0.1 newer than version in archive
+libpam-gnome-keyring 3.2.2-2ubuntu4.1 newer than version in archive
+libpam-modules/precise uptodate 1.1.3-7ubuntu2
+libpam-modules-bin/precise uptodate 1.1.3-7ubuntu2
+libpam-runtime/precise uptodate 1.1.3-7ubuntu2
+libpam-winbind/precise-security uptodate 2:3.6.3-2ubuntu2.10
+libpam0g/precise uptodate 1.1.3-7ubuntu2
+libpango-perl/precise uptodate 1.222-1build1
+libpango1.0-0 1.30.0-0ubuntu3.1 newer than version in archive
+libpangomm-1.4-1/precise uptodate 2.28.4-1ubuntu1
+libpaper-utils/precise uptodate 1.1.24+nmu1build1
+libpaper1/precise uptodate 1.1.24+nmu1build1
+libparpack2/precise uptodate 3.0.2-3
+libparse-debcontrol-perl/precise uptodate 2.005-3
+libparse-debianchangelog-perl/precise uptodate 1.2.0-1ubuntu1
+libparted0debian1 2.3-8ubuntu5.1 newer than version in archive
+libpathplan4/precise-security uptodate 2.26.3-10ubuntu1.1
+libpcap-dev/precise uptodate 1.1.1-10
+libpcap0.8/precise uptodate 1.1.1-10
+libpcap0.8-dev/precise uptodate 1.1.1-10
+libpci3 1:3.1.8-2ubuntu6 newer than version in archive
+libpciaccess0 0.12.902-1ubuntu0.2 newer than version in archive
+libpcre3/precise uptodate 8.12-4
+libpcrecpp0/precise uptodate 8.12-4
+libpcsclite1/precise uptodate 1.7.4-2ubuntu2
+libpeas-1.0-0/precise uptodate 1.2.0-1ubuntu1
+libpeas-common/precise uptodate 1.2.0-1ubuntu1
+libperl5.14/precise-security uptodate 5.14.2-6ubuntu2.4
+libphonon4/precise uptodate 4:4.7.0really4.6.0-0ubuntu1
+libpipeline1/precise uptodate 1.2.1-1
+libpixman-1-0 0.30.2-1ubuntu0.0.0.0.1 newer than version in archive
+libpkcs11-helper1/precise uptodate 1.09-1
+libplist1/precise uptodate 1.8-1
+libplot2c2/precise uptodate 2.6-2ubuntu1
+libplrpc-perl/precise uptodate 0.2020-2
+libplymouth2 0.8.2-2ubuntu31.1 newer than version in archive
+libpng12-0/precise uptodate 1.2.46-3ubuntu4
+libpolkit-agent-1-0/precise-security uptodate 0.104-1ubuntu1.1
+libpolkit-backend-1-0/precise-security uptodate 0.104-1ubuntu1.1
+libpolkit-gobject-1-0/precise-security uptodate 0.104-1ubuntu1.1
+libpoppler-glib8/precise-security uptodate 0.18.4-1ubuntu3.1
+libpoppler-qt4-3/precise-security uptodate 0.18.4-1ubuntu3.1
+libpoppler19/precise-security uptodate 0.18.4-1ubuntu3.1
+libpopt0/precise uptodate 1.16-3ubuntu1
+libportaudio2/precise uptodate 19+svn20111121-1
+libpostproc52/precise-security uptodate 4:0.8.10-0ubuntu0.12.04.1
+libpq-dev 9.1.13-0ubuntu0.12.04 newer than version in archive
+libpq5 9.1.13-0ubuntu0.12.04 newer than version in archive
+libproxy1/precise-security uptodate 0.4.7-0ubuntu4.1
+libproxychains3/precise uptodate 3.1-3
+libpstoedit0c2a/precise uptodate 3.60-1build2
+libpth20/precise uptodate 2.0.7-16ubuntu3
+libpthread-stubs0/precise uptodate 0.3-3
+libpthread-stubs0-dev/precise uptodate 0.3-3
+libpulse-mainloop-glib0 1:1.1-0ubuntu15.4 newer than version in archive
+libpulse0 1:1.1-0ubuntu15.4 newer than version in archive
+libpulsedsp 1:1.1-0ubuntu15.4 newer than version in archive
+libpurple-bin/precise-security uptodate 1:2.10.3-0ubuntu1.5
+libpurple0/precise-security uptodate 1:2.10.3-0ubuntu1.5
+libpython2.7/precise-security uptodate 2.7.3-0ubuntu3.5
+libqhull5/precise uptodate 2009.1-3ubuntu1
+libqrupdate1/precise uptodate 1.1.1-1
+libqscintilla2-8/precise uptodate 2.6.1-4
+libqt4-dbus 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-declarative 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-designer 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-help 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-network 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-opengl 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-script 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-scripttools 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-sql 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-sql-mysql 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-sql-sqlite 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-svg 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-test 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-xml 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqt4-xmlpatterns 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqtassistantclient4/precise uptodate 4.6.3-3ubuntu2
+libqtcore4 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqtgui4 4:4.8.1-0ubuntu4.8 newer than version in archive
+libqtwebkit4/precise uptodate 2.2.1-1ubuntu4
+libquadmath0/precise uptodate 4.6.3-1ubuntu5
+libquvi-scripts/precise uptodate 0.4.2-1
+libquvi7/precise uptodate 0.4.0-1
+libradare2-0.9/precise uptodate 0.9-3
+libradare2-dev/precise uptodate 0.9-3
+librados2 0.41-1ubuntu2.1 newer than version in archive
+libraptor2-0/precise uptodate 2.0.13-1~precise1
+librarian0/precise uptodate 0.8.1-5
+librasqal3/precise uptodate 0.9.32-1~precise1
+libraw1394-11/precise uptodate 2.0.7-1ubuntu1
+librbd1 0.41-1ubuntu2.1 newer than version in archive
+librdf0/precise uptodate 1.0.17-1~precise1
+libreadline-dev/precise uptodate 6.2-8
+libreadline5/precise uptodate 5.2-11
+libreadline6/precise uptodate 6.2-8
+libreadline6-dev/precise uptodate 6.2-8
+librecode0/precise uptodate 3.6-18
+libreoffice/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-avmedia-backend-gstreamer/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-base/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-base-core/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-base-drivers/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-calc/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-common/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-core/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-draw/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-gnome/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-gtk/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-impress/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-java-common/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-math/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-pdfimport/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-report-builder-bin/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-sdbc-firebird/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-sdbc-hsqldb/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-style-human/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libreoffice-writer/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+libresid-builder0c2a/precise uptodate 2.1.1-12
+libroken18-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+librpm2 4.9.1.1-1ubuntu0.2 newer than version in archive
+librpmbuild2 4.9.1.1-1ubuntu0.2 newer than version in archive
+librpmio2 4.9.1.1-1ubuntu0.2 newer than version in archive
+librpmsign0 4.9.1.1-1ubuntu0.2 newer than version in archive
+librrd4/precise uptodate 1.4.7-1
+librsvg2-2/precise-security uptodate 2.36.1-0ubuntu1.1
+librsvg2-common/precise-security uptodate 2.36.1-0ubuntu1.1
+librtmp-dev/precise uptodate 2.4~20110711.gitc28f1bab-1
+librtmp0/precise uptodate 2.4~20110711.gitc28f1bab-1
+libruby/precise uptodate 4.8
+libruby1.8/precise-security uptodate 1.8.7.352-2ubuntu1.4
+libruby1.9.1/precise-security uptodate 1.9.3.0-1ubuntu2.8
+libsamplerate0/precise uptodate 0.1.8-4
+libsane/precise uptodate 1.0.22-7ubuntu1
+libsane-common/precise uptodate 1.0.22-7ubuntu1
+libsane-hpaio/precise-security uptodate 3.12.2-1ubuntu3.4
+libsasl2-2 2.1.25.dfsg1-3ubuntu0.1 newer than version in archive
+libsasl2-modules 2.1.25.dfsg1-3ubuntu0.1 newer than version in archive
+libschroedinger-1.0-0/precise uptodate 1.0.11-1
+libsdl-image1.2/precise uptodate 1.2.10-3
+libsdl-net1.2/precise uptodate 1.2.7-5
+libsdl-sound1.2/precise uptodate 1.0.3-4
+libsdl1.2debian/precise uptodate 1.2.14-6.4ubuntu3
+libselinux1/precise uptodate 2.1.0-4.1ubuntu1
+libsensors4/precise uptodate 1:3.3.1-2ubuntu1
+libservlet2.5-java/precise-security uptodate 6.0.35-1ubuntu3.4
+libsexy2/precise uptodate 0.1.11-2build2
+libsgutils2-2/precise uptodate 1.33-1
+libshout3/precise uptodate 2.2.2-7ubuntu1
+libsidplay2/precise uptodate 2.1.1-12
+libsigc++-2.0-0c2a/precise uptodate 2.2.10-0ubuntu2
+libsigsegv2/precise uptodate 2.9-4ubuntu2
+libslang2/precise uptodate 2.2.4-3ubuntu1
+libslp1/precise uptodate 1.2.1-7.8ubuntu1
+libsm6/precise uptodate 2:1.2.0-2build1
+libsmbclient/precise-security uptodate 2:3.6.3-2ubuntu2.10
+libsmi2ldbl/precise uptodate 0.4.8+dfsg2-4build1
+libsmpeg0/precise uptodate 0.4.5+cvs20030824-4
+libsndfile1/precise uptodate 1.0.25-4
+libsnmp-base/precise-security uptodate 5.4.3~dfsg-2.4ubuntu1.2
+libsnmp15/precise-security uptodate 5.4.3~dfsg-2.4ubuntu1.2
+libsocket6-perl/precise uptodate 0.23-1build2
+libsonic0/precise uptodate 0.1.17-1.1
+libsoup-gnome2.4-1/precise uptodate 2.38.1-1
+libsoup2.4-1/precise uptodate 2.38.1-1
+libsox-fmt-alsa/precise uptodate 14.3.2-3
+libsox-fmt-base/precise uptodate 14.3.2-3
+libsox1b/precise uptodate 14.3.2-3
+libspectre1/precise uptodate 0.2.6-1build1
+libspeechd2/precise uptodate 0.7.1-6ubuntu3
+libspeex1/precise uptodate 1.2~rc1-3ubuntu2
+libspeexdsp1/precise uptodate 1.2~rc1-3ubuntu2
+libsqlite3-0 3.7.9-2ubuntu1.1 newer than version in archive
+libsqlite3-dev 3.7.9-2ubuntu1.1 newer than version in archive
+libsqlite3-ruby/precise uptodate 1.3.4-1
+libss2/precise uptodate 1.42-1ubuntu2
+libssh-4/precise-security uptodate 0.5.2-1ubuntu0.12.04.3
+libssl-dev/precise-security uptodate 1.0.1-4ubuntu5.13
+libssl-doc/precise-security uptodate 1.0.1-4ubuntu5.13
+libssl1.0.0/precise-security uptodate 1.0.1-4ubuntu5.13
+libstartup-notification0/precise uptodate 0.12-1ubuntu1
+libstdc++6/precise uptodate 4.6.3-1ubuntu5
+libstdc++6-4.6-dev/precise uptodate 4.6.3-1ubuntu5
+libsub-name-perl/precise uptodate 0.05-1build2
+libsvm-tools/precise uptodate 3.1-1build1
+libsvn1/precise-security uptodate 1.6.17dfsg-3ubuntu3.3
+libswitch-perl/precise uptodate 2.16-2
+libswscale2/precise-security uptodate 4:0.8.10-0ubuntu0.12.04.1
+libsys-hostname-long-perl/precise uptodate 1.4-2
+libsysfs2/precise uptodate 2.1.0+repack-1
+libt1-5/precise uptodate 5.1.2-3.4ubuntu1
+libtag1-vanilla/precise uptodate 1.7-1ubuntu5
+libtag1c2a/precise uptodate 1.7-1ubuntu5
+libtagc0/precise uptodate 1.7-1ubuntu5
+libtalloc2/precise uptodate 2.0.7-3
+libtar0/precise uptodate 1.2.11-8
+libtasn1-3/precise-security uptodate 2.10-1ubuntu1.1
+libtasn1-3-dev/precise-security uptodate 2.10-1ubuntu1.1
+libtdb1/precise uptodate 1.2.9-4
+libtelepathy-glib0 0.18.2-0ubuntu1 newer than version in archive
+libterm-readkey-perl/precise uptodate 2.30-4build3
+libtest-longstring-perl/precise uptodate 0.15-1
+libtest-www-mechanize-perl/precise uptodate 1.36-1ubuntu1
+libtext-charwidth-perl/precise uptodate 0.04-7build1
+libtext-iconv-perl/precise uptodate 1.7-5
+libtext-wrapi18n-perl/precise uptodate 0.06-7
+libthai-data/precise uptodate 0.1.16-3
+libthai0/precise uptodate 0.1.16-3
+libtheora0/precise uptodate 1.1.1+dfsg.1-3ubuntu2
+libthunarx-2-0/precise uptodate 1.2.3-3ubuntu2
+libtidy-0.99-0/precise uptodate 20091223cvs-1ubuntu2
+libtie-ixhash-perl/precise uptodate 1.21-2
+libtiff4/precise-security uptodate 3.9.5-2ubuntu1.6
+libtimedate-perl/precise uptodate 1.2000-1
+libtinfo-dev/precise uptodate 5.9-4
+libtinfo5/precise uptodate 5.9-4
+libtinyxml2.6.2/precise uptodate 2.6.2-1build1
+libtorque2/precise uptodate 2.4.16+dfsg-1build1
+libtotem-plparser17/precise uptodate 3.4.1-1
+libts-0.0-0/precise uptodate 1.0-10
+libtsk3-3/precise uptodate 3.2.3-2ubuntu1
+libtumbler-1-0/precise uptodate 0.1.24-0ubuntu1
+libtwolame0/precise uptodate 0.3.13-1build1
+libucl1/precise uptodate 1.03-5
+libudev0 175-0ubuntu9.5 newer than version in archive
+libui-dialog-perl/precise uptodate 1.08-1.1
+libumfpack5.4.0/precise uptodate 1:3.4.0-2ubuntu3
+libunique-1.0-0/precise uptodate 1.1.6-4
+libunistring0/precise uptodate 0.9.3-5
+libunity9 5.12.0-0ubuntu1.1 newer than version in archive
+libupnp3/precise-security uptodate 1:1.6.6-5.1ubuntu0.12.04.1
+libupower-glib1 0.9.15-3git1ubuntu0.1 newer than version in archive
+liburi-perl/precise uptodate 1.59-1
+libusb-0.1-4/precise uptodate 2:0.1.12-20
+libusb-1.0-0/precise uptodate 2:1.0.9~rc3-2ubuntu1
+libusbmuxd1 1.0.7-2ubuntu0.1 newer than version in archive
+libutempter0/precise uptodate 1.1.5-4
+libutouch-evemu1/precise uptodate 1.0.9-0ubuntu1
+libutouch-frame1/precise uptodate 2.2.3-0ubuntu1
+libutouch-geis1 2.2.9-0ubuntu3 newer than version in archive
+libutouch-grail1/precise uptodate 3.0.5-0ubuntu1
+libuuid-perl/precise uptodate 0.02-4ubuntu1
+libuuid1/precise uptodate 2.20.1-1ubuntu3
+libv4l-0 0.8.6-1ubuntu2 newer than version in archive
+libv4lconvert0 0.8.6-1ubuntu2 newer than version in archive
+libva-x11-1/precise uptodate 1.0.15-4
+libva1/precise uptodate 1.0.15-4
+libvcdinfo0/precise uptodate 0.7.23-4.1ubuntu1
+libvirt-bin 0.9.8-2ubuntu17.19 newer than version in archive
+libvirt0 0.9.8-2ubuntu17.19 newer than version in archive
+libvisio-0.0-0/precise uptodate 0.0.31-1~precise1
+libvisual-0.4-0/precise uptodate 0.4.0-4
+libvisual-0.4-plugins/precise uptodate 0.4.0.dfsg.1-7
+libvlc5/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+libvlccore5/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+libvncserver0/precise uptodate 0.9.8.2-2ubuntu1
+libvorbis0a/precise uptodate 1.3.2-1ubuntu3
+libvorbisenc2/precise uptodate 1.3.2-1ubuntu3
+libvorbisfile3/precise uptodate 1.3.2-1ubuntu3
+libvpx1/precise uptodate 1.0.0-1
+libvte-2.90-9/precise uptodate 1:0.32.1-0ubuntu1
+libvte-2.90-common/precise uptodate 1:0.32.1-0ubuntu1
+libvte-common/precise uptodate 1:0.28.2-3ubuntu2
+libvte9/precise uptodate 1:0.28.2-3ubuntu2
+libwavpack1/precise uptodate 4.60.1-2
+libwbclient0/precise-security uptodate 2:3.6.3-2ubuntu2.10
+libwebkitgtk-1.0-0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libwebkitgtk-1.0-common/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libwebkitgtk-3.0-0/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libwebkitgtk-3.0-common/precise-security uptodate 1.8.3-0ubuntu0.12.04.1
+libwhisker2-perl/precise uptodate 2.5-1
+libwind0-heimdal 1.6~git20120311.dfsg.1-2ubuntu0.1 newer than version in archive
+libwireshark-data/precise uptodate 1.10.3-1backbox1
+libwireshark3/precise uptodate 1.10.3-1backbox1
+libwiretap3/precise uptodate 1.10.3-1backbox1
+libwmf-bin/precise uptodate 0.2.8.4-10ubuntu1
+libwmf0.2-7/precise uptodate 0.2.8.4-10ubuntu1
+libwnck-3-0/precise uptodate 3.4.0-0ubuntu1
+libwnck-3-common/precise uptodate 3.4.0-0ubuntu1
+libwnck-common/precise uptodate 1:2.30.7-0ubuntu1
+libwnck22/precise uptodate 1:2.30.7-0ubuntu1
+libwpd-0.9-9/precise uptodate 0.9.9-1~precise1
+libwpg-0.2-2/precise uptodate 0.2.2-1~precise1
+libwps-0.2-2/precise uptodate 0.2.9-1ubuntu1~precise1
+libwrap0/precise uptodate 7.6.q-21
+libwsutil3/precise uptodate 1.10.3-1backbox1
+libwv-1.2-4/precise uptodate 1.2.9-2
+libwww-mechanize-perl/precise uptodate 1.71-1
+libwww-perl/precise uptodate 6.03-1
+libwww-robotrules-perl/precise uptodate 6.01-1
+libwxbase2.8-0/precise uptodate 2.8.12.1-6ubuntu2
+libwxgtk2.8-0/precise uptodate 2.8.12.1-6ubuntu2
+libx11-6 2:1.4.99.1-0ubuntu2.2 newer than version in archive
+libx11-data 2:1.4.99.1-0ubuntu2.2 newer than version in archive
+libx11-dev 2:1.4.99.1-0ubuntu2.2 newer than version in archive
+libx11-doc 2:1.4.99.1-0ubuntu2.2 newer than version in archive
+libx11-xcb1 2:1.4.99.1-0ubuntu2.2 newer than version in archive
+libx264-120/precise uptodate 2:0.120.2151+gita3f4407-2
+libx86-1/precise uptodate 1.1+ds1-7ubuntu1
+libxapian22/precise uptodate 1.2.8-1
+libxatracker1 8.0.4-0ubuntu0.7 newer than version in archive
+libxau-dev/precise uptodate 1:1.0.6-4
+libxau6/precise uptodate 1:1.0.6-4
+libxaw7/precise uptodate 2:1.0.9-3ubuntu1
+libxcb-composite0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-dri2-0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-glx0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-keysyms1/precise uptodate 0.3.8-1build1
+libxcb-randr0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-render0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-shape0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-shm0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb-util0/precise uptodate 0.3.8-2
+libxcb-xv0/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb1/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcb1-dev/precise-security uptodate 1.8.1-1ubuntu0.2
+libxcomposite1/precise uptodate 1:0.4.3-2build1
+libxcursor1/precise-security uptodate 1:1.1.12-1ubuntu0.1
+libxdamage1/precise uptodate 1:1.1.3-2build1
+libxdmcp-dev/precise uptodate 1:1.1.0-4
+libxdmcp6/precise uptodate 1:1.1.0-4
+libxenstore3.0/precise-security uptodate 4.1.5-0ubuntu0.12.04.3
+libxext-dev/precise-security uptodate 2:1.3.0-3ubuntu0.1
+libxext6/precise-security uptodate 2:1.3.0-3ubuntu0.1
+libxfce4ui-1-0/precise uptodate 4.8.1-1
+libxfce4util-bin/precise uptodate 4.8.2-1
+libxfce4util-common/precise uptodate 4.8.2-1
+libxfce4util4/precise uptodate 4.8.2-1
+libxfcegui4-4/precise uptodate 4.8.1-5ubuntu1
+libxfconf-0-2/precise uptodate 4.8.1-1
+libxfixes3 1:5.0-4ubuntu4.2 newer than version in archive
+libxfont1/precise-security uptodate 1:1.4.4-1ubuntu0.2
+libxft2/precise uptodate 2.2.0-3ubuntu2
+libxi6 2:1.7.1.901-1ubuntu1~precise1 newer than version in archive
+libxinerama1/precise-security uptodate 2:1.1.1-3ubuntu0.1
+libxkbfile1 1:1.0.7-1ubuntu0.1 newer than version in archive
+libxklavier16/precise uptodate 5.2.1-1ubuntu1
+libxml-namespacesupport-perl/precise uptodate 1.09-3
+libxml-parser-perl/precise uptodate 2.41-1build1
+libxml-sax-base-perl/precise uptodate 1.07-1
+libxml-sax-expat-perl/precise uptodate 0.40-2
+libxml-sax-perl 0.99+dfsg-1ubuntu0.1 newer than version in archive
+libxml-simple-perl/precise uptodate 2.18-3
+libxml-simple-ruby/precise uptodate 1.0.12-1
+libxml-twig-perl/precise uptodate 1:3.39-1ubuntu1
+libxml-xpath-perl/precise uptodate 1.13-7
+libxml2/precise-security uptodate 2.7.8.dfsg-5.1ubuntu4.7
+libxml2-dev/precise-security uptodate 2.7.8.dfsg-5.1ubuntu4.7
+libxml2-utils/precise-security uptodate 2.7.8.dfsg-5.1ubuntu4.7
+libxmu6/precise uptodate 2:1.1.0-3
+libxmuu1/precise uptodate 2:1.1.0-3
+libxp6/precise-security uptodate 1:1.0.1-2ubuntu0.12.04.1
+libxpm4/precise uptodate 1:3.5.9-4
+libxrandr2/precise-security uptodate 2:1.3.2-2ubuntu0.2
+libxrender1/precise-security uptodate 1:0.9.6-2ubuntu0.1
+libxres1/precise-security uptodate 2:1.0.5-1ubuntu0.1
+libxslt1-dev/precise-security uptodate 1.1.26-8ubuntu1.3
+libxslt1.1/precise-security uptodate 1.1.26-8ubuntu1.3
+libxss1/precise uptodate 1:1.2.1-2
+libxt6/precise-security uptodate 1:1.1.1-2ubuntu0.1
+libxtst6/precise-security uptodate 2:1.2.0-4ubuntu0.1
+libxv1/precise-security uptodate 2:1.0.6-2ubuntu0.1
+libxvmc1/precise-security uptodate 2:1.0.6-1ubuntu2.1
+libxxf86dga1/precise-security uptodate 2:1.1.2-1ubuntu0.1
+libxxf86vm1/precise-security uptodate 1:1.1.1-2ubuntu0.1
+libyajl1/precise uptodate 1.0.12-2
+libyaml-0-2/precise-security uptodate 0.1.4-2ubuntu0.12.04.3
+libyaml-syck-perl/precise uptodate 1.19-1
+libyaml-tiny-perl/precise uptodate 1.50-1
+libyelp0/precise uptodate 3.4.1-0ubuntu1
+libzeitgeist-1.0-1 0.3.18-1ubuntu1 newer than version in archive
+libzephyr4/precise uptodate 3.0.1-1
+libzip2/precise uptodate 0.10-1ubuntu1
+libzvbi-common/precise uptodate 0.2.33-4
+libzvbi0/precise uptodate 0.2.33-4
+lightdm 1.2.3-0ubuntu2.4 newer than version in archive
+lightdm-gtk-greeter 1.1.5-0ubuntu1.1 newer than version in archive
+link-grammar-dictionaries-en/precise uptodate 4.7.4-2
+lintian 2.5.6ubuntu0.1 newer than version in archive
+linux-firmware/precise-security uptodate 1.79.14
+linux-generic-lts-saucy/precise uptodate 3.11.0.20.18
+linux-headers-3.11.0-15/precise uptodate 3.11.0-15.25~precise1
+linux-headers-3.11.0-15-generic/precise uptodate 3.11.0-15.25~precise1
+linux-headers-3.11.0-17/precise uptodate 3.11.0-17.31~precise1
+linux-headers-3.11.0-17-generic/precise uptodate 3.11.0-17.31~precise1
+linux-headers-3.11.0-18/precise uptodate 3.11.0-18.32~precise1
+linux-headers-3.11.0-18-generic/precise uptodate 3.11.0-18.32~precise1
+linux-headers-3.11.0-19/precise uptodate 3.11.0-19.33~precise1
+linux-headers-3.11.0-19-generic/precise uptodate 3.11.0-19.33~precise1
+linux-headers-3.11.0-20/precise uptodate 3.11.0-20.35~precise1
+linux-headers-3.11.0-20-generic/precise uptodate 3.11.0-20.35~precise1
+linux-headers-generic-lts-saucy/precise uptodate 3.11.0.20.18
+linux-image-3.11.0-15-generic/precise uptodate 3.11.0-15.25~precise1
+linux-image-3.11.0-17-generic/precise uptodate 3.11.0-17.31~precise1
+linux-image-3.11.0-18-generic/precise uptodate 3.11.0-18.32~precise1
+linux-image-3.11.0-19-generic/precise uptodate 3.11.0-19.33~precise1
+linux-image-3.11.0-20-generic/precise uptodate 3.11.0-20.35~precise1
+linux-image-generic-lts-saucy/precise uptodate 3.11.0.20.18
+linux-libc-dev/precise-security uptodate 3.2.0-61.93
+linux-sound-base 1.0.25+dfsg-0ubuntu1.1 newer than version in archive
+lmodern/precise uptodate 2.004.1-3.1ubuntu1
+localechooser-data/precise uptodate 2.39ubuntu2
+locales/precise uptodate 2.13+git20120306-3
+lockfile-progs/precise uptodate 0.1.16
+login 1:4.1.4.2+svn3283-3ubuntu5.1 newer than version in archive
+logkeys/precise uptodate 0.1.0-2backbox2
+logrotate/precise uptodate 3.7.8-6ubuntu5
+lp-solve/precise uptodate 5.5.0.13-7
+lsb-base 4.0-0ubuntu20.3 newer than version in archive
+lsb-release 4.0-0ubuntu20.3 newer than version in archive
+lshw/precise uptodate 02.15-2
+lsof/precise uptodate 4.81.dfsg.1-1build1
+ltrace/precise uptodate 0.5.3-2.1ubuntu2
+luatex/precise uptodate 0.70.1-1ubuntu1
+lvm2 2.02.66-4ubuntu7.4 newer than version in archive
+m17n-contrib/precise uptodate 1.1.13-1
+m17n-db/precise uptodate 1.6.3-1
+m4/precise uptodate 1.4.16-2ubuntu1
+macchanger/precise uptodate 1.5.0-9
+macchanger-gtk/precise uptodate 1.1-4
+magictree/precise uptodate 1.3-0backbox2
+make 3.81-8.1ubuntu1.1 newer than version in archive
+makedev/precise uptodate 2.3.1-89ubuntu2
+maltego-tungsten-community 3.4.0 installed: No available version in archive
+man-db 2.6.1-2ubuntu1 newer than version in archive
+manpages/precise uptodate 3.35-0.1ubuntu1
+manpages-dev/precise uptodate 3.35-0.1ubuntu1
+maskprocessor/precise uptodate 0.69-0backbox2
+mat/precise uptodate 0.3.2-1backbox1
+mawk/precise uptodate 1.3.3-17
+mdk3/precise uptodate 6-0backbox3
+medusa/precise uptodate 2.1.1-0backbox0
+memtest86+/precise uptodate 4.20-1.1ubuntu1
+menu/precise uptodate 2.1.46ubuntu1
+mesa-common-dev 8.0.4-0ubuntu0.7 newer than version in archive
+mime-support/precise uptodate 3.51-1ubuntu1
+miscfiles/precise uptodate 1.4.2.dfsg.1-9
+mlocate/precise uptodate 0.23.1-1ubuntu2
+mobile-broadband-provider-info/precise uptodate 20120410-0ubuntu1
+modemmanager/precise uptodate 0.5.2.0-0ubuntu2
+module-init-tools/precise uptodate 3.16-1ubuntu2
+mount/precise uptodate 2.20.1-1ubuntu3
+mountall 2.36.4 newer than version in archive
+mozilla-plugin-vlc/precise uptodate 2.0.0-1
+mpg321/precise uptodate 0.2.13-4ubuntu1
+mscompress/precise uptodate 0.3-3.1
+msf/precise uptodate 4.9.0+git20131215-0backbox1
+msr-tools/precise uptodate 1.2-3
+mtools 4.0.12-1ubuntu0.12.04.1 newer than version in archive
+mtr-tiny/precise uptodate 0.80-1ubuntu1
+multiarch-support/precise-security uptodate 2.15-0ubuntu10.5
+mysql-client/precise-security uptodate 5.5.37-0ubuntu0.12.04.1
+mysql-client-5.5/precise-security uptodate 5.5.37-0ubuntu0.12.04.1
+mysql-client-core-5.5/precise-security uptodate 5.5.37-0ubuntu0.12.04.1
+mysql-common/precise-security uptodate 5.5.37-0ubuntu0.12.04.1
+mysql-workbench-community 6.0.9-1ubu1204 installed: No available version in archive
+nano/precise uptodate 2.2.6-1
+nasm/precise uptodate 2.09.10-1
+nautilus-data 1:3.4.2-0ubuntu9 newer than version in archive
+nautilus-dropbox/precise uptodate 0.7.1-2
+nbtscan/precise uptodate 1.5.1-6
+ncurses-base/precise uptodate 5.9-4
+ncurses-bin/precise uptodate 5.9-4
+net-tools/precise uptodate 1.60-24.1ubuntu2
+netbase/precise uptodate 4.47ubuntu1
+netcat-openbsd/precise uptodate 1.89-4ubuntu1
+netcmd/precise uptodate 1.3+20111208-0backbox2
+netpbm/precise uptodate 2:10.0-15
+network-manager 0.9.4.0-0ubuntu4.4.1 newer than version in archive
+network-manager-gnome 0.9.4.1-0ubuntu2.3 newer than version in archive
+network-manager-openconnect/precise uptodate 0.9.4.0-0ubuntu1
+network-manager-openconnect-gnome/precise uptodate 0.9.4.0-0ubuntu1
+network-manager-openvpn/precise uptodate 0.9.4.0-0ubuntu1
+network-manager-openvpn-gnome/precise uptodate 0.9.4.0-0ubuntu1
+network-manager-pptp/precise uptodate 0.9.4.0-0ubuntu1
+network-manager-pptp-gnome/precise uptodate 0.9.4.0-0ubuntu1
+ngrep/precise uptodate 1.45.ds2-11
+nikto/precise uptodate 1:2.1.5-1backbox1
+nmap/precise uptodate 6.40-0.1backbox1
+nsis/precise uptodate 2.46-7
+nsis-common/precise uptodate 2.46-7
+ntfs-3g 1:2012.1.15AR.1-1ubuntu1.2 newer than version in archive
+ntpdate 1:4.2.6.p3+dfsg-1ubuntu3.1 newer than version in archive
+nvidia-common 1:0.2.44.2 newer than version in archive
+obex-data-server/precise uptodate 0.4.6-0ubuntu1
+obexd-client/precise uptodate 0.44-0ubuntu1
+octave/precise uptodate 3.8.1-1ubuntu1~octave1~precise1
+octave-common/precise uptodate 3.8.1-1ubuntu1~octave1~precise1
+odbcinst/precise uptodate 2.2.14p2-5ubuntu3
+odbcinst1debian2/precise uptodate 2.2.14p2-5ubuntu3
+oinkmaster/precise uptodate 2.0-3
+onboard 0.97.0-0ubuntu4 newer than version in archive
+oneconf 0.2.8.1 newer than version in archive
+openconnect/precise uptodate 3.15-0ubuntu2
+openjdk-6-jre-headless/precise-security uptodate 6b31-1.13.3-1ubuntu1~0.12.04.2
+openjdk-6-jre-lib/precise-security uptodate 6b31-1.13.3-1ubuntu1~0.12.04.2
+openjdk-7-jre/precise-security uptodate 7u55-2.4.7-1ubuntu1~0.12.04.2
+openjdk-7-jre-headless/precise-security uptodate 7u55-2.4.7-1ubuntu1~0.12.04.2
+openjdk-7-jre-lib/precise-security uptodate 7u55-2.4.7-1ubuntu1~0.12.04.2
+openprinting-ppds/precise uptodate 20120322-0ubuntu1
+openssh-client 1:5.9p1-5ubuntu1.4 newer than version in archive
+openssh-server 1:5.9p1-5ubuntu1.4 newer than version in archive
+openssl/precise-security uptodate 1.0.1-4ubuntu5.13
+openvas-administrator/precise uptodate 1.3.0-1ubuntu1~precise
+openvas-check-setup/precise uptodate 2.2.3-0ubuntu1~precise
+openvas-cli/precise uptodate 1.2.0-1ubuntu1~precise
+openvas-manager/precise uptodate 4.0.2-1ubuntu4~precise
+openvas-scanner/precise uptodate 3.4.0-1ubuntu1~precise
+openvpn 2.2.1-8ubuntu1.2 newer than version in archive
+orage/precise uptodate 4.8.3-1
+os-prober/precise uptodate 1.51ubuntu3
+oss-compat/precise uptodate 1
+pack/precise uptodate 0.0.3-0backbox2
+parted 2.3-8ubuntu5.1 newer than version in archive
+passwd 1:4.1.4.2+svn3283-3ubuntu5.1 newer than version in archive
+pastebinit 1.3-2ubuntu2.1 newer than version in archive
+patch/precise uptodate 2.6.1-3
+patchutils/precise uptodate 0.3.2-1.1
+pavucontrol/precise uptodate 0.99.2-1build1
+pciutils 1:3.1.8-2ubuntu6 newer than version in archive
+pcmciautils/precise uptodate 018-6
+pdfcrack/precise uptodate 0.11-1
+perl/precise-security uptodate 5.14.2-6ubuntu2.4
+perl-base/precise-security uptodate 5.14.2-6ubuntu2.4
+perl-modules/precise-security uptodate 5.14.2-6ubuntu2.4
+perlmagick/precise-security uptodate 8:6.6.9.7-5ubuntu3.3
+pgadmin3/precise uptodate 1.14.0-2
+pgadmin3-data/precise uptodate 1.14.0-2
+pgagent/precise uptodate 3.0.1-1
+pgf/precise uptodate 2.10-1
+phonon/precise uptodate 4:4.7.0really4.6.0-0ubuntu1
+phonon-backend-gstreamer 4:4.7.0really4.6.2-0ubuntu0.1 newer than version in archive
+php5/precise-security uptodate 5.3.10-1ubuntu3.11
+php5-cli/precise-security uptodate 5.3.10-1ubuntu3.11
+php5-common/precise-security uptodate 5.3.10-1ubuntu3.11
+php5-sqlite/precise-security uptodate 5.3.10-1ubuntu3.11
+pidgin/precise-security uptodate 1:2.10.3-0ubuntu1.5
+pidgin-data/precise-security uptodate 1:2.10.3-0ubuntu1.5
+pidgin-libnotify/precise uptodate 0.14-4ubuntu10
+pidgin-microblog/precise uptodate 0.3.0-3
+pidgin-otr/precise-security uptodate 3.2.0-5ubuntu0.12.04.1
+pkg-config/precise uptodate 0.26-1ubuntu1
+plymouth 0.8.2-2ubuntu31.1 newer than version in archive
+plymouth-label 0.8.2-2ubuntu31.1 newer than version in archive
+plymouth-theme-backbox-logo/precise uptodate 3.13
+plymouth-theme-backbox-text/precise uptodate 3.13
+plymouth-theme-ubuntu-text 0.8.2-2ubuntu31.1 newer than version in archive
+pm-utils 1.4.1-9fix.ubuntu12.04 newer than version in archive
+po-debconf/precise uptodate 1.0.16+nmu2ubuntu1
+policykit-1/precise-security uptodate 0.104-1ubuntu1.1
+policykit-1-gnome 0.105-1ubuntu3.1 newer than version in archive
+policykit-desktop-privileges/precise uptodate 0.10
+polipo/precise uptodate 1.0.4.1-1.1
+poppler-utils/precise-security uptodate 0.18.4-1ubuntu3.1
+popularity-contest/precise uptodate 1.53ubuntu1
+postgresql 9.1+129ubuntu1 newer than version in archive
+postgresql-9.1 9.1.13-0ubuntu0.12.04 newer than version in archive
+postgresql-client-9.1 9.1.13-0ubuntu0.12.04 newer than version in archive
+postgresql-client-common 129ubuntu1 newer than version in archive
+postgresql-common 129ubuntu1 newer than version in archive
+powermgmt-base/precise uptodate 1.31
+ppp/precise uptodate 2.4.5-5ubuntu1
+pppconfig/precise uptodate 2.3.18+nmu3ubuntu1
+pppoeconf/precise uptodate 1.20ubuntu1
+pptp-linux/precise uptodate 1.7.2-6
+preview-latex-style/precise uptodate 11.86-2ubuntu1
+printer-driver-c2esp/precise uptodate 23-1
+printer-driver-foo2zjs/precise uptodate 20111202dfsg0-1ubuntu1
+printer-driver-gutenprint 5.2.8~pre1-0ubuntu2.1 newer than version in archive
+printer-driver-hpcups/precise-security uptodate 3.12.2-1ubuntu3.4
+printer-driver-hpijs/precise-security uptodate 3.12.2-1ubuntu3.4
+printer-driver-min12xxw/precise uptodate 0.0.9-6ubuntu1
+printer-driver-pnm2ppa/precise uptodate 1.13+nondbs-0ubuntu1
+printer-driver-postscript-hp/precise-security uptodate 3.12.2-1ubuntu3.4
+printer-driver-ptouch 1.3-3ubuntu0.1 newer than version in archive
+printer-driver-pxljr/precise uptodate 1.3+repack0-2
+printer-driver-sag-gdi/precise uptodate 0.1-3
+printer-driver-splix/precise uptodate 2.0.0+svn300-1.1ubuntu2
+procps 1:3.2.8-11ubuntu6.3 newer than version in archive
+prosper/precise uptodate 1.00.4+cvs.2007.05.01-4
+proxychains/precise uptodate 3.1-3
+ps2eps/precise uptodate 1.68-1
+psmisc 22.15-2ubuntu1.1 newer than version in archive
+pstoedit/precise uptodate 3.60-1build2
+psutils/precise uptodate 1.17-31
+ptunnel/precise uptodate 0.71-2
+pulseaudio 1:1.1-0ubuntu15.4 newer than version in archive
+pulseaudio-module-x11 1:1.1-0ubuntu15.4 newer than version in archive
+pulseaudio-utils 1:1.1-0ubuntu15.4 newer than version in archive
+pyew/precise uptodate 2.0-3
+pyrit/precise uptodate 0.4.0-2build1
+python 2.7.3-0ubuntu2.2 newer than version in archive
+python-appindicator 0.4.92-0ubuntu1.1 newer than version in archive
+python-apport/precise-security uptodate 2.0.1-0ubuntu17.6
+python-apt 0.8.3ubuntu7.2 newer than version in archive
+python-apt-common 0.8.3ubuntu7.2 newer than version in archive
+python-aptdaemon 0.43+bzr805-0ubuntu9 newer than version in archive
+python-aptdaemon.gtk3widgets 0.43+bzr805-0ubuntu9 newer than version in archive
+python-beautifulsoup/precise uptodate 3.2.0-2build1
+python-cairo/precise uptodate 1.8.8-1ubuntu3
+python-central 0.6.17ubuntu2 newer than version in archive
+python-chardet/precise uptodate 2.0.1-2build1
+python-cheetah/precise uptodate 2.4.4-2ubuntu3
+python-configobj/precise uptodate 4.7.2+ds-3build1
+python-crypto/precise-security uptodate 2.4.1-1ubuntu0.1
+python-cups/precise uptodate 1.9.61-0ubuntu2
+python-cupshelpers 1.3.8+20120201-0ubuntu8.1 newer than version in archive
+python-dateutil/precise uptodate 1.5-1
+python-dbus/precise uptodate 1.0.0-1ubuntu1
+python-dbus-dev/precise uptodate 1.0.0-1ubuntu1
+python-debian/precise uptodate 0.1.21ubuntu1
+python-debtagshw 1.9+git20120320-0ubuntu1 newer than version in archive
+python-defer/precise uptodate 1.0.2+bzr481-1
+python-dnspython/precise uptodate 1.9.4-0ubuntu3
+python-docutils/precise uptodate 0.8.1-4ubuntu1
+python-epydoc/precise uptodate 3.0.1-11
+python-fpconst/precise uptodate 0.7.2-4
+python-gconf/precise uptodate 2.28.1+dfsg-1
+python-gdbm/precise uptodate 2.7.3-1ubuntu1
+python-gi 3.2.2-1~precise newer than version in archive
+python-gi-cairo 3.2.2-1~precise newer than version in archive
+python-glade2/precise uptodate 2.24.0-3
+python-gmenu/precise uptodate 3.0.1-0ubuntu7
+python-gnome2/precise uptodate 2.28.1+dfsg-1
+python-gnomekeyring/precise uptodate 2.32.0+dfsg-1
+python-gnupginterface/precise uptodate 0.3.2-9.1ubuntu3
+python-gobject 3.2.2-1~precise newer than version in archive
+python-gobject-2/precise uptodate 2.28.6-10ubuntu1
+python-gpgme/precise uptodate 0.2-1
+python-gst0.10 0.10.22-3ubuntu0.1 newer than version in archive
+python-gtk-vnc/precise uptodate 0.5.0-1ubuntu1
+python-gtk2/precise uptodate 2.24.0-3
+python-gtksourceview2/precise uptodate 2.10.1-2build1
+python-gtkspell/precise uptodate 2.25.3-11
+python-hachoir-core/precise uptodate 1.3.3-3
+python-hachoir-parser/precise uptodate 1.3.4-1
+python-httplib2/precise-security uptodate 0.7.2-1ubuntu2.1
+python-ibus/precise uptodate 1.4.1-3ubuntu1
+python-imaging/precise-security uptodate 1.1.7-4ubuntu0.12.04.1
+python-imaging-tk/precise-security uptodate 1.1.7-4ubuntu0.12.04.1
+python-impacket/precise uptodate 0.9.6.0-3
+python-keyring/precise-security uptodate 0.9.2-0ubuntu0.12.04.2
+python-launchpadlib/precise uptodate 1.9.12-1
+python-lazr.restfulclient 0.12.0-1ubuntu1.1 newer than version in archive
+python-lazr.uri/precise uptodate 1.0.3-1
+python-libvirt 0.9.8-2ubuntu17.19 newer than version in archive
+python-libxml2/precise-security uptodate 2.7.8.dfsg-5.1ubuntu4.7
+python-lxml/precise-security uptodate 2.3.2-1ubuntu0.2
+python-magic/precise-security uptodate 5.09-2ubuntu0.3
+python-matplotlib/precise uptodate 1.1.1~rc1+git20120423-0ubuntu1
+python-matplotlib-data/precise uptodate 1.1.1~rc1+git20120423-0ubuntu1
+python-minimal 2.7.3-0ubuntu2.2 newer than version in archive
+python-mutagen/precise uptodate 1.20-1ubuntu1
+python-notify/precise uptodate 0.1.1-3
+python-numpy/precise uptodate 1:1.6.1-6ubuntu1
+python-oauth/precise uptodate 1.0.1-3build1
+python-openssl/precise-security uptodate 0.12-1ubuntu2.1
+python-pam/precise uptodate 0.4.2-12.2ubuntu4
+python-paramiko 1.7.7.1-2ubuntu1 newer than version in archive
+python-pcapy/precise uptodate 0.10.8-1build1
+python-pdfrw/precise uptodate 0+svn136-3
+python-pefile/precise uptodate 1.2.9.1-1
+python-pexpect/precise uptodate 2.3-1ubuntu2
+python-pip/precise uptodate 1.0-1build1
+python-piston-mini-client 0.7.2+bzr57-0ubuntu1 newer than version in archive
+python-pkg-resources/precise uptodate 0.6.24-1ubuntu1
+python-poppler/precise uptodate 0.12.1-4+ubuntu1
+python-problem-report/precise-security uptodate 2.0.1-0ubuntu17.6
+python-pycurl/precise uptodate 7.19.0-4ubuntu3
+python-pygments/precise uptodate 1.4+dfsg-2
+python-pyorbit/precise uptodate 2.24.0-6ubuntu2
+python-pyparsing/precise uptodate 1.5.2-2ubuntu1
+python-pypdf/precise uptodate 1.13-1
+python-pysqlite2/precise uptodate 2.6.3-2build1
+python-qt4/precise uptodate 4.9.1-2ubuntu1
+python-qt4-phonon/precise uptodate 4.9.1-2ubuntu1
+python-radare2/precise uptodate 0.9-1
+python-renderpm/precise uptodate 2.5-1.1build1
+python-reportlab/precise uptodate 2.5-1.1build1
+python-reportlab-accel/precise uptodate 2.5-1.1build1
+python-roman/precise uptodate 0.8.1-4ubuntu1
+python-rsvg/precise uptodate 2.32.0+dfsg-1
+python-scapy/precise uptodate 2.2.0-1
+python-serial/precise uptodate 2.5-2.1build1
+python-setuptools/precise uptodate 0.6.24-1ubuntu1
+python-simplejson/precise uptodate 2.3.2-1
+python-sip/precise uptodate 4.13.2-1
+python-smbc/precise uptodate 1.0.13-0ubuntu1
+python-soappy/precise uptodate 0.12.0-4
+python-socksipy/precise uptodate 1.0-1ubuntu2
+python-software-properties 0.82.7.7 newer than version in archive
+python-sqlalchemy 0.7.4-1ubuntu0.1 newer than version in archive
+python-sqlalchemy-ext 0.7.4-1ubuntu0.1 newer than version in archive
+python-support/precise uptodate 1.0.14ubuntu2
+python-svn/precise uptodate 1.7.5-1.1
+python-tk/precise uptodate 2.7.3-1ubuntu1
+python-twisted-bin/precise uptodate 11.1.0-1ubuntu2
+python-twisted-core/precise uptodate 11.1.0-1ubuntu2
+python-twisted-web/precise uptodate 11.1.0-1
+python-tz/precise uptodate 2011k-0ubuntu5
+python-ubuntu-sso-client 3.0.2-0ubuntu3 newer than version in archive
+python-uniconvertor/precise uptodate 1.1.4-1ubuntu1
+python-uno/precise uptodate 1:4.2.4~rc2-0ubuntu1~precise3
+python-urlgrabber/precise uptodate 3.9.1-4ubuntu2
+python-virtkey/precise uptodate 0.60.0-0ubuntu5
+python-vm-builder 0.12.4+bzr477-0ubuntu4 newer than version in archive
+python-vte/precise uptodate 1:0.28.2-3ubuntu2
+python-wadllib/precise uptodate 1.3.0-2
+python-wxgtk2.8/precise uptodate 2.8.12.1-6ubuntu2
+python-wxversion/precise uptodate 2.8.12.1-6ubuntu2
+python-xapian/precise uptodate 1.2.8-1
+python-xdg/precise uptodate 0.19-3ubuntu2
+python-xkit/precise uptodate 0.4.2.3build1
+python-zeitgeist 0.9.0-1ubuntu1 newer than version in archive
+python-zope.interface/precise uptodate 3.6.1-1ubuntu3
+python2.7/precise-security uptodate 2.7.3-0ubuntu3.5
+python2.7-dev/precise-security uptodate 2.7.3-0ubuntu3.5
+python2.7-minimal/precise-security uptodate 2.7.3-0ubuntu3.5
+python3 3.2.3-0ubuntu1.2 newer than version in archive
+python3-httplib2/precise-security uptodate 0.7.2-1ubuntu2.1
+python3-minimal 3.2.3-0ubuntu1.2 newer than version in archive
+python3.2/precise-security uptodate 3.2.3-0ubuntu3.6
+python3.2-minimal/precise-security uptodate 3.2.3-0ubuntu3.6
+qdbus 4:4.8.1-0ubuntu4.8 newer than version in archive
+qemu/precise-security uptodate 1.0+noroms-0ubuntu14.14
+qemu-common/precise-security uptodate 1.0+noroms-0ubuntu14.14
+qemu-kvm/precise-security uptodate 1.0+noroms-0ubuntu14.14
+qemu-utils/precise-security uptodate 1.0+noroms-0ubuntu14.14
+radare2/precise uptodate 0.9-3
+radeontool/precise uptodate 1.6.2-1.1
+rarian-compat/precise uptodate 0.8.1-5
+readline-common/precise uptodate 6.2-8
+reaver/precise uptodate 1.4-2backbox6
+recode/precise uptodate 3.6-18
+recon-ng/precise uptodate 3.1.2+git20131211-0backbox1
+recordmydesktop/precise uptodate 0.3.8.1+svn602-1ubuntu3
+redfang/precise uptodate 1.1-0backbox2
+resolvconf 1.63ubuntu16 newer than version in archive
+responder/precise uptodate 2.0-0backbox1
+rfcomm-shell/precise uptodate 0.1-0backbox2
+rfkill/precise uptodate 0.4-1ubuntu2
+rips/precise uptodate 0.54-0backbox1
+rpm 4.9.1.1-1ubuntu0.2 newer than version in archive
+rpm-common 4.9.1.1-1ubuntu0.2 newer than version in archive
+rpm2cpio 4.9.1.1-1ubuntu0.2 newer than version in archive
+rrdtool/precise uptodate 1.4.7-1
+rsync/precise uptodate 3.0.9-1ubuntu1
+rsyslog 5.8.6-1ubuntu8.6 newer than version in archive
+rtkit/precise-security uptodate 0.10-2ubuntu0.12.04.1
+ruby-json/precise uptodate 1.6.3-1
+ruby-nokogiri/precise uptodate 1.5.0-1
+ruby-rchardet/precise uptodate 1.3-2
+ruby-sqlite3/precise uptodate 1.3.4-1
+ruby1.9.1/precise-security uptodate 1.9.3.0-1ubuntu2.8
+ruby1.9.1-dev/precise-security uptodate 1.9.3.0-1ubuntu2.8
+samba-common/precise-security uptodate 2:3.6.3-2ubuntu2.10
+samba-common-bin/precise-security uptodate 2:3.6.3-2ubuntu2.10
+samdump2/precise uptodate 1.1.1-1.1
+sane-utils/precise uptodate 1.0.22-7ubuntu1
+scalpel/precise uptodate 1.60-1build1
+screensaver-default-images/precise uptodate 0.2-1
+seabios 0.6.2-0ubuntu2.1 newer than version in archive
+seahorse 3.2.2-0ubuntu2.1 newer than version in archive
+secure-delete/precise uptodate 3.1-5
+sed/precise uptodate 4.2.1-9
+sensible-utils/precise uptodate 0.0.6ubuntu2
+sessioninstaller 0.20+bzr128-0ubuntu1.3 newer than version in archive
+setoolkit/precise uptodate 5.4.8+git20140307-0backbox1
+sgml-base/precise uptodate 1.26+nmu1ubuntu1
+sgml-data/precise uptodate 2.0.6
+shared-mime-info 1.0-0ubuntu4.1 newer than version in archive
+shimmer-themes/precise uptodate 1.3.0-1backbox1
+siege/precise uptodate 2.70-1build1
+simple-scan 3.4.4-0ubuntu1 newer than version in archive
+sipcrack/precise uptodate 0.2-2build1
+skipfish/precise uptodate 2.10b-1backbox1
+skype/precise downgradeable from 4.2.0.13-1 to 4.2.0.11-0ubuntu0.12.04.2
+skype 4.2.0.13-1 newer than version in archive
+sleuthkit/precise uptodate 3.2.3-2ubuntu1
+slowhttptest/precise uptodate 1.5-0backbox3
+smartmontools/precise uptodate 5.41+svn3365-1
+smbclient/precise-security uptodate 2:3.6.3-2ubuntu2.10
+snort-rules-default/precise uptodate 2.9.2-3ubuntu1
+socat/precise uptodate 1.7.1.3-1.2
+software-center 5.2.10 newer than version in archive
+software-center-aptdaemon-plugins/precise uptodate 0.1.2
+software-properties-common 0.82.7.7 newer than version in archive
+software-properties-gtk 0.82.7.7 newer than version in archive
+sound-theme-freedesktop/precise uptodate 0.7.pristine-2
+sox/precise uptodate 14.3.2-3
+speech-dispatcher/precise uptodate 0.7.1-6ubuntu3
+spooftooph/precise uptodate 0.5.2-0backbox2
+sqlite3 3.7.9-2ubuntu1.1 newer than version in archive
+sqlmap/precise uptodate 1.0+git20131216-0backbox1
+ssh-import-id/precise uptodate 2.10-0ubuntu1
+sshfs 2.3-1ubuntu0.1 newer than version in archive
+ssl-cert 1.0.28ubuntu0.1 newer than version in archive
+sslsniff/precise uptodate 0.8-2
+sslstrip/precise uptodate 0.9-1
+sslyze/precise uptodate 0.6-0backbox1
+statsprocessor/precise uptodate 0.08-0backbox1
+steghide/precise uptodate 0.5.1-9build2
+strace/precise uptodate 4.5.20-2.3ubuntu1
+sublime-text/precise uptodate 2.0.2-1~webupd8~3
+sudo/precise-security uptodate 1.8.3p1-1ubuntu3.6
+synaptic 0.75.9ubuntu1.1 newer than version in archive
+syslinux/precise uptodate 2:4.05+dfsg-2
+syslinux-common/precise uptodate 2:4.05+dfsg-2
+syslinux-legacy/precise uptodate 2:3.63+dfsg-2ubuntu5
+system-config-printer-common 1.3.8+20120201-0ubuntu8.1 newer than version in archive
+system-config-printer-gnome 1.3.8+20120201-0ubuntu8.1 newer than version in archive
+system-config-printer-udev 1.3.8+20120201-0ubuntu8.1 newer than version in archive
+system-tools-backends/precise uptodate 2.10.2-1ubuntu1
+sysv-rc 2.88dsf-13.10ubuntu11.1 newer than version in archive
+sysvinit-utils 2.88dsf-13.10ubuntu11.1 newer than version in archive
+tar/precise uptodate 1.26-4ubuntu1
+tcl/precise uptodate 8.5.0-2
+tcl8.4/precise uptodate 8.4.19-4ubuntu3
+tcl8.5/precise uptodate 8.5.11-1ubuntu1
+tcpd/precise uptodate 7.6.q-21
+tcpdump/precise uptodate 4.2.1-1ubuntu2
+tcpjunk/precise uptodate 2.9.03-0backbox5
+tcptraceroute/precise uptodate 1.5beta7+debian-4
+telnet/precise uptodate 0.17-36build1
+testdisk/precise uptodate 6.13-1
+tex-common/precise uptodate 2.10
+texinfo/precise uptodate 4.13a.dfsg.1-8ubuntu2
+texlive-base/precise uptodate 2009-15
+texlive-binaries/precise uptodate 2009-11ubuntu2
+texlive-common/precise uptodate 2009-15
+texlive-doc-base/precise uptodate 2009-2
+texlive-extra-utils/precise uptodate 2009-10ubuntu1
+texlive-font-utils/precise uptodate 2009-10ubuntu1
+texlive-fonts-recommended/precise uptodate 2009-15
+texlive-fonts-recommended-doc/precise uptodate 2009-15
+texlive-generic-recommended/precise uptodate 2009-15
+texlive-latex-base/precise uptodate 2009-15
+texlive-latex-base-doc/precise uptodate 2009-15
+texlive-latex-extra/precise uptodate 2009-10ubuntu1
+texlive-latex-extra-doc/precise uptodate 2009-10ubuntu1
+texlive-latex-recommended/precise uptodate 2009-15
+texlive-latex-recommended-doc/precise uptodate 2009-15
+texlive-luatex/precise uptodate 2009-15
+texlive-pictures/precise uptodate 2009-15
+texlive-pictures-doc/precise uptodate 2009-15
+texlive-pstricks/precise uptodate 2009-10ubuntu1
+texlive-pstricks-doc/precise uptodate 2009-10ubuntu1
+texmaker/precise uptodate 3.2-1
+texmaker-data/precise uptodate 3.2-1
+thc-ipv6/precise uptodate 2.1-0backbox1
+thc-ssl-dos/precise uptodate 1.4-0backbox0
+theharvester/precise uptodate 2.2a-0backbox2
+thunar/precise uptodate 1.2.3-3ubuntu2
+thunar-archive-plugin/precise uptodate 0.3.0-4
+thunar-data/precise uptodate 1.2.3-3ubuntu2
+thunar-media-tags-plugin/precise uptodate 0.2.0-1
+thunar-volman/precise uptodate 0.6.1-0ubuntu1
+thunderbird/precise-security uptodate 1:24.5.0+build1-0ubuntu0.12.04.1
+thunderbird-globalmenu/precise-security uptodate 1:24.5.0+build1-0ubuntu0.12.04.1
+time/precise uptodate 1.7-23.1
+tinyhoneypot/precise uptodate 0.4.6-9
+tipa/precise uptodate 2:1.3-15
+tk/precise uptodate 8.5.0-2
+tk8.5/precise uptodate 8.5.11-1
+tmux/precise uptodate 1.6-1ubuntu1
+tor/precise uptodate 0.2.4.22-1~precise+1
+tor-geoipdb/precise uptodate 0.2.4.22-1~precise+1
+torchat/precise-security uptodate 0.9.9.550-2~build0.12.04.1
+torsocks/precise uptodate 1.2-1
+toshset/precise uptodate 1.76-2
+traceroute/precise uptodate 1:2.0.18-1
+transmission-common/precise-security uptodate 2.51-0ubuntu1.3
+transmission-gtk/precise-security uptodate 2.51-0ubuntu1.3
+tree/precise uptodate 1.5.3-2
+truecrack/precise uptodate 3.0-0backbox2
+truecrypt/precise uptodate 7.1a-3
+tsconf/precise uptodate 1.0-10
+tshark/precise uptodate 1.10.3-1backbox1
+ttf-dejavu/precise uptodate 2.33-2ubuntu1
+ttf-dejavu-core/precise uptodate 2.33-2ubuntu1
+ttf-dejavu-extra/precise uptodate 2.33-2ubuntu1
+ttf-droid/precise uptodate 20101110+git-2
+ttf-freefont/precise uptodate 20100919-1
+ttf-indic-fonts-core/precise uptodate 1:0.5.11ubuntu1
+ttf-lyx/precise uptodate 2.0.2-1ubuntu2
+ttf-mscorefonts-installer/precise uptodate 3.4ubuntu3
+ttf-punjabi-fonts/precise uptodate 1:0.5.11ubuntu1
+ttf-ubuntu-font-family/precise uptodate 0.80-0ubuntu2
+ttf-umefont/precise uptodate 434-1
+ttf-unfonts-core/precise uptodate 1.0.3.is.1.0.2-080608-5ubuntu1
+ttf-wqy-microhei/precise uptodate 0.2.0-beta-1ubuntu1
+tumbler/precise uptodate 0.1.24-0ubuntu1
+tumbler-common/precise uptodate 0.1.24-0ubuntu1
+tzdata 2014c-0ubuntu0.12.04 newer than version in archive
+tzdata-java 2014c-0ubuntu0.12.04 newer than version in archive
+ubiquity-slideshow-backbox/precise uptodate 3.09
+ubuntu-extras-keyring/precise uptodate 2010.09.27
+ubuntu-keyring 2011.11.21.1 newer than version in archive
+ubuntu-minimal 1.267.1 newer than version in archive
+ubuntu-sso-client 3.0.2-0ubuntu3 newer than version in archive
+ubuntu-sso-client-gtk 3.0.2-0ubuntu3 newer than version in archive
+ubuntu-standard 1.267.1 newer than version in archive
+ubuntu-vm-builder 0.12.4+bzr477-0ubuntu4 newer than version in archive
+ucf/precise uptodate 3.0025+nmu2ubuntu1
+udev 175-0ubuntu9.5 newer than version in archive
+udisks/precise-security uptodate 1.0.4-5ubuntu2.2
+ufw/precise uptodate 0.31.1-1
+unattended-upgrades 0.76ubuntu1 newer than version in archive
+unixodbc/precise uptodate 2.2.14p2-5ubuntu3
+uno-libs3/precise uptodate 4.2.4~rc2-0ubuntu1~precise3
+unrar/precise uptodate 1:4.0.3-1
+unzip 6.0-4ubuntu2 newer than version in archive
+update-inetd/precise uptodate 4.41
+update-manager 1:0.156.14.13 newer than version in archive
+update-manager-core 1:0.156.14.13 newer than version in archive
+update-notifier 0.119ubuntu8.6 newer than version in archive
+update-notifier-common 0.119ubuntu8.6 newer than version in archive
+upower 0.9.15-3git1ubuntu0.1 newer than version in archive
+upstart 1.5-0ubuntu7.2 newer than version in archive
+upx-ucl/precise uptodate 3.08-2ubuntu1
+ure/precise uptodate 4.2.4~rc2-0ubuntu1~precise3
+ureadahead/precise uptodate 0.100.0-12
+usb-creator-common 0.2.38.3 newer than version in archive
+usb-creator-gtk 0.2.38.3 newer than version in archive
+usb-modeswitch/precise uptodate 1.2.3+repack0-1ubuntu2
+usb-modeswitch-data/precise uptodate 20120120-0ubuntu1
+usbmuxd 1.0.7-2ubuntu0.1 newer than version in archive
+usbutils/precise uptodate 1:005-1
+user-setup/precise uptodate 1.42ubuntu3
+ussp-push/precise uptodate 0.11-1
+util-linux/precise uptodate 2.20.1-1ubuntu3
+uuid-runtime/precise uptodate 2.20.1-1ubuntu3
+vbetool/precise uptodate 1.1-2ubuntu1
+vgabios/precise uptodate 0.6c-2ubuntu3
+vidalia/precise uptodate 0.2.21-1~precise
+vim 2:7.3.429-2ubuntu2.1 newer than version in archive
+vim-common 2:7.3.429-2ubuntu2.1 newer than version in archive
+vim-runtime 2:7.3.429-2ubuntu2.1 newer than version in archive
+vim-tiny 2:7.3.429-2ubuntu2.1 newer than version in archive
+vinetto/precise uptodate 0.6.0~alpha-1
+virt-manager 0.9.1-1ubuntu5.1 newer than version in archive
+virtinst 0.600.1-1ubuntu3.3 newer than version in archive
+virtualbox/precise-security uptodate 4.1.12-dfsg-2ubuntu0.6
+virtualbox-dkms/precise-security uptodate 4.1.12-dfsg-2ubuntu0.6
+virtualbox-qt/precise-security uptodate 4.1.12-dfsg-2ubuntu0.6
+vlc/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+vlc-data/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+vlc-nox/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+vlc-plugin-notify/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+vlc-plugin-pulse/precise-security uptodate 2.0.8-0ubuntu0.12.04.1
+w3af/precise uptodate 1.1svn5547-1backbox2
+w3af-console/precise uptodate 1.1svn5547-1backbox2
+wamerican/precise uptodate 7.1-1
+watershed/precise uptodate 6
+wdiff/precise uptodate 0.6.5-1
+weevely/precise uptodate 1.1.0-0backbox2
+wget/precise uptodate 1.13.4-2ubuntu1
+whatweb/precise uptodate 0.4.8~git20120606-1backbox1
+whiptail/precise uptodate 0.52.11-2ubuntu10
+whois/precise uptodate 5.0.15ubuntu2
+wifi-radar/precise uptodate 2.0.s08+dfsg-1ubuntu1
+wifite/precise uptodate 2.0r85-1backbox5
+winbind/precise-security uptodate 2:3.6.3-2ubuntu2.10
+wine 1.4-0ubuntu4.1 newer than version in archive
+wine-gecko1.4/precise uptodate 1.4.0-0ubuntu2
+wine1.4 1.4-0ubuntu4.1 newer than version in archive
+wine1.4-amd64/precise uptodate 1.4-0ubuntu4.1
+wine1.4-common 1.4-0ubuntu4.1 newer than version in archive
+wine1.4-i386 1.4-0ubuntu4.1 newer than version in archive
+winetricks/precise uptodate 0.0+20120308
+wireless-regdb/precise uptodate 2011.04.28-1ubuntu3
+wireless-tools/precise uptodate 30~pre9-5ubuntu2
+wireshark/precise uptodate 1.10.3-1backbox1
+wireshark-common/precise uptodate 1.10.3-1backbox1
+wodim/precise uptodate 9:1.1.11-2ubuntu2
+wpasupplicant 0.7.3-6ubuntu2.2 newer than version in archive
+wpscan/precise uptodate 2.2+git20131214-0backbox1
+x11-apps/precise uptodate 7.6+5ubuntu1
+x11-common 1:7.6+12ubuntu2 newer than version in archive
+x11-session-utils/precise uptodate 7.6+2
+x11-utils 7.6+4ubuntu0.1 newer than version in archive
+x11-xfs-utils/precise uptodate 7.6+1
+x11-xkb-utils/precise uptodate 7.6+4
+x11-xserver-utils/precise uptodate 7.6+3
+x11proto-core-dev 7.0.22-1ubuntu0.1 newer than version in archive
+x11proto-input-dev 2.3-1~precise1 newer than version in archive
+x11proto-kb-dev/precise uptodate 1.0.5-2
+x11proto-xext-dev/precise uptodate 7.2.0-3
+xauth/precise uptodate 1:1.0.6-1
+xbitmaps/precise uptodate 1.1.1-1
+xchat/precise uptodate 2.8.8-3ubuntu12
+xchat-common/precise uptodate 2.8.8-3ubuntu12
+xcursor-themes/precise uptodate 1.0.3-1
+xdg-user-dirs/precise uptodate 0.14-0ubuntu2
+xdg-user-dirs-gtk/precise uptodate 0.9-0ubuntu1
+xdg-utils/precise uptodate 1.1.0~rc1-2ubuntu6
+xfce-keyboard-shortcuts/precise uptodate 4.8.1-1
+xfce4-appfinder/precise uptodate 4.8.0-3
+xfce4-cpugraph-plugin/precise uptodate 1.0.1-2
+xfce4-datetime-plugin/precise uptodate 0.6.1-3ubuntu1
+xfce4-dict/precise uptodate 0.6.0-5
+xfce4-indicator-plugin/precise uptodate 0.4.0-0ubuntu2
+xfce4-mailwatch-plugin/precise uptodate 1.1.0-5
+xfce4-netload-plugin/precise uptodate 1.1.0-1
+xfce4-notes/precise uptodate 1.7.7-2ubuntu1
+xfce4-notes-plugin/precise uptodate 1.7.7-2ubuntu1
+xfce4-notifyd/precise uptodate 0.2.2-1
+xfce4-panel/precise uptodate 4.8.6-2ubuntu2
+xfce4-places-plugin/precise uptodate 1.2.0-3
+xfce4-power-manager/precise uptodate 1.0.11-0ubuntu2
+xfce4-power-manager-data/precise uptodate 1.0.11-0ubuntu2
+xfce4-quicklauncher-plugin/precise uptodate 1.9.4-9
+xfce4-screenshooter/precise uptodate 1.8.0-2
+xfce4-session/precise uptodate 4.8.3-0ubuntu2
+xfce4-settings/precise uptodate 4.8.3-1ubuntu3
+xfce4-systemload-plugin/precise uptodate 1:1.0.0-1ubuntu1
+xfce4-taskmanager/precise uptodate 1.0.0-2
+xfce4-terminal/precise uptodate 0.4.8-1ubuntu1
+xfce4-utils/precise uptodate 4.8.3-1ubuntu2
+xfce4-verve-plugin/precise uptodate 1.0.0-1
+xfce4-volumed/precise uptodate 0.1.13-2ubuntu1
+xfce4-weather-plugin 0.7.4-5~ubuntu12.04.1 newer than version in archive
+xfce4-xkb-plugin/precise uptodate 0.5.4.3-1ubuntu1
+xfconf/precise uptodate 4.8.1-1
+xfdesktop4/precise uptodate 4.8.3-2ubuntu7
+xfdesktop4-data/precise uptodate 4.8.3-2ubuntu7
+xfonts-base/precise uptodate 1:1.0.3
+xfonts-encodings/precise uptodate 1:1.0.4-1ubuntu1
+xfonts-mathml/precise uptodate 4ubuntu1
+xfonts-scalable/precise uptodate 1:1.0.3-1
+xfonts-utils/precise uptodate 1:7.6+1
+xfwm4 4.8.3-1ubuntu1.1 newer than version in archive
+xinit/precise uptodate 1.3.1-1
+xinput/precise uptodate 1.5.99.1-0ubuntu2
+xkb-data 2.5-1ubuntu1.5 newer than version in archive
+xml-core/precise uptodate 0.13
+xorg 1:7.6+12ubuntu2 newer than version in archive
+xorg-docs-core/precise uptodate 1:1.6-1ubuntu2
+xorg-sgml-doctools/precise uptodate 1:1.10-1
+xplico 1.0.0-build12.4+0 installed: No available version in archive
+xscreensaver/precise uptodate 5.15-2ubuntu1
+xscreensaver-data/precise uptodate 5.15-2ubuntu1
+xscreensaver-gl/precise uptodate 5.15-2ubuntu1
+xserver-common/precise-security uptodate 2:1.11.4-0ubuntu10.14
+xserver-xorg 1:7.6+12ubuntu2 newer than version in archive
+xserver-xorg-core/precise-security uptodate 2:1.11.4-0ubuntu10.14
+xserver-xorg-input-all 1:7.6+12ubuntu2 newer than version in archive
+xserver-xorg-input-evdev 1:2.7.0-0ubuntu1.2 newer than version in archive
+xserver-xorg-input-mouse/precise uptodate 1:1.7.1-1build3
+xserver-xorg-input-synaptics 1.6.2-1ubuntu1~precise2 newer than version in archive
+xserver-xorg-input-vmmouse 1:12.9.0-0ubuntu0.1 newer than version in archive
+xserver-xorg-input-wacom 1:0.14.0-0ubuntu2.1 newer than version in archive
+xserver-xorg-video-all 1:7.6+12ubuntu2 newer than version in archive
+xserver-xorg-video-ati/precise uptodate 1:6.14.99~git20111219.aacbd629-0ubuntu2
+xserver-xorg-video-cirrus/precise uptodate 1:1.3.2-4build1
+xserver-xorg-video-fbdev/precise uptodate 1:0.4.2-4ubuntu2
+xserver-xorg-video-intel 2:2.17.0-1ubuntu4.4 newer than version in archive
+xserver-xorg-video-mach64/precise uptodate 6.9.0-1build2
+xserver-xorg-video-mga/precise uptodate 1:1.4.13.dfsg-4build2
+xserver-xorg-video-neomagic/precise uptodate 1:1.2.5-2build2
+xserver-xorg-video-nouveau 1:0.0.16+git20111201+b5534a1-1build3 newer than version in archive
+xserver-xorg-video-openchrome/precise-security uptodate 1:0.2.904+svn1050-1ubuntu0.1
+xserver-xorg-video-qxl/precise-security uptodate 0.0.16-2ubuntu0.1
+xserver-xorg-video-r128/precise uptodate 6.8.1-5build2
+xserver-xorg-video-radeon/precise uptodate 1:6.14.99~git20111219.aacbd629-0ubuntu2
+xserver-xorg-video-s3/precise uptodate 1:0.6.3-4build2
+xserver-xorg-video-savage/precise uptodate 1:2.3.3-1ubuntu1
+xserver-xorg-video-siliconmotion/precise uptodate 1:1.7.5-1build2
+xserver-xorg-video-sis/precise uptodate 1:0.10.3-3build2
+xserver-xorg-video-sisusb/precise uptodate 1:0.9.4-2build2
+xserver-xorg-video-tdfx/precise uptodate 1:1.4.3-4build2
+xserver-xorg-video-trident/precise uptodate 1:1.3.4-2build2
+xserver-xorg-video-vesa/precise uptodate 1:2.3.0-7build2
+xserver-xorg-video-vmware 1:12.0.1-1ubuntu1.1 newer than version in archive
+xsltproc/precise-security uptodate 1.1.26-8ubuntu1.3
+xterm 271-1ubuntu2.1 newer than version in archive
+xtightvncviewer/precise uptodate 1.3.9-6.2ubuntu2
+xtrans-dev/precise uptodate 1.2.6-2
+xul-ext-ubufox/precise-security uptodate 2.7-0ubuntu0.12.04.1
+xz-lzma/precise uptodate 5.1.1alpha+20110809-3
+xz-utils/precise uptodate 5.1.1alpha+20110809-3
+yelp/precise uptodate 3.4.1-0ubuntu1
+yelp-xsl/precise uptodate 3.4.1-1
+yersinia/precise uptodate 0.7.1-1.1
+zaproxy/precise uptodate 2.2.2-0backbox1
+zeitgeist 0.9.0-1ubuntu1 newer than version in archive
+zeitgeist-core 0.9.0-1ubuntu1 newer than version in archive
+zeitgeist-datahub/precise uptodate 0.8.2-1ubuntu2
+zenity 3.4.0-0ubuntu4 newer than version in archive
+zenity-common 3.4.0-0ubuntu4 newer than version in archive
+zenmap/precise uptodate 6.40-0.1backbox1
+zim/precise uptodate 0.54-1
+zip/precise uptodate 3.0-4
+zlib1g/precise uptodate 1:1.2.3.4.dfsg-3ubuntu4
+zlib1g-dev/precise uptodate 1:1.2.3.4.dfsg-3ubuntu4
