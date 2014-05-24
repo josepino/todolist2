@@ -37,44 +37,45 @@ class ModelosTest(TestCase):
         p = Proyecto ()
         p.Nombre = "ProyectoNameTest1"
         p.FechaCreacion = "15/05/2014"
-        self.assertEqual("ProyectoNameTest1", p.Nombre)
-        self.assertEqual("15/05/2014", p.FechaCreacion)
+        self.assertEqual("ProyectoNameTest1", p.Nombre, msg= "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
+        self.assertEqual("15/05/2014", p.FechaCreacion, msg= "Inconsistencia en las fechas de creacion, posible problema de creacion del objeto!")
+
 
     """ Prueba de Fase """
     def test_fase(self):
         f = Fase ()
         f.Nombre = "FaseNameTest1"
-        self.assertEqual("FaseNameTest1", f.Nombre)
+        self.assertEqual("FaseNameTest1", f.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
 
     """ Prueba de TipoItem """
     def test_tipoItem(self):
         ti = TipoItem ()
         ti.Nombre = "TipoItemNameTest1"
-        self.assertEqual("TipoItemNameTest1", ti.Nombre)
+        self.assertEqual("TipoItemNameTest1", ti.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
 
     """ Prueba de AtributoTipoItem """
     def test_atributoTipoItem(self):
         ati = AtributoTipoItem ()
         ati.Nombre = "AtributoTipoItemNameTest1"
-        self.assertEqual("AtributoTipoItemNameTest1", ati.Nombre)
+        self.assertEqual("AtributoTipoItemNameTest1", ati.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
 
     """ Prueba de Item """
     def test_Item(self):
         it = Item ()
         it.Nombre = "ItemNameTest1"
-        self.assertEqual("ItemNameTest1", it.Nombre)
+        self.assertEqual("ItemNameTest1", it.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
 
     """ Prueba de AtributoItem """
     def test_atributoItem(self):
         ai = AtributoItem ()
         ai.Nombre = "AtributoItemNameTest1"
-        self.assertEqual("AtributoItemNameTest1", ai.Nombre)
+        self.assertEqual("AtributoItemNameTest1", ai.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")
 
     """ Prueba de RelacionItem """
     def test_relacionItem(self):
         ri = RelacionItem ()
         ri.Nombre = "AtributoItemNameTest1"
-        self.assertEqual("AtributoItemNameTest1", ri.Nombre)                
+        self.assertEqual("AtributoItemNameTest1", ri.Nombre, msg = "Inconsistencia en los nombres al crear el objeto, posible problema de creacion del objeto!")                
 
 
 
