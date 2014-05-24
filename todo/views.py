@@ -8,7 +8,8 @@ from django.db import IntegrityError
 
 
 def index(request):
-     return render_to_response('todo/index.html')
+    return render_to_response('todo/index.html')
+
 
 #def index(request):
 #    todo = Proyecto.objects.all().order_by('id')  #select * from Todos
@@ -27,7 +28,6 @@ def ImportarTipoItem(request, id_fase, id_tipoitem):
 
     tipoItemNuevo.id = None
     tipoItemNuevo.fase = fase
-
     try:
         tipoItemNuevo.save()
     except IntegrityError as e:

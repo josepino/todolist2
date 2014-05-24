@@ -3,6 +3,8 @@ from django.contrib.contenttypes.models import ContentType
 from models import *
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django import forms
+from django.shortcuts import render_to_response, render
 
 
 class RelacionAdmin(admin.ModelAdmin):
@@ -124,7 +126,7 @@ class FaseAdmin(admin.ModelAdmin):
     search_fields = ['nombre']
     ordering = ('nombre',)
     readonly_fields = ('fechainicio', 'fechafin',)
-    actions = ('iniciar_fase', 'finalizar_fase', 'importar_tipoitem',)
+    actions = ('iniciar_fase', 'finalizar_fase', 'ImportarTipo',)
     inlines = [TipoItemAdmin2]
 
     def iniciar_fase(modeladmin, request, queryset):
@@ -139,9 +141,7 @@ class FaseAdmin(admin.ModelAdmin):
 
     def finalizar_fase(modeladmin, request, queryset):
         rows_updated = queryset.update(fechafin=datetime.datetime.now())
-        #for obj in queryset:
-        #    obj.all.readonly_fields
-        
+
         if rows_updated == 1:
             message_bit = "1 fase fue finalizada"
         else:
@@ -152,12 +152,61 @@ class FaseAdmin(admin.ModelAdmin):
 
     def importar_tipoitem(modeladmin, request, queryset):
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
-        if selected == 1:
+        count = 0
+        for a in queryset:
+            count += 1
+        if count == 1:
             return HttpResponseRedirect('/importartipoitem/%s/1' % (",".join(selected)))
         else:
-            messages.add_message(request, messages.ERROR, "Solo se puede importar Tipo de Item en una fase a la vez.")
+            messages.error(request, "Solo se puede importar Tipo de Item en una fase a la vez.")
 
-    importar_tipoitem.short_description = "Importar tipo de Item"
+    importar_tipoitem.short_description = "Importar tipo de Item22"
+
+    class ImportarTipoForm(forms.Form):
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+        tipoitem = forms.ModelChoiceField(queryset=TipoItem.objects.all(), initial=1)
+
+        class Meta:
+            model = TipoItem
+
+    def ImportarTipo(self, request, queryset):
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+
+        count = 0
+        for a in queryset:
+            count += 1
+        if count == 1:
+            id_fase = (",".join(selected))
+            form = None
+            tipoitem = None
+            if 'apply' in request.POST:
+                form = self.ImportarTipoForm(request.POST)
+
+                if form.is_valid():
+                    tipoitem = form.cleaned_data['TipoItem']
+                    count = 0
+                    for fase in queryset:
+                        fase.tipoitem.add(tipoitem)
+                        count += 1
+                    plural = ''
+                    if count != 1:
+                        plural = 's'
+
+                    self.message_user(request, "Successfully added tag %s to %d article%s." % (tipoitem, count, plural))
+                    return HttpResponseRedirect(request.get_full_path())
+
+            if not form:
+                form = self.ImportarTipoForm(
+                    initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+            return render_to_response('admin/ImportarTipo.html', {'fase': queryset,
+                                                                  'tipoitem_form': form,
+                                                                  'id_fase': id_fase,
+                                                                  'tipoitem': tipoitem,
+            })
+        else:
+            messages.error(request, "Solo se puede importar Tipo de Item en una fase a la vez.")
+
+    ImportarTipo.short_description = "Importar tipo de Item"
 
 
 class FaseAdmin2(admin.TabularInline):

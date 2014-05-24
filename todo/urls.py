@@ -7,5 +7,3 @@ urlpatterns = patterns('todo.views',
                        url(r'^importartipoitem/(?P<id_fase>\d+)/(?P<id_tipoitem>\d+)$', ImportarTipoItem),
 )
 
-
-

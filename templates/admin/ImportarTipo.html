@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+    <h2>Importar tipo de item</h2>
+    <p>Selecciona el Tipo de Item que se importara:</p>
+
+    <form action="" method="post">
+
+        {{ tipoitem_form }}
+        <p>el tipo de Item se importara a:</p>
+
+        <ul>{{ fase|unordered_list }}</ul>
+
+        <input type="hidden" name="action" value="ImportarTipo"/>
+        <a href="/importartipoitem/{{ id_fase }}/1" class="btn btn-lg btn-danger" role="button">Importar</a>
+    </form>
+
+{% endblock %}

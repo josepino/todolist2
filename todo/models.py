@@ -168,6 +168,7 @@ class LineaBase(models.Model):
                               blank=True, default='I')
     """Estado de la Linea Base"""
 
+
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase LineaBase"""
         return u'%s' % (self.nombre)
