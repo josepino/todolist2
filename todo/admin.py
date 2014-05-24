@@ -130,6 +130,9 @@ class FaseAdmin(admin.ModelAdmin):
     inlines = [TipoItemAdmin2]
 
     def iniciar_fase(modeladmin, request, queryset):
+        """
+        Definicion de la accion iniciar_fase
+        """
         rows_updated = queryset.update(fechainicio=datetime.datetime.now())
         if rows_updated == 1:
             message_bit = "1 fase fue iniciada"
@@ -140,6 +143,9 @@ class FaseAdmin(admin.ModelAdmin):
     iniciar_fase.short_description = "Iniciar la fase seleccionada"
 
     def finalizar_fase(modeladmin, request, queryset):
+        """
+        Definicion de la accion finalizar_fase
+        """
         rows_updated = queryset.update(fechafin=datetime.datetime.now())
 
         if rows_updated == 1:
@@ -151,6 +157,9 @@ class FaseAdmin(admin.ModelAdmin):
     finalizar_fase.short_description = "Finalizar la fase seleccionada"
 
     def importar_tipoitem(modeladmin, request, queryset):
+        """
+        Definicion de la accion importar_tipoitem
+        """
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
         count = 0
         for a in queryset:
@@ -163,6 +172,9 @@ class FaseAdmin(admin.ModelAdmin):
     importar_tipoitem.short_description = "Importar tipo de Item22"
 
     class ImportarTipoForm(forms.Form):
+        """
+        Definicion del formulario ImportarTipoForm
+        """
         _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
         tipoitem = forms.ModelChoiceField(queryset=TipoItem.objects.all(), initial=1)
 
@@ -170,6 +182,9 @@ class FaseAdmin(admin.ModelAdmin):
             model = TipoItem
 
     def ImportarTipo(self, request, queryset):
+        """
+        Definicion de la accion ImportarTipo
+        """
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
 
         count = 0
@@ -234,6 +249,9 @@ class ProyectoAdmin(admin.ModelAdmin):
     inlines = [FaseAdmin2]
 
     def iniciar_proyecto(modeladmin, request, queryset):
+        """
+        Definicion de la accion iniciar_proyecto
+        """
         rows_updated = queryset.update(fechainicio=datetime.datetime.now())
         if rows_updated == 1:
             message_bit = "1 proyecto fue iniciado"
@@ -244,6 +262,9 @@ class ProyectoAdmin(admin.ModelAdmin):
     iniciar_proyecto.short_description = "Iniciar el proyecto seleccionado"
 
     def finalizar_proyecto(modeladmin, request, queryset):
+        """
+        Definicion de la accion finalizar_proyecto
+        """
         rows_updated = queryset.update(fechafin=datetime.datetime.now())
         if rows_updated == 1:
             message_bit = "1 proyecto fue finalizado"

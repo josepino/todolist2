@@ -17,11 +17,17 @@ def index(request):
 
 
 def ver_fase(request, id):
+    """
+    Definimos el view ver_fase
+    """
     ver = get_object_or_404(Proyecto, id=id)
     return render_to_response('todo/ver.html', RequestContext(request, locals()))
 
 
 def ImportarTipoItem(request, id_fase, id_tipoitem):
+    """
+    Definimos el view ImportarTipoItem
+    """
     tipoItemExistente = TipoItem.objects.get(id=id_tipoitem)
     tipoItemNuevo = TipoItem.objects.get(id=id_tipoitem)
     fase = Fase.objects.get(id=id_fase)
@@ -44,6 +50,9 @@ def ImportarTipoItem(request, id_fase, id_tipoitem):
 
 
 def ListarTipoItem(request, id_fase):
+    """
+    Definimos el view ListarTipoItem
+    """
     tipoitem_fase = TipoItem.objects.filter(fase=id_fase)
     tipoitem_available = tipoitem_fase.values_list('id', flat=True)
     tipoitem = TipoItem.objects.exclude(pk__in=tipoitem_available)
