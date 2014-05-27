@@ -119,6 +119,37 @@ cd proyecto
 unzip master.zip
 
 
+##############Verificamos los archivos de configuracion
+##############Archivo de configuracion todolist.wsgi
+#Vemos la ruta donde se encuentra
+ruta_todolist_wsgi="$directorioinstalacion/todolist"
+#Vemos si esta instalado
+instalado=`ls "$ruta_todolist_wsgi" | grep todolist.wsgi`
+
+#Si ya existe el archivo borramos para crear y cargar de nuevo con las variables del sistema local
+if [ "$wsgi_conf" ];
+then
+	echo "Ya existe el archivo, se sobreescribira con las variables locales de la maquina"
+	rm "$ruta_todolist_wsgi/todolist.wsgi"
+fi
+
+#Creamos y cargamos los datos en el archivo de configuracion
+if [ -n "$wsgi_conf" ];
+then
+	echo "Creando y agregando datos al archivo todolist.wsgi"
+	echo "import os" > todolist.wsgi
+	echo "import sys" >> todolist.wsgi
+	echo "sys.path = ['"$ruta_todolist_wsgi"'] + sys.path" >> todolist.wsgi
+	echo "os.environ['DJANGO_SETTINGS_MODULE'] = 'todolist.settings'" >> todolist.wsgi
+	echo "import django.core.handlers.wsgi" >> todolist.wsgi
+	echo "application = django.core.handlers.wsgi.WSGIHandler()" >> todolist.wsgi
+fi
+
+
+
+
+
+
 
 #############Base de Datos
 #        'NAME': 'dbpm',
@@ -146,7 +177,7 @@ fi
 echo -e "\n\nEl user se ha creado."
 
 ##############Creacion de la BD con el user postgres, poblacion.sql es un archivo que esta en el mismo directorio
-psql -U postgres postgres -f poblacion.sql
+########ACTUALIZA!!!!!!! psql -U postgres postgres -f poblacion.sql
 
 if [ $? -ne 0 ]; then
 	echo "Ha ocurrido un error, revisar archivos y documentacion."
