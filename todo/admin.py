@@ -52,7 +52,7 @@ class ItemAdmin(admin.ModelAdmin):
 
     def calcular_impacto(modeladmin, request, queryset):
         """
-        Definicion de la accion importar_tipoitem
+        Definicion de la accion calcular_impacto
         """
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
         count = 0

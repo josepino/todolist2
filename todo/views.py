@@ -68,7 +68,7 @@ def ListarTipoItem(request, id_fase):
 
 def CalcularImpacto(request, id_item):
     """
-
+    Definimos el view CalcularImpacto
     """
     item = Item.objects.get(id=id_item)
 
