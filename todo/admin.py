@@ -41,11 +41,30 @@ class ItemAdmin(admin.ModelAdmin):
     Definicion de la clase ItemAdmin
     """
     list_display = (
-        'nombre', 'tipoitem', 'descripcion', 'complejidad', 'estado', 'version', 'costo', 'fechamodificacion',)
+        'nombre', 'tipoitem', 'descripcion', 'complejidad', 'estado', 'version', 'costo', 'fechamodificacion',
+        'complejidadtotal', 'costototal',)
     list_filter = ( 'tipoitem', 'complejidad', 'estado', 'costo', 'fechamodificacion',)
     search_fields = ['nombre']
     ordering = ('nombre',)
     inlines = [AtributoItemAdmin2]
+    readonly_fields = ('complejidadtotal', 'costototal',)
+    actions = ('calcular_impacto',)
+
+    def calcular_impacto(modeladmin, request, queryset):
+        """
+        Definicion de la accion importar_tipoitem
+        """
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+        count = 0
+        for a in queryset:
+            count += 1
+
+        if count == 1:
+            return HttpResponseRedirect('/calcularimpacto/%s' % (",".join(selected)))
+        else:
+            messages.error(request, "Solo se puede calcular el impacto de un item a la vez.")
+
+    calcular_impacto.short_description = "Calcular Impacto del Item"
 
 
 class ItemAdmin2(admin.TabularInline):

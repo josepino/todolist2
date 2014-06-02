@@ -196,6 +196,8 @@ class Item(models.Model):
     """Descripción del Item"""
     complejidad = models.IntegerField(help_text='Ingrese la complejidad del Item')
     """Complejidad del Item"""
+    costo = models.IntegerField(help_text='Ingrese el costo del Item en Dolares $')
+    """Costo del Item"""
     Estado_CHOICES = (
         ('M', 'En Modificacion'),
         ('P', 'Pendiente'),
@@ -210,7 +212,9 @@ class Item(models.Model):
     """Estado del Item"""
     version = models.IntegerField(help_text='Ingrese la Version del Item')
     """Version del Item"""
-    costo = models.IntegerField(help_text='Ingrese el costo del Item en Dolares $')
+    complejidadtotal = models.IntegerField(null=True, blank=True, verbose_name="Complejidad total al modificar")
+    """Complejidad del Item"""
+    costototal = models.IntegerField(null=True, blank=True, verbose_name="Costo total al modificar")
     """Costo del Item"""
     fechamodificacion = models.DateField('Fecha de Modificacion', help_text='Ingrese la fecha de modificacion del Item')
     """Fecha de modificacion del Item"""

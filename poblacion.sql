@@ -140,9 +140,11 @@ CREATE TABLE "todo_item" (
     "nombre" varchar(45) NOT NULL,
     "descripcion" varchar(45) NOT NULL,
     "complejidad" integer NOT NULL,
+    "costo" integer NOT NULL,
     "estado" varchar(1),
     "version" integer NOT NULL,
-    "costo" integer NOT NULL,
+    "complejidadtotal" integer NOT NULL,
+    "costototal" integer NOT NULL,
     "fechamodificacion" date NOT NULL
 )
 ;
@@ -371,11 +373,11 @@ insert into todo_atributotipoitem (tipoitem_id,nombre,descripcion) values ('3','
 insert into todo_lineabase (fase_id,nombre,fechacreacion,estado) values ('1','lb1 p1f1',current_date,'I');
 insert into todo_lineabase (fase_id,nombre,fechacreacion,estado) values ('3','lb1 p2f1',current_date,'I');
 
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id) values ('1','item 1','item 1 del tipo a','5','A','1','50',current_date,'1');
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id) values ('1','item 5','item 5 del tipo a','3','A','1','45',current_date,'1');
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion) values ('2','item 2','item 1 del tipo b','3','M','1','35',current_date);
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id) values ('3','item 3','item 1 del tipo c','8','A','1','75',current_date,'2');
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion) values ('4','item 4','item 1 del tipo d','2','M','1','20',current_date);
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('1','item 1','item 1 del tipo a','5','A','1','50',current_date,'1','5','50');
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,complejidadtotal,costototal) values ('2','item 2','item 1 del tipo b','3','M','1','35',current_date,'3','35');
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('3','item 3','item 1 del tipo c','8','A','1','75',current_date,'2','8','75');
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,complejidadtotal,costototal) values ('4','item 4','item 1 del tipo d','2','M','1','20',current_date,'2','20');
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('1','item 5','item 5 del tipo a','3','A','1','45',current_date,'1','3','45');
 
 insert into todo_atributoitem (item_id,atributotipoitem_id,nombre,descripcion) values ('1','1','atributo 1','atrib 1 del item 1');
 insert into todo_atributoitem (item_id,atributotipoitem_id,nombre,descripcion) values ('1','2','atributo 2','atrib 2 del item 1');
