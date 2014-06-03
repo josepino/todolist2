@@ -229,6 +229,34 @@ class Item(models.Model):
         verbose_name = u'Item'
         verbose_name_plural = 'Items'
 
+    def save(self):
+        existe = False
+        existe = Item.objects.filter(id=self.id).exists()
+        if existe is True:
+            self.cambiarversion()
+            self.version = self.version + 1
+        self.fechamodificacion = datetime.datetime.now()
+        super(Item, self).save()
+        return Item
+
+    def cambiarversion(self):
+        olds = Item.objects.filter(id=self.id)
+        for old in olds:
+            new = Item()
+            new.nombre = old.nombre
+            new.tipoitem = old.tipoitem
+            new.lineabase = old.lineabase
+            new.nombre = old.nombre
+            new.descripcion = old.descripcion
+            new.complejidad = old.complejidad
+            new.costo = old.costo
+            new.estado = old.estado
+            new.version = old.version
+            new.costototal = old.costototal
+            new.complejidadtotal = old.complejidadtotal
+            new.save()
+        return Item
+
 
 class AtributoItem(models.Model):
     """
