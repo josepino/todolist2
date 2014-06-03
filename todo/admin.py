@@ -47,24 +47,127 @@ class ItemAdmin(admin.ModelAdmin):
     search_fields = ['nombre']
     ordering = ('nombre',)
     inlines = [AtributoItemAdmin2]
-    readonly_fields = ('complejidadtotal', 'costototal',)
-    actions = ('calcular_impacto',)
+    readonly_fields = ('complejidadtotal', 'costototal', 'idversion')
+    actions = ('calcular_impacto', 'revertir_version',)
 
     def calcular_impacto(modeladmin, request, queryset):
         """
         Definicion de la accion calcular_impacto
         """
+
+        def impacto_complejidad(id_item):
+            """ Recibe un request, se verifica cual es el usuario registrado y el proyecto del cual se solicita,
+            se obtiene la lista de fases con las que estan relacionados el usuario y el proyecto
+            desplegandola en pantalla, ademas permite realizar busquedas avanzadas sobre
+            las fases que puede mostrar.
+
+
+            """
+            item = Item.objects.get(id=id_item)
+            com = 0
+            try:
+                relaciones = RelacionItem.objects.filter(itemorigen=id_item)
+            except RelacionItem.DoesNotExist:
+                relaciones = False
+            if relaciones:
+                for hijo in relaciones:
+                    com = com + impacto_complejidad(hijo.itemdestino.id)
+                com = com + item.complejidad
+                return com
+            else:
+                return item.complejidad
+
+        def impacto_costo(id_item):
+            """ Recibe un request, se verifica cual es el usuario registrado y el proyecto del cual se solicita,
+            se obtiene la lista de fases con las que estan relacionados el usuario y el proyecto
+            desplegandola en pantalla, ademas permite realizar busquedas avanzadas sobre
+            las fases que puede mostrar.
+
+            """
+            item = Item.objects.get(id=id_item)
+            cost = 0
+            try:
+                relaciones = RelacionItem.objects.filter(itemorigen=id_item)
+            except RelacionItem.DoesNotExist:
+                relaciones = False
+            if relaciones:
+                for hijo in relaciones:
+                    cost = cost + impacto_costo(hijo.itemdestino.id)
+                cost = cost + item.costo
+                return cost
+            else:
+                return item.costo
+
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
         count = 0
         for a in queryset:
             count += 1
 
         if count == 1:
-            return HttpResponseRedirect('/calcularimpacto/%s' % (",".join(selected)))
+            for a in queryset:
+                item1 = Item.objects.get(id=a.id)
+                item1.complejidadtotal = impacto_complejidad(a.id)
+                item1.costototal = impacto_costo(a.id)
+                item1.save()
+                modeladmin.message_user(request,
+                                        "Se calculo correctamente correctamente impaco del cambio en el item %s." % item1)
         else:
             messages.error(request, "Solo se puede calcular el impacto de un item a la vez.")
-
     calcular_impacto.short_description = "Calcular Impacto del Item"
+
+    def revertir_version(modeladmin, request, queryset):
+        """
+        Definicion de la accion calcular_impacto
+        """
+        count = 0
+        idite = 0
+        for a in queryset:
+            count += 1
+
+        if count == 1:
+            for a in queryset:
+                items = Item.objects.filter(idversion=a.id)
+                if a.version > 1:
+                    for b in items:
+                        if b.version == (a.version - 1):
+                            idite == b.id
+                            atributos = AtributoItem.objects.all()
+                            for at in atributos:
+                                if at.item.id == a.id:
+                                    new = AtributoItem()
+                                    new.nombre = at.nombre
+                                    new.descripcion = at.descripcion
+                                    new.item = b
+                                    new.atributotipoitem = at.atributotipoitem
+                                    new.save()
+                            relaciones1 = RelacionItem.objects.all()
+                            for rel1 in relaciones1:
+                                if rel1.itemorigen.id == a.id:
+                                    new1 = RelacionItem()
+                                    new1.itemorigen = b
+                                    new1.tiporelacion = rel1.tiporelacion
+                                    new1.itemdestino = rel1.itemdestino
+                                    new1.save()
+                            relaciones2 = RelacionItem.objects.all()
+                            for rel2 in relaciones2:
+                                if rel2.itemdestino.id == a.id:
+                                    new2 = RelacionItem()
+                                    new2.itemorigen = rel2.itemorigen
+                                    new2.tiporelacion = rel2.tiporelacion
+                                    new2.itemdestino = b
+                                    new2.save()
+                            items1 = Item.objects.filter(idversion=a.id)
+                            for b1 in items1:
+                                b1.idversion = b.id
+                                b1.save()
+                    a.delete()
+                else:
+                    messages.error(request, "No existe una version anterior del item.")
+
+        else:
+            messages.error(request, "Solo se puede revertir la version de un item a la vez.")
+
+    revertir_version.short_description = "Revertir version del Item"
 
 
 class ItemAdmin2(admin.TabularInline):

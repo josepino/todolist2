@@ -212,12 +212,15 @@ class Item(models.Model):
     """Estado del Item"""
     version = models.IntegerField(help_text='Ingrese la Version del Item')
     """Version del Item"""
+    fechamodificacion = models.DateField('Fecha de Modificacion', help_text='Ingrese la fecha de modificacion del Item')
+    """Fecha de modificacion del Item"""
     complejidadtotal = models.IntegerField(null=True, blank=True, verbose_name="Complejidad total al modificar")
     """Complejidad del Item"""
     costototal = models.IntegerField(null=True, blank=True, verbose_name="Costo total al modificar")
     """Costo del Item"""
-    fechamodificacion = models.DateField('Fecha de Modificacion', help_text='Ingrese la fecha de modificacion del Item')
-    """Fecha de modificacion del Item"""
+    idversion = models.IntegerField(null=True,
+                                    blank=True, )
+    """Id del de la version del Item"""
 
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase Item"""
@@ -232,9 +235,12 @@ class Item(models.Model):
     def save(self):
         existe = False
         existe = Item.objects.filter(id=self.id).exists()
+        ols = Item.objects.filter(id=self.id)
         if existe is True:
-            self.cambiarversion()
-            self.version = self.version + 1
+            for ol in ols:
+                if ol.idversion == self.idversion:
+                    self.cambiarversion()
+                    self.version = self.version + 1
         self.fechamodificacion = datetime.datetime.now()
         super(Item, self).save()
         return Item
@@ -254,6 +260,7 @@ class Item(models.Model):
             new.version = old.version
             new.costototal = old.costototal
             new.complejidadtotal = old.complejidadtotal
+            new.idversion = old.id
             new.save()
         return Item
 

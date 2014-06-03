@@ -143,11 +143,13 @@ CREATE TABLE "todo_item" (
     "costo" integer NOT NULL,
     "estado" varchar(1),
     "version" integer NOT NULL,
-    "complejidadtotal" integer NOT NULL,
-    "costototal" integer NOT NULL,
-    "fechamodificacion" date NOT NULL
+    "fechamodificacion" date NOT NULL,
+    "complejidadtotal" integer,
+    "costototal" integer,
+    "idversion" integer
 )
 ;
+
 CREATE TABLE "todo_atributoitem" (
     "id" serial NOT NULL PRIMARY KEY,
     "item_id" integer NOT NULL REFERENCES "todo_item" ("id") DEFERRABLE INITIALLY DEFERRED,
