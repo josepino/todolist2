@@ -13,14 +13,14 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Project Manager in Python with Django - IS2 by josepino</title>
+    <title>Project Management Web Application by josepino</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Project Manager in Python with Django - IS2</h1>
-        <h2>Project Manager in Python with Django - IS2</h2>
+        <h1>Project Management Web Application</h1>
+        <h2>PMWA</h2>
         <a href="https://github.com/josepino/todolist2" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -28,10 +28,63 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="project-manager---is-2" class="anchor" href="#project-manager---is-2"><span class="octicon octicon-link"></span></a>Project Manager - IS 2.</h3>
+          <p><img src="http://i57.tinypic.com/vg0h81.jpg" alt="PMWA"></p>
+
+<h1>
+<a name="project-management-web-application-pmwa" class="anchor" href="#project-management-web-application-pmwa"><span class="octicon octicon-link"></span></a>Project Management Web Application (PMWA)</h1>
 
 <p>Aplicación web de gestión de proyectos hecho con Python y Django.</p>
+
+<h1>
+<a name="introducci%C3%B3n" class="anchor" href="#introducci%C3%B3n"><span class="octicon octicon-link"></span></a>Introducción</h1>
+
+<p><img src="http://i61.tinypic.com/16kj9k.jpg" alt="PMWA2"></p>
+
+<p>El Software Project Management Web Application (en adelante PM o PMWA),   está diseñado y constuido para facilitar la administración de ítems de un proyecto basado en fases. Con este software se puede gestionar los ítems y la completa trazabilidad de los mismos, con los diversos componentes generados en las distintas fases de un proyecto.
+El objetivo de contar con un sistema de gestión de proyectos es, en primer lugar, lograr una mejor administración de los ítems de las fases de los proyectos.
+PM es un producto independiente, no interactúa con otros sistemas externos.</p>
+
+<p><img src="http://i61.tinypic.com/fwk87o.jpg" alt="PMWA3"></p>
+
+<h1>
+<a name="funciones-y-caracter%C3%ADsticas-principales-del-producto" class="anchor" href="#funciones-y-caracter%C3%ADsticas-principales-del-producto"><span class="octicon octicon-link"></span></a>Funciones y características principales del producto</h1>
+
+<p>El software PM abarca las funciones relacionadas con el proceso de gestión de proyectos. Tiene como funciones principales la gestión de usuarios, de las características del proyecto, de las fases del proyecto y el manejo de los ítems y tipos de ítems. Así como también la administración de las relaciones entre los ítems.
+PM es un sistema autónomo, no es necesario interactuar con ninguna aplicación externa. En el lado servidor, el lenguaje primario utilizado en el desarrollo es Python, integrado con el Web framework Django. El sistema gestor de bases de datos es PostgreSQL. Por otro lado, en el lado cliente, funciona sobre un navegador web.</p>
+
+<h1>
+<a name="consideraciones-y-features-del-software" class="anchor" href="#consideraciones-y-features-del-software"><span class="octicon octicon-link"></span></a>Consideraciones y Features del Software</h1>
+
+<p><img src="http://i61.tinypic.com/swsr39.jpg" alt="PMWA4">
+Para que un usuario ingrese al Sistema, debe especificar su nombre de usuario y contraseña. El Sistema verifica que el usuario y contraseña coincidan con los registrados. Una vez que el Sistema verifique los datos del usuario, el Sistema crea una sesión para dicho usuario. El sistema obtiene todos los parámetros una vez iniciada la sesión correctamente. De acuerdo a los permisos de cada rol asignado al usuario, el sistema habilitará el acceso a los módulos del sistema. Una vez que el usuario acceda a uno de los módulos del sistema, de acuerdo a sus privilegios, se le habilitará las funcionalidades correspondientes.
+Sólo un usuario con rol de Administrador puede crear nuevos usuarios. El usuario con rol de administrador debe especificar el nombre de los usuarios en el sistema.<br>
+Roles y Permisos
+Los permisos pueden ser crear, modificar, eliminar y listar los componentes del sistema. Estos son predefinidos. Un rol tiene al menos un permiso y un permiso puede pertenecer a varios roles. Sólo un usuario con rol de administrador puede crear, modificar y eliminar roles. El sistema tiene un rol predefinido (Administrador) que no se permite eliminarlo.
+Proyecto
+El sistema permite el registro de proyectos. Cada proyecto tiene como mínimo un usuario administrador del proyecto. En donde cada proyecto debe tener un nombre y un estado (por defecto inactivo).
+Fases
+El sistema permitirá el registro de fases. Cada fase tiene un estado que puede ser inicio, desarrollo o finalizada. La estructura de fase puede ser visualizada por todos los usuarios. La fase pertenece solamente a un proyecto. 
+Tipo de Ítem
+El sistema permite el registro de tipos de ítem. Cada tipo de ítem debe tener un nombre único dentro de la fase a la cual pertenece. Cada tipo de ítem tiene tipos de atributos predefinidos. Los tipos de ítems pueden ser creados antes y después de haber iniciado el proyecto. Los tipos de ítems también pueden ser eliminados.</p>
+
+<h1>
+<a name="gesti%C3%B3n-de-configuraci%C3%B3n" class="anchor" href="#gesti%C3%B3n-de-configuraci%C3%B3n"><span class="octicon octicon-link"></span></a>Gestión de Configuración</h1>
+
+<p>Línea Base
+Una línea base pertenece a un proyecto y a una fase ya existentes. Cada línea base tiene un estado. Esos estados pueden ser: Abierta, Pendiente, Aprobada. Los cambios de estados de una línea base son realizados por el usuario. El sistema permite modificar, eliminar y/o crear ítems. La creación de una línea base se realiza explícitamente por el usuario.</p>
+
+<h1>
+<a name="desarrollo" class="anchor" href="#desarrollo"><span class="octicon octicon-link"></span></a>Desarrollo</h1>
+
+<p>Ítems
+El atributo estado de un ítem puede ser: en-modificación, pendiente, aprobado, rechazado, eliminado, en-revisión. Es necesario definir un valor por defecto a los atributos de tipo de item en el momento de agregar un atributo al tipo de item. El software permite que el usuario pueda cambiar el estado de un ítem. Los ítems creados en la primera fase de un proyecto no tienen antecesores.
+Un ítem que pertenece a una línea base podrá ser modificado si la línea base ha sido abierta. </p>
+
+<h1>
+<a name="detalles-del-producto" class="anchor" href="#detalles-del-producto"><span class="octicon octicon-link"></span></a>Detalles del producto</h1>
+
+<p>Para el funcionamiento del software la máquina cliente debe contar con un navegador actualizado que cumpla con las normas internacionales de la Web para poder interactuar con el sistema.
+La Base de Datos es centralizada, es decir, se utiliza una sola base de datos que almacena toda la información del sistema. El sistema es capaz de mantener la integridad y confidencialidad de los datos almacenados en el mismo, incluyendo los datos de los usuarios, garantizando que esos datos no sean comprometidos o visualizados por personas no autorizadas.</p>
         </section>
 
         <aside id="sidebar">
