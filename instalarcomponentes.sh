@@ -11,6 +11,7 @@ echo "     Jose Santacruz"
 echo "       Victor Vera"
 echo "/////////////////////////////"
 
+echo "Ultima actualizacion 06 Junio 2014"
 
 
 ########################Variable Directorio del proyecto
