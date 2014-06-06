@@ -165,6 +165,16 @@ CREATE TABLE "todo_relacionitem" (
     "itemdestino_id" integer NOT NULL REFERENCES "todo_item" ("id") DEFERRABLE INITIALLY DEFERRED
 )
 ;
+CREATE TABLE "todo_solicituditem" (
+    "id" serial NOT NULL PRIMARY KEY,
+    "item_id" integer NOT NULL REFERENCES "todo_item" ("id") DEFERRABLE INITIALLY DEFERRED,
+    "complejidad" integer,
+    "costo" integer,
+    "votos" integer,
+    "votossi" integer,
+    "votosno" integer
+)
+;
 CREATE INDEX "todo_fase_fkproyecto_id" ON "todo_fase" ("fkproyecto_id");
 CREATE INDEX "todo_tipoitem_fase_id" ON "todo_tipoitem" ("fase_id");
 CREATE INDEX "todo_atributotipoitem_tipoitem_id" ON "todo_atributotipoitem" ("tipoitem_id");
@@ -175,6 +185,7 @@ CREATE INDEX "todo_atributoitem_item_id" ON "todo_atributoitem" ("item_id");
 CREATE INDEX "todo_atributoitem_atributotipoitem_id" ON "todo_atributoitem" ("atributotipoitem_id");
 CREATE INDEX "todo_relacionitem_itemorigen_id" ON "todo_relacionitem" ("itemorigen_id");
 CREATE INDEX "todo_relacionitem_itemdestino_id" ON "todo_relacionitem" ("itemdestino_id");
+CREATE INDEX "todo_solicituditem_item_id" ON "todo_solicituditem" ("item_id");
 
 /*poblacion*/ 
 

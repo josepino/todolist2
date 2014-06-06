@@ -52,6 +52,62 @@ def ImportarTipoItem(request, id_fase, id_tipoitem):
     return HttpResponseRedirect('/admin/todo/tipoitem/' + str(tipoItemNuevo.id))
 
 
+def SolicitarCambio(request, id_item):
+    """
+    Definimos el view SolicitarCambio
+    """
+    #tipoItemExistente = TipoItem.objects.get(id=id_tipoitem)
+    #tipoItemNuevo = TipoItem.objects.get(id=id_tipoitem)
+    item = Item.objects.get(id=id_item)
+
+    #tipoItemNuevo.id = None
+    #tipoItemNuevo.fase = fase
+    try:
+        item.calcular_impacto()
+    except IntegrityError as e:
+        return render(request, "keyduplicate_tipoitem.html",
+                      {'item': item, "message": e.message},
+                      context_instance=RequestContext(request))
+
+    item.estado = 'V'
+    super(Item, item).save()
+    solicitud = SolicitudItem()
+    solicitud.item = item
+    solicitud.complejidad = item.complejidadtotal
+    solicitud.costo = item.costototal
+    solicitud.votos = 0
+    solicitud.votossi = 0
+    solicitud.votosno = 0
+    solicitud.save()
+    return HttpResponseRedirect('/admin/todo/solicituditem/')
+
+
+def VotoSi(request, id_solicitud):
+    """
+    Definimos el view VotoSi
+    """
+    #tipoItemExistente = TipoItem.objects.get(id=id_tipoitem)
+    #tipoItemNuevo = TipoItem.objects.get(id=id_tipoitem)
+    solicitud = SolicitudItem.objects.get(id=id_solicitud)
+    solicitud.votos = solicitud.votos + 1
+    solicitud.votossi = solicitud.votossi + 1
+    solicitud.save()
+    return HttpResponseRedirect('/admin/todo/solicituditem/')
+
+
+def VotoNo(request, id_solicitud):
+    """
+    Definimos el view VotoNo
+    """
+    #tipoItemExistente = TipoItem.objects.get(id=id_tipoitem)
+    #tipoItemNuevo = TipoItem.objects.get(id=id_tipoitem)
+    solicitud = SolicitudItem.objects.get(id=id_solicitud)
+    solicitud.votos = solicitud.votos + 1
+    solicitud.votosno = solicitud.votosno + 1
+    solicitud.save()
+    return HttpResponseRedirect('/admin/todo/solicituditem/')
+
+
 def ListarTipoItem(request, id_fase):
     """
     Definimos el view ListarTipoItem

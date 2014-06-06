@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 import datetime
-
+#from django.core.exceptions import SomeException
 from django.db import models
-
-
-
+from django import forms
+from django.shortcuts import render_to_response, render
 
 
 """Models contiene los modelos del proyecto"""
@@ -236,13 +235,20 @@ class Item(models.Model):
         existe = False
         existe = Item.objects.filter(id=self.id).exists()
         ols = Item.objects.filter(id=self.id)
-        if existe is True:
-            for ol in ols:
+        #if existe is True:
+        for ol in ols:
+            if ol.estado == 'A':
+                #messages.append('El item que desea modificar esat en estado Aprobado, por ende no se realizaran los cambios')
+                # raise SomeException('El item que desea modificar esat en estado Aprobado, por ende no se realizaran los cambios')
+                #self.error_messages = {'required' :'El item que desea modificar esta en estado Aprobado, por ende no se realizaran los cambios'}
+                #self.fechamodificacion = datetime.datetime.now()
+                self.solicitar_cambio()
+            else:
                 if ol.idversion == self.idversion:
                     self.cambiarversion()
                     self.version = self.version + 1
-        self.fechamodificacion = datetime.datetime.now()
-        super(Item, self).save()
+                    self.fechamodificacion = datetime.datetime.now()
+                super(Item, self).save()
         return Item
 
     def cambiarversion(self):
@@ -261,7 +267,85 @@ class Item(models.Model):
             new.costototal = old.costototal
             new.complejidadtotal = old.complejidadtotal
             new.idversion = old.id
-            new.save()
+            new.fechamodificacion = datetime.datetime.now()
+            super(Item, new).save()
+            #new.save()
+        return Item
+
+    def calcular_impacto(self):
+        """
+        Definicion de la accion calcular_impacto
+        """
+
+        def impacto_complejidad(id_item):
+            """ Recibe un request, se verifica cual es el usuario registrado y el proyecto del cual se solicita,
+            se obtiene la lista de fases con las que estan relacionados el usuario y el proyecto
+            desplegandola en pantalla, ademas permite realizar busquedas avanzadas sobre
+            las fases que puede mostrar.
+
+
+            """
+            item = Item.objects.get(id=id_item)
+            com = 0
+            try:
+                relaciones = RelacionItem.objects.filter(itemorigen=id_item)
+            except RelacionItem.DoesNotExist:
+                relaciones = False
+            if relaciones:
+                for hijo in relaciones:
+                    com = com + impacto_complejidad(hijo.itemdestino.id)
+                com = com + item.complejidad
+                return com
+            else:
+                return item.complejidad
+
+        def impacto_costo(id_item):
+            """ Recibe un request, se verifica cual es el usuario registrado y el proyecto del cual se solicita,
+            se obtiene la lista de fases con las que estan relacionados el usuario y el proyecto
+            desplegandola en pantalla, ademas permite realizar busquedas avanzadas sobre
+            las fases que puede mostrar.
+
+            """
+            item = Item.objects.get(id=id_item)
+            cost = 0
+            try:
+                relaciones = RelacionItem.objects.filter(itemorigen=id_item)
+            except RelacionItem.DoesNotExist:
+                relaciones = False
+            if relaciones:
+                for hijo in relaciones:
+                    cost = cost + impacto_costo(hijo.itemdestino.id)
+                cost = cost + item.costo
+                return cost
+            else:
+                return item.costo
+
+        self.complejidadtotal = impacto_complejidad(self.id)
+        self.costototal = impacto_costo(self.id)
+        #self.save()
+        super(Item, self).save()
+        return Item
+
+    class SolicitarCambioForm(forms.Form):
+        """
+        Definicion del formulario ImportarTipoForm
+        """
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+        #class Meta:
+        #   model = Item
+
+    def solicitar_cambio(self):
+        """
+        Definicion de la accion solicitar_cambio
+        """
+
+        form = self.SolicitarCambioForm()
+        if form.is_valid():
+            item = form.cleaned_data['Item']
+        return render_to_response('admin/ConfirmarSolicitud.html', {'item': self,
+                                                                    'item_form': form,
+                                                                    'id_item': self.id,
+        })
         return Item
 
 
@@ -323,5 +407,33 @@ class RelacionItem(models.Model):
         verbose_name = u'Relacion Item'
         verbose_name_plural = 'Relacion Items'
 
+
+class SolicitudItem(models.Model):
+    """
+    Clase SolicitudItem
+    Definimos los atributos de la clase SolicitudItem
+    """
+    item = models.ForeignKey(Item, verbose_name="Item", related_name="Item")
+    """Nombre del Item"""
+    complejidad = models.IntegerField(null=True, blank=True, verbose_name="Complejidad de modificacion")
+    """Complejidad del Item"""
+    costo = models.IntegerField(null=True, blank=True, verbose_name="Costo de modificacion")
+    """Costo del Item"""
+    votos = models.IntegerField(null=True, blank=True, verbose_name="Votos de la Solicitud")
+    """Cantidad de votos de la solicitud"""
+    votossi = models.IntegerField(null=True, blank=True, verbose_name="Votos positivos de la Solicitud")
+    """Cantidad de votos positivos de la solicitud"""
+    votosno = models.IntegerField(null=True, blank=True, verbose_name="Votos negativos de la Solicitud")
+    """Cantidad de votos negativos de la solicitud"""
+
+    def __unicode__(self):
+        """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""
+        return u'%s ' % (self.item)
+
+    class Meta:
+        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el Item Origen"""
+        ordering = ('item',)
+        verbose_name = u'Solicitud de cambio de  Item'
+        verbose_name_plural = 'Solicitudes de cambio de Items'
 
 

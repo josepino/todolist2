@@ -1,0 +1,26 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+    <h2>Voto de Solicitud de Cambio</h2>
+
+    <form action="" method="post">
+
+        {{ item_form }}
+        <p>Desea que se realice el cambio del item {{ item }} ??</p>
+
+        <p>Item involucrado:</p>
+        <ul>{{ item }}</ul>
+        <p>Costo de modificacion: {{ costo }}</p>
+
+        <p>Complejidad de modificacion: {{ complejidad }}</p>
+
+        <input type="hidden" name="action" value="solicitarcambio/"/>
+
+        <a href="/voto/si/{{ id_solicitud }}" class="btn btn-lg btn-danger" role="button">Si</a>
+        <a href="/voto/no/{{ id_solicitud }}" class="btn btn-lg btn-danger" role="button">No</a>
+    </form>
+
+
+
+{% endblock %}
+

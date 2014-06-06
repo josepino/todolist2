@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+    <h2>Confirmacion de Solicitud de Cambio de Item</h2>
+
+    <form action="" method="post">
+
+        {{ item_form }}
+        <p>Esta seguro que desea solicitar el cambio del item {{ item }} ??</p>
+
+        <p>Item involucrado:</p>
+        <ul>{{ item }}</ul>
+
+        <input type="hidden" name="action" value="solicitarcambio/"/>
+
+        <a href="/solicitarcambio/{{ id_item }}" class="btn btn-lg btn-danger" role="button">Aceptar</a>
+    </form>
+
+
+
+{% endblock %}
+

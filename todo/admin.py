@@ -7,6 +7,74 @@ from django import forms
 from django.shortcuts import render_to_response, render
 
 
+class SolicitudItemAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase RelacionAdmin
+    """
+    list_display = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno',)
+    list_filter = ('item', 'costo', 'complejidad', 'votos',)
+    search_fields = ['item']
+    ordering = ('item',)
+    readonly_fields = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno',)
+    actions = ('votar',)
+
+    class VotoForm(forms.Form):
+        """
+        Definicion del formulario ImportarTipoForm
+        """
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+        #item = forms.ModelChoiceField(queryset=RelacionItem.objects.filter(itemorigen=id_item), initial=1)
+
+        class Meta:
+            model = Item
+
+    def votar(self, request, queryset):
+        """
+        Definicion de la accion solicitar_cambio
+        """
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+
+        count = 0
+        for a in queryset:
+            count += 1
+        if count == 1:
+            for a in queryset:
+                #id_solicitud = (",".join(selected))
+                #solicitud=SolicitudItem.objects.filter(id=id_solicitud)
+                form = None
+
+                #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
+                if 'apply' in request.POST:
+                    form = self.VotoForm(request.POST)
+
+                    if form.is_valid():
+                        item = form.cleaned_data['Item']
+                        count = 0
+                        #for fase in queryset:
+                        #   fase.tipoitem.add(tipoitem)
+                        #  count += 1
+                        plural = ''
+                        if count != 1:
+                            plural = 's'
+
+                        self.message_user(request, "Successfully added tag %s to %d article%s." % (item, count, plural))
+                        return HttpResponseRedirect(request.get_full_path())
+
+                if not form:
+                    form = self.VotoForm(
+                        initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+                return render_to_response('admin/voto.html', {'item': a.item,
+                                                              'item_form': form,
+                                                              'id_solicitud': a.id,
+                                                              'costo': a.costo,
+                                                              'complejidad': a.complejidad,
+                })
+        else:
+            messages.error(request, "Solo se puede votar el cambio de un item a la vez.")
+
+    votar.short_description = "Votar para el cambio del Item"
+
+
 class RelacionAdmin(admin.ModelAdmin):
     """
     Definicion de la clase RelacionAdmin
@@ -48,7 +116,7 @@ class ItemAdmin(admin.ModelAdmin):
     ordering = ('nombre',)
     inlines = [AtributoItemAdmin2]
     readonly_fields = ('complejidadtotal', 'costototal', 'idversion')
-    actions = ('calcular_impacto', 'revertir_version',)
+    actions = ('calcular_impacto', 'revertir_version', 'solicitar_cambio',)
 
     def calcular_impacto(modeladmin, request, queryset):
         """
@@ -109,6 +177,7 @@ class ItemAdmin(admin.ModelAdmin):
                 item1.complejidadtotal = impacto_complejidad(a.id)
                 item1.costototal = impacto_costo(a.id)
                 item1.save()
+                #super(Item, item1).save()
                 modeladmin.message_user(request,
                                         "Se calculo correctamente correctamente impaco del cambio en el item %s." % item1)
         else:
@@ -160,7 +229,8 @@ class ItemAdmin(admin.ModelAdmin):
                             for b1 in items1:
                                 b1.idversion = b.id
                                 b1.save()
-                    a.delete()
+                            a.delete()
+
                 else:
                     messages.error(request, "No existe una version anterior del item.")
 
@@ -168,6 +238,58 @@ class ItemAdmin(admin.ModelAdmin):
             messages.error(request, "Solo se puede revertir la version de un item a la vez.")
 
     revertir_version.short_description = "Revertir version del Item"
+
+    class SolicitarCambioForm(forms.Form):
+        """
+        Definicion del formulario ImportarTipoForm
+        """
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+        #item = forms.ModelChoiceField(queryset=RelacionItem.objects.filter(itemorigen=id_item), initial=1)
+
+        class Meta:
+            model = Item
+
+    def solicitar_cambio(self, request, queryset):
+        """
+        Definicion de la accion solicitar_cambio
+        """
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+
+        count = 0
+        for a in queryset:
+            count += 1
+        if count == 1:
+            id_item = (",".join(selected))
+            form = None
+
+            #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
+            if 'apply' in request.POST:
+                form = self.SolicitarCambioForm(request.POST)
+
+                if form.is_valid():
+                    item = form.cleaned_data['Item']
+                    count = 0
+                    #for fase in queryset:
+                    #   fase.tipoitem.add(tipoitem)
+                    #  count += 1
+                    plural = ''
+                    if count != 1:
+                        plural = 's'
+
+                    self.message_user(request, "Successfully added tag %s to %d article%s." % (item, count, plural))
+                    return HttpResponseRedirect(request.get_full_path())
+
+            if not form:
+                form = self.SolicitarCambioForm(
+                    initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+            return render_to_response('admin/ConfirmarSolicitud.html', {'item': queryset,
+                                                                        'item_form': form,
+                                                                        'id_item': id_item,
+            })
+        else:
+            messages.error(request, "Solo se puede solicitar el cambio de un item a la vez.")
+
+    solicitar_cambio.short_description = "Solicitar cambio del item"
 
 
 class ItemAdmin2(admin.TabularInline):
@@ -405,3 +527,4 @@ admin.site.register(RelacionItem, RelacionAdmin)
 admin.site.register(AtributoTipoItem, AtributoTipoItemAdmin)
 admin.site.register(AtributoItem, AtributoItemAdmin)
 admin.site.register(LineaBase, LineaBaseAdmin)
+admin.site.register(SolicitudItem, SolicitudItemAdmin)
