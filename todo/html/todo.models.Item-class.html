@@ -97,6 +97,15 @@ django.db.models.Model --+
             nombre
         </td>
     </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.Item.SolicitarCambioForm-class.html" class="summary-name">SolicitarCambioForm</a><br/>
+            Definicion del formulario ImportarTipoForm
+        </td>
+    </tr>
 </table>
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -130,6 +139,84 @@ django.db.models.Model --+
                     <td align="right" valign="top">
                         <span class="codelink"><a
                                 href="todo.models-pysrc.html#Item.__unicode__">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="save"></a><span class="summary-sig-name">save</span>(<span
+                            class="summary-sig-arg">self</span>)</span></td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a href="todo.models-pysrc.html#Item.save">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="cambiarversion"></a><span class="summary-sig-name">cambiarversion</span>(<span
+                            class="summary-sig-arg">self</span>)</span></td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a href="todo.models-pysrc.html#Item.cambiarversion">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="calcular_impacto"></a><span class="summary-sig-name">calcular_impacto</span>(<span
+                            class="summary-sig-arg">self</span>)</span><br/>
+                        Definicion de la accion calcular_impacto
+                    </td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a
+                                href="todo.models-pysrc.html#Item.calcular_impacto">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="solicitar_cambio"></a><span class="summary-sig-name">solicitar_cambio</span>(<span
+                            class="summary-sig-arg">self</span>)</span><br/>
+                        Definicion de la accion solicitar_cambio
+                    </td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a
+                                href="todo.models-pysrc.html#Item.solicitar_cambio">source&nbsp;code</a></span>
 
                     </td>
                 </tr>
@@ -216,6 +303,16 @@ re de la Item')">models.CharField('Nombre', max_length= 45, help_text=<code
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
+            <a href="todo.models.Item-class.html#costo" class="summary-name">costo</a> = <code title="models.IntegerField(help_text= 'Ingrese el costo del Item en Dolares $\
+')">models.IntegerField(help_text= 'Ingrese el costo del I<code class="variable-ellipsis">...</code></code><br/>
+            Costo del Item
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
             <a href="todo.models.Item-class.html#Estado_CHOICES" class="summary-name">Estado_CHOICES</a> = <code title="'M', 'En Modificacion', ('P', 'Pendiente'), ('A', 'Aprobado'), ('R', '\
 Rechazado'), ('E', 'Eliminado'), ('V', 'En revision'),">'M', 'En Modificacion', ('P', 'Pendiente'), (<code
                 class="variable-ellipsis">...</code></code>
@@ -248,8 +345,33 @@ p_text= 'Ingrese el Estado del Item', null= True, blank= True, default\
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Item-class.html#costo" class="summary-name">costo</a> = <code title="models.IntegerField(help_text= 'Ingrese el costo del Item en Dolares $\
-')">models.IntegerField(help_text= 'Ingrese el costo del I<code class="variable-ellipsis">...</code></code><br/>
+            <a href="todo.models.Item-class.html#fechamodificacion" class="summary-name">fechamodificacion</a> = <code
+                title="models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha\
+ de modificacion del Item')">models.DateField('Fecha de Modificacion', <code class="variable-ellipsis">...</code></code><br/>
+            Fecha de modificacion del Item
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.Item-class.html#complejidadtotal" class="summary-name">complejidadtotal</a> = <code
+                title="models.IntegerField(null= True, blank= True, verbose_name= &quot;Complejida\
+d total al modificar&quot;)">models.IntegerField(null= True, blank= True<code
+                class="variable-ellipsis">...</code></code><br/>
+            Complejidad del Item
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.models.Item-class.html#costototal" class="summary-name">costototal</a> = <code
+                title="models.IntegerField(null= True, blank= True, verbose_name= &quot;Costo tota\
+l al modificar&quot;)">models.IntegerField(null= True, blank= True, verb<code
+                class="variable-ellipsis">...</code></code><br/>
             Costo del Item
         </td>
     </tr>
@@ -258,10 +380,10 @@ p_text= 'Ingrese el Estado del Item', null= True, blank= True, default\
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
-            <a href="todo.models.Item-class.html#fechamodificacion" class="summary-name">fechamodificacion</a> = <code
-                title="models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha\
- de modificacion del Item')">models.DateField('Fecha de Modificacion', <code class="variable-ellipsis">...</code></code><br/>
-            Fecha de modificacion del Item
+            <a name="idversion"></a><span class="summary-name">idversion</span> = <code
+                title="models.IntegerField(null= True, blank= True,)">models.IntegerField(null= True, blank=
+            True,)</code><br/>
+            Id del de la version del Item
         </td>
     </tr>
 </table>
@@ -436,6 +558,37 @@ models.IntegerField(help_text= 'Ingrese la complejidad del Item')
         </tr>
     </table>
 </div>
+<a name="costo"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">costo</h3>
+
+                <p>Costo del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.IntegerField(help_text= 'Ingrese el costo del Item en Dolares $<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+')
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
 <a name="Estado_CHOICES"></a>
 
 <div>
@@ -528,37 +681,6 @@ models.IntegerField(help_text= 'Ingrese la Version del Item')
         </tr>
     </table>
 </div>
-<a name="costo"></a>
-
-<div>
-    <table class="details" border="1" cellpadding="3"
-           cellspacing="0" width="100%" bgcolor="white">
-        <tr>
-            <td>
-                <h3 class="epydoc">costo</h3>
-
-                <p>Costo del Item</p>
-                <dl class="fields">
-                </dl>
-                <dl class="fields">
-                    <dt>Value:</dt>
-                    <dd>
-                        <table>
-                            <tr>
-                                <td><pre class="variable">
-models.IntegerField(help_text= 'Ingrese el costo del Item en Dolares $<span class="variable-linewrap"><img
-                                        src="crarr.png" alt="\"/></span>
-')
-</pre>
-                                </td>
-                            </tr>
-                        </table>
-                    </dd>
-                </dl>
-            </td>
-        </tr>
-    </table>
-</div>
 <a name="fechamodificacion"></a>
 
 <div>
@@ -580,6 +702,68 @@ models.IntegerField(help_text= 'Ingrese el costo del Item en Dolares $<span clas
 models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha<span class="variable-linewrap"><img
                                         src="crarr.png" alt="\"/></span>
  de modificacion del Item')
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="complejidadtotal"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">complejidadtotal</h3>
+
+                <p>Complejidad del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.IntegerField(null= True, blank= True, verbose_name= &quot;Complejida<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+d total al modificar&quot;)
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
+<a name="costototal"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">costototal</h3>
+
+                <p>Costo del Item</p>
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+models.IntegerField(null= True, blank= True, verbose_name= &quot;Costo tota<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+l al modificar&quot;)
 </pre>
                                 </td>
                             </tr>
@@ -614,7 +798,7 @@ models.DateField('Fecha de Modificacion', help_text= 'Ingrese la fecha<span clas
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
     <tr>
         <td align="left" class="footer">
-            Generated by Epydoc 3.0.1 on Sat May 17 01:17:43 2014
+            Generated by Epydoc 3.0.1 on Sat Jun 7 01:30:32 2014
         </td>
         <td align="right" class="footer">
             <a target="mainFrame" href="http://epydoc.sourceforge.net"

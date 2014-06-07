@@ -71,6 +71,68 @@ django.contrib.admin.ModelAdmin --+
 <hr/>
 <p>Definicion de la clase ProyectoAdmin</p>
 
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+    <tr bgcolor="#70b0f0" class="table-header">
+        <td colspan="2" class="table-header">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr valign="top">
+                    <td align="left"><span class="table-header">Instance Methods</span></td>
+                    <td align="right" valign="top"
+                            ><span class="options">[<a href="#section-InstanceMethods"
+                                                       class="privatelink" onclick="toggle_private();"
+                            >hide private</a>]</span></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="iniciar_proyecto"></a><span class="summary-sig-name">iniciar_proyecto</span>(<span
+                            class="summary-sig-arg">modeladmin</span>,
+        <span class="summary-sig-arg">request</span>,
+        <span class="summary-sig-arg">queryset</span>)</span><br/>
+                        Definicion de la accion iniciar_proyecto
+                    </td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a href="todo.admin-pysrc.html#ProyectoAdmin.iniciar_proyecto">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><span class="summary-sig"><a name="finalizar_proyecto"></a><span class="summary-sig-name">finalizar_proyecto</span>(<span
+                            class="summary-sig-arg">modeladmin</span>,
+        <span class="summary-sig-arg">request</span>,
+        <span class="summary-sig-arg">queryset</span>)</span><br/>
+                        Definicion de la accion finalizar_proyecto
+                    </td>
+                    <td align="right" valign="top">
+                        <span class="codelink"><a href="todo.admin-pysrc.html#ProyectoAdmin.finalizar_proyecto">source&nbsp;code</a></span>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
 <!-- ==================== CLASS VARIABLES ==================== -->
 <a name="section-ClassVariables"></a>
 <table class="summary" border="1" cellpadding="3"
@@ -120,7 +182,35 @@ django.contrib.admin.ModelAdmin --+
             <span class="summary-type">&nbsp;</span>
         </td>
         <td class="summary">
+            <a name="readonly_fields"></a><span class="summary-name">readonly_fields</span> = <code
+                title="'fechainicio', 'fechafin',">'fechainicio', 'fechafin',</code>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
             <a name="ordering"></a><span class="summary-name">ordering</span> = <code title="'nombre',">'nombre',</code>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a href="todo.admin.ProyectoAdmin-class.html#fieldsets" class="summary-name">fieldsets</a> = <code title="'Nombre', {'fields':('nombre', 'descripcion',)}, ('Fechas', {'fields':\
+('fechacreacion', 'fechainicio', 'fechafin',)}), ('Estado', {'fields':\
+('estado',)}),">'Nombre', {'fields':('nombre', 'descripcion',)}, (<code class="variable-ellipsis">...</code></code>
+        </td>
+    </tr>
+    <tr>
+        <td width="15%" align="right" valign="top" class="summary">
+            <span class="summary-type">&nbsp;</span>
+        </td>
+        <td class="summary">
+            <a name="actions"></a><span class="summary-name">actions</span> = <code
+                title="'iniciar_proyecto', 'finalizar_proyecto',">'iniciar_proyecto', 'finalizar_proyecto',</code>
         </td>
     </tr>
     <tr>
@@ -179,6 +269,38 @@ django.contrib.admin.ModelAdmin --+
         </tr>
     </table>
 </div>
+<a name="fieldsets"></a>
+
+<div>
+    <table class="details" border="1" cellpadding="3"
+           cellspacing="0" width="100%" bgcolor="white">
+        <tr>
+            <td>
+                <h3 class="epydoc">fieldsets</h3>
+
+                <dl class="fields">
+                </dl>
+                <dl class="fields">
+                    <dt>Value:</dt>
+                    <dd>
+                        <table>
+                            <tr>
+                                <td><pre class="variable">
+'Nombre', {'fields':('nombre', 'descripcion',)}, ('Fechas', {'fields':<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+('fechacreacion', 'fechainicio', 'fechafin',)}), ('Estado', {'fields':<span class="variable-linewrap"><img
+                                        src="crarr.png" alt="\"/></span>
+('estado',)}),
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dl>
+            </td>
+        </tr>
+    </table>
+</div>
 <br/>
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
@@ -203,7 +325,7 @@ django.contrib.admin.ModelAdmin --+
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
     <tr>
         <td align="left" class="footer">
-            Generated by Epydoc 3.0.1 on Sat May 17 01:17:43 2014
+            Generated by Epydoc 3.0.1 on Sat Jun 7 01:30:32 2014
         </td>
         <td align="right" class="footer">
             <a target="mainFrame" href="http://epydoc.sourceforge.net"

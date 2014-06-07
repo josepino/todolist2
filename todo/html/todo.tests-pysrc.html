@@ -196,17 +196,29 @@
         <a name="L38"></a><tt class="py-lineno">38</tt> <tt class="py-line"> <tt class="py-name">p</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"ProyectoNameTest1"</tt>
         </tt>
-        <a name="L39"></a><tt class="py-lineno">39</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L39"></a><tt class="py-lineno">39</tt> <tt class="py-line"> <tt class="py-name">p</tt><tt
+                class="py-op">.</tt><tt class="py-name">FechaCreacion</tt> <tt class="py-op">=</tt> <tt
+                class="py-string">"15/05/2014"</tt> </tt>
+        <a name="L40"></a><tt class="py-lineno">40</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"ProyectoNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt><tt class="py-op">=</tt>
+            <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible problema de creacion del
+                objeto!"</tt><tt class="py-op">)</tt> </tt>
+        <a name="L41"></a><tt class="py-lineno">41</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+                class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"15/05/2014"</tt><tt
+                class="py-op">,</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt
+                class="py-name">FechaCreacion</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt><tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en las fechas de creacion, posible problema
+            de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-    <a name="L40"></a><tt class="py-lineno">40</tt> <tt class="py-line"> </tt>
-    <a name="L41"></a><tt class="py-lineno">41</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de Fase
+    <a name="L42"></a><tt class="py-lineno">42</tt> <tt class="py-line"> </tt>
+    <a name="L43"></a><tt class="py-lineno">43</tt> <tt class="py-line"> </tt>
+    <a name="L44"></a><tt class="py-lineno">44</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de Fase
     """</tt> </tt>
     <a name="ModelosTest.test_fase"></a>
 
-    <div id="ModelosTest.test_fase-def"><a name="L42"></a><tt class="py-lineno">42</tt> <a class="py-toggle" href="#"
+    <div id="ModelosTest.test_fase-def"><a name="L45"></a><tt class="py-lineno">45</tt> <a class="py-toggle" href="#"
                                                                                            id="ModelosTest.test_fase-toggle"
                                                                                            onclick="return toggle('ModelosTest.test_fase');">-</a><tt
             class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
@@ -214,26 +226,28 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_fase-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_fase-expanded"><a name="L43"></a><tt class="py-lineno">43</tt> <tt class="py-line"> <tt
+    <div id="ModelosTest.test_fase-expanded"><a name="L46"></a><tt class="py-lineno">46</tt> <tt class="py-line"> <tt
             class="py-name">f</tt> <tt class="py-op">=</tt> <tt id="link-3" class="py-name"
                                                                 targets="Class todo.models.Fase=todo.models.Fase-class.html"><a
             title="todo.models.Fase" class="py-name" href="#"
             onclick="return doclink('link-3', 'Fase', 'link-3');">Fase</a></tt> <tt class="py-op">(</tt><tt
             class="py-op">)</tt> </tt>
-        <a name="L44"></a><tt class="py-lineno">44</tt> <tt class="py-line"> <tt class="py-name">f</tt><tt
+        <a name="L47"></a><tt class="py-lineno">47</tt> <tt class="py-line"> <tt class="py-name">f</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"FaseNameTest1"</tt>
         </tt>
-        <a name="L45"></a><tt class="py-lineno">45</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L48"></a><tt class="py-lineno">48</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"FaseNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">f</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt> <tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible
+            problema de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-    <a name="L46"></a><tt class="py-lineno">46</tt> <tt class="py-line"> </tt>
-    <a name="L47"></a><tt class="py-lineno">47</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de TipoItem
+    <a name="L49"></a><tt class="py-lineno">49</tt> <tt class="py-line"> </tt>
+    <a name="L50"></a><tt class="py-lineno">50</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de TipoItem
     """</tt> </tt>
     <a name="ModelosTest.test_tipoItem"></a>
 
-    <div id="ModelosTest.test_tipoItem-def"><a name="L48"></a><tt class="py-lineno">48</tt> <a class="py-toggle"
+    <div id="ModelosTest.test_tipoItem-def"><a name="L51"></a><tt class="py-lineno">51</tt> <a class="py-toggle"
                                                                                                href="#"
                                                                                                id="ModelosTest.test_tipoItem-toggle"
                                                                                                onclick="return toggle('ModelosTest.test_tipoItem');">-</a><tt
@@ -242,26 +256,28 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_tipoItem-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_tipoItem-expanded"><a name="L49"></a><tt class="py-lineno">49</tt> <tt class="py-line">
+    <div id="ModelosTest.test_tipoItem-expanded"><a name="L52"></a><tt class="py-lineno">52</tt> <tt class="py-line">
         <tt class="py-name">ti</tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"
                                                                  targets="Class todo.models.TipoItem=todo.models.TipoItem-class.html"><a
             title="todo.models.TipoItem" class="py-name" href="#"
             onclick="return doclink('link-4', 'TipoItem', 'link-4');">TipoItem</a></tt> <tt class="py-op">(</tt><tt
             class="py-op">)</tt> </tt>
-        <a name="L50"></a><tt class="py-lineno">50</tt> <tt class="py-line"> <tt class="py-name">ti</tt><tt
+        <a name="L53"></a><tt class="py-lineno">53</tt> <tt class="py-line"> <tt class="py-name">ti</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"TipoItemNameTest1"</tt>
         </tt>
-        <a name="L51"></a><tt class="py-lineno">51</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L54"></a><tt class="py-lineno">54</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"TipoItemNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">ti</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt> <tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible
+            problema de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-    <a name="L52"></a><tt class="py-lineno">52</tt> <tt class="py-line"> </tt>
-    <a name="L53"></a><tt class="py-lineno">53</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
+    <a name="L55"></a><tt class="py-lineno">55</tt> <tt class="py-line"> </tt>
+    <a name="L56"></a><tt class="py-lineno">56</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
     AtributoTipoItem """</tt> </tt>
     <a name="ModelosTest.test_atributoTipoItem"></a>
 
-    <div id="ModelosTest.test_atributoTipoItem-def"><a name="L54"></a><tt class="py-lineno">54</tt> <a class="py-toggle"
+    <div id="ModelosTest.test_atributoTipoItem-def"><a name="L57"></a><tt class="py-lineno">57</tt> <a class="py-toggle"
                                                                                                        href="#"
                                                                                                        id="ModelosTest.test_atributoTipoItem-toggle"
                                                                                                        onclick="return toggle('ModelosTest.test_atributoTipoItem');">-</a><tt
@@ -270,26 +286,28 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_atributoTipoItem-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_atributoTipoItem-expanded"><a name="L55"></a><tt class="py-lineno">55</tt> <tt
+    <div id="ModelosTest.test_atributoTipoItem-expanded"><a name="L58"></a><tt class="py-lineno">58</tt> <tt
             class="py-line"> <tt class="py-name">ati</tt> <tt class="py-op">=</tt> <tt id="link-5" class="py-name"
                                                                                        targets="Class todo.models.AtributoTipoItem=todo.models.AtributoTipoItem-class.html"><a
             title="todo.models.AtributoTipoItem" class="py-name" href="#"
             onclick="return doclink('link-5', 'AtributoTipoItem', 'link-5');">AtributoTipoItem</a></tt> <tt
             class="py-op">(</tt><tt class="py-op">)</tt> </tt>
-        <a name="L56"></a><tt class="py-lineno">56</tt> <tt class="py-line"> <tt class="py-name">ati</tt><tt
+        <a name="L59"></a><tt class="py-lineno">59</tt> <tt class="py-line"> <tt class="py-name">ati</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"AtributoTipoItemNameTest1"</tt>
         </tt>
-        <a name="L57"></a><tt class="py-lineno">57</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L60"></a><tt class="py-lineno">60</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"AtributoTipoItemNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">ati</tt><tt class="py-op">.</tt><tt class="py-name">Nombre</tt><tt
-                class="py-op">)</tt> </tt>
+                class="py-op">,</tt> <tt class="py-name">msg</tt> <tt class="py-op">=</tt> <tt class="py-string">"Inconsistencia
+            en los nombres al crear el objeto, posible problema de creacion del objeto!"</tt><tt class="py-op">)</tt>
+        </tt>
     </div>
-    <a name="L58"></a><tt class="py-lineno">58</tt> <tt class="py-line"> </tt>
-    <a name="L59"></a><tt class="py-lineno">59</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de Item
+    <a name="L61"></a><tt class="py-lineno">61</tt> <tt class="py-line"> </tt>
+    <a name="L62"></a><tt class="py-lineno">62</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de Item
     """</tt> </tt>
     <a name="ModelosTest.test_Item"></a>
 
-    <div id="ModelosTest.test_Item-def"><a name="L60"></a><tt class="py-lineno">60</tt> <a class="py-toggle" href="#"
+    <div id="ModelosTest.test_Item-def"><a name="L63"></a><tt class="py-lineno">63</tt> <a class="py-toggle" href="#"
                                                                                            id="ModelosTest.test_Item-toggle"
                                                                                            onclick="return toggle('ModelosTest.test_Item');">-</a><tt
             class="py-line"> <tt class="py-keyword">def</tt> <a class="py-def-name"
@@ -297,26 +315,28 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_Item-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_Item-expanded"><a name="L61"></a><tt class="py-lineno">61</tt> <tt class="py-line"> <tt
+    <div id="ModelosTest.test_Item-expanded"><a name="L64"></a><tt class="py-lineno">64</tt> <tt class="py-line"> <tt
             class="py-name">it</tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"
                                                                  targets="Class todo.models.Item=todo.models.Item-class.html"><a
             title="todo.models.Item" class="py-name" href="#"
             onclick="return doclink('link-6', 'Item', 'link-6');">Item</a></tt> <tt class="py-op">(</tt><tt
             class="py-op">)</tt> </tt>
-        <a name="L62"></a><tt class="py-lineno">62</tt> <tt class="py-line"> <tt class="py-name">it</tt><tt
+        <a name="L65"></a><tt class="py-lineno">65</tt> <tt class="py-line"> <tt class="py-name">it</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"ItemNameTest1"</tt>
         </tt>
-        <a name="L63"></a><tt class="py-lineno">63</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L66"></a><tt class="py-lineno">66</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"ItemNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">it</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt> <tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible
+            problema de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-    <a name="L64"></a><tt class="py-lineno">64</tt> <tt class="py-line"> </tt>
-    <a name="L65"></a><tt class="py-lineno">65</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
+    <a name="L67"></a><tt class="py-lineno">67</tt> <tt class="py-line"> </tt>
+    <a name="L68"></a><tt class="py-lineno">68</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
     AtributoItem """</tt> </tt>
     <a name="ModelosTest.test_atributoItem"></a>
 
-    <div id="ModelosTest.test_atributoItem-def"><a name="L66"></a><tt class="py-lineno">66</tt> <a class="py-toggle"
+    <div id="ModelosTest.test_atributoItem-def"><a name="L69"></a><tt class="py-lineno">69</tt> <a class="py-toggle"
                                                                                                    href="#"
                                                                                                    id="ModelosTest.test_atributoItem-toggle"
                                                                                                    onclick="return toggle('ModelosTest.test_atributoItem');">-</a><tt
@@ -325,26 +345,28 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_atributoItem-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_atributoItem-expanded"><a name="L67"></a><tt class="py-lineno">67</tt> <tt
+    <div id="ModelosTest.test_atributoItem-expanded"><a name="L70"></a><tt class="py-lineno">70</tt> <tt
             class="py-line"> <tt class="py-name">ai</tt> <tt class="py-op">=</tt> <tt id="link-7" class="py-name"
                                                                                       targets="Class todo.models.AtributoItem=todo.models.AtributoItem-class.html"><a
             title="todo.models.AtributoItem" class="py-name" href="#"
             onclick="return doclink('link-7', 'AtributoItem', 'link-7');">AtributoItem</a></tt> <tt class="py-op">(</tt><tt
             class="py-op">)</tt> </tt>
-        <a name="L68"></a><tt class="py-lineno">68</tt> <tt class="py-line"> <tt class="py-name">ai</tt><tt
+        <a name="L71"></a><tt class="py-lineno">71</tt> <tt class="py-line"> <tt class="py-name">ai</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"AtributoItemNameTest1"</tt>
         </tt>
-        <a name="L69"></a><tt class="py-lineno">69</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L72"></a><tt class="py-lineno">72</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"AtributoItemNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">ai</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt> <tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible
+            problema de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-    <a name="L70"></a><tt class="py-lineno">70</tt> <tt class="py-line"> </tt>
-    <a name="L71"></a><tt class="py-lineno">71</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
+    <a name="L73"></a><tt class="py-lineno">73</tt> <tt class="py-line"> </tt>
+    <a name="L74"></a><tt class="py-lineno">74</tt> <tt class="py-line"> <tt class="py-string">""" Prueba de
     RelacionItem """</tt> </tt>
     <a name="ModelosTest.test_relacionItem"></a>
 
-    <div id="ModelosTest.test_relacionItem-def"><a name="L72"></a><tt class="py-lineno">72</tt> <a class="py-toggle"
+    <div id="ModelosTest.test_relacionItem-def"><a name="L75"></a><tt class="py-lineno">75</tt> <a class="py-toggle"
                                                                                                    href="#"
                                                                                                    id="ModelosTest.test_relacionItem-toggle"
                                                                                                    onclick="return toggle('ModelosTest.test_relacionItem');">-</a><tt
@@ -353,21 +375,23 @@
             class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
     </div>
     <div id="ModelosTest.test_relacionItem-collapsed" style="display:none;" pad="++" indent="++++++++"></div>
-    <div id="ModelosTest.test_relacionItem-expanded"><a name="L73"></a><tt class="py-lineno">73</tt> <tt
+    <div id="ModelosTest.test_relacionItem-expanded"><a name="L76"></a><tt class="py-lineno">76</tt> <tt
             class="py-line"> <tt class="py-name">ri</tt> <tt class="py-op">=</tt> <tt id="link-8" class="py-name"
                                                                                       targets="Class todo.models.RelacionItem=todo.models.RelacionItem-class.html"><a
             title="todo.models.RelacionItem" class="py-name" href="#"
             onclick="return doclink('link-8', 'RelacionItem', 'link-8');">RelacionItem</a></tt> <tt class="py-op">(</tt><tt
             class="py-op">)</tt> </tt>
-        <a name="L74"></a><tt class="py-lineno">74</tt> <tt class="py-line"> <tt class="py-name">ri</tt><tt
+        <a name="L77"></a><tt class="py-lineno">77</tt> <tt class="py-line"> <tt class="py-name">ri</tt><tt
                 class="py-op">.</tt><tt class="py-name">Nombre</tt> <tt class="py-op">=</tt> <tt class="py-string">"AtributoItemNameTest1"</tt>
         </tt>
-        <a name="L75"></a><tt class="py-lineno">75</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
+        <a name="L78"></a><tt class="py-lineno">78</tt> <tt class="py-line"> <tt class="py-name">self</tt><tt
                 class="py-op">.</tt><tt class="py-name">assertEqual</tt><tt class="py-op">(</tt><tt class="py-string">"AtributoItemNameTest1"</tt><tt
                 class="py-op">,</tt> <tt class="py-name">ri</tt><tt class="py-op">.</tt><tt
-                class="py-name">Nombre</tt><tt class="py-op">)</tt> </tt>
+                class="py-name">Nombre</tt><tt class="py-op">,</tt> <tt class="py-name">msg</tt> <tt
+                class="py-op">=</tt> <tt class="py-string">"Inconsistencia en los nombres al crear el objeto, posible
+            problema de creacion del objeto!"</tt><tt class="py-op">)</tt> </tt>
     </div>
-</div><a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+</div><a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line"> </tt><script type="text/javascript">
     <!--
     expandto(location.href);
     // -->
@@ -397,7 +421,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
     <tr>
         <td align="left" class="footer">
-            Generated by Epydoc 3.0.1 on Sat May 17 01:17:43 2014
+            Generated by Epydoc 3.0.1 on Sat Jun 7 01:30:33 2014
         </td>
         <td align="right" class="footer">
             <a target="mainFrame" href="http://epydoc.sourceforge.net"

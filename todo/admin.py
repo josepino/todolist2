@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django import forms
 from django.shortcuts import render_to_response, render
+from django.contrib.auth.signals import user_logged_in
 
 """class FilterUserAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
@@ -315,6 +316,7 @@ class ItemAdmin(admin.ModelAdmin):
                             for b1 in items1:
                                 b1.idversion = b.id
                                 b1.save()
+                            messages.info(request, "Se realizo correctamente la version del item %s ." % a)
                             a.delete()
 
                 else:
@@ -347,31 +349,34 @@ class ItemAdmin(admin.ModelAdmin):
         if count == 1:
             id_item = (",".join(selected))
             form = None
+            it = Item.objects.get(id=id_item)
+            if it.estado == 'A':
+                #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
+                if 'apply' in request.POST:
+                    form = self.SolicitarCambioForm(request.POST)
 
-            #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
-            if 'apply' in request.POST:
-                form = self.SolicitarCambioForm(request.POST)
+                    if form.is_valid():
+                        item = form.cleaned_data['Item']
+                        count = 0
+                        #for fase in queryset:
+                        #   fase.tipoitem.add(tipoitem)
+                        #  count += 1
+                        plural = ''
+                        if count != 1:
+                            plural = 's'
 
-                if form.is_valid():
-                    item = form.cleaned_data['Item']
-                    count = 0
-                    #for fase in queryset:
-                    #   fase.tipoitem.add(tipoitem)
-                    #  count += 1
-                    plural = ''
-                    if count != 1:
-                        plural = 's'
+                        self.message_user(request, "Successfully added tag %s to %d article%s." % (item, count, plural))
+                        return HttpResponseRedirect(request.get_full_path())
 
-                    self.message_user(request, "Successfully added tag %s to %d article%s." % (item, count, plural))
-                    return HttpResponseRedirect(request.get_full_path())
-
-            if not form:
-                form = self.SolicitarCambioForm(
-                    initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
-            return render_to_response('admin/ConfirmarSolicitud.html', {'item': queryset,
-                                                                        'item_form': form,
-                                                                        'id_item': id_item,
-            })
+                if not form:
+                    form = self.SolicitarCambioForm(
+                        initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+                return render_to_response('admin/ConfirmarSolicitud.html', {'item': queryset,
+                                                                            'item_form': form,
+                                                                            'id_item': id_item,
+                })
+            else:
+                messages.error(request, "No se puede solicitar el cambio de un item que no este en estado 'Aprobado'.")
         else:
             messages.error(request, "Solo se puede solicitar el cambio de un item a la vez.")
 
@@ -604,6 +609,20 @@ class ProyectoAdmin(admin.ModelAdmin):
 
     finalizar_proyecto.short_description = "Finalizar el proyecto seleccionado"
 
+
+def logged_in_message(sender, user, request, **kwargs):
+    sol = SolicitudItem.objects.all()
+    for s in sol:
+        if s.completo <> True:
+            id_proyecto = s.item.tipoitem.fase.fkproyecto.id
+            comit = Comite.objects.get(proyecto_id=id_proyecto)
+            miembros1 = comit.miembros.all()
+            for m in miembros1:
+                if m.id == request.user.id:
+                    messages.info(request, "Tiene una solicitud Pendiente de cambio!!!")
+
+
+user_logged_in.connect(logged_in_message)
 
 admin.site.register(Proyecto, ProyectoAdmin)
 admin.site.register(Fase, FaseAdmin)

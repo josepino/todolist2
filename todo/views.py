@@ -68,19 +68,23 @@ def SolicitarCambio(request, id_item):
         return render(request, "keyduplicate_tipoitem.html",
                       {'item': item, "message": e.message},
                       context_instance=RequestContext(request))
-
-    item.estado = 'V'
-    super(Item, item).save()
-    solicitud = SolicitudItem()
-    solicitud.item = item
-    solicitud.complejidad = item.complejidadtotal
-    solicitud.costo = item.costototal
-    solicitud.votos = 0
-    solicitud.votossi = 0
-    solicitud.votosno = 0
-    solicitud.completo = False
-    solicitud.save()
-    return HttpResponseRedirect('/admin/todo/solicituditem/')
+    if item.estado == 'A':
+        item.estado = 'V'
+        super(Item, item).save()
+        solicitud = SolicitudItem()
+        solicitud.item = item
+        solicitud.complejidad = item.complejidadtotal
+        solicitud.costo = item.costototal
+        solicitud.votos = 0
+        solicitud.votossi = 0
+        solicitud.votosno = 0
+        solicitud.completo = False
+        solicitud.save()
+        messages.info(request, "Se realizo correctamente la solicitud del cambio del item %s ." % item)
+        return HttpResponseRedirect('/admin/todo/solicituditem/')
+    else:
+        messages.error(request, "Se realizo correctamente la solicitud del cambio del item %s ." % item)
+        return HttpResponseRedirect('/admin/todo/solicituditem/')
 
 
 def VotoSi(request, id_solicitud):
@@ -140,6 +144,7 @@ def CalcularImpacto(request, id_item):
     item.complejidadtotal = impacto_complejidad(id_item)
     item.costototal = impacto_costo(id_item)
     item.save()
+    messages.info(request, "Se calculo corresctamente el impacto de modificacion del itrm %s ." % item)
     return HttpResponseRedirect('/admin/todo/item')
 
 
