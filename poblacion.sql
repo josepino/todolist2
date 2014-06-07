@@ -172,9 +172,23 @@ CREATE TABLE "todo_solicituditem" (
     "costo" integer,
     "votos" integer,
     "votossi" integer,
-    "votosno" integer
+    "votosno" integer,
+    "completo" boolean
 )
 ;
+CREATE TABLE "todo_comite_miembros" (
+    "id" serial NOT NULL PRIMARY KEY,
+    "comite_id" integer NOT NULL,
+    "user_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED,
+    UNIQUE ("comite_id", "user_id")
+)
+;
+CREATE TABLE "todo_comite" (
+    "id" serial NOT NULL PRIMARY KEY,
+    "proyecto_id" integer NOT NULL REFERENCES "todo_proyecto" ("id") DEFERRABLE INITIALLY DEFERRED
+)
+;
+ALTER TABLE "todo_comite_miembros" ADD CONSTRAINT "comite_id_refs_id_65394389" FOREIGN KEY ("comite_id") REFERENCES "todo_comite" ("id") DEFERRABLE INITIALLY DEFERRED;
 CREATE INDEX "todo_fase_fkproyecto_id" ON "todo_fase" ("fkproyecto_id");
 CREATE INDEX "todo_tipoitem_fase_id" ON "todo_tipoitem" ("fase_id");
 CREATE INDEX "todo_atributotipoitem_tipoitem_id" ON "todo_atributotipoitem" ("tipoitem_id");
@@ -186,6 +200,11 @@ CREATE INDEX "todo_atributoitem_atributotipoitem_id" ON "todo_atributoitem" ("at
 CREATE INDEX "todo_relacionitem_itemorigen_id" ON "todo_relacionitem" ("itemorigen_id");
 CREATE INDEX "todo_relacionitem_itemdestino_id" ON "todo_relacionitem" ("itemdestino_id");
 CREATE INDEX "todo_solicituditem_item_id" ON "todo_solicituditem" ("item_id");
+CREATE INDEX "todo_comite_miembros_comite_id" ON "todo_comite_miembros" ("comite_id");
+CREATE INDEX "todo_comite_miembros_user_id" ON "todo_comite_miembros" ("user_id");
+CREATE INDEX "todo_comite_proyecto_id" ON "todo_comite" ("proyecto_id");
+
+
 
 /*poblacion*/ 
 
@@ -204,7 +223,7 @@ insert into auth_group (name)values ('Desarrollador');
 insert into auth_user_groups (user_id,group_id)values ('1','1');
 insert into auth_user_groups (user_id,group_id)values ('2','1');
 insert into auth_user_groups (user_id,group_id)values ('3','1');
-insert into auth_user_groups (user_id,group_id)values ('4','3');
+insert into auth_user_groups (user_id,group_id)values ('4','2');
 insert into auth_user_groups (user_id,group_id)values ('5','3');
 
 
@@ -222,6 +241,8 @@ insert into django_content_type (name,app_label,model)values ('Linea Base','todo
 insert into django_content_type (name,app_label,model)values ('Item','todo','item');
 insert into django_content_type (name,app_label,model)values ('Atributo del Item','todo','atributoitem');
 insert into django_content_type (name,app_label,model)values ('Relacion Item','todo','relacionitem');
+insert into django_content_type (name,app_label,model)values ('Solicitud de cambio de  Item','todo','solicituditem');
+insert into django_content_type (name,app_label,model)values ('Comite','todo','comite'); 
 
 insert into auth_permission (name,content_type_id,codename)values ('Can add permission','1','add_permission');
 insert into auth_permission (name,content_type_id,codename)values ('Can change permission','1','change_permission');
@@ -268,6 +289,13 @@ insert into auth_permission (name,content_type_id,codename)values ('Can delete a
 insert into auth_permission (name,content_type_id,codename)values ('Can add relacion item','14','add_relacionitem');
 insert into auth_permission (name,content_type_id,codename)values ('Can change relacion item','14','change_relacionitem');
 insert into auth_permission (name,content_type_id,codename)values ('Can delete relacion item','14','delete_relacionitem');
+insert into auth_permission (name,content_type_id,codename)values ('Can add Solicitud de cambio de  Item ','15','add_solicituditem');
+insert into auth_permission (name,content_type_id,codename)values ('Can change Solicitud de cambio de  Item ','15','change_solicituditem');
+insert into auth_permission (name,content_type_id,codename)values ('Can delete Solicitud de cambio de  Item','15','delete_solicituditem');
+insert into auth_permission (name,content_type_id,codename)values ('Can add Comite','16','add_comite ');
+insert into auth_permission (name,content_type_id,codename)values ('Can change Comite ','16','change_comite');
+insert into auth_permission (name,content_type_id,codename)values ('Can delete Comite ','16','delete_comite');
+
 
 
 insert into auth_group_permissions (group_id,permission_id)values ('1','1');
@@ -315,6 +343,12 @@ insert into auth_group_permissions (group_id,permission_id)values ('1','42');
 insert into auth_group_permissions (group_id,permission_id)values ('1','43');
 insert into auth_group_permissions (group_id,permission_id)values ('1','44');
 insert into auth_group_permissions (group_id,permission_id)values ('1','45');
+insert into auth_group_permissions (group_id,permission_id)values ('1','46');
+insert into auth_group_permissions (group_id,permission_id)values ('1','47');
+insert into auth_group_permissions (group_id,permission_id)values ('1','48');
+insert into auth_group_permissions (group_id,permission_id)values ('1','49');
+insert into auth_group_permissions (group_id,permission_id)values ('1','50');
+insert into auth_group_permissions (group_id,permission_id)values ('1','51');
 
 insert into auth_group_permissions (group_id,permission_id)values ('2','20');
 insert into auth_group_permissions (group_id,permission_id)values ('2','22');
@@ -341,6 +375,8 @@ insert into auth_group_permissions (group_id,permission_id)values ('2','42');
 insert into auth_group_permissions (group_id,permission_id)values ('2','43');
 insert into auth_group_permissions (group_id,permission_id)values ('2','44');
 insert into auth_group_permissions (group_id,permission_id)values ('2','45');
+insert into auth_group_permissions (group_id,permission_id)values ('2','47');
+insert into auth_group_permissions (group_id,permission_id)values ('2','50');
 
 insert into auth_group_permissions (group_id,permission_id)values ('3','20');
 insert into auth_group_permissions (group_id,permission_id)values ('3','22');
@@ -365,6 +401,9 @@ insert into auth_group_permissions (group_id,permission_id)values ('3','42');
 insert into auth_group_permissions (group_id,permission_id)values ('3','43');
 insert into auth_group_permissions (group_id,permission_id)values ('3','44');
 insert into auth_group_permissions (group_id,permission_id)values ('3','45');
+insert into auth_group_permissions (group_id,permission_id)values ('3','46');
+insert into auth_group_permissions (group_id,permission_id)values ('3','47');
+insert into auth_group_permissions (group_id,permission_id)values ('3','50');
 
 insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, Estado)values ('Proyecto 1','Proyecto 1',current_date, 'I');
 insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, Estado)values ('Proyecto 2','Proyecto 2',current_date, 'I');
@@ -400,9 +439,16 @@ insert into todo_relacionitem (itemorigen_id,tiporelacion,itemdestino_id) values
 insert into todo_relacionitem (itemorigen_id,tiporelacion,itemdestino_id) values ('3','A','4');
 insert into todo_relacionitem (itemorigen_id,tiporelacion,itemdestino_id) values ('1','P','5');
 
+insert into todo_comite (proyecto_id)values ('1');
+insert into todo_comite (proyecto_id)values ('2');
 
-
-
-
+insert into todo_comite_miembros (comite_id,user_id )values ('1','1');
+insert into todo_comite_miembros (comite_id,user_id )values ('1','2');
+insert into todo_comite_miembros (comite_id,user_id )values ('1','4');
+insert into todo_comite_miembros (comite_id,user_id )values ('2','1');
+insert into todo_comite_miembros (comite_id,user_id )values ('2','2');
+insert into todo_comite_miembros (comite_id,user_id )values ('2','3');
+insert into todo_comite_miembros (comite_id,user_id )values ('2','4');
+insert into todo_comite_miembros (comite_id,user_id )values ('2','5');
 
 

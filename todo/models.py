@@ -4,6 +4,8 @@ import datetime
 from django.db import models
 from django import forms
 from django.shortcuts import render_to_response, render
+from django.contrib.auth.models import User
+from django.contrib import messages
 
 
 """Models contiene los modelos del proyecto"""
@@ -242,6 +244,7 @@ class Item(models.Model):
                 # raise SomeException('El item que desea modificar esat en estado Aprobado, por ende no se realizaran los cambios')
                 #self.error_messages = {'required' :'El item que desea modificar esta en estado Aprobado, por ende no se realizaran los cambios'}
                 #self.fechamodificacion = datetime.datetime.now()
+                #messages.error(self, 'El item no se puede modificar porque tiene estado "Aprobado".')
                 self.solicitar_cambio()
             else:
                 if ol.idversion == self.idversion:
@@ -425,6 +428,7 @@ class SolicitudItem(models.Model):
     """Cantidad de votos positivos de la solicitud"""
     votosno = models.IntegerField(null=True, blank=True, verbose_name="Votos negativos de la Solicitud")
     """Cantidad de votos negativos de la solicitud"""
+    completo = models.NullBooleanField(default=False)
 
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""
@@ -436,4 +440,53 @@ class SolicitudItem(models.Model):
         verbose_name = u'Solicitud de cambio de  Item'
         verbose_name_plural = 'Solicitudes de cambio de Items'
 
+    def save(self):
+        cont = 0
+        ols = SolicitudItem.objects.filter(id=self.id)
+        id_proyecto = self.item.tipoitem.fase.fkproyecto.id
+        comit = Comite.objects.get(proyecto_id=id_proyecto)
+        miembros1 = comit.miembros.all()
+        for m in miembros1:
+            cont = cont + 1
+        for ol in ols:
+            if self.completo <> True:
+                if cont > self.votos:
+                    self.completo = False
+                    super(SolicitudItem, self).save()
+                else:
+                    it = self.item
+                    if self.votossi < self.votosno:
+                        it.estado = 'A'
+                    else:
+                        it.estado = 'M'
+                    super(Item, it).save()
+                    self.completo = True
+                    self.save()
+        super(SolicitudItem, self).save()
+        return SolicitudItem
+
+
+class Comite(models.Model):
+    """
+    Clase Comite
+    Definimos los atributos de la clase Comite
+    """
+    proyecto = models.ForeignKey(Proyecto, verbose_name="Proyecto", help_text='Seleccione el Proyecto',
+                                 related_name="Proyecto")
+    """Nombre del Proyecto"""
+
+    miembros = models.ManyToManyField(User, verbose_name="Miembros", help_text='Seleccione los miembros del comite',
+                                      related_name="Proyecto")
+    """miembros del comite"""
+
+
+    def __unicode__(self):
+        """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""
+        return u'%s ' % (self.proyecto)
+
+    class Meta:
+        """En esta clase definimos que se listaran las relaciones de los Item ordenados por el Item Origen"""
+        ordering = ('proyecto',)
+        verbose_name = u'Comite'
+        verbose_name_plural = 'Comite'
 

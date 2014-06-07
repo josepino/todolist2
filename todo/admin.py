@@ -6,6 +6,21 @@ from django.contrib import messages
 from django import forms
 from django.shortcuts import render_to_response, render
 
+"""class FilterUserAdmin(admin.ModelAdmin):
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+    def queryset(self, request):
+        qs = super(FilterUserAdmin, self).queryset(request)
+        return qs.filter(created_by=request.user)
+
+    def has_change_permission(self, request, obj=None):
+        if not obj:
+            # the changelist itself
+            return True
+        return obj.user === request.user"""
+
 
 class SolicitudItemAdmin(admin.ModelAdmin):
     """
@@ -15,7 +30,7 @@ class SolicitudItemAdmin(admin.ModelAdmin):
     list_filter = ('item', 'costo', 'complejidad', 'votos',)
     search_fields = ['item']
     ordering = ('item',)
-    readonly_fields = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno',)
+    readonly_fields = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno', 'completo',)
     actions = ('votar',)
 
     class VotoForm(forms.Form):
@@ -35,44 +50,102 @@ class SolicitudItemAdmin(admin.ModelAdmin):
         selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
 
         count = 0
+        cont = 0
+        ban = 0
         for a in queryset:
             count += 1
         if count == 1:
             for a in queryset:
-                #id_solicitud = (",".join(selected))
-                #solicitud=SolicitudItem.objects.filter(id=id_solicitud)
-                form = None
+                id_proyecto = a.item.tipoitem.fase.fkproyecto.id
+                comit = Comite.objects.get(proyecto_id=id_proyecto)
+                miembros1 = comit.miembros.all()
+                for m in miembros1:
+                    cont = cont + 1
+                for miembro in miembros1:
+                    if request.user.id == miembro.id:
+                        ban = ban + 1
+                        if cont == a.votos:
+                            messages.error(request, "Ya se realizaron todos los votos para esta solicitud.")
+                        else:
+                            form = None
+                            #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
+                            if 'apply' in request.POST:
+                                form = self.VotoForm(request.POST)
 
-                #admin.ModelAdmin.message_user(request,"Se realizo la solicitud del cambio en el item.")
-                if 'apply' in request.POST:
-                    form = self.VotoForm(request.POST)
+                                if form.is_valid():
+                                    item = form.cleaned_data['Item']
+                                    count = 0
+                                    #for fase in queryset:
+                                    #   fase.tipoitem.add(tipoitem)
+                                    #  count += 1
+                                    plural = ''
+                                    if count != 1:
+                                        plural = 's'
 
-                    if form.is_valid():
-                        item = form.cleaned_data['Item']
-                        count = 0
-                        #for fase in queryset:
-                        #   fase.tipoitem.add(tipoitem)
-                        #  count += 1
-                        plural = ''
-                        if count != 1:
-                            plural = 's'
+                                    self.message_user(request, "Successfully added tag %s to %d article%s." % (
+                                    item, count, plural))
+                                    return HttpResponseRedirect(request.get_full_path())
 
-                        self.message_user(request, "Successfully added tag %s to %d article%s." % (item, count, plural))
-                        return HttpResponseRedirect(request.get_full_path())
-
-                if not form:
-                    form = self.VotoForm(
-                        initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
-                return render_to_response('admin/voto.html', {'item': a.item,
-                                                              'item_form': form,
-                                                              'id_solicitud': a.id,
-                                                              'costo': a.costo,
-                                                              'complejidad': a.complejidad,
-                })
+                            if not form:
+                                form = self.VotoForm(
+                                    initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+                            return render_to_response('admin/voto.html', {'item': a.item,
+                                                                          'item_form': form,
+                                                                          'id_solicitud': a.id,
+                                                                          'costo': a.costo,
+                                                                          'complejidad': a.complejidad,
+                            })
+                if ban == 0:
+                    messages.error(request,
+                                   "No puede votar en esta solicitud ya que no es miembro del comite de cambio de este item.")
         else:
             messages.error(request, "Solo se puede votar el cambio de un item a la vez.")
 
     votar.short_description = "Votar para el cambio del Item"
+
+    """def queryset(self, request):
+        qs = super(SolicitudItemAdmin, self).queryset(request)
+        if request.user.is_superuser:
+            return qs
+
+        # get instructor's "owner"
+        return qs.filter(instructor__owner=request.user)
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "instructor" and not request.user.is_superuser:
+            kwargs["queryset"] = Instructor.objects.filter(owner=request.user)
+            return db_field.formfield(**kwargs)
+        return super(CourseAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        obj.save()
+
+    def queryset(self, request):
+        qs = super(FilterUserAdmin, self).queryset(request)
+        return qs.filter(created_by=request.user)
+
+
+    def queryset(self, request):
+        qs = super(SolicitudItemAdmin, self).queryset(request)
+        if request.user.is_superuser:
+            return qs
+        else:
+            return qs.filter(author = request.user)
+
+    def save_model(self, request, obj, form, change):
+        obj.author = request.user
+        obj.save()
+
+    def has_change_permission(self, request, obj=None):
+        if not obj:
+            return True # So they can see the change list page
+        if request.user.is_superuser or obj.author == request.user:
+            return True
+        else:
+            return False
+
+    has_delete_permission = has_change_permission"""
 
 
 class RelacionAdmin(admin.ModelAdmin):
@@ -83,6 +156,19 @@ class RelacionAdmin(admin.ModelAdmin):
     list_filter = ('itemorigen', 'tiporelacion', 'itemdestino',)
     search_fields = ['itemorigen']
     ordering = ('itemorigen', 'itemdestino',)
+
+
+class ComiteAdmin(admin.ModelAdmin):
+    """
+    Definicion de la clase Comitedmin
+    """
+    list_display = ('proyecto', 'lista_miembros',)
+    list_filter = ('miembros',)
+    search_fields = ['proyecto']
+    ordering = ('proyecto',)
+
+    def lista_miembros(self, obj):
+        return "\n|\n".join([p.username for p in obj.miembros.all()])
 
 
 class AtributoItemAdmin(admin.ModelAdmin):
@@ -528,3 +614,4 @@ admin.site.register(AtributoTipoItem, AtributoTipoItemAdmin)
 admin.site.register(AtributoItem, AtributoItemAdmin)
 admin.site.register(LineaBase, LineaBaseAdmin)
 admin.site.register(SolicitudItem, SolicitudItemAdmin)
+admin.site.register(Comite, ComiteAdmin)

@@ -78,6 +78,7 @@ def SolicitarCambio(request, id_item):
     solicitud.votos = 0
     solicitud.votossi = 0
     solicitud.votosno = 0
+    solicitud.completo = False
     solicitud.save()
     return HttpResponseRedirect('/admin/todo/solicituditem/')
 
@@ -92,7 +93,11 @@ def VotoSi(request, id_solicitud):
     solicitud.votos = solicitud.votos + 1
     solicitud.votossi = solicitud.votossi + 1
     solicitud.save()
-    return HttpResponseRedirect('/admin/todo/solicituditem/')
+    messages.info(request, "Su voto se registro correctamente.")
+    if solicitud.completo:
+        return HttpResponseRedirect('/admin/todo/item/')
+    else:
+        return HttpResponseRedirect('/admin/todo/solicituditem/')
 
 
 def VotoNo(request, id_solicitud):
@@ -105,7 +110,11 @@ def VotoNo(request, id_solicitud):
     solicitud.votos = solicitud.votos + 1
     solicitud.votosno = solicitud.votosno + 1
     solicitud.save()
-    return HttpResponseRedirect('/admin/todo/solicituditem/')
+    messages.info(request, "Su voto se registro correctamente.")
+    if solicitud.completo:
+        return HttpResponseRedirect('/admin/todo/item/')
+    else:
+        return HttpResponseRedirect('/admin/todo/solicituditem/')
 
 
 def ListarTipoItem(request, id_fase):
