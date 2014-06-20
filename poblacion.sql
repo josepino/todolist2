@@ -428,7 +428,7 @@ insert into todo_atributotipoitem (tipoitem_id,nombre,descripcion) values ('3','
 insert into todo_lineabase (fase_id,nombre,fechacreacion,estado) values ('1','lb1 p1f1',current_date,'I');
 insert into todo_lineabase (fase_id,nombre,fechacreacion,estado) values ('3','lb1 p2f1',current_date,'I');
 
-insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('1','item 1','item 1 del tipo a','5','A','1','50',current_date,'1','5','50');
+insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('1','item 1','item 1 del tipo a','5','V','1','50',current_date,'1','5','50');
 insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,complejidadtotal,costototal) values ('2','item 2','item 1 del tipo b','3','M','1','35',current_date,'3','35');
 insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,lineabase_id,complejidadtotal,costototal) values ('3','item 3','item 1 del tipo c','8','A','1','75',current_date,'2','8','75');
 insert into todo_item (tipoitem_id,nombre,descripcion,complejidad,estado,version,costo,fechamodificacion,complejidadtotal,costototal) values ('4','item 4','item 1 del tipo d','2','M','1','20',current_date,'2','20');
@@ -453,5 +453,13 @@ insert into todo_comite_miembros (comite_id,user_id )values ('2','2');
 insert into todo_comite_miembros (comite_id,user_id )values ('2','3');
 insert into todo_comite_miembros (comite_id,user_id )values ('2','4');
 insert into todo_comite_miembros (comite_id,user_id )values ('2','5');
+
+
+insert into todo_solicituditem (item_id,complejidad,costo,votos,votossi,votosno,completo,solicitante_id) values ( 1,11,130,3,1,2,True,4);
+insert into todo_solicituditem (item_id,complejidad,costo,votos,votossi,votosno,completo,solicitante_id) values ( 1,11,130,2,1,1,False,1);
+insert into todo_solicituditem (item_id,complejidad,costo,votos,votossi,votosno,completo,solicitante_id) values ( 3,8,75,5,1,4,True,2);
+insert into todo_solicituditem (item_id,complejidad,costo,votos,votossi,votosno,completo,solicitante_id) values ( 5,15,110,3,0,3,True,1);
+
+
 
 

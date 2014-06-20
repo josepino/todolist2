@@ -83,7 +83,7 @@ def ReporteSolicitudesDeCambio(request, id_proyecto):
     if cont >= 1:
         p.setFillColorRGB(0, 0, 0.9)
         c = c + 40
-        p.drawString(25, alto - c, "Linea Base ,   Usuario Solicitante ,   Estado")
+        p.drawString(25, alto - c, "Item    ,   Linea Base ,   Usuario Solicitante ,   Estado")
         p.setFont("Helvetica", 12)
         c = c + 20
         for i in solicitudes:
@@ -98,7 +98,7 @@ def ReporteSolicitudesDeCambio(request, id_proyecto):
                 else:
                     est = 'PENDIENTE'
                 p.setFillColorRGB(0, 0, 0)
-                p.drawString(25, alto - c, "%s ,   %s  ,   %s" % (lb, i.solicitante, est))
+                p.drawString(25, alto - c, "%s ,    %s ,   %s  ,   %s" % (i.item.nombre, lb, i.solicitante, est))
                 c = c + 20
     p.showPage()
     p.save()
@@ -154,7 +154,7 @@ def ReporteListaDeitems(request, id_proyecto):
                     if fid == fas.id:
                         p.setFillColorRGB(0, 0, 0)
                         p.drawString(25, alto - c, "%s ,   %s  ,   %s  ,   %s  ,   %s  ,   %s" % (
-                        it.id, it.nombre, it.tipoitem, it.version, it.complejidad, it.costo))
+                            it.id, it.nombre, it.tipoitem.nombre, it.version, it.complejidad, it.costo))
                         c = c + 20
     p.showPage()
     p.save()
