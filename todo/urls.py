@@ -9,6 +9,8 @@ urlpatterns = patterns('todo.views',
                        url(r'^solicitarcambio/(?P<id_item>\d+)$', SolicitarCambio),
                        url(r'^voto/si/(?P<id_solicitud>\d+)$', VotoSi),
                        url(r'^voto/no/(?P<id_solicitud>\d+)$', VotoNo),
+                       url(r'^solicitudesdecambio/(?P<id_proyecto>\d+)$', ReporteSolicitudesDeCambio),
+                       url(r'^itemsdelproyecto/(?P<id_proyecto>\d+)$', ReporteListaDeitems),
                        #url(r'^revertir/(?P<id_item>\d+)$', RevertirItem),
 )
 

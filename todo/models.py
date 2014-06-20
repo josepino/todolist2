@@ -429,6 +429,9 @@ class SolicitudItem(models.Model):
     votosno = models.IntegerField(null=True, blank=True, verbose_name="Votos negativos de la Solicitud")
     """Cantidad de votos negativos de la solicitud"""
     completo = models.NullBooleanField(default=False)
+    solicitante = models.ForeignKey(User, verbose_name="Solicitante", related_name="Solicitante")
+    """Solicitante del cambio"""
+
 
     def __unicode__(self):
         """En esta clase definimos como se vera a la instancia de la clase RelacionItem"""

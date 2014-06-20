@@ -27,11 +27,11 @@ class SolicitudItemAdmin(admin.ModelAdmin):
     """
     Definicion de la clase RelacionAdmin
     """
-    list_display = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno',)
-    list_filter = ('item', 'costo', 'complejidad', 'votos',)
+    list_display = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno', 'solicitante',)
+    list_filter = ('item', 'costo', 'complejidad', 'votos', 'solicitante',)
     search_fields = ['item']
     ordering = ('item',)
-    readonly_fields = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno', 'completo',)
+    readonly_fields = ('item', 'costo', 'complejidad', 'votos', 'votossi', 'votosno', 'completo', 'solicitante',)
     actions = ('votar',)
 
     class VotoForm(forms.Form):
@@ -580,7 +580,7 @@ class ProyectoAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Nombre', {'fields': ('nombre', 'descripcion',)} ),
         ('Fechas', {'fields': ('fechacreacion', 'fechainicio', 'fechafin',)} ), ('Estado', {'fields': ('estado',)} ),)
-    actions = ('iniciar_proyecto', 'finalizar_proyecto',)
+    actions = ('iniciar_proyecto', 'finalizar_proyecto', 'Informes',)
     inlines = [FaseAdmin2]
 
     def iniciar_proyecto(modeladmin, request, queryset):
@@ -608,6 +608,53 @@ class ProyectoAdmin(admin.ModelAdmin):
         modeladmin.message_user(request, "%s correctamente." % message_bit)
 
     finalizar_proyecto.short_description = "Finalizar el proyecto seleccionado"
+
+    class InformeForm(forms.Form):
+        """
+        Definicion del formulario InformeForm
+        """
+        _selected_action = forms.CharField(widget=forms.MultipleHiddenInput)
+
+        class Meta:
+            model = Proyecto
+
+    def Informes(self, request, queryset):
+        """
+        Definicion de la accion  InformeSolicitudes
+        """
+        selected = request.POST.getlist(admin.ACTION_CHECKBOX_NAME)
+
+        count = 0
+        for a in queryset:
+            count += 1
+        if count == 1:
+            id_proyecto = (",".join(selected))
+            form = None
+            if 'apply' in request.POST:
+                form = self.InformeForm(request.POST)
+
+                if form.is_valid():
+                    count = 0
+                    for proyecto in queryset:
+                        count += 1
+                    plural = ''
+                    if count != 1:
+                        plural = 's'
+
+                    self.message_user(request, "Successfully added tag %s to %d article%s." % (tipoitem, count, plural))
+                    return HttpResponseRedirect(request.get_full_path())
+
+            if not form:
+                form = self.InformeForm(
+                    initial={'_selected_action': request.POST.getlist(admin.ACTION_CHECKBOX_NAME)})
+            proyecto = Proyecto.objects.get(id=id_proyecto)
+            return render_to_response('admin/reporte.html', {'proyecto': proyecto,
+                                                             'id_proyecto': id_proyecto,
+            })
+        else:
+            messages.error(request, "Solo se puede realizar el informe de un proyecto a la vez.")
+
+    Informes.short_description = "Realizar informes"
 
 
 def logged_in_message(sender, user, request, **kwargs):

@@ -173,7 +173,8 @@ CREATE TABLE "todo_solicituditem" (
     "votos" integer,
     "votossi" integer,
     "votosno" integer,
-    "completo" boolean
+    "completo" boolean,
+    "solicitante_id" integer NOT NULL REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED
 )
 ;
 CREATE TABLE "todo_comite_miembros" (
@@ -200,9 +201,11 @@ CREATE INDEX "todo_atributoitem_atributotipoitem_id" ON "todo_atributoitem" ("at
 CREATE INDEX "todo_relacionitem_itemorigen_id" ON "todo_relacionitem" ("itemorigen_id");
 CREATE INDEX "todo_relacionitem_itemdestino_id" ON "todo_relacionitem" ("itemdestino_id");
 CREATE INDEX "todo_solicituditem_item_id" ON "todo_solicituditem" ("item_id");
+CREATE INDEX "todo_solicituditem_solicitante_id" ON "todo_solicituditem" ("solicitante_id");
 CREATE INDEX "todo_comite_miembros_comite_id" ON "todo_comite_miembros" ("comite_id");
 CREATE INDEX "todo_comite_miembros_user_id" ON "todo_comite_miembros" ("user_id");
 CREATE INDEX "todo_comite_proyecto_id" ON "todo_comite" ("proyecto_id");
+
 
 
 
@@ -405,8 +408,8 @@ insert into auth_group_permissions (group_id,permission_id)values ('3','46');
 insert into auth_group_permissions (group_id,permission_id)values ('3','47');
 insert into auth_group_permissions (group_id,permission_id)values ('3','50');
 
-insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, Estado)values ('Proyecto 1','Proyecto 1',current_date, 'I');
-insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, Estado)values ('Proyecto 2','Proyecto 2',current_date, 'I');
+insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, FechaInicio, Estado)values ('Proyecto 1','Proyecto 1',current_date-90,current_date-88, 'I');
+insert into todo_proyecto ( Nombre, Descripcion, FechaCreacion, FechaInicio, Estado)values ('Proyecto 2','Proyecto 2',current_date-80,current_date-78, 'I');
 
 insert into todo_fase (fkproyecto_id,Nombre,NroOrden,Descripcion,FechaCreacion,Estado)values ('1','Fase 1','1','Fase 1 proy1',current_date,'I');
 insert into todo_fase (fkproyecto_id,Nombre,NroOrden,Descripcion,FechaCreacion,Estado)values ('1','Fase 2','2','Fase 2 proy1',current_date,'I');

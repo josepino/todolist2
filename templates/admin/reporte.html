@@ -1,0 +1,28 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+    <h2>Reporte del Proyecto</h2>
+
+    <form action="" method="post">
+
+        {{ item_form }}
+        <p>Seleccione el reporte que desea generar del proyecto {{ proyecto }} . </p>
+
+
+        <input type="hidden" name="action" value="solicitarcambio/"/>
+
+        <a href="/solicitudesdecambio/{{ id_proyecto }}" class="btn btn-lg btn-danger" role="button">Solicitudes de
+            cambio</a>
+
+        <p></p>
+        <a href="/itemsdelproyecto/{{ id_proyecto }}" class="btn btn-lg btn-danger" role="button">Lista de ítems</a>
+
+        <p></p>
+
+        <p></p>
+        <a href="/admin/todo/proyecto/" class="btn btn-lg btn-danger" role="button">Volver</a>
+    </form>
+
+
+
+{% endblock %}

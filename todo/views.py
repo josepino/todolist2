@@ -1,10 +1,11 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render
 from todo.models import *
 from django.db import IntegrityError
+from reportlab.pdfgen import canvas
 
 
 def index(request):
@@ -52,6 +53,114 @@ def ImportarTipoItem(request, id_fase, id_tipoitem):
     return HttpResponseRedirect('/admin/todo/tipoitem/' + str(tipoItemNuevo.id))
 
 
+def ReporteSolicitudesDeCambio(request, id_proyecto):
+    """
+    Definimos el view ReporteSolicitudesDeCambio
+    """
+    from reportlab.lib.units import inch, cm
+    from reportlab.lib.pagesizes import A4
+
+    ancho = A4[0]
+    alto = A4[1]
+
+    proyecto = Proyecto.objects.get(id=id_proyecto)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="ReporteSolicitudesDeCambio.pdf"'
+    p = canvas.Canvas(response)
+    p.setTitle('Reporte Solicitudes De Cambio del proyecto')
+    p.translate(2.3 * cm, 0.3 * cm)
+    p.setFont("Times-Italic", 25)
+    p.setFillColorRGB(0, 0, 0.5)
+    p.drawString(30, alto - 40, " Reporte Solicitudes De Cambio")
+    p.drawString(30, alto - 80, " Proyecto :    %s" % proyecto)
+    p.setFont("Courier-BoldOblique", 14)
+    p.saveState()
+    solicitudes = SolicitudItem.objects.all()
+    c = 100
+    cont = 0
+    for temp in solicitudes:
+        cont = cont + 1
+    if cont >= 1:
+        p.setFillColorRGB(0, 0, 0.9)
+        c = c + 40
+        p.drawString(25, alto - c, "Linea Base ,   Usuario Solicitante ,   Estado")
+        p.setFont("Helvetica", 12)
+        c = c + 20
+        for i in solicitudes:
+            pid = i.item.tipoitem.fase.fkproyecto.id
+            if (pid == proyecto.id):
+                lb = i.item.lineabase
+                if i.completo:
+                    if i.votossi > i.votosno:
+                        est = 'APROBADA'
+                    else:
+                        est = 'RECHAZADA'
+                else:
+                    est = 'PENDIENTE'
+                p.setFillColorRGB(0, 0, 0)
+                p.drawString(25, alto - c, "%s ,   %s  ,   %s" % (lb, i.solicitante, est))
+                c = c + 20
+    p.showPage()
+    p.save()
+    return response
+
+
+def ReporteListaDeitems(request, id_proyecto):
+    """
+    Definimos el view ReporteListaDeitems
+    """
+    from reportlab.lib.units import inch, cm
+    from reportlab.lib.pagesizes import A4
+
+    ancho = A4[0]
+    alto = A4[1]
+
+    proyecto = Proyecto.objects.get(id=id_proyecto)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="ReporteListaDeitems.pdf"'
+    p = canvas.Canvas(response)
+    p.setFillColorRGB(0, 0, 0.5)
+    p.setTitle('Reporte de Items del proyecto')
+    p.setFont("Times-Italic", 25)
+    p.drawString(30, alto - 40, " Reporte de Items")
+    p.drawString(30, alto - 80, " Proyecto :   %s" % proyecto)
+
+    p.saveState()
+    c = 100
+
+    fases = Fase.objects.all()
+    for fas in fases:
+        if fas.fkproyecto.id == proyecto.id:
+            p.setFont("Courier-BoldOblique", 18)
+            p.setFillColorRGB(0, 0, 0.7)
+            c = c + 40
+            p.drawString(25, alto - c, "Fase : %s" % fas)
+            p.setFont("Helvetica", 14)
+            c = c + 20
+
+            items = Item.objects.all()
+            cont = 0
+            for it in items:
+                fid = it.tipoitem.fase.id
+                if fid == fas.id:
+                    cont = cont + 1
+            if cont >= 1:
+                p.setFillColorRGB(0, 0, 0.9)
+                p.drawString(25, alto - c, "Id ,   Nombre ,   Tipo de Item ,   Version ,   Complejidad ,   Costo")
+                p.setFont("Helvetica", 12)
+                c = c + 20
+                for it in items:
+                    fid = it.tipoitem.fase.id
+                    if fid == fas.id:
+                        p.setFillColorRGB(0, 0, 0)
+                        p.drawString(25, alto - c, "%s ,   %s  ,   %s  ,   %s  ,   %s  ,   %s" % (
+                        it.id, it.nombre, it.tipoitem, it.version, it.complejidad, it.costo))
+                        c = c + 20
+    p.showPage()
+    p.save()
+    return response
+
+
 def SolicitarCambio(request, id_item):
     """
     Definimos el view SolicitarCambio
@@ -79,6 +188,7 @@ def SolicitarCambio(request, id_item):
         solicitud.votossi = 0
         solicitud.votosno = 0
         solicitud.completo = False
+        solicitud.solicitante = request.user
         solicitud.save()
         messages.info(request, "Se realizo correctamente la solicitud del cambio del item %s ." % item)
         return HttpResponseRedirect('/admin/todo/solicituditem/')
